@@ -124,7 +124,7 @@
 
 \textbf{La exposición a la inteligencia artificial generativa no es, por sí sola, una medida de pérdida o ganancia de empleo.} El indicador de la Organización Internacional del Trabajo (OIT) estima qué proporción de las tareas de una ocupación puede realizarse con herramientas actuales de IA. No identifica si una empresa utilizará esa capacidad para complementar al trabajador, reemplazar horas de trabajo o producir más. Confundir exposición con daño llevaría a clasificaciones aparentemente precisas, pero metodológicamente falsas.
 
-\textbf{En la base disponible, una cuarta parte del empleo presenta exposición sustantiva.} El 25,4\% de los ocupados se ubica en los gradientes 1 a 4; el 8,0\% está en los gradientes altos 3 y 4 y el 2,9\% en el gradiente 4. Entre las ocupaciones de alta exposición con mayor peso aparecen oficinistas generales, contadores, empleados de centros de llamadas, auxiliares contables, secretarios y desarrolladores de software.
+\textbf{En la base disponible, una cuarta parte del empleo presenta exposición sustantiva.} El 25,4\% de los ocupados se ubica en los niveles de exposición 1 a 4; el 8,0\% está en los niveles altos 3 y 4 y el 2,9\% en el nivel 4. Entre las ocupaciones de alta exposición con mayor peso aparecen oficinistas generales, contadores, empleados de centros de llamadas, auxiliares contables, secretarios y desarrolladores de software.
 
 \textbf{La exposición aumenta con el ingreso y la educación.} El índice promedio pasa de 0,211 en el primer quintil de ingreso y 0,208 en el segundo, a 0,358 en el quinto. También sube de 0,179 entre quienes tienen básica primaria a 0,361 entre quienes tienen educación superior o universitaria. Es mayor entre mujeres (0,297) que entre hombres (0,240), y entre ocupados formales (0,320) que entre informales (0,217). Estos resultados describen la composición de tareas, no la vulnerabilidad económica total.
 
@@ -154,7 +154,13 @@ La exposición aumenta con el ingreso y el logro educativo. El índice promedio 
 
 Estos resultados identifican dónde existe un mayor potencial de transformación de tareas, pero no establecen el signo del efecto sobre los trabajadores. La evidencia disponible muestra aumentos de productividad en centros de llamadas, consultoría, escritura y desarrollo de software, pero también reducciones de empleo e ingresos en algunos mercados de trabajo independiente. El resultado depende de cómo las empresas adopten la tecnología, de la respuesta de la demanda y de la capacidad de los trabajadores para asumir nuevas tareas. Por lo tanto, la prioridad es preparar transiciones y concentrar los esfuerzos de capacitación en los perfiles con mayor exposición y menor capacidad de ajuste.
 
-\section{Qué mide el índice de la OIT}
+\section{Metodología}
+
+\subsection{Clasificación ocupacional e índice de exposición de la OIT}
+
+La Clasificación Internacional Uniforme de Ocupaciones de 2008 (CIUO-08) organiza los empleos en cuatro niveles jerárquicos: diez grandes grupos a un dígito, 43 subgrupos principales a dos dígitos, 130 subgrupos a tres dígitos y 436 grupos primarios a cuatro dígitos \citep{ilo2012isco}. Este último es el nivel más detallado de la estructura internacional. En este informe, por brevedad, cada grupo primario se denomina ocupación a cuatro dígitos, aunque puede reunir varios cargos con tareas y niveles de cualificación semejantes.
+
+El anexo de exposición de la OIT asigna puntajes a 427 códigos de la CIUO-08 a cuatro dígitos. Esta cifra no debe confundirse con los 436 grupos primarios de la clasificación internacional ni con los 446 códigos distintos observados en \texttt{OFICIO\_C8} de la base colombiana, que utiliza la adaptación CIUO-08 A.C. El cruce conserva como resultado principal únicamente las equivalencias exactas con la correlativa de la OIT.
 
 La actualización de 2025 de la OIT y el instituto polaco NASK construye un índice de exposición a IA generativa a partir de tareas ocupacionales \citep{gmyrek2025}. Su punto de partida fue la clasificación polaca de seis dígitos: 2.541 ocupaciones y 29.753 tareas. Una encuesta a 1.640 trabajadores produjo 52.558 evaluaciones sobre 2.861 tareas representativas. Esas respuestas fueron revisadas por expertos y, para los casos con desacuerdo, mediante un proceso Delphi.
 
@@ -166,6 +172,7 @@ Para cada ocupación se calcula la media no ponderada de sus tareas y su desviac
 \centering
 \small
 \caption{Reglas de clasificación de exposición ocupacional}
+\label{tab:reglas_exposicion}
 \begin{tabularx}{0.94\textwidth}{>{\bfseries}l X}
 \toprule
 Categoría & Regla basada en la media ($\mu$) y la desviación estándar ($\sigma$) de los puntajes de tareas \\
@@ -180,7 +187,7 @@ No expuesta & Casos restantes \\
 \end{tabularx}
 \end{table}
 
-Hay tres precauciones. Primero, las tareas no se ponderan por frecuencia ni importancia. Segundo, el índice representa un techo tecnológico bajo adopción completa, no el uso observado en Colombia. Tercero, la OIT señala que la transformación de los puestos es más probable que su automatización total. En consecuencia, el índice ordena ocupaciones por potencial técnico; no estima efectos causales sobre empleo, salarios, calidad del trabajo o bienestar.
+El Cuadro \ref{tab:reglas_exposicion} presenta las seis categorías construidas a partir de la media y la dispersión de los puntajes de las tareas. Hay tres precauciones. Primero, las tareas no se ponderan por frecuencia ni importancia. Segundo, el índice representa un techo tecnológico bajo adopción completa, no el uso observado en Colombia. Tercero, la OIT señala que la transformación de los puestos es más probable que su automatización total. En consecuencia, el índice ordena ocupaciones por potencial técnico; no estima efectos causales sobre empleo, salarios, calidad del trabajo o bienestar.
 
 \subsection{Aplicación a la GEIH de 2025}
 
@@ -188,7 +195,7 @@ Se enlazó \texttt{OFICIO\_C8} de la GEIH con la CIUO-08 a cuatro dígitos. El i
 
 Los promedios, participaciones y cuantiles se ponderan con el factor de expansión. El ingreso mensual equivalente se calcula como ingreso real por hora multiplicado por horas semanales y por $52/12$. Los quintiles y percentiles son ponderados; para no dividir artificialmente personas con el mismo ingreso, los empates permanecen juntos. Por esa razón se observan 68 posiciones percentílicas con masa positiva, no 100 grupos de tamaño idéntico.
 
-\section{Resultados para Colombia en 2025}
+\section{Resultados}
 
 \subsection{Distribución nacional}
 
@@ -196,9 +203,10 @@ Los promedios, participaciones y cuantiles se ponderan con el factor de expansi�
 \centering
 \includegraphics[width=\textwidth]{figures/fig_01_distribucion_exposicion.png}
 \caption{Distribución de los ocupados por nivel de exposición}
+\label{fig:distribucion_exposicion}
 \end{figure}
 
-Más de la mitad del empleo de la base (56,7\%) se clasifica como no expuesto. Otro 14,4\% presenta exposición mínima. Los gradientes 1 y 2 reúnen 17,4\% y los gradientes 3 y 4, 8,0\%. La clasificación, por tanto, no implica que una cuarta parte de los empleos vaya a desaparecer: indica que en esos puestos existe al menos un conjunto importante de tareas técnicamente susceptible de apoyo o automatización.
+La Figura \ref{fig:distribucion_exposicion} muestra que más de la mitad del empleo de la base (56,7\%) se clasifica como no expuesto. Otro 14,4\% presenta exposición mínima. Los niveles 1 y 2 reúnen 17,4\% y los niveles 3 y 4, 8,0\%. La clasificación, por tanto, no implica que una cuarta parte de los empleos vaya a desaparecer: indica que en esos puestos existe al menos un conjunto importante de tareas técnicamente susceptible de apoyo o automatización.
 
 \subsection{Ingreso laboral}
 
@@ -206,43 +214,52 @@ Más de la mitad del empleo de la base (56,7\%) se clasifica como no expuesto. O
 \centering
 \includegraphics[width=\textwidth]{figures/fig_02_quintiles_ingreso.png}
 \caption{Índice promedio por quintil de ingreso laboral mensual equivalente}
+\label{fig:quintiles_ingreso}
 \end{figure}
 
-La relación es claramente creciente a partir del tercer quintil. Los dos quintiles inferiores tienen promedios similares, alrededor de 0,21; el quinto llega a 0,358. La mediana mensual dentro de cada quintil es, respectivamente, 0,40; 1,00; 1,42; 1,80 y 3,50 millones de pesos de 2025. Esta asociación es descriptiva: refleja que las ocupaciones mejor remuneradas concentran más tareas cognitivas y de oficina que las herramientas generativas pueden ejecutar.
+La Figura \ref{fig:quintiles_ingreso} muestra una relación creciente a partir del tercer quintil. Los dos quintiles inferiores tienen promedios similares, alrededor de 0,21; el quinto llega a 0,358. La mediana mensual dentro de cada quintil es, respectivamente, 0,40; 1,00; 1,42; 1,80 y 3,50 millones de pesos de 2025. Esta asociación es descriptiva: refleja que las ocupaciones mejor remuneradas concentran más tareas cognitivas y de oficina que las herramientas generativas pueden ejecutar.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{figures/fig_03_percentiles_ingreso.png}
 \caption{Exposición a lo largo de la distribución de ingreso}
+\label{fig:percentiles_ingreso}
 \end{figure}
 
-\subsection{Departamentos y actividades económicas}
+La Figura \ref{fig:percentiles_ingreso} confirma que el aumento no es uniforme a lo largo de la distribución: la exposición cambia poco en la parte baja y media y se eleva con mayor claridad en la parte alta. El resultado describe la composición ocupacional de cada tramo de ingreso; no identifica un efecto de la IA sobre la remuneración.
+
+\subsection{Departamentos}
 
 \begin{figure}[H]
 \centering
 \includegraphics[height=0.80\textheight,keepaspectratio]{figures/fig_04_departamentos.png}
 \caption{Índice promedio en los 24 departamentos seleccionados}
+\label{fig:departamentos}
 \end{figure}
 
-Bogotá sobresale con 0,319. Antioquia (0,273), Atlántico (0,270) y Valle del Cauca (0,269) conforman el siguiente grupo. Huila (0,200), Cauca (0,210) y Nariño (0,211) presentan los menores promedios. La cobertura exacta supera 95\% en la mayoría de los departamentos, pero es 80,0\% en La Guajira; su estimación requiere especial cautela.
+La Figura \ref{fig:departamentos} muestra que Bogotá sobresale con 0,319. Antioquia (0,273), Atlántico (0,270) y Valle del Cauca (0,269) conforman el siguiente grupo. Huila (0,200), Cauca (0,210) y Nariño (0,211) presentan los menores promedios. La cobertura exacta supera 95\% en la mayoría de los departamentos, pero es 80,0\% en La Guajira; su estimación requiere especial cautela.
+
+\subsection{Actividades económicas}
 
 \begin{figure}[H]
 \centering
 \includegraphics[height=0.78\textheight,keepaspectratio]{figures/fig_05_actividad_economica.png}
 \caption{Índice promedio por actividad económica}
+\label{fig:actividad_economica}
 \end{figure}
 
-Finanzas y seguros e información y comunicaciones tienen niveles casi tres veces superiores al de agricultura. Comercio también aparece alto (0,354) porque combina un volumen grande de empleo con tareas de venta, registro, servicio al cliente y administración. Menor exposición directa no equivale a inmunidad: sectores como agricultura o construcción pueden experimentar cambios por robótica, analítica, plataformas o demanda, tecnologías que este índice de IA generativa no captura.
+La Figura \ref{fig:actividad_economica} muestra que finanzas y seguros e información y comunicaciones tienen niveles casi tres veces superiores al de agricultura. Comercio también aparece alto (0,354) porque combina un volumen grande de empleo con tareas de venta, registro, servicio al cliente y administración. Menor exposición directa no equivale a inmunidad: sectores como agricultura o construcción pueden experimentar cambios por tecnologías o mecanismos que este índice de IA generativa no captura.
 
-\subsection{Educación y otros perfiles}
+\subsection{Logro educativo y otros perfiles}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{figures/fig_06_logro_educativo.png}
 \caption{Índice promedio por logro educativo disponible}
+\label{fig:logro_educativo}
 \end{figure}
 
-La exposición sube con el logro educativo: 0,167 para ninguno, 0,179 en básica primaria, 0,193 en básica secundaria, 0,243 en media y 0,361 en superior o universitaria. La versión disponible de la base no conserva \texttt{P3042}; por tanto, todavía no es posible separar técnica profesional, tecnológica, universitaria, especialización, maestría y doctorado. Esa desagregación debe incorporarse antes de cerrar el informe.
+La Figura \ref{fig:logro_educativo} muestra que la exposición sube con el logro educativo: 0,167 para ninguno, 0,179 en básica primaria, 0,193 en básica secundaria, 0,243 en media y 0,361 en superior o universitaria. La versión disponible de la base no conserva \texttt{P3042}; por tanto, todavía no es posible separar técnica profesional, tecnológica, universitaria, especialización, maestría y doctorado. Esa desagregación debe incorporarse antes de cerrar el informe.
 
 Las mujeres registran un índice medio 23\% mayor que los hombres (0,297 frente a 0,240). Los formales superan en 48\% a los informales (0,320 frente a 0,217). El patrón importa para la política de formación, pero no debe interpretarse como un ranking de vulnerabilidad: los informales pueden tener menor exposición directa y, al mismo tiempo, menos protección frente a transiciones o choques indirectos.
 
@@ -251,14 +268,15 @@ Las mujeres registran un índice medio 23\% mayor que los hombres (0,297 frente 
 \begin{figure}[H]
 \centering
 \includegraphics[height=0.76\textheight,keepaspectratio]{figures/fig_07_ocupaciones_alta_exposicion.png}
-\caption{Ocupaciones en gradientes 3 y 4 con mayor peso en el empleo}
+\caption{Ocupaciones en niveles de exposición 3 y 4 con mayor peso en el empleo}
+\label{fig:ocupaciones_alta_exposicion}
 \end{figure}
 
-En conjunto, oficinistas generales, contadores, empleados de centros de llamadas, auxiliares contables, secretarios generales y desarrolladores de software representan cerca de 1,11 millones de ocupados de la base. Son perfiles prioritarios para pilotos de adopción responsable y programas de actualización, no porque su desplazamiento sea inevitable, sino porque una proporción grande de sus tareas puede cambiar pronto.
+La Figura \ref{fig:ocupaciones_alta_exposicion} identifica las ocupaciones de alta exposición con mayor peso en el empleo. En conjunto, oficinistas generales, contadores, empleados de centros de llamadas, auxiliares contables, secretarios generales y desarrolladores de software representan cerca de 1,11 millones de ocupados de la base. Su alta exposición indica un mayor potencial de cambio en las tareas, no un desplazamiento inevitable.
 
 \section{Cómo cambia la IA las tareas y qué puede ocurrir con los trabajadores}
 
-La tabla siguiente combina tareas del índice OIT con evidencia causal u observacional disponible. Cuando el estudio no corresponde exactamente a la ocupación colombiana, se identifica la conexión como una inferencia y no como un efecto demostrado.
+El Cuadro \ref{tab:ejemplos} combina tareas del índice OIT con evidencia causal u observacional disponible. Cuando el estudio no corresponde exactamente a la ocupación colombiana, se identifica la conexión como una inferencia y no como un efecto demostrado.
 
 \begin{longtable}{p{0.16\textwidth} p{0.23\textwidth} p{0.34\textwidth} p{0.17\textwidth}}
 \caption{Ejemplos documentados de tareas, mecanismos y resultados}\label{tab:ejemplos}\\
@@ -293,53 +311,22 @@ No es metodológicamente viable asignar un signo a cada una de las 427 ocupacion
 La alternativa propuesta tiene tres capas:
 
 \begin{enumerate}[leftmargin=1.5em,itemsep=2pt]
-\item \textbf{Exposición tecnológica:} puntaje y gradiente OIT para todas las ocupaciones.
+\item \textbf{Exposición tecnológica:} puntaje y nivel de exposición OIT para todas las ocupaciones.
 \item \textbf{Evidencia de resultados:} productividad, calidad, horas, empleo e ingresos, sólo cuando exista un estudio pertinente.
 \item \textbf{Confianza y transferibilidad:} directa para la misma ocupación y contexto; cercana para tareas similares; baja cuando se extrapola entre países, empresas o modalidades de trabajo.
 \end{enumerate}
 
 Con esta regla, la mayoría de las ocupaciones conservaría resultado \emph{incierto} hasta contar con evidencia. Eso es una conclusión útil: orienta la evaluación de pilotos y evita que el informe presente como pronóstico lo que hoy es una posibilidad tecnológica.
 
-\section{Implicaciones y recomendaciones}
+\section{Conclusiones}
 
-\subsection*{Firmas}
+En 2025, el 25,4\% del empleo con correspondencia ocupacional exacta se ubicó en los niveles de exposición 1 a 4 y el 8,0\% en los niveles 3 y 4. La exposición se concentra en tareas de oficina, contabilidad, atención remota y desarrollo de software. Estas cifras miden potencial técnico de transformación de tareas; no son una estimación de empleos que desaparecerán.
 
-\begin{itemize}
-\item Mapear tareas dentro de los puestos de gradientes 3 y 4, empezando por oficinistas, contabilidad, centros de llamadas, secretarías y desarrollo de software.
-\item Hacer pilotos con métricas de tiempo, calidad, errores, satisfacción del cliente y carga de trabajo. El éxito no debe medirse sólo por reducción de costos.
-\item Capacitar antes y durante el rediseño. Los mayores retornos pueden estar entre trabajadores con menos experiencia, pero requieren guías, datos confiables y supervisión.
-\item Mantener revisión humana en decisiones legales, financieras, de personal y de atención sensible. Definir responsabilidad, privacidad, propiedad intelectual y trazabilidad.
-\item Compartir parte de las ganancias de productividad mediante formación, progresión laboral, mejores tareas o compensación; esto facilita adopción y reduce rotación.
-\end{itemize}
+La exposición promedio aumenta con el ingreso y el logro educativo, y es mayor entre mujeres, trabajadores formales y ocupados de Bogotá. También es más alta en finanzas y seguros e información y comunicaciones. Estos resultados describen dónde se concentran las tareas compatibles con la IA generativa, pero no permiten ordenar grupos por vulnerabilidad laboral.
 
-\subsection*{Trabajadores}
+La incertidumbre sigue siendo sustancial. El índice supone capacidad tecnológica y no mide adopción, inversión complementaria, respuesta de la demanda ni efectos causales sobre empleo y salarios. La base analizada representa 22,96 millones de ocupados, frente a 23,83 millones en la cifra oficial; el cruce exacto deja 3,51\% del empleo sin correspondencia, la educación sólo puede desagregarse en seis categorías y esta versión no incorpora errores estándar. Por estas razones, tampoco es defendible asignar un impacto positivo o negativo a cada ocupación.
 
-\begin{itemize}
-\item Aprender a formular instrucciones, verificar fuentes, detectar errores y documentar decisiones asistidas por IA.
-\item Fortalecer capacidades menos sustituibles: criterio profesional, conocimiento del negocio, negociación, comunicación, cuidado y coordinación con otros.
-\item Acumular credenciales portables y evidencia de proyectos, no sólo cursos generales. La formación debe estar ligada a tareas concretas del oficio.
-\item En perfiles de alta exposición, anticipar la transición hacia control de calidad, relación con clientes, resolución de excepciones y supervisión de sistemas.
-\end{itemize}
-
-\subsection*{Gobierno}
-
-\begin{itemize}
-\item Priorizar formación modular del SENA y alianzas sectoriales para ocupaciones de gradientes 3 y 4, cruzando exposición con informalidad, ingreso, edad y capacidad de transición.
-\item Cofinanciar adopción y capacitación en mipymes, donde el costo fijo y la falta de capacidades de gestión pueden ampliar brechas frente a empresas grandes.
-\item Fortalecer intermediación laboral, certificación de competencias y protección de ingresos durante transiciones, sin esperar a que aparezca desempleo masivo.
-\item Construir un observatorio de adopción que mida uso efectivo, tareas, vacantes, salarios, horas y calidad del empleo. La exposición tecnológica no sustituye estos indicadores.
-\item Establecer reglas de protección de datos, no discriminación, transparencia y responsabilidad para usos laborales de IA, incluida la gestión algorítmica.
-\end{itemize}
-
-\section{Limitaciones y pasos para cerrar el informe}
-
-\begin{enumerate}[leftmargin=1.5em,itemsep=3pt]
-\item \textbf{Universo.} La base procesada suma 22,96 millones de ocupados, 872 mil menos que el promedio anual oficial del DANE. Debe reconstruirse \texttt{BaseIA.dta} desde el archivo completo de ocupados de 2025 y documentar cualquier exclusión.
-\item \textbf{Educación.} Se requiere conservar \texttt{P3042} para separar los doce niveles: preescolar/ninguno, básica primaria, básica secundaria, media académica, media técnica, normalista, técnica profesional, tecnológica, universitaria, especialización, maestría y doctorado.
-\item \textbf{Correspondencia ocupacional.} La cobertura exacta es alta, pero la falta de cruce se concentra en códigos colombianos específicos. Debe revisarse manualmente la equivalencia de los diez códigos con mayor empleo; no conviene imputarlos automáticamente a dos dígitos.
-\item \textbf{Adopción y causalidad.} Los resultados no incorporan intensidad de adopción, inversión complementaria ni cambios de demanda. Son una línea base de exposición, no un pronóstico.
-\item \textbf{Incertidumbre muestral.} Esta versión presenta estimaciones puntuales. La publicación final debería incorporar errores estándar mediante el diseño muestral de la GEIH, especialmente para departamentos pequeños y ocupaciones poco frecuentes.
-\end{enumerate}
+La implicación práctica es acotada: firmas, trabajadores y gobierno deben concentrar la capacitación y el seguimiento en los perfiles con mayor exposición, sin asumir de antemano sustitución o ganancias. Las firmas pueden evaluar pilotos por tarea y medir calidad y errores; los trabajadores requieren capacidades de uso y verificación; y el gobierno debe observar adopción, vacantes, salarios y transiciones. Son prioridades de evaluación, no efectos estimados por este informe.
 
 \section*{Reproducibilidad}
 
