@@ -1,0 +1,448 @@
+﻿oficio_c8_4d,oficio_c8_label,occupation_name_isco08,grupo_exposicion_4d,ocupados,observaciones,exposicion_promedio_4d,desviacion_tareas_4d,participacion_empleo
+4132,Grabadores de datos,Data Entry Clerks,Gradient 4,41359.44194938024,932,0.7,0.03,0.0018017305867767447
+4131,Operadores de máquinas de procesamiento de texto y mecanógrafos,Typists and Word Processing Operators,Gradient 4,118.16573441046185,4,0.65,0.05,5.147623081008633e-06
+4311,Auxiliares de contabilidad y cálculo de costos,Accounting and Bookkeeping Clerks,Gradient 4,161070.75975152224,2604,0.64,0.07,0.00701668351412645
+4312,"Auxiliares de servicios estadísticos, financieros y de seguros","Statistical, Finance and Insurance Clerks",Gradient 4,1840.4572727192724,31,0.64,0.02,8.017536034389631e-05
+3311,"Agentes de bolsa, cambio y otros servicios financieros",Securities and Finance Dealers and Brokers,Gradient 4,4204.437415919097,56,0.63,0.04,0.00018315681100633242
+4419,Otro personal de apoyo administrativo no clasificados en otros grupos primarios,Clerical Support Workers Not Elsewhere Classified,Gradient 4,2009.6246039012274,36,0.63,0.03,8.754475268838094e-05
+2413,Analistas financieros,Financial Analysts,Gradient 4,9957.805235836739,102,0.62,0.06,0.0004337892733787602
+5244,Vendedores a través de medios tecnológicos,Contact Centre Salespersons,Gradient 4,76827.25460029914,936,0.61,0.1,0.0033468056624375597
+4313,Auxiliares encargados de las nóminas,Payroll Clerks,Gradient 4,2150.0089409811017,32,0.61,0.08,9.366027896484166e-05
+4110,Oficinistas generales,General Office Clerks,Gradient 4,309583.3989483505,5844,0.6,0.1,0.013486300896569735
+3312,Analistas de préstamos y créditos,Credit and Loans Officers,Gradient 4,32960.592523367,415,0.6,0.04,0.0014358536989042979
+4416,Empleados del servicio de personal,Personnel Clerks,Gradient 4,14573.523643976545,188,0.6,0.09,0.0006348626110236984
+2513,Desarrolladores web y multimedia,Web and Multimedia Developers,Gradient 4,13176.151192197496,141,0.6,0.08,0.000573989239217306
+2643,"Traductores, intérpretes y otros lingüistas","Translators, Interpreters and Other Linguists",Gradient 3,4863.791523228148,80,0.59,0.11,0.00021188008208212594
+4222,Empleados de centros de llamadas,Contact Centre Information Clerks,Gradient 3,191575.44502539234,2301,0.58,0.06,0.008345551165803105
+4120,Secretarios generales,Secretaries (general),Gradient 3,106598.23377866385,1929,0.58,0.1,0.004643711066761011
+4211,Cajeros de bancos y afines,Bank Tellers and Related Clerks,Gradient 3,22067.764330398782,359,0.58,0.09,0.000961332264214849
+4414,Escribientes públicos y afines,Scribes and Related Workers,Gradient 3,17261.202745338618,269,0.58,0.08,0.0007519452750086569
+2412,Asesores financieros y de inversiones,Financial and Investment Advisers,Gradient 3,72112.56695370383,796,0.57,0.11,0.0031414209536601598
+4226,Recepcionistas generales,Receptionists (general),Gradient 3,34171.97630422927,594,0.57,0.17,0.0014886248947288468
+4225,Empleados de ventanillas de información,Inquiry Clerks,Gradient 3,21086.199868967757,363,0.57,0.09,0.000918572627486244
+2521,Diseñadores y administradores de bases de datos,Database Designers and Administrators,Gradient 3,10736.395155207876,109,0.57,0.08,0.00046770678304931893
+3331,Declarantes o gestores de aduana,Clearing and Forwarding Aents,Gradient 3,6363.865200224072,73,0.57,0.09,0.00027722740058729533
+2514,Programadores de aplicaciones,Applications Programmers,Gradient 3,2500.863372601095,21,0.57,0.08,0.00010894445909787132
+2522,Administradores de sistemas,Systems Aministrators,Gradient 3,1707.7607980572566,8,0.57,0.05,7.439473841363397e-05
+3314,"Técnicos y profesionales del nivel medio de servicios estadísticos, matemáticos y afines","Statistical, Mathematical and Related Associate Professionals",Gradient 3,48.76969007548972,2,0.57,0.1,2.1245412939607805e-06
+4221,Empleados y consultores de viajes,Travel Consultants and Clerks,Gradient 3,16240.21320709571,265,0.56,0.07,0.0007074681739374497
+2120,"Matemáticos, actuarios y estadísticos","Mathematicians, Actuaries and Statisticians",Gradient 3,4203.536839312676,27,0.56,0.09,0.00018311757942241722
+2431,Profesionales de la publicidad y la comercialización,Advertising and Marketing Professionals,Gradient 3,71487.05547130128,801,0.55,0.09,0.0031141719600300214
+3342,Secretarios jurídicos,Legal Secretaries,Gradient 3,10005.094518336593,193,0.55,0.13,0.0004358493240634622
+2631,Economistas,Economists,Gradient 3,9147.89134718162,116,0.55,0.08,0.00039850720580078867
+4227,Entrevistadores de encuestas y de investigaciones de mercados,Survey and Market Research Interviewers,Gradient 3,9122.728929172177,192,0.55,0.16,0.00039741106194516413
+2622,"Bibliotecarios, documentalistas y afines",Librarians and Related Information Professionals,Gradient 3,3052.967876669608,49,0.55,0.04,0.0001329956436688554
+2641,Autores y otros escritores,Authors and Related Writers,Gradient 3,2482.8580110112925,36,0.55,0.09,0.00010816009622513174
+2519,Desarrolladores y analistas de software y multimedia no clasificados en otros grupos primarios,Software and Applications Developers and Analysts Not Elsewhere Classified,Gradient 3,1835.6270325025093,12,0.55,0.16,7.996494184863052e-05
+3343,Secretarios administrativos y ejecutivos,Administrative and Executive Secretaries,Gradient 3,69084.86416068696,1110,0.54,0.14,0.0030095259262435817
+2642,Periodistas,Journalists,Gradient 3,21320.57009755548,281,0.54,0.1,0.0009287824366512994
+4223,Telefonistas,Telephone Switchboard Operators,Gradient 3,3898.934337925182,59,0.54,0.15,0.00016984826006771596
+2112,Meteorólogos,Meteorologists,Gradient 3,249.70242761306298,2,0.54,0.13,1.0877721753922339e-05
+2512,Desarrolladores de software,Software Developers,Gradient 3,88504.18554450833,974,0.53,0.07,0.003855484760855057
+3321,Agentes de seguros,Insurance Representatives,Gradient 3,25137.15566568432,339,0.53,0.12,0.0010950433587296128
+3344,Secretarios médicos,Medical Secretaries,Gradient 3,24357.39294692273,399,0.53,0.11,0.0010610747587049695
+3514,Técnicos de la Web,Web Technicians,Gradient 3,3194.4709425121946,22,0.53,0.12,0.00013915990483474118
+2523,Profesionales en redes de computadores,Computer Network Professionals,Gradient 3,695.641528954323,10,0.52,0.06,3.030405056439417e-05
+3252,Técnicos en documentación sanitaria,Medical Records and Health Information Technicians,Gradient 3,209.12574706926875,12,0.52,0.1,9.110090398182579e-06
+2411,Contadores,Accountants,Gradient 3,252537.74117273046,3800,0.51,0.08,0.011001235779324518
+4224,Recepcionistas de hoteles,Hotel Receptionists,Gradient 3,24133.30951518697,562,0.51,0.07,0.0010513130705892945
+2434,Profesionales de ventas de tecnología de la información y las comunicaciones,Information and Communications Technology Sales Professionals,Gradient 3,845.1477515980793,13,0.51,0.09,3.681695116349778e-05
+4413,"Codificadores de datos, correctores de pruebas de imprenta y afines","Coding, Proofreading and Related Clerks",Gradient 3,539.8349971658536,9,0.51,0.2,2.351669124057972e-05
+4323,Empleados de servicios de transporte,Transport Clerks,Gradient 3,23973.162957452394,335,0.5,0.1,0.0010443366478466824
+2433,Profesionales de ventas técnicas y médicas (excluyendo las TIC),Technical and Medical Sales Professionals (excluding ICT),Gradient 3,11981.305831835456,145,0.5,0.1,0.0005219385022932594
+3322,Representantes comerciales,Commercial Sales Representatives,Gradient 2,311582.12095335196,5188,0.49,0.08,0.013573370702184671
+2511,Analistas de sistemas,Systems Analysts,Gradient 2,104167.50326940892,1219,0.49,0.05,0.004537821787304675
+2166,Diseñadores gráficos y multimedia,Graphic and Multimedia Designers,Gradient 2,76570.17187238442,955,0.49,0.09,0.003335606434585722
+3313,Técnicos de contabilidad y afines,Accounting Associate Professionals,Gradient 2,24192.37593571156,248,0.49,0.13,0.001053886165667338
+2529,Profesionales en bases de datos y en redes de computadores no clasificados en otros grupos primarios,Database and Network Professionals Not Elsewhere Classified,Gradient 2,2754.0889027354906,26,0.49,0.06,0.00011997565684841868
+3352,Agentes de administración tributaria,Government Tax and Excise Officials,Gradient 2,1230.5990370656664,21,0.49,0.12,5.360826502090762e-05
+3332,Organizadores de conferencias y eventos,Conference and Event Planners,Gradient 2,17732.2952663373,268,0.48,0.14,0.0007724673556818902
+2153,Ingenieros de telecomunicaciones,Telecommunications Engineers,Gradient 2,8745.23204172237,71,0.48,0.12,0.0003809662634548032
+4213,Prestamistas,Pawnbrokers and Money-lenders,Gradient 2,8364.031020100228,184,0.48,0.06,0.00036436010273320176
+2632,"Sociólogos, antropólogos y afines","Sociologists, Anthropologists and Related Professionals",Gradient 2,4249.179468316274,36,0.48,0.12,0.0001851058973701626
+3512,Técnicos en asistencia y soporte al usuario de tecnología de la información y las comunicaciones,Information and Communications Technology User Support Technicians,Gradient 2,28182.511642755107,382,0.47,0.19,0.0012277074072007512
+1346,"Gerentes de sucursales de bancos, de servicios financieros y de seguros",Financial and Insurance Services Branch managers,Gradient 2,14678.84366848653,175,0.47,0.12,0.0006394506397933312
+2656,"Locutores de radio, televisión y otros medios de comunicación","Announcers on Radio, Television and Other Media",Gradient 2,4506.8631153054,90,0.47,0.12,0.00019633130290297218
+2621,Archivistas y curadores de arte,Archivists and Curators,Gradient 2,3995.8725037169074,48,0.47,0.11,0.00017407115211124857
+2633,"Filósofos, historiadores y especialistas en ciencias políticas","Philosophers, Historians and Political Scientists",Gradient 2,1071.8561518122883,15,0.47,0.06,4.669299009664119e-05
+2356,Instructores de tecnología de la información,Information Technology Trainers,Gradient 2,841.7521943149447,23,0.47,0.1,3.6669031386831947e-05
+5243,Vendedores puerta a puerta,Door-to-door Salespersons,Gradient 2,85843.3229933959,1255,0.46,0.18,0.003739570299257252
+2421,Analistas de gestión y organización,Management and Organization Analysts,Gradient 2,22877.428539872326,291,0.46,0.1,0.0009966034550837276
+4411,Empleados de bibliotecas,Library Clerks,Gradient 2,2124.353650142055,31,0.46,0.18,9.254266421863842e-05
+4212,Receptores de apuestas y afines,"Bookmakers, Croupiers and Related Gaming Workers",Gradient 2,16927.624624052194,322,0.45,0.19,0.0007374136982785632
+2423,Profesionales de gestión de talento humano,Personnel and Careers Professionals,Gradient 2,13620.486410813908,169,0.45,0.07,0.0005933456985027853
+3522,Técnicos de ingeniería de las telecomunicaciones,Telecommunications Engineering Technicians,Minimal Exposure,11726.709942081448,162,0.45,0.04,0.0005108476079238708
+3315,Tasadores y evaluadores,Valuers and Loss Assessors,Gradient 2,10050.567464711503,89,0.45,0.19,0.0004378302501710922
+3353,Agentes de servicios de seguridad social,Government Social Benefits Officials,Gradient 2,1386.5046464690693,25,0.45,0.07,6.039994043703079e-05
+1420,Gerentes de comercios al por mayor y al por menor,Retail and Wholesale Trade Managers,Gradient 2,387612.88577017863,6456,0.44,0.15,0.01688547908783852
+3324,Agentes de operaciones comerciales y consignatarios,Trade Brokers,Gradient 2,16421.40564659329,260,0.44,0.1,0.0007153614129404092
+3339,Agentes de servicios comerciales no clasificados en otros grupos primarios,Business Services Agents Not Elsewhere Classified,Gradient 2,13904.950308209038,221,0.44,0.12,0.000605737725102124
+2165,Cartógrafos y topógrafos,Cartographers and Surveyors,Gradient 2,8805.833259865414,130,0.44,0.12,0.00038360621852136066
+1330,Directores de servicios de tecnología de la información y las comunicaciones,Information and Communications Technology Service Managers,Gradient 2,7467.0941307681605,96,0.44,0.07,0.00032528707486459944
+4322,Empleados de servicios de apoyo a la producción,Production Clerks,Gradient 2,727.5346831291124,12,0.44,0.06,3.1693403724812366e-05
+5221,Comerciantes de tiendas,Shopkeepers,Gradient 2,327845.2648112467,5780,0.43,0.1,0.014281837798084606
+3341,Supervisores de oficina,Office Supervisors,Gradient 2,205849.43980431042,2777,0.43,0.11,0.008967365478968752
+4214,Cobradores y afines,Debt Collectors and Related Workers,Gradient 2,32803.8423817087,501,0.43,0.07,0.0014290252333497339
+3511,Técnicos en operaciones de tecnología de la información y las comunicaciones,Information and Communications Technology Operations Technicians,Gradient 2,20446.129002786154,246,0.43,0.13,0.0008906893872163313
+3513,Técnicos en redes y sistemas de computación,Computer Network and Systems Technicians,Gradient 2,13402.362062694945,211,0.43,0.08,0.0005838436043931098
+2432,Profesionales de relaciones públicas,Public Relations Professionals,Gradient 2,3109.8180474077226,39,0.43,0.09,0.0001354721928352514
+3354,Agentes gubernamentales de expedición de licencias,Government Licensing Officials,Gradient 2,404.8098652097102,5,0.43,0.07,1.763462661972003e-05
+2422,Profesionales en políticas de administración,Policy Administration Professionals,Minimal Exposure,25341.547734184707,447,0.42,0.06,0.0011039472371224216
+1219,Directores de administración y servicios no clasificados en otros grupos primarios,Business Services and Administration Managers Not Elsewhere Classified,Gradient 2,24884.62197385949,369,0.42,0.1,0.0010840422993509751
+4229,Otros empleados de servicios de información al cliente no clasificados en otros grupos primarios,Client Information Workers Not Elsewhere Classified,Gradient 2,21575.501816979926,314,0.42,0.13,0.0009398879606810669
+5242,"Demostradores de tiendas, almacenes y afines",Sales Demonstrators,Gradient 2,9466.774627122259,205,0.42,0.11,0.0004123986349884436
+2152,Ingenieros electrónicos,Electronics Engineers,Gradient 2,8000.572445548991,86,0.42,0.13,0.0003485268516076978
+1221,Directores de ventas y comercialización,Sales and Marketing Managers,Gradient 2,79103.87176651857,690,0.41,0.09,0.0034459813425102934
+4412,Empleados de servicios de correos,Mail Carriers and Sorting Clerks,Gradient 2,9547.50392211981,118,0.41,0.15,0.00041591542421940157
+2265,Dietistas y nutricionistas,Dieticians and Nutritionists,Minimal Exposure,7918.493455422986,154,0.41,0.07,0.00034495126595973945
+2424,Profesionales en formación y desarrollo de personal,Training and Staff Development Professionals,Gradient 2,1174.569987223553,24,0.41,0.09,5.1167486130028816e-05
+2164,"Planificadores urbanos, regionales y de tránsito",Town and Traffic Planners,Minimal Exposure,758.9130091077164,9,0.41,0.06,3.3060329558741555e-05
+2131,"Biólogos, botánicos, zoólogos y afines","Biologists, Botanists, Zoologists and Related Professionals",Gradient 2,17460.27576897569,337,0.4,0.1,0.0007606174412368189
+1223,Directores de investigación y desarrollo,Research and Development Managers,Minimal Exposure,6145.326990662521,58,0.4,0.06,0.0002677072775394946
+5230,"Cajeros de comercio, taquilleros y expendedores de boletas",Cashiers and Ticket Clerks,Gradient 1,191916.86119117524,3293,0.39,0.14,0.008360424189222134
+2634,Psicólogos,Psychologists,Gradient 1,74945.08447841919,1405,0.39,0.14,0.0032648131761206776
+2351,Especialistas en métodos pedagógicos,Education Methods Specialists,Gradient 1,16759.01251277979,280,0.39,0.11,0.0007300684928342465
+3431,Fotógrafos,Photographers,Gradient 1,13789.992539376339,246,0.39,0.12,0.0006007298497892274
+3411,"Técnicos y profesionales del nivel medio del derecho, de servicios legales y afines",Legal and Related Associate Professionals,Gradient 1,11914.568775411155,244,0.39,0.14,0.0005190312533033366
+3323,Agentes de compras,Buyers,Minimal Exposure,9816.947670024,109,0.39,0.08,0.00042765313196238563
+2113,Químicos,Chemists,Minimal Exposure,5078.553980859709,63,0.39,0.1,0.0002212357230329808
+1222,Directores de publicidad y relaciones públicas,Advertising and Public Relations Managers,Minimal Exposure,3612.123976182432,36,0.39,0.05,0.00015735401505375106
+3333,Agentes de empleo y contratistas de mano de obra,Employment agents and contractors,Minimal Exposure,589.9823897878317,9,0.39,0.09,2.5701249031390876e-05
+5223,"Vendedores y auxiliares de venta en tiendas, almacenes y afines",Shop Sales Assistants,Gradient 1,1337628.6058828542,23197,0.38,0.16,0.058270766223498034
+1120,Directores y gerentes generales,Managing Directors and Chief Executives,Minimal Exposure,103455.63864397127,1062,0.38,0.06,0.0045068110142177185
+1321,Directores de industrias manufactureras,Manufacturing Managers,Minimal Exposure,43720.11379646565,621,0.38,0.11,0.001904567918998058
+1324,"Directores de empresas de abastecimiento, distribución y afines","Supply, Distribution and Related Managers",Minimal Exposure,42685.207950342,463,0.38,0.05,0.0018594845854347775
+2143,Ingenieros medioambientales,Environmental Engineers,Minimal Exposure,20277.87239588394,329,0.38,0.07,0.0008833596685162092
+1112,Directores del gobierno,Senior Government Officials,Minimal Exposure,14115.534137004648,249,0.38,0.08,0.0006149113335344132
+2133,Profesionales de la protección medioambiental,Environmental Protection Professionals,Minimal Exposure,10863.084341863769,147,0.38,0.04,0.00047322571105833696
+3114,Técnicos en electrónica,Electronics Engineering Technicians,Minimal Exposure,7031.49974288636,126,0.38,0.11,0.00030631139010958074
+1349,Directores y gerentes de servicios profesionales no clasificados en otros grupos primarios,Professional Services Managers Not Elsewhere Classified,Minimal Exposure,5781.439742393314,67,0.38,0.07,0.0002518553522125747
+7321,Preimpresores y afines,Pre-press Technicians,Gradient 1,5318.989834967381,73,0.38,0.22,0.00023170976746118607
+3141,Técnicos en ciencias biológicas (excluyendo la medicina),Life Science Technicians (excluding Medical),Gradient 1,1464.8403886522124,16,0.38,0.18,6.381245995076037e-05
+2111,Físicos y astrónomos,Physicists and Astronomers,Gradient 1,451.92111305679816,3,0.38,0.14,1.968692162725918e-05
+4321,Empleados de control de abastecimientos e inventario,Stock Clerks,Minimal Exposure,270306.39435427194,3826,0.37,0.06,0.011775286985387538
+9621,"Mensajeros, mandaderos, maleteros y repartidores","Messengers, Package Deliverers and Luggage Porters",Gradient 1,199969.7536463874,3439,0.37,0.19,0.008711230243770383
+2310,Profesores de instituciones de educación superior,University and Higher Education Teachers,Minimal Exposure,83108.01659998075,1756,0.37,0.12,0.0036204128599655475
+3422,"Entrenadores, instructores y árbitros de actividades deportivas","Sports Coaches, Instructors and Officials",Minimal Exposure,64328.352348973895,953,0.37,0.12,0.0028023192422651794
+4415,Empleados de archivos,Filing and Copying Clerks,Gradient 1,42127.90307457792,797,0.37,0.17,0.0018352068584274136
+2141,Ingenieros industriales y de producción,Industrial and Production Engineers,Minimal Exposure,38704.213265776205,370,0.37,0.07,0.0016860615518803966
+2161,Arquitectos constructores,Building Architects,Minimal Exposure,36966.95141645995,576,0.37,0.08,0.0016103816668620176
+1211,Directores financieros,Finance Managers,Minimal Exposure,28824.761601175655,318,0.37,0.04,0.0012556855746977556
+3432,Diseñadores y decoradores de interiores,Interior Designers and Decorators,Minimal Exposure,15890.081088061528,250,0.37,0.08,0.0006922154597192808
+1411,Gerentes de hoteles,Hotel Managers,Gradient 1,13964.963500670352,285,0.37,0.13,0.000608352064159213
+2654,"Directores y productores de cine, de teatro y afines","Film, Stage and Related Directors and Producers",Minimal Exposure,8723.892510649368,83,0.37,0.07,0.00038003665502612193
+1344,Directores  de servicios de bienestar social,Social Welfare Managers,Minimal Exposure,3848.488248535582,79,0.37,0.07,0.00016765069022749046
+1114,"Dirigentes de organizaciones con un interés específico
+(partidos políticos, sindicatos y organizaciones sociales)",Senior Officials of Special-interest Organizations,Minimal Exposure,2862.397891803907,58,0.37,0.06,0.00012469389310185435
+2619,Profesionales en derecho no clasificados en otros grupos primarios,Legal Professionals Not Elsewhere Classified,Minimal Exposure,1355.112415891803,28,0.37,0.09,5.9032408880695164e-05
+3433,"Técnicos en galerías de arte, museos y bibliotecas","Gallery, Museum and Library Technicians",Gradient 1,690.4145758124076,10,0.37,0.2,3.0076350167397426e-05
+2162,Arquitectos paisajistas,Landscape Architects,Minimal Exposure,463.718317922504,4,0.37,0.08,2.0200840187162095e-05
+2611,Abogados,Lawyers,Minimal Exposure,215338.6418961086,3568,0.36,0.09,0.009380741115753783
+1412,Gerentes de restaurantes,Restaurant Managers,Minimal Exposure,123641.14556066669,2093,0.36,0.12,0.00538614698944474
+1212,Directores de recursos humanos,Human Resource Managers,Minimal Exposure,110659.13302275496,1489,0.36,0.05,0.00482061496180999
+1345,Directores de servicios de educación,Education Managers,Minimal Exposure,39559.03041254004,653,0.36,0.1,0.001723299728384582
+1342,Directores de servicios de salud,Health Service Managers,Minimal Exposure,38911.50378681339,821,0.36,0.05,0.0016950916948054071
+3359,Agentes de gobierno y profesionales del nivel medio para la aplicación de regulaciones no clasificados en otros grupos primarios,Government Regulatory AssociatePprofessionals Not Elsewhere Classified,Minimal Exposure,22846.567243202506,410,0.36,0.1,0.0009952590524627818
+5222,Supervisores de tiendas y almacenes,Shop Supervisors,Minimal Exposure,12728.734186177724,225,0.36,0.12,0.0005544985288306303
+2114,Geólogos y geofísicos,Geologists and geophysicists,Minimal Exposure,3182.860845596019,32,0.36,0.1,0.00013865413720966254
+1213,Directores de políticas y planeación,Policy and Planning Managers,Not Exposed,1528.143848122278,26,0.36,0.04,6.65701320517426e-05
+5211,Vendedores en quioscos y puestos de mercado,Stall and Market Salespersons,Gradient 1,112504.59116974869,2208,0.35,0.17,0.004901008173936122
+3122,Supervisores de industrias manufactureras,Manufacturing Supervisors,Minimal Exposure,48449.7048595884,573,0.35,0.13,0.002110601861424157
+3334,Agentes inmobiliarios,Real Estate Agents and Property Managers,Minimal Exposure,44565.74608181104,596,0.35,0.09,0.0019414059777788666
+2320,Profesores de formación profesional,Vocational Education Teachers,Minimal Exposure,25547.42276912845,556,0.35,0.12,0.0011129157175957765
+3118,Delineantes y dibujantes técnicos,Draughtspersons,Minimal Exposure,24521.659192699557,340,0.35,0.11,0.0010682306463437178
+3521,Técnicos de radiodifusión y grabación audio visual,Broadcasting and Audio-visual Technicians,Minimal Exposure,17450.186811340925,228,0.35,0.11,0.0007601779386056785
+2163,Diseñadores de productos y de prendas,Product and Garment Designers,Minimal Exposure,15130.071873227726,191,0.35,0.09,0.0006591073764362867
+2354,Otros profesores de música,Other Music Teachers,Minimal Exposure,11227.95054604107,152,0.35,0.09,0.0004891202823862565
+2145,Ingenieros químicos,Chemical Engineers,Minimal Exposure,9437.680723232428,116,0.35,0.12,0.0004111312248383936
+2355,Otros profesores de artes,Other Arts Teachers,Minimal Exposure,9068.77762412759,152,0.35,0.1,0.00039506079530920887
+1322,Directores de explotaciones de minería,Mining Managers,Minimal Exposure,1624.6278107327541,27,0.35,0.11,7.077323776050624e-05
+3256,Asistentes médicos,Medical Assistants,Gradient 1,485.2471463034011,7,0.35,0.23,2.1138694925115367e-05
+2353,Otros profesores de idiomas,Other Language Teachers,Minimal Exposure,17183.795121954787,293,0.34,0.11,0.0007485731868922109
+1323,Directores de empresas de construcción,Construction Managers,Minimal Exposure,9138.384645597633,103,0.34,0.06,0.00039809306783818773
+3155,Técnicos en seguridad aeronáutica,Air Traffic Safety Electronics Technicians,Minimal Exposure,1861.050651171603,5,0.34,0.1,8.107246432049358e-05
+1343,Directores de servicios de atención a personas mayores,Aged Care Service Managers,Minimal Exposure,416.46500405087363,14,0.34,0.09,1.8142356394433988e-05
+2359,Otros profesionales de la educación no clasificados en otros grupos primarios,Teaching Professionals Not Elsewhere Classified,Minimal Exposure,49377.066302042826,909,0.33,0.1,0.0021510002661684112
+3412,Trabajadores y asistentes sociales,Social Work Associate Professionals,Minimal Exposure,8509.1028907388,164,0.33,0.13,0.00037067983081198817
+2262,Farmacéuticos,Pharmacists,Minimal Exposure,3380.356417517985,42,0.33,0.09,0.0001472575853200185
+1431,"Gerentes de centros deportivos, de esparcimiento y culturales","Sports, Recreation and Cultural Centre Managers",Minimal Exposure,18426.03749496406,264,0.32,0.1,0.0008026886675212833
+2144,Ingenieros mecánicos,Mechanical Engineers,Not Exposed,18258.202366322475,213,0.32,0.07,0.0007953773095687449
+5113,Guías,Travel Guides,Minimal Exposure,8268.414650049057,162,0.32,0.11,0.0003601947917329081
+8219,Ensambladores no clasificados en otros grupos primarios,Assemblers Not Elsewhere Classified,Minimal Exposure,4558.540426778267,73,0.32,0.17,0.00019858250814981781
+3351,Agentes de aduanas e inspectores de fronteras,Customs and Border Inspectors,Minimal Exposure,2342.4769084597365,26,0.32,0.14,0.00010204471085358489
+3116,Técnicos en química industrial,Chemical Engineering Technicians,Not Exposed,2304.401838099402,16,0.32,0.02,0.00010038605649006973
+2230,Profesionales de medicina tradicional y alternativa,Traditional and Complementary Medicine Professionals,Minimal Exposure,1858.2895332609667,17,0.32,0.11,8.095218246080652e-05
+2151,Ingenieros electricistas,Electrical Engineers,Not Exposed,21693.88969345812,300,0.31,0.08,0.0009450452608790572
+7543,Clasificadores y probadores de productos (excluyendo alimentos y bebidas),Product Graders and Testers (except Foods and Beverages),Minimal Exposure,13409.897364108003,172,0.31,0.11,0.0005841718627640303
+3212,Técnicos de laboratorios médicos,Medical and Pathology Laboratory Technicians,Minimal Exposure,7573.647820980598,157,0.31,0.16,0.0003299288454915979
+1111,Directores formuladores de políticas y normas,Legislators,Not Exposed,7238.968486075819,112,0.31,0.04,0.00031534929687974646
+2612,Jueces,Judges,Not Exposed,6596.125767149206,144,0.31,0.08,0.00028734530711135544
+7515,Catadores y clasificadores de alimentos y bebidas,Food and Beverage Tasters and Graders,Minimal Exposure,4590.7657015003315,61,0.31,0.16,0.00019998632939104946
+3135,Controladores de procesos de producción de metales,Metal Production Process Controllers,Minimal Exposure,2348.4312499544003,27,0.31,0.13,0.00010230409827975422
+3154,Controladores de tráfico aéreo y marítimo,Air Traffic Controllers,Minimal Exposure,2139.0491377475237,37,0.31,0.09,9.318283991391926e-05
+2655,Actores,Actors,Minimal Exposure,1113.0937804145594,14,0.31,0.15,4.8489414160335905e-05
+2330,Profesores de educación secundaria,Secondary Education Teachers,Not Exposed,211449.26757511165,3925,0.3,0.07,0.00921130931621111
+2142,Ingenieros civiles,Civil Engineers,Not Exposed,83393.04455075014,1425,0.3,0.06,0.003632829458274974
+3213,Técnicos y asistentes farmacéuticos,Pharmaceutical Technicians and Assistants,Minimal Exposure,26819.293019593533,563,0.3,0.12,0.0011683218697261409
+2149,Ingenieros no clasificados en otros grupos primarios,Engineering Professionals Not Elsewhere Classified,Not Exposed,7414.523424155805,97,0.3,0.08,0.0003229969508782102
+5161,"Astrólogos, adivinos y trabajadores afines","Astrologers, Fortune-tellers and Related Workers",Minimal Exposure,1949.8663075219636,30,0.3,0.16,8.49415176028601e-05
+1341,Directores de servicios de cuidados infantiles,Child Care Service Managers,Minimal Exposure,1025.9721548915174,13,0.3,0.15,4.46941575012473e-05
+3259,Otros técnicos y profesionales del nivel medio de la salud no clasificados en otros grupos primarios,Health Associate Professionals Not Elsewhere Classified,Minimal Exposure,91.11348172010719,3,0.3,0.15,3.969152849880288e-06
+2211,Médicos generales,Generalist Medical Practitioners,Not Exposed,62878.436620525106,1035,0.29,0.1,0.0027391569413958367
+9629,Otras ocupaciones elementales no clasificadas en otros grupos primarios,Elementary Workers Not Elsewhere Classified,Minimal Exposure,20032.493717181165,308,0.29,0.14,0.0008726703011088165
+2132,"Agrónomos, silvicultores, zootecnistas y afines","Farming, Forestry and Fisheries Advisers",Not Exposed,18635.734895639118,302,0.29,0.1,0.0008118236607164585
+2146,"Ingenieros de minas, metalúrgicos y afines","Mining Engineers, Metallurgists and Related Professionals",Not Exposed,6629.86443932171,89,0.29,0.05,0.00028881505609116117
+3121,Supervisores de minas,Mining Supervisors,Not Exposed,2749.3045767938047,53,0.29,0.08,0.00011976723850474772
+3133,Controladores de instalaciones de procesamiento de productos químicos,Chemical Processing Plant Controllers,Not Exposed,2026.642150301096,21,0.29,0.1,8.82860836255358e-05
+3134,Operadores de instalaciones de refinación de petróleo y gas natural,Petroleum and Natural Gas Refining Plant Operators,Not Exposed,1591.5510452726762,41,0.29,0.11,6.933232325024757e-05
+3152,"Capitanes, oficiales de cubierta y prácticos",Ships' Deck Officers and Pilots,Not Exposed,617.232101828003,27,0.29,0.11,2.6888321132695445e-05
+5131,Meseros,Waiters,Minimal Exposure,338997.57488866476,5821,0.28,0.16,0.014767662974456544
+3123,Supervisores de la construcción,Construction Supervisors,Not Exposed,148770.82413363367,2262,0.28,0.06,0.0064808646255336685
+2263,Profesionales de la salud y la higiene laboral y ambiental,Environmental and Occupational Health and Hygiene Professionals,Not Exposed,49618.23686869478,626,0.28,0.05,0.0021615063166876354
+2652,"Compositores, músicos y cantantes","Musicians, Singers and Composers",Not Exposed,30497.927525254247,489,0.28,0.09,0.0013285732656355233
+2635,Profesionales del trabajo social y consejeros,Social Work and Counselling Professionals,Not Exposed,29848.881531669227,620,0.28,0.1,0.0013002990442304507
+2264,Fisioterapeutas,Physiotherapists,Minimal Exposure,27891.63328485264,508,0.28,0.14,0.001215035949130652
+3112,Técnicos en ingeniería civil,Civil Engineering Technicians,Not Exposed,12771.51740415603,197,0.28,0.07,0.000556362283001361
+8212,Ensambladores de equipos eléctricos y electrónicos,Electrical and Electronic Equipment Assemblers,Minimal Exposure,7418.458493712006,92,0.28,0.19,0.00032316837328737083
+2352,Profesores de educación especial e inclusiva,Special Needs Teachers,Not Exposed,2570.441904179634,30,0.28,0.1,0.00011197549052913425
+3117,Técnicos de minas y metalurgia,Mining and metallurgical technicians,Not Exposed,1832.6206873195265,34,0.28,0.06,7.983397721721168e-05
+8171,Operadores de instalaciones para la preparación de papel y de pasta para papel,Pulp and Papermaking Plant Operators,Minimal Exposure,1375.1405473412487,14,0.28,0.14,5.990488914947191e-05
+3131,Operadores de plantas de producción de energía,Power Production Plant Operators,Not Exposed,813.6900521948401,23,0.28,0.11,3.544656760576474e-05
+1311,Directores de producción agropecuaria y silvicultura,Agricultural and Forestry Production Managers,Minimal Exposure,123804.13035509756,2054,0.27,0.13,0.005393247053552593
+2212,Médicos especialistas,Specialist Medical Practitioners,Not Exposed,46770.78895293054,672,0.27,0.12,0.002037463685494373
+3113,Electrotécnicos,Electrical Engineering Technicians,Not Exposed,40711.37922674709,673,0.27,0.05,0.0017734991993477987
+5153,Conserjes y afines,Building Caretakers,Minimal Exposure,7855.246435563352,132,0.27,0.16,0.00034219605252279207
+3132,"Operadores de incineradores, instalaciones de tratamiento de agua y afines",Incinerator and Water Treatment Plant Operators,Not Exposed,6408.6692110784525,105,0.27,0.09,0.00027917918603124337
+8211,Ensambladores de maquinaria mecánica,Mechanical Machinery Assemblers,Minimal Exposure,3553.8727054337182,51,0.27,0.17,0.0001548164301328756
+3153,Pilotos de aviación y afines,Aircraft Pilots and Related Associate Professionals,Not Exposed,3386.1862972516346,30,0.27,0.05,0.00014751155085094135
+8132,Operadores de máquinas para fabricar productos fotográficos,Photographic Products Machine Operators,Not Exposed,95.30126926201805,3,0.27,0.06,4.1515843467660066e-06
+2341,Profesores de educación primaria,Primary School Teachers,Not Exposed,169832.4843223709,3344,0.26,0.09,0.007398368237327796
+3115,Técnicos en ingeniería mecánica,Mechanical Engineering Technicians,Not Exposed,31058.850798351334,394,0.26,0.08,0.0013530086199425486
+5132,Bármanes,Bartenders,Not Exposed,21924.642639206875,418,0.26,0.12,0.0009550974912948643
+3142,Técnicos agropecuarios,Agricultural Technicians,Not Exposed,12519.061142445193,146,0.26,0.09,0.0005453645966905923
+3111,Técnicos en ciencias físicas y químicas,Chemical and Physical Science Technicians,Not Exposed,5959.2342316157865,89,0.26,0.09,0.00025960056719358287
+3119,Técnicos en ciencias físicas y en ingeniería no clasificados en otros grupos primarios,Physical and Engineering Science Technicians Not Elsewhere Classified,Not Exposed,4914.862437371651,57,0.26,0.05,0.000214104871000207
+8121,Operadores de instalaciones de procesamiento de metales,Metal Processing Plant Operators,Not Exposed,3937.81555473767,44,0.26,0.1,0.000171542032378955
+8321,Conductores de motocicletas,Motorcycle Drivers,Minimal Exposure,509597.8902230916,9818,0.25,0.17,0.022199480033980493
+5322,Trabajadores de los cuidados personales a domicilio,Home-based Personal Care Workers,Minimal Exposure,77883.25575817715,1191,0.25,0.18,0.0033928079655670142
+2221,Profesionales de enfermería,Nursing Professionals,Not Exposed,30512.934290812085,639,0.25,0.13,0.0013292270014510898
+3434,Chefs,Chefs,Not Exposed,23510.54099226417,388,0.25,0.06,0.0010241835677878527
+3423,Instructores de educación física y actividades recreativas,Fitness and Recreation Instructors and Programme Leaders,Not Exposed,20727.549057493263,383,0.25,0.07,0.0009029488156902152
+5112,Revisores y cobradores de los transportes públicos,Transport Conductors,Minimal Exposure,14319.438103841858,195,0.25,0.17,0.0006237939488817225
+7322,Impresores,Printers,Not Exposed,13908.6923235001,168,0.25,0.11,0.0006059007375386638
+7421,Ajustadores e instaladores en electrónica,Electronics Mechanics and Servicers,Not Exposed,10181.667144464227,155,0.25,0.13,0.00044354131134102315
+5241,"Modelos de moda, arte y publicidad",Fashion and Other Models,Not Exposed,3384.8235508495877,34,0.25,0.06,0.00014745218588471204
+8332,Conductores de camiones y vehículos pesados,Heavy Truck and Lorry Drivers,Minimal Exposure,283524.85932246316,3981,0.24,0.22,0.012351119528596789
+5246,Vendedores de comidas en mostrador,Food Service Counter Attendants,Not Exposed,68352.96112412546,1253,0.24,0.13,0.0029776422250770724
+7422,Instaladores y reparadores en tecnología de la información y las comunicaciones,Information and Communications Technology Installers and Servicers,Not Exposed,58929.00114665802,913,0.24,0.14,0.0025671087135092883
+5245,Expendedores de combustibles para vehículos,Service Station Attendants,Minimal Exposure,39484.395985208925,556,0.24,0.16,0.0017200484482847774
+3257,"Inspectores de seguridad, salud ocupacional, medioambiental y afines",Environmental and Occupational Health Inspectors and Associates,Not Exposed,36636.0134805404,492,0.24,0.04,0.0015959651038387353
+5312,Auxiliares de maestros,Teachers' Aides,Not Exposed,21609.578663994118,366,0.24,0.14,0.000941372441483335
+8131,Operadores de plantas y máquinas de productos químicos,Chemical Products Plant and Machine Operators,Not Exposed,20566.715808185905,203,0.24,0.07,0.0008959424787816463
+2266,Fonoaudiólogos y terapeutas del lenguaje,Audiologists and Speech Therapists,Not Exposed,5511.4688291092825,121,0.24,0.04,0.0002400946797015864
+2267,Optómetras,Optometrists and Ophthalmic Opticians,Not Exposed,4846.709311740389,70,0.24,0.07,0.00021113593415660623
+3254,Técnicos en optometría y ópticas,Dispensing Opticians,Not Exposed,543.7357433018847,5,0.24,0.07,2.3686618427535967e-05
+3355,Inspectores de policía y detectives,Police Inspectors and Detectives,Not Exposed,9388.8179980986,191,0.23,0.07,0.0004090026306824417
+8114,Operadores de máquinas para fabricar cemento y otros productos minerales,"Cement, Stone and Other Mineral Products Machine Operators",Not Exposed,7626.012906476788,89,0.23,0.11,0.00033221001205891126
+2240,Paramédicos e instrumentadores quirúrgicos,Paramedical Practitioners,Not Exposed,7079.238554823557,129,0.23,0.13,0.00030839102352796444
+3421,Atletas y deportistas,Athletes and Sports Players,Not Exposed,2723.838377968583,33,0.23,0.11,0.00011865786112464437
+3151,Oficiales maquinistas en navegación,Ships' Engineers,Not Exposed,2655.3269063629955,32,0.23,0.05,0.0001156733137487888
+1113,Jefes de comunidades étnicas,Traditional Chiefs and Heads of Villages,Not Exposed,521.8209489751972,5,0.23,0.1,2.273194995571182e-05
+5212,Vendedores ambulantes de alimentos preparados para consumo inmediato,Street Food Salespersons,Not Exposed,237436.93990301964,4320,0.22,0.11,0.010343403510558069
+7513,Operarios de la elaboración de productos lácteos,Dairy Products Makers,Not Exposed,22455.105444712495,262,0.22,0.17,0.0009782059041935833
+5151,"Supervisores  de mantenimiento y limpieza en oficinas, hoteles y otros establecimientos","Cleaning and Housekeeping Supervisors in Offices, Hotels and Other Establishments",Not Exposed,12878.235335888457,188,0.22,0.1,0.0005610112084388752
+8183,"Operadores de máquinas de embalaje, embotellamiento y etiquetado","Packing, Bottling and Labelling Machine Operators",Not Exposed,11154.677897576456,128,0.22,0.01,0.00048592832510418267
+3221,Técnicos y profesionales del nivel medio en enfermería,Nursing Associate Professionals,Minimal Exposure,8121.259136757163,135,0.22,0.21,0.00035378429447244377
+7323,Encuadernadores y afines,Print Finishing and Binding Workers,Not Exposed,7206.527349696235,73,0.22,0.09,0.0003139360721134058
+3253,Trabajadores comunitarios de la salud,Community Health Workers,Not Exposed,6779.508362631497,105,0.22,0.08,0.00029533395530847897
+3211,Técnicos en aparatos de diagnóstico y tratamiento médico,Medical Imaging and Therapeutic Equipment Technicians,Not Exposed,5803.953166416306,114,0.22,0.03,0.00025283609863378955
+5111,Personal de servicio a pasajeros,Travel Attendants and Travel Stewards,Not Exposed,4037.0100035637884,52,0.22,0.1,0.0001758632142920769
+6221,Trabajadores de explotaciones de acuicultura,Aquaculture Workers,Not Exposed,3726.771233860284,47,0.22,0.15,0.0001623483636501628
+7523,Ajustadores y operadores de máquinas para trabajar madera,Woodworking Machine Tool Setters and Operators,Not Exposed,2773.819483441969,35,0.22,0.16,0.00012083517499175433
+3258,Técnicos en atención prehospitalaria,Ambulance Workers,Not Exposed,2077.0775710738153,14,0.22,0.17,9.048318871158556e-05
+7521,Operarios del tratamiento de la madera,Wood Treaters,Not Exposed,1080.1725827470395,14,0.22,0.15,4.70552766092662e-05
+6123,Criadores y trabajadores calificados de la apicultura y la sericicultura,Apiarists and Sericulturists,Not Exposed,495.47883587040144,11,0.22,0.11,2.158441535020793e-05
+1312,Directores de producción de piscicultura y pesca,Aquaculture and Fisheries Production Managers,Not Exposed,131.23412955915592,4,0.22,0.08,5.716918171795992e-06
+5162,Acompañantes,Companions and Valets,Not Exposed,41.39872281028825,3,0.22,0.05,1.8034417686795253e-06
+2342,Profesores de primera infancia,Early Childhood Educators,Not Exposed,62386.81669425414,1083,0.21,0.05,0.002717740630718449
+7127,Mecánicos montadores de aire acondicionado y refrigeración,Air Conditioning and Refrigeration Mechanics,Not Exposed,13928.17342876115,269,0.21,0.11,0.0006067493878482113
+9331,Conductores de vehículos accionados a pedal o a brazo,Hand and Pedal Vehicle Drivers,Not Exposed,12954.221747294354,151,0.21,0.08,0.0005643213846684522
+5169,Otros trabajadores de servicios personales no clasificados en otros grupos primarios,Personal Services Workers Not Elsewhere Classified,Not Exposed,10824.56116452695,166,0.21,0.07,0.00047154753592743167
+8154,"Operadores de máquinas de blanqueamiento, teñido y limpieza de tejidos","Bleaching, Dyeing and Fabric Cleaning Machine Operators",Not Exposed,8683.98986428067,93,0.21,0.15,0.0003782983864454237
+2651,"Escultores, pintores artísticos y afines",Visual Artists,Not Exposed,7997.379356745836,147,0.21,0.04,0.00034838775191263954
+7213,Chapistas y caldereros,Sheet Metal Workers,Not Exposed,6862.72675365753,101,0.21,0.09,0.0002989591763807908
+7311,Mecánicos y reparadores de instrumentos de precisión,Precision-instrument Makers and Repairers,Not Exposed,4762.1329748665685,75,0.21,0.08,0.00020745155724335873
+8112,Operadores de instalaciones de procesamiento de minerales y rocas,Mineral and Stone Processing Plant Operators,Not Exposed,4488.09230102755,43,0.21,0.1,0.00019551359481434515
+3143,Técnicos forestales,Forestry Technicians,Not Exposed,569.1199812428657,11,0.21,0.07,2.4792425367007248e-05
+5414,Guardias de seguridad,Security Guards,Not Exposed,500724.62915557896,7551,0.2,0.09,0.02181293647545377
+9520,Vendedores ambulantes (excluyendo comidas de preparación inmediata),Street Vendors (excluding Food),Not Exposed,200865.8210312273,3585,0.2,0.1,0.008750265393641482
+9321,Empacadores manuales,Hand Packers,Not Exposed,113232.17997072083,1229,0.2,0.05,0.00493270393518242
+9334,Surtidores de estanterías,Shelf Fillers,Not Exposed,37300.872701968576,616,0.2,0.1,0.0016249281927656562
+8344,Operadores de montacargas,Lifting Truck Operators,Not Exposed,26799.21366109902,314,0.2,0.1,0.0011674471578669552
+2269,Otros profesionales de la salud no clasificados en otros grupos primarios,Health Professionals Not Elsewhere Classified,Not Exposed,15004.437472469412,244,0.2,0.08,0.0006536343977903306
+5152,Mayordomos domésticos,Domestic Housekeepers,Not Exposed,14016.809202655268,108,0.2,0.1,0.0006106106049580338
+7222,Herramentistas y afines,Toolmakers and Related Workers,Not Exposed,13370.130155050561,217,0.2,0.1,0.0005824394942036124
+5419,Personal de los servicios de protección no clasificados en otros grupos primarios,Protective Services Workers Not Elsewhere Classified,Not Exposed,7128.577314323568,96,0.2,0.05,0.000310540355044903
+6129,"Criadores y trabajadores pecuarios calificados, avicultores y criadores de insectos no clasificados en otros grupos primarios",Animal Producers Not Elsewhere Classified,Not Exposed,5927.403433094178,46,0.2,0.14,0.00025821393041622733
+5165,Instructores de conducción,Driving Instructors,Not Exposed,5355.860780938179,89,0.2,0.03,0.0002333159668678484
+8122,"Operadores de máquinas pulidoras, galvanizadoras y recubridoras de metales","Metal Finishing, Plating and Coating Machine Operators",Not Exposed,4680.670638314796,60,0.2,0.04,0.00020390283471428627
+8311,Maquinistas de locomotoras,Locomotive Engine Drivers,Not Exposed,2053.3653082342876,21,0.2,0.08,8.945021758755649e-05
+8182,Operadores de máquinas de vapor y calderas,Steam Engine and Boiler Operators,Not Exposed,516.672058271253,10,0.2,0.04,2.2507650172348675e-05
+3222,Técnicos y profesionales del nivel medio en partería,Midwifery Associate Professionals,Not Exposed,59.690546682381644,1,0.2,0.07,2.60028372313867e-06
+5311,Cuidadores de niños,Child Care Workers,Not Exposed,153735.6833911109,2289,0.19,0.09,0.006697147494973412
+7411,Electricistas de obras y afines,Building and Related Electricians,Not Exposed,119593.79710925609,1834,0.19,0.06,0.005209833404044461
+6122,Avicultores y trabajadores calificados de la avicultura,Poultry Producers,Not Exposed,60108.20334045595,621,0.19,0.1,0.0026184779912466496
+6130,Productores y trabajadores calificados de explotaciones agropecuarias mixtas cuya producción se destina al mercado,Mixed Crop and Animal Producers,Not Exposed,9048.252732785997,93,0.19,0.11,0.00039416667481876136
+7315,"Sopladores, modeladores, laminadores, cortadores y pulidores de vidrio","Glass Makers, Cutters, Grinders and Finishers",Not Exposed,3661.732714140099,39,0.19,0.06,0.00015951510757185406
+7232,Mecánicos y reparadores de sistemas y motores de aeronaves,Aircraft Engine Mechanics and Repairers,Not Exposed,2914.3442188232293,42,0.19,0.07,0.0001269568174028149
+3230,Técnicos y profesionales del nivel medio en medicina tradicional y alternativa,Traditional and Complementary Medicine Associate Professionals,Not Exposed,2698.0563677962887,32,0.19,0.11,0.00011753472613716402
+8113,Perforadores y sondistas de pozos y afines,Well Drillers and Borers and Related Workers,Not Exposed,1956.1208109113952,35,0.19,0.12,8.521398090339567e-05
+2653,Coreógrafos y bailarines,Dancers and Choreographers,Not Exposed,1367.7175312386553,27,0.19,0.1,5.958152223425706e-05
+5120,Cocineros,Cooks,Not Exposed,370623.87365607324,5722,0.18,0.06,0.016145391182335166
+6111,Agricultores y trabajadores calificados de cultivos extensivos,Field Crop and Vegetable Growers,Not Exposed,340084.3626555051,2848,0.18,0.12,0.014815006426605815
+7231,Mecánicos y reparadores de vehículos de motor,Motor Vehicle Mechanics and Repairers,Not Exposed,283604.30363847676,4798,0.18,0.04,0.012354580340623277
+5142,Especialistas en tratamientos de belleza y afines,Beauticians and Related Workers,Not Exposed,220474.9010960782,3852,0.18,0.19,0.009604490636202459
+9411,Cocineros de comidas rápidas,Fast Food Preparers,Not Exposed,177209.69940801588,3029,0.18,0.05,0.007719739934782156
+6113,"Agricultores y trabajadores calificados de huertas, invernaderos, viveros y jardines","Gardeners, Horticultural and Nursery Growers",Not Exposed,133090.6691759687,1264,0.18,0.11,0.005797794123102789
+8331,"Conductores de buses, microbuses y tranvías",Bus and Tram Drivers,Not Exposed,111363.17534933025,1644,0.18,0.06,0.004851284974130966
+7126,Fontaneros e instaladores de tuberías,Plumbers and Pipe Fitters,Not Exposed,57179.69907475995,774,0.18,0.1,0.002490904323413597
+9612,Clasificadores de desechos,Refuse Sorters,Not Exposed,43429.25653265051,662,0.18,0.11,0.0018918973798441854
+9510,Trabajadores ambulantes de servicios y afines,Street and Related Service Workers,Not Exposed,25439.256860244393,384,0.18,0.09,0.0011082037143071094
+7534,"Tapiceros, colchoneros y afines",Upholsterers and Related Workers,Not Exposed,24649.54242674355,389,0.18,0.09,0.0010738015903278021
+7223,Ajustadores y operadores de máquinas herramientas,Metal Working Machine Tool Setters and Operators,Not Exposed,19931.761205054838,275,0.18,0.05,0.0008682821169451377
+6223,Pescadores de alta mar,Deep-sea Fishery Workers,Not Exposed,14465.80516945509,183,0.18,0.07,0.0006301700992015184
+7314,Alfareros y ceramistas (barro y arcilla),Potters and Related Workers,Not Exposed,13993.33477721893,176,0.18,0.07,0.000609587994682793
+8143,Operadores de máquinas para fabricar productos de papel,Paper Products Machine Operators,Not Exposed,12424.158697894847,123,0.18,0.02,0.0005412303862407629
+8343,"Operadores de grúas, aparatos elevadores y afines","Crane, hoist and related plant operators",Not Exposed,9804.807537663717,172,0.18,0.03,0.00042712427454144147
+5411,Bomberos y rescatistas,Fire Fighters,Not Exposed,7196.027037402065,127,0.18,0.1,0.00031347864974648243
+7316,"Rotulistas, pintores decorativos y grabadores","Sign Writers, Decorative Painters, Engravers and Etchers",Not Exposed,6788.876834580496,93,0.18,0.08,0.0002957420716095289
+3214,Técnicos de prótesis médicas y dentales,Medical and Dental Prosthetic Technicians,Not Exposed,6219.596244619754,101,0.18,0.05,0.0002709426496868173
+8141,Operadores de máquinas para fabricar productos de caucho,Rubber Products Machine Operators,Not Exposed,2612.6517381415533,27,0.18,0.05,0.00011381426652144663
+6112,Agricultores y trabajadores calificados de plantaciones de árboles y arbustos,Tree and Shrub Crop Growers,Not Exposed,265577.07268912403,2113,0.17,0.11,0.011569264778675181
+5141,Peluqueros,Hairdressers,Not Exposed,208233.76320235245,3670,0.17,0.18,0.009071233137538166
+6121,Criadores de ganado y trabajadores de la cría de animales domésticos (excepto aves de corral),Livestock and Dairy Producers,Not Exposed,182608.59825950343,1826,0.17,0.1,0.007954930757896845
+7512,"Panaderos, pasteleros y confiteros","Bakers, Pastry-cooks and Confectionery Makers",Not Exposed,131486.40266696326,1970,0.17,0.08,0.0057279078794210125
+8111,Mineros y operadores de instalaciones mineras,Miners and Quarriers,Not Exposed,92903.3104468306,774,0.17,0.11,0.0040471226920743885
+7412,Ajustadores electricistas,Electrical Mechanics and Fitters,Not Exposed,87022.670197954,1443,0.17,0.05,0.003790945894060552
+6222,Pescadores de agua dulce y en aguas costeras,Inland and Coastal Waters Fishery Workers,Not Exposed,83330.29827791275,946,0.17,0.1,0.0036300960587500064
+7233,Mecánicos y reparadores de máquinas agrícolas e industriales,Agricultural and Industrial Machinery Mechanics and Repairers,Not Exposed,66268.01535432065,825,0.17,0.04,0.002886816276075495
+7536,Zapateros y afines,Shoemakers and Related Workers,Not Exposed,58808.32219719127,1101,0.17,0.06,0.002561851607896006
+8142,Operadores de máquinas para fabricar productos de material plástico,Plastic Products Machine Operators,Not Exposed,47865.35917489113,461,0.17,0.05,0.0020851461627070748
+7221,Herreros y forjadores,"Blacksmiths, Hammersmiths and Forging Press Workers",Not Exposed,46959.53849952829,826,0.17,0.05,0.002045686132783715
+6114,Agricultores y trabajadores calificados de cultivos mixtos,Mixed Crop Growers,Not Exposed,28918.53358060287,264,0.17,0.12,0.001259770538990151
+2636,Profesionales religiosos,Religious Professionals,Not Exposed,20998.302928246012,356,0.17,0.12,0.0009147435959732876
+7532,"Patronistas y cortadores de tela, cuero y afines",Garment and Related Patternmakers and Cutters,Not Exposed,19826.771038469327,188,0.17,0.04,0.0008637084576902711
+8181,Operadores de máquinas y de instalaciones para elaborar productos de vidrio y cerámica,Glass and Ceramics Plant Operators,Not Exposed,13105.630970669463,125,0.17,0.06,0.0005709171851922823
+5163,Personal de servicios funerarios y embalsamadores,Undertakers and Embalmers,Not Exposed,1914.2312421436013,39,0.17,0.17,8.33891565402383e-05
+3255,Técnicos y asistentes terapeutas,Physiotherapy Technicians and Assistants,Not Exposed,1460.8583979045434,29,0.17,0.07,6.363899352596872e-05
+7224,Pulidores de metales y afiladores de herramientas,"Metal Polishers, Wheel Grinders and Tool Sharpeners",Not Exposed,1207.829202871298,16,0.17,0.05,5.261634867024605e-05
+8312,"Guardafrenos, guardagujas y agentes de maniobras","Railway Brake, Signal and Switch Operators",Not Exposed,359.7045206749573,4,0.17,0.04,1.5669714255214942e-05
+7522,Ebanistas y carpinteros (excluye carpinteros de armar y de obra blanca),Cabinet-makers and Related Workers,Not Exposed,84924.53690378589,1401,0.16,0.06,0.00369954546037327
+8156,Operadores de máquinas para la fabricación de calzado y afines,Shoemaking and Related Machine Operators,Not Exposed,11876.941188553856,140,0.16,0.02,0.0005173920925470002
+8157,Operadores de máquinas de lavandería,Laundry Machine Operators,Not Exposed,6219.678653259228,84,0.16,0.03,0.00027094623963289387
+3251,Higienistas y asistentes odontologícos,Dental Assistants and Therapists,Not Exposed,6088.499233559581,98,0.16,0.1,0.0002652317047724442
+8152,Operadores de telares y otras máquinas tejedoras,Weaving and Knitting Machine Operators,Not Exposed,5214.932697315077,58,0.16,0.03,0.0002271767535024858
+8159,Operadores de máquinas para fabricar productos textiles y artículos de piel y cuero no clasificados en otros grupos primarios,"Textile, Fur and Leather Products Machine Operators Not Elsewhere Classified",Not Exposed,1994.4377895318953,18,0.16,0.01,8.688317345338025e-05
+7541,Buzos,Underwater Divers,Not Exposed,60.131059789304786,2,0.16,0.09,2.6194736807689224e-06
+8153,Operadores de máquinas de coser,Sewing Machine Operators,Not Exposed,214392.33136070284,2216,0.15,0.03,0.00933951723661353
+7531,"Sastres, modistos, peleteros y sombrereros","Tailors, Dressmakers, Furriers and Hatters",Not Exposed,135465.38614452176,2780,0.15,0.05,0.005901243299288878
+8160,Operadores de máquinas para elaborar alimentos y productos afines,Food and Related Products Machine Operators,Not Exposed,72158.51773340223,784,0.15,0.03,0.0031434226954962846
+5329,Trabajadores de los cuidados personales en servicios de salud no clasificados en otros grupos primarios,Personal Care Workers in Health Services Not Elsewhere Classified,Not Exposed,54468.51496146848,1019,0.15,0.03,0.0023727977167219746
+7514,"Operarios de la conservación de frutas, legumbres, verduras y afines","Fruit, Vegetable and Related Preservers",Not Exposed,47320.68648631297,701,0.15,0.04,0.0020614187283767406
+2261,Odontólogos,Dentists,Not Exposed,31532.608718814816,541,0.15,0.06,0.001373646812717768
+8151,"Operadores de máquinas de preparación de fibras, hilado y devanado","Fibre Preparing, Spinning and Winding Machine Operators",Not Exposed,3785.67255137232,37,0.15,0.02,0.0001649142663887145
+7413,Instaladores y reparadores de líneas eléctricas,Electrical Line Installers and Repairers,Not Exposed,2194.5355888470467,31,0.15,0.08,9.559998171723609e-05
+8155,Operadores de máquinas de tratamiento de pieles y cueros,Fur and Leather Preparing Machine Operators,Not Exposed,394.3112968675241,9,0.15,0.02,1.7177280224122296e-05
+9111,Personal doméstico,Domestic Cleaners and Helpers,Not Exposed,963168.2294587679,17596,0.14,0.08,0.04195824647129864
+9333,Obreros y peones de carga,Freight Handlers,Not Exposed,251208.7140929787,3793,0.14,0.03,0.010943339719141357
+5321,Trabajadores de los cuidados personales en instituciones,Health Care Assistants,Not Exposed,189195.80620550874,3719,0.14,0.06,0.008241887580290683
+5412,Policías,Police Officers,Not Exposed,91631.78745406696,1929,0.14,0.03,0.003991731667440738
+7111,Constructores de casas,House Builders,Not Exposed,70996.87932235905,1044,0.14,0.07,0.003092818544247996
+5164,Cuidadores de animales,Pet Groomers and Animal Care Workers,Not Exposed,40808.14401607575,496,0.14,0.06,0.0017777145386376717
+9121,Lavanderos y planchadores manuales,Hand Launderers and Pressers,Not Exposed,38776.00778300933,706,0.14,0.03,0.0016891891177169983
+2250,Veterinarios,Veterinarians,Not Exposed,17643.640137771003,326,0.14,0.05,0.0007686052954295295
+7125,Cristaleros,Glaziers,Not Exposed,12586.82841776323,139,0.14,0.0,0.0005483167248375936
+8350,Marineros de cubierta y afines,Ships' Deck Crews and Related Workers,Not Exposed,11023.076980402035,219,0.14,0.02,0.0004801954286591285
+5413,Guardianes de prisión,Prison Guards,Not Exposed,8755.619874980717,195,0.14,0.04,0.0003814187859268136
+3240,Técnicos y asistentes veterinarios,Veterinary Technicians and Assistants,Not Exposed,5710.325426751159,67,0.14,0.02,0.0002487574178205444
+8172,Operadores de instalaciones de procesamiento de la madera,Wood Processing Plant Operators,Not Exposed,3298.3224264512196,57,0.14,0.05,0.00014368395995434608
+7516,Preparadores y elaboradores de cigarros y productos del tabaco,Tobacco Preparers and Tobacco Products Makers,Not Exposed,2470.4188394404096,29,0.14,0.06,0.00010761821183701902
+7312,Fabricantes y afinadores de instrumentos musicales,Musical Instrument Makers and Tuners,Not Exposed,1147.3479241144682,16,0.14,0.02,4.998161849190079e-05
+7549,"Otros oficiales, operarios y oficios relacionados no clasificados en otros grupos primarios",Craft and Related Workers not Elsewhere Classified,Not Exposed,231.74139507242367,8,0.14,0.01,1.0095289975994369e-05
+9412,Ayudantes de cocina,Kitchen Helpers,Not Exposed,188925.73783723993,3505,0.13,0.02,0.008230122662373602
+7212,Soldadores y oxicortadores,Welders and Flame Cutters,Not Exposed,113726.70472092723,1850,0.13,0.05,0.004954246787947588
+7544,Fumigadores y otros controladores de plagas y malas hierbas,Fumigators and Other Pest and Weed Controllers,Not Exposed,89768.72746404549,840,0.13,0.04,0.003910571670815785
+7131,Pintores y empapeladores,Painters and Related Workers,Not Exposed,68718.39360608242,1160,0.13,0.04,0.002993561465016272
+7511,"Carniceros, pescaderos y afines","Butchers, Fishmongers and Related Food Preparers",Not Exposed,61651.16018870384,867,0.13,0.03,0.002685693418160951
+7115,Carpinteros de armar y de obra blanca,Carpenters and Joiners,Not Exposed,57532.63112356228,910,0.13,0.02,0.002506279010242283
+8342,"Operadores de máquinas de movimiento de tierras, construcción de vías y afines",Earthmoving and Related Plant Operators,Not Exposed,32805.41014291777,464,0.13,0.02,0.0014290935293225515
+7234,Reparadores de bicicletas y afines,Bicycle and Related Repairers,Not Exposed,12629.258489276233,178,0.13,0.02,0.0005501650949809254
+7121,Techadores,Roofers,Not Exposed,7795.332492507092,135,0.13,0.08,0.00033958603704166
+2659,Artistas creativos e interpretativos no clasificados en otros grupos primarios,Creative and Performing Artists Not Elsewhere Classified,Not Exposed,7493.5962082832375,121,0.13,0.06,0.0003264415779580039
+9332,Conductores de vehículos y maquinaria de tracción animal,Drivers of Animal-drawn Vehicles and Machinery,Not Exposed,2396.620514152893,38,0.13,0.08,0.00010440335463255883
+7215,Aparejadores y empalmadores de cables,Riggers and Cable Splicers,Not Exposed,1776.1136644103499,42,0.13,0.03,7.737237651022528e-05
+7211,Moldeadores y macheros,Metal Moulders and Coremakers,Not Exposed,1358.2141798637426,7,0.13,0.01,5.916753021594059e-05
+7124,Instaladores de material aislante y de insonorización,Insulation Workers,Not Exposed,403.1229115841448,7,0.13,0.02,1.7561138298737e-05
+6320,Trabajadores pecuarios de subsistencia,Subsistence Livestock Farmers,Not Exposed,57.013231165516096,1,0.13,0.04,2.4836525252832327e-06
+9112,"Aseadores de oficinas, hoteles y otros establecimientos","Cleaners and Helpers in Offices, Hotels and Other Establishments",Not Exposed,461881.88818805374,7346,0.12,0.02,0.020120840277417788
+9212,Obreros y peones de explotaciones ganaderas,Livestock Farm Labourers,Not Exposed,230169.54382020514,2209,0.12,0.03,0.010026815829692984
+9214,Obreros y peones de jardinería y horticultura,Garden and Horticultural Labourers,Not Exposed,117497.67484810308,1058,0.12,0.02,0.0051185205764641166
+9329,Obreros y peones de la industria manufacturera no clasificados en otros grupos primarios,Manufacturing Labourers Not Elsewhere Classified,Not Exposed,60527.85098076325,744,0.12,0.02,0.0026367589919945736
+7132,Barnizadores y afines,Spray Painters and Varnishers,Not Exposed,41699.86859156142,803,0.12,0.0,0.0018165605038370912
+6210,Trabajadores forestales calificados y afines,Forestry and Related Workers,Not Exposed,33124.820038674516,336,0.12,0.05,0.0014430078993377092
+7533,"Costureros, bordadores y afines","Sewing, Embroidery and Related Workers",Not Exposed,21534.72644095589,353,0.12,0.02,0.0009381116736059234
+8341,Operadores de maquinaria agrícola y forestal móvil,Mobile Farm and Forestry Plant Operators,Not Exposed,20680.237142101098,202,0.12,0.03,0.0009008877790547262
+3413,Auxiliares laicos de las religiones,Religious Associate Professionals,Not Exposed,1222.486801559237,14,0.12,0.07,5.3254873820490584e-05
+7542,Dinamiteros y pegadores,Shotfirers and Blasters,Not Exposed,600.8729259813092,3,0.12,0.05,2.6175670620304062e-05
+9311,Obreros y peones de minas y canteras,Mining and Quarrying Labourers,Not Exposed,94385.97195299831,792,0.11,0.02,0.004111711488721315
+9213,Obreros y peones de explotaciones agropecuarias,Mixed Crop and Livestock Farm Labourers,Not Exposed,87809.66312187936,777,0.11,0.03,0.0038252294616277507
+7123,Revocadores,Plasterers,Not Exposed,26354.942704817513,377,0.11,0.01,0.0011480934980248176
+9622,Personas que realizan trabajos varios,Odd Job Persons,Not Exposed,13396.788658439751,178,0.11,0.03,0.0005836008116365889
+7113,"Labrantes, tronzadores y grabadores de piedra","Stonemasons, Stone Cutters, Splitters and Carvers",Not Exposed,2930.305068551866,27,0.11,0.02,0.0001276521157383734
+9216,Obreros y peones de pesca y acuicultura,Fishery and Aquaculture Labourers,Not Exposed,2843.416470775056,33,0.11,0.03,0.00012386701040624097
+7214,Montadores de estructuras metálicas,Structural Metal Preparers and Erectors,Not Exposed,1441.3657660556842,24,0.11,0.02,6.278984108668165e-05
+7535,"Apelambradores, pellejeros y curtidores","Pelt Dressers, Tanners and Fellmongers",Not Exposed,515.2233578151985,12,0.11,0.03,2.2444540812073805e-05
+9123,Limpiadores de ventanas,Window Cleaners,Not Exposed,123.79495765215138,2,0.11,0.03,5.392847465485574e-06
+9129,Otro personal de limpieza no clasificados en otros grupos primarios,Other Cleaning Workers,Not Exposed,10392.248817662543,143,0.1,0.01,0.00045271482586958935
+7122,"Enchapadores, parqueteros y colocadores de suelos",Floor Layers and Tile Setters,Not Exposed,8138.364761400847,141,0.1,0.02,0.00035452946233917093
+7114,"Operarios en cemento armado, enfoscadores y afines","Concrete Placers, Concrete Finishers and Related Workers",Not Exposed,797.7355551603662,13,0.1,0.03,3.475154601096585e-05
+9211,Obreros y peones de explotaciones agrícolas,Crop Farm Labourers,Not Exposed,1243208.4426374848,11295,0.09,0.02,0.05415756526842121
+9313,Obreros y peones de la construcción de edificios,Building Construction Labourers,Not Exposed,664834.2040526397,10791,0.09,0.02,0.028961999101512585
+7112,Albañiles,Bricklayers and Related Workers,Not Exposed,196790.14179076074,3338,0.09,0.01,0.008572717641463707
+9611,Recolectores de basura y material reciclable,Garbage and Recycling Collectors,Not Exposed,81246.14689214369,1342,0.09,0.02,0.0035393047152930735
+9122,Lavadores de vehículos,Vehicle Cleaners,Not Exposed,57936.474016827575,891,0.09,0.01,0.002523871512915289
+9312,Obreros y peones de obras públicas y mantenimiento,Civil Engineering Labourers,Not Exposed,29158.562417149053,353,0.09,0.02,0.001270226852618439
+9613,Barrenderos y afines,Sweepers and Related Labourers,Not Exposed,22396.29013016938,341,0.09,0.03,0.0009756437479799447
+7119,Oficiales y operarios de la construcción de obra gruesa y afines no clasificados en otros grupos primarios,Building Frame and Related Trades Workers Not Elsewhere Classified,Not Exposed,13393.381564460393,212,0.09,0.01,0.0005834523892898332
+9215,Obreros y peones forestales,Forestry Labourers,Not Exposed,8330.041799191096,65,0.09,0.02,0.0003628794391641032
+9624,Acarreadores de agua y recolectores de leña,Water and Firewood Collectors,Not Exposed,820.9849070970005,8,0.09,0.03,3.576435146801818e-05
+7133,Limpiadores de fachadas y deshollinadores,Building Structure Cleaners,Not Exposed,440.7306917390729,4,0.09,0.01,1.919943622086176e-05
+6224,Cazadores y tramperos,Hunters and Trappers,Not Exposed,222.30860768034745,2,0.09,0.03,9.684371918065387e-06
+8323,Conductores de camionetas y vehículos livianos,,Sin correspondencia 4d,339765.28486887645,4855,,,0.014801106524174022
+8324,Conductores de taxis,,Sin correspondencia 4d,154249.55338527696,3095,,,0.006719533079557674
+7332,Tejedores con agujas,,Sin correspondencia 4d,69491.19863837356,926,,,0.0030272269691591492
+1439,Otros gerentes de servicios no clasificados en otros grupos primarios,,Sin correspondencia 4d,42178.21948617532,729,,,0.0018373987791477863
+7341,Cesteros y mimbreros,,Sin correspondencia 4d,33083.420033862574,276,,,0.0014412044017215258
+7399,Artesanos de otros materiales no clasificados en otros grupos primarios,,Sin correspondencia 4d,29358.78140705724,433,,,0.0012789489402765034
+7331,Tejedores con telares,,Sin correspondencia 4d,24054.917201423672,256,,,0.0010478980866625673
+3435,Otros técnicos y profesionales del nivel medio en actividades culturales y artísticas,,Sin correspondencia 4d,16483.62496402525,237,,,0.0007180718568444331
+5249,Otros vendedores no clasificados en otros grupos primarios,,Sin correspondencia 4d,14387.244620604579,315,,,0.0006267477864935478
+7342,Sombrereros artesanales,,Sin correspondencia 4d,10234.863165140547,80,,,0.0004458586757209545
+7363,Bisutero,,Sin correspondencia 4d,9182.083785460996,156,,,0.0003999967220752062
+7333,Otros tejedores,,Sin correspondencia 4d,9067.735601926635,118,,,0.00039501540196773544
+310,Otros miembros de las Fuerzas Militares,,Sin correspondencia 4d,8757.003725826795,228,,,0.00038147907026043603
+7361,Joyeros,,Sin correspondencia 4d,7467.802898686932,98,,,0.0003253179507366612
+7370,Artesanos del cuero,,Sin correspondencia 4d,7266.01934837207,84,,,0.00031652770654149896
+210,Suboficiales de las Fuerzas Militares,,Sin correspondencia 4d,6664.193779858878,139,,,0.0002903105362029429
+9626,Lectores de medidores,,Sin correspondencia 4d,6101.335318725654,81,,,0.0002657908798040244
+7351,Tallador piezas artesanales de madera,,Sin correspondencia 4d,4679.405107584326,75,,,0.0002038477047290127
+3139,Técnicos en control de procesos no clasificados en otros grupos primarios,,Sin correspondencia 4d,3311.982167334404,33,,,0.00014427901568519469
+8189,Otros operadores de máquinas y de instalaciones fijas no clasificados en otros grupos primarios,,Sin correspondencia 4d,3047.612350615136,33,,,0.00013276234228358936
+110,Oficiales de las Fuerzas Militares,,Sin correspondencia 4d,2848.7714593290398,34,,,0.0001241002883765134
+7352,Decoradores de piezas artesanales en madera,,Sin correspondencia 4d,1131.610015047295,24,,,4.929603206225454e-05
+7391,Artesanos de papel,,Sin correspondencia 4d,879.9548010504435,13,,,3.833324158420824e-05
+7392,Artesanos del hierro y otros metales,,Sin correspondencia 4d,689.0052804156527,9,,,3.0014957399447493e-05
+7393,Artesanos de las semillas y cortezas vegetales,,Sin correspondencia 4d,660.4856039371087,12,,,2.8772562168407872e-05
+7362,Orfebres y plateros,,Sin correspondencia 4d,502.35498128885297,11,,,2.188395908038475e-05
+0,,,Sin correspondencia 4d,400.9631282635806,5,,,1.7467052221022666e-05
+9625,Recolectores de dinero y surtidores de máquinas de venta automática,,Sin correspondencia 4d,15.52075905148937,1,,,6.761267801264289e-07

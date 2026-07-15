@@ -1,0 +1,52 @@
+﻿oficio_c8_4d,oficio_c8_label,occupation_name_isco08,grupo_exposicion_4d,ocupados,observaciones,exposicion_promedio_4d,desviacion_tareas_4d,participacion_empleo
+4110,Oficinistas generales,General Office Clerks,Gradient 4,309583.3989483505,5844,0.6,0.1,0.013486300896569735
+2411,Contadores,Accountants,Gradient 3,252537.74117273046,3800,0.51,0.08,0.011001235779324518
+4222,Empleados de centros de llamadas,Contact Centre Information Clerks,Gradient 3,191575.44502539234,2301,0.58,0.06,0.008345551165803105
+4311,Auxiliares de contabilidad y cálculo de costos,Accounting and Bookkeeping Clerks,Gradient 4,161070.75975152224,2604,0.64,0.07,0.00701668351412645
+4120,Secretarios generales,Secretaries (general),Gradient 3,106598.23377866385,1929,0.58,0.1,0.004643711066761011
+2512,Desarrolladores de software,Software Developers,Gradient 3,88504.18554450833,974,0.53,0.07,0.003855484760855057
+5244,Vendedores a través de medios tecnológicos,Contact Centre Salespersons,Gradient 4,76827.25460029914,936,0.61,0.1,0.0033468056624375597
+2412,Asesores financieros y de inversiones,Financial and Investment Advisers,Gradient 3,72112.56695370383,796,0.57,0.11,0.0031414209536601598
+2431,Profesionales de la publicidad y la comercialización,Advertising and Marketing Professionals,Gradient 3,71487.05547130128,801,0.55,0.09,0.0031141719600300214
+3343,Secretarios administrativos y ejecutivos,Administrative and Executive Secretaries,Gradient 3,69084.86416068696,1110,0.54,0.14,0.0030095259262435817
+4132,Grabadores de datos,Data Entry Clerks,Gradient 4,41359.44194938024,932,0.7,0.03,0.0018017305867767447
+4226,Recepcionistas generales,Receptionists (general),Gradient 3,34171.97630422927,594,0.57,0.17,0.0014886248947288468
+3312,Analistas de préstamos y créditos,Credit and Loans Officers,Gradient 4,32960.592523367,415,0.6,0.04,0.0014358536989042979
+3321,Agentes de seguros,Insurance Representatives,Gradient 3,25137.15566568432,339,0.53,0.12,0.0010950433587296128
+3344,Secretarios médicos,Medical Secretaries,Gradient 3,24357.39294692273,399,0.53,0.11,0.0010610747587049695
+4224,Recepcionistas de hoteles,Hotel Receptionists,Gradient 3,24133.30951518697,562,0.51,0.07,0.0010513130705892945
+4323,Empleados de servicios de transporte,Transport Clerks,Gradient 3,23973.162957452394,335,0.5,0.1,0.0010443366478466824
+4211,Cajeros de bancos y afines,Bank Tellers and Related Clerks,Gradient 3,22067.764330398782,359,0.58,0.09,0.000961332264214849
+2642,Periodistas,Journalists,Gradient 3,21320.57009755548,281,0.54,0.1,0.0009287824366512994
+4225,Empleados de ventanillas de información,Inquiry Clerks,Gradient 3,21086.199868967757,363,0.57,0.09,0.000918572627486244
+4414,Escribientes públicos y afines,Scribes and Related Workers,Gradient 3,17261.202745338618,269,0.58,0.08,0.0007519452750086569
+4221,Empleados y consultores de viajes,Travel Consultants and Clerks,Gradient 3,16240.21320709571,265,0.56,0.07,0.0007074681739374497
+4416,Empleados del servicio de personal,Personnel Clerks,Gradient 4,14573.523643976545,188,0.6,0.09,0.0006348626110236984
+2513,Desarrolladores web y multimedia,Web and Multimedia Developers,Gradient 4,13176.151192197496,141,0.6,0.08,0.000573989239217306
+2433,Profesionales de ventas técnicas y médicas (excluyendo las TIC),Technical and Medical Sales Professionals (excluding ICT),Gradient 3,11981.305831835456,145,0.5,0.1,0.0005219385022932594
+2521,Diseñadores y administradores de bases de datos,Database Designers and Administrators,Gradient 3,10736.395155207876,109,0.57,0.08,0.00046770678304931893
+3342,Secretarios jurídicos,Legal Secretaries,Gradient 3,10005.094518336593,193,0.55,0.13,0.0004358493240634622
+2413,Analistas financieros,Financial Analysts,Gradient 4,9957.805235836739,102,0.62,0.06,0.0004337892733787602
+2631,Economistas,Economists,Gradient 3,9147.89134718162,116,0.55,0.08,0.00039850720580078867
+4227,Entrevistadores de encuestas y de investigaciones de mercados,Survey and Market Research Interviewers,Gradient 3,9122.728929172177,192,0.55,0.16,0.00039741106194516413
+3331,Declarantes o gestores de aduana,Clearing and Forwarding Aents,Gradient 3,6363.865200224072,73,0.57,0.09,0.00027722740058729533
+2643,"Traductores, intérpretes y otros lingüistas","Translators, Interpreters and Other Linguists",Gradient 3,4863.791523228148,80,0.59,0.11,0.00021188008208212594
+3311,"Agentes de bolsa, cambio y otros servicios financieros",Securities and Finance Dealers and Brokers,Gradient 4,4204.437415919097,56,0.63,0.04,0.00018315681100633242
+2120,"Matemáticos, actuarios y estadísticos","Mathematicians, Actuaries and Statisticians",Gradient 3,4203.536839312676,27,0.56,0.09,0.00018311757942241722
+4223,Telefonistas,Telephone Switchboard Operators,Gradient 3,3898.934337925182,59,0.54,0.15,0.00016984826006771596
+3514,Técnicos de la Web,Web Technicians,Gradient 3,3194.4709425121946,22,0.53,0.12,0.00013915990483474118
+2622,"Bibliotecarios, documentalistas y afines",Librarians and Related Information Professionals,Gradient 3,3052.967876669608,49,0.55,0.04,0.0001329956436688554
+2514,Programadores de aplicaciones,Applications Programmers,Gradient 3,2500.863372601095,21,0.57,0.08,0.00010894445909787132
+2641,Autores y otros escritores,Authors and Related Writers,Gradient 3,2482.8580110112925,36,0.55,0.09,0.00010816009622513174
+4313,Auxiliares encargados de las nóminas,Payroll Clerks,Gradient 4,2150.0089409811017,32,0.61,0.08,9.366027896484166e-05
+4419,Otro personal de apoyo administrativo no clasificados en otros grupos primarios,Clerical Support Workers Not Elsewhere Classified,Gradient 4,2009.6246039012274,36,0.63,0.03,8.754475268838094e-05
+4312,"Auxiliares de servicios estadísticos, financieros y de seguros","Statistical, Finance and Insurance Clerks",Gradient 4,1840.4572727192724,31,0.64,0.02,8.017536034389631e-05
+2519,Desarrolladores y analistas de software y multimedia no clasificados en otros grupos primarios,Software and Applications Developers and Analysts Not Elsewhere Classified,Gradient 3,1835.6270325025093,12,0.55,0.16,7.996494184863052e-05
+2522,Administradores de sistemas,Systems Aministrators,Gradient 3,1707.7607980572566,8,0.57,0.05,7.439473841363397e-05
+2434,Profesionales de ventas de tecnología de la información y las comunicaciones,Information and Communications Technology Sales Professionals,Gradient 3,845.1477515980793,13,0.51,0.09,3.681695116349778e-05
+2523,Profesionales en redes de computadores,Computer Network Professionals,Gradient 3,695.641528954323,10,0.52,0.06,3.030405056439417e-05
+4413,"Codificadores de datos, correctores de pruebas de imprenta y afines","Coding, Proofreading and Related Clerks",Gradient 3,539.8349971658536,9,0.51,0.2,2.351669124057972e-05
+2112,Meteorólogos,Meteorologists,Gradient 3,249.70242761306298,2,0.54,0.13,1.0877721753922339e-05
+3252,Técnicos en documentación sanitaria,Medical Records and Health Information Technicians,Gradient 3,209.12574706926875,12,0.52,0.1,9.110090398182579e-06
+4131,Operadores de máquinas de procesamiento de texto y mecanógrafos,Typists and Word Processing Operators,Gradient 4,118.16573441046185,4,0.65,0.05,5.147623081008633e-06
+3314,"Técnicos y profesionales del nivel medio de servicios estadísticos, matemáticos y afines","Statistical, Mathematical and Related Associate Professionals",Gradient 3,48.76969007548972,2,0.57,0.1,2.1245412939607805e-06
