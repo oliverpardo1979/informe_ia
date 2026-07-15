@@ -1,63 +1,126 @@
-\documentclass[11pt]{article}
+\documentclass[12pt, a4paper]{article}
 
+\usepackage[top=2.5cm, bottom=2.5cm, left=3cm, right=3cm]{geometry}
+\usepackage{mdframed}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish,es-nodecimaldot]{babel}
-\usepackage{lmodern}
-\usepackage{microtype}
-\usepackage{geometry}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{tabularx}
-\usepackage{longtable}
-\usepackage{array}
+\usepackage{amsmath}
 \usepackage{float}
-\usepackage{caption}
+\usepackage[margin=10pt, font=small, labelfont=bf]{caption}
+\usepackage{booktabs}
+\usepackage{graphicx}
 \usepackage{xcolor}
-\usepackage{enumitem}
+\usepackage{hyperref}
 \usepackage{natbib}
-\usepackage[colorlinks=true,linkcolor=azulCJC,citecolor=azulCJC,urlcolor=azulCJC]{hyperref}
+\usepackage{longtable}
+\usepackage{comment}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{microtype}
 
-\geometry{letterpaper,margin=2.25cm,headheight=15pt}
+\setlength{\textfloatsep}{18pt plus 2pt minus 4pt}
+\setlength{\floatsep}{12pt plus 2pt minus 2pt}
+\setlength{\intextsep}{14pt plus 2pt minus 2pt}
+\setstretch{1.15}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{5pt}
+\setlength{\parskip}{8pt}
 \setlist[itemize]{leftmargin=1.25em,itemsep=2pt,topsep=3pt}
 \renewcommand{\arraystretch}{1.18}
 
-\definecolor{azulCJC}{HTML}{173A63}
-\definecolor{azulClaro}{HTML}{EAF1F7}
-\definecolor{dorado}{HTML}{DDA63A}
-\definecolor{grisTexto}{HTML}{3E4A56}
-\definecolor{rojo}{HTML}{BB443A}
+\titleformat{\section}
+  {\large\bfseries}{\thesection.}{0.5em}{}
+  [\vspace{2pt}\hrule\vspace{4pt}]
+\titleformat{\subsection}
+  {\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+\titlespacing{\section}{0pt}{18pt}{8pt}
+\titlespacing{\subsection}{0pt}{14pt}{6pt}
 
-\newcommand{\dato}[2]{%
-  \begin{minipage}[t]{0.23\textwidth}
-    {\color{azulCJC}\bfseries\Large #1}\par
-    {\small #2}
-  \end{minipage}}
-\newcommand{\fuentefig}{\footnotesize Fuente: cálculos propios con GEIH 2025 del DANE e índice OIT--NASK (2025).}
+\hypersetup{colorlinks=true, linkcolor=blue!60!black, citecolor=blue!60!black, urlcolor=blue!60!black}
 
-\title{\vspace{-2.2cm}\color{azulCJC}\bfseries\LARGE Inteligencia artificial y empleo en Colombia\\[4pt]
-\Large Exposición ocupacional en 2025}
-\author{Centro Javeriano de Competitividad}
-\date{Borrador técnico --- julio de 2026}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize Centro Javeriano de Competitividad}
+\fancyhead[R]{\footnotesize \reportnumber}
+\cfoot{\thepage}
+\setlength{\headheight}{14pt}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\geometry{margin=1in}
+\graphicspath{{figures/}}
+\newcommand{\figurelang}{es}
+\newcommand{\reportseries}{Informes sobre la Productividad en Colombia}
+\newcommand{\reportseriesdesc}{Evidencia para entender y fomentar la productividad}
+\newcommand{\reportnumber}{Informe 0X}
+\newcommand{\reporttitle}{Inteligencia Artificial y Empleo en Colombia}
+\newcommand{\reportsubtitle}{Exposición ocupacional en 2025}
+\newcommand{\reportauthorone}{Oliver Pardo}
+\newcommand{\reportauthoroneaffil}{Profesor asociado del Departamento de Administración, Pontificia Universidad Javeriana y director del Centro Javeriano de Competitividad}
+\newcommand{\reportauthortwo}{Jorge Orozco}
+\newcommand{\reportauthortwoaffil}{Consultor de investigación del Centro Javeriano de Competitividad, Pontificia Universidad Javeriana}
+\renewcommand{\contentsname}{Tabla de contenido}
+
+\title{\reporttitle\\\reportsubtitle}
+\author{\reportauthorone \and \reportauthortwo}
+\date{Julio de 2026}
 
 \begin{document}
 
-\maketitle
-\vspace{-0.6cm}
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{0.6cm}
+
 \begin{center}
-\colorbox{azulClaro}{\parbox{0.94\textwidth}{\centering\vspace{5pt}
-\dato{0,264}{índice promedio entre ocupados con correspondencia exacta}\hfill
-\dato{25,4\%}{del empleo en gradientes de exposición 1 a 4}\hfill
-\dato{8,0\%}{del empleo en los gradientes altos 3 y 4}\hfill
-\dato{96,5\%}{cobertura del cruce ocupacional exacto a cuatro dígitos}
-\vspace{5pt}}}
+\includegraphics[width=0.58\textwidth]{logo_cjc_palatino_horizontal.png}
 \end{center}
 
-\textbf{Nota de alcance.} Los resultados son provisionales y corresponden a los 22,96 millones de ocupados expandidos que conserva la versión disponible de \texttt{BaseIA.dta}. Esta cifra equivale al 96,3\% del promedio anual de 23,83 millones publicado por el DANE para 2025. Antes de una publicación definitiva debe reconstruirse el universo desde los microdatos de ocupados y conservar el nivel educativo detallado.
+\vspace{1.5cm}
 
+\begin{center}
+{\Large\bfseries \reportseries\par}
+\vspace{0.15cm}
+{\large \reportseriesdesc\par}
+
+\vspace{1.4cm}
+
+{\large\bfseries \reportnumber\par}
+\vspace{0.45cm}
+{\Huge\bfseries \reporttitle\par}
+\vspace{0.35cm}
+{\Large \reportsubtitle\par}
+\vspace{0.65cm}
+{\large\bfseries \reportauthorone\par}
+{\normalsize \reportauthoroneaffil\par}
+\vspace{0.25cm}
+{\large\bfseries \reportauthortwo\par}
+{\normalsize \reportauthortwoaffil\par}
+\end{center}
+
+\vfill
+
+\begin{center}
+{\large Julio de 2026\par}
+\end{center}
+
+\end{titlepage}
+
+\begin{mdframed}[
+  linewidth=1pt,
+  linecolor=gray!60,
+  backgroundcolor=gray!6,
+  innertopmargin=12pt,
+  innerbottommargin=12pt,
+  innerleftmargin=14pt,
+  innerrightmargin=14pt
+]
 \section*{Resumen ejecutivo}
+\addcontentsline{toc}{section}{Resumen ejecutivo}
+
+\textbf{Nota de alcance.} Los resultados son provisionales y corresponden a los 22,96 millones de ocupados expandidos que conserva la versión disponible de \texttt{BaseIA.dta}. Esta cifra equivale al 96,3\% del promedio anual de 23,83 millones publicado por el DANE para 2025. Antes de una publicación definitiva debe reconstruirse el universo desde los microdatos de ocupados y conservar el nivel educativo detallado.
 
 \textbf{La exposición a la inteligencia artificial generativa no es, por sí sola, una medida de pérdida o ganancia de empleo.} El indicador de la Organización Internacional del Trabajo (OIT) estima qué proporción de las tareas de una ocupación puede realizarse con herramientas actuales de IA. No identifica si una empresa utilizará esa capacidad para complementar al trabajador, reemplazar horas de trabajo o producir más. Confundir exposición con daño llevaría a clasificaciones aparentemente precisas, pero metodológicamente falsas.
 
@@ -70,6 +133,12 @@
 \textbf{La evidencia empírica aconseja prepararse para resultados mixtos.} En centros de atención, una herramienta generativa aumentó 15\% la productividad y cerca de 30\% entre agentes menos experimentados \citep{brynjolfsson2025}. En consultoría, la IA permitió completar 12,2\% más tareas, 25,1\% más rápido, dentro de su frontera de capacidades; fuera de ella, redujo la probabilidad de acertar \citep{dellacqua2026}. Entre desarrolladores, elevó 26,1\% las tareas completadas \citep{cui2026}. Pero en una plataforma de trabajo independiente, los perfiles más expuestos sufrieron caídas de empleo e ingresos \citep{hui2024}. La misma exposición puede traducirse en productividad, presión salarial o desplazamiento, según la organización del trabajo y las instituciones.
 
 \textbf{La respuesta debe concentrarse en tareas y transiciones, no en anunciar ocupaciones condenadas.} Las firmas deben rediseñar procesos, capacitar antes de automatizar y medir calidad además de velocidad. Los trabajadores necesitan aprender a usar y verificar sistemas de IA, al tiempo que fortalecen criterio profesional, conocimiento sectorial y capacidades interpersonales. El Gobierno debe focalizar formación y protección en ocupaciones de alta exposición, especialmente donde coincidan baja capacidad de negociación, poca formación transferible o riesgo de desplazamiento.
+
+\end{mdframed}
+
+\newpage
+\tableofcontents
+\newpage
 
 \section{Qué mide el índice de la OIT}
 
