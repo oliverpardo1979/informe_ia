@@ -43,6 +43,16 @@ MID = HexColor("#5A6570")
 GRID = HexColor("#D8E0E8")
 RED = HexColor("#BB443A")
 
+DISPLAY_GROUP_LABELS = {
+    "Not Exposed": "Muy baja o ninguna",
+    "Minimal Exposure": "Muy baja o ninguna",
+    "Gradient 1": "Baja",
+    "Gradient 2": "Media",
+    "Gradient 3": "Alta",
+    "Gradient 4": "Muy alta",
+    "Sin correspondencia 4d": "Sin correspondencia 4d",
+}
+
 
 def register_fonts() -> tuple[str, str]:
     regular = Path(r"C:\Windows\Fonts\arial.ttf")
@@ -72,6 +82,10 @@ def fmt_pct(value: str | float, decimals: int = 1) -> str:
 
 def fmt_millions(value: str | float, decimals: int = 2) -> str:
     return f"{float(value) / 1_000_000:.{decimals}f}".replace(".", ",")
+
+
+def exposure_label(value: str) -> str:
+    return DISPLAY_GROUP_LABELS.get(value, value)
 
 
 styles = getSampleStyleSheet()
@@ -209,12 +223,14 @@ def report_table(data: list[list], widths: list[float], header_rows: int = 1, ti
     return table
 
 
-def chart(filename: str, max_width: float = 7.15 * inch, max_height: float = 7.55 * inch) -> Image:
+def chart(filename: str, max_width: float = 6.90 * inch, max_height: float = 7.55 * inch) -> Image:
     path = FIG_DIR / filename
     with PILImage.open(path) as im:
         width_px, height_px = im.size
     ratio = min(max_width / width_px, max_height / height_px)
-    return Image(str(path), width=width_px * ratio, height=height_px * ratio)
+    image = Image(str(path), width=width_px * ratio, height=height_px * ratio)
+    image.hAlign = "CENTER"
+    return image
 
 
 def add_chart(story: list, filename: str, caption: str, max_height: float = 7.55 * inch) -> None:
@@ -265,9 +281,9 @@ def build_story() -> list:
     story.append(HRFlowable(width="100%", thickness=4, color=GOLD))
     story.append(Spacer(1, 0.35 * inch))
     metric_data = [[
-        P("<b>0,264</b><br/><font size='7'>índice promedio con cruce exacto</font>", "BodyCJC"),
-        P("<b>25,4%</b><br/><font size='7'>del empleo en gradientes 1 a 4</font>", "BodyCJC"),
-        P("<b>8,0%</b><br/><font size='7'>del empleo en gradientes 3 y 4</font>", "BodyCJC"),
+        P("<b>0,264</b><br/><font size='7'>puntaje promedio con cruce exacto</font>", "BodyCJC"),
+        P("<b>25,4%</b><br/><font size='7'>del empleo entre baja y muy alta exposición</font>", "BodyCJC"),
+        P("<b>8,0%</b><br/><font size='7'>del empleo con exposición alta o muy alta</font>", "BodyCJC"),
         P("<b>96,5%</b><br/><font size='7'>cobertura exacta a cuatro dígitos</font>", "BodyCJC"),
     ]]
     metrics = Table(metric_data, colWidths=[1.72 * inch] * 4)
@@ -286,9 +302,9 @@ def build_story() -> list:
 
     story.extend(section("Resumen ejecutivo"))
     summaries = [
-        ("La exposición no es un pronóstico de daño.", "El índice de la OIT estima qué tareas puede realizar la IA generativa. No identifica si una firma utilizará esa capacidad para complementar al trabajador, reemplazar horas o producir más."),
-        ("Una cuarta parte del empleo presenta exposición sustantiva.", "El 25,4% se ubica en los gradientes 1 a 4; el 8,0% está en los gradientes altos. Oficinistas, contadores, centros de llamadas, auxiliares contables, secretarios y desarrolladores concentran una parte importante."),
-        ("La exposición aumenta con ingreso y educación.", "El promedio pasa de 0,211 en el primer quintil a 0,358 en el quinto. Es mayor entre mujeres que hombres y entre formales que informales. Esto describe tareas, no vulnerabilidad económica total."),
+        ("La exposición no es un pronóstico de daño.", "El indicador de la OIT estima qué tareas puede realizar la IA generativa. No identifica si una firma utilizará esa capacidad para complementar al trabajador, reemplazar horas o producir más."),
+        ("Una cuarta parte del empleo presenta exposición sustantiva.", "El 25,4% se ubica entre baja y muy alta exposición; el 8,0% tiene exposición alta o muy alta. Oficinistas, contadores, centros de llamadas, auxiliares contables, secretarios y desarrolladores concentran una parte importante."),
+        ("La exposición aumenta con ingreso y educación.", "El puntaje promedio pasa de 0,211 en el primer quintil a 0,358 en el quinto. Es mayor entre mujeres que hombres y entre formales que informales. Esto describe tareas, no vulnerabilidad económica total."),
         ("Los resultados observados son mixtos.", "Experimentos encuentran más productividad en centros de atención, consultoría, escritura y software; otra evidencia muestra caídas de empleo e ingresos en trabajo independiente expuesto. El resultado depende de la organización del trabajo."),
         ("La respuesta debe enfocarse en transiciones.", "Empresas, trabajadores y Gobierno deben capacitar, experimentar con métricas de calidad, mantener revisión humana y proteger ingresos durante cambios ocupacionales."),
     ]
@@ -297,23 +313,23 @@ def build_story() -> list:
 
     story.extend(section("1. Qué mide la OIT"))
     story.append(P("La actualización de 2025 de la OIT y NASK parte de 2.541 ocupaciones y 29.753 tareas de una clasificación polaca detallada. Una encuesta a 1.640 trabajadores produjo 52.558 evaluaciones sobre 2.861 tareas representativas. El equipo combinó revisión experta, un proceso Delphi y un asistente de clasificación para puntuar 3.265 tareas CIUO-08."))
-    story.append(P("Cada tarea recibe un valor entre 0 -la IA no puede realizarla- y 1 -puede realizarla completamente sin intervención humana bajo la capacidad considerada-. Para cada ocupación se calcula la media no ponderada de sus tareas y su desviación estándar."))
+    story.append(P("Cada tarea recibe un valor entre 0 -la IA no puede realizarla- y 1 -puede realizarla completamente sin intervención humana bajo la capacidad considerada-. El puntaje de exposición de una ocupación es el promedio no ponderado de los puntajes de sus tareas. La unidad de partida es la tarea, no el trabajador ni la ocupación completa."))
+    story.append(P("Al cruzar el indicador con la GEIH, cada ocupado recibe el puntaje de su ocupación a cuatro dígitos. Por eso, un promedio de 0,358 en el quinto quintil de ingreso no significa que 35,8% de sus trabajadores esté expuesto; significa que las ocupaciones de ese quintil tienen, en promedio, tareas más expuestas a IA generativa."))
     thresholds = [
-        ["Categoría", "Regla"],
-        ["Gradiente 4", "media >= 0,60 y media - desviación >= 0,50"],
-        ["Gradiente 3", "0,50 <= media < 0,60 y media + desviación >= 0,50"],
-        ["Gradiente 2", "0,40 <= media < 0,50 y media + desviación >= 0,50"],
-        ["Gradiente 1", "media < 0,40 y media + desviación >= 0,50"],
-        ["Mínima", "No clasificada antes, media < 0,50 y media + desviación > 0,40"],
-        ["No expuesta", "Casos restantes"],
+        ["Etiqueta del informe", "Regla OIT"],
+        ["Muy alta", "Gradiente 4: media >= 0,60 y media - desviación >= 0,50"],
+        ["Alta", "Gradiente 3: 0,50 <= media < 0,60 y media + desviación >= 0,50"],
+        ["Media", "Gradiente 2: 0,40 <= media < 0,50 y media + desviación >= 0,50"],
+        ["Baja", "Gradiente 1: media < 0,40 y media + desviación >= 0,50"],
+        ["Muy baja o ninguna", "Exposición mínima: no clasificada antes, media < 0,50 y media + desviación > 0,40; no expuesta: casos restantes"],
     ]
     story.append(report_table(thresholds, [1.25 * inch, 5.7 * inch]))
     story.append(Spacer(1, 5))
-    story.append(P("<b>Precauciones.</b> Las tareas no se ponderan por frecuencia ni importancia; el índice es un techo tecnológico bajo adopción completa, no el uso observado; y mide potencial de automatización o apoyo, no efectos causales sobre empleo, salarios o calidad del trabajo."))
+    story.append(P("<b>Precauciones.</b> La escala del informe reemplaza los nombres técnicos de la OIT por cinco rótulos. La categoría muy baja o ninguna agrupa los casos sin exposición y los de exposición mínima. Las tareas no se ponderan por frecuencia ni importancia; el indicador mide potencial técnico, no efectos causales sobre empleo, salarios o calidad del trabajo."))
 
     story.append(subsection("Aplicación a la GEIH"))
     story.append(P("El indicador principal enlaza OFICIO_C8 con la CIUO-08 exactamente a cuatro dígitos. La cobertura es 96,49%. El 3,51% sin correspondencia se conserva como categoría aparte. Una imputación a dos dígitos se usa sólo como sensibilidad porque puede ocultar diferencias entre ocupaciones colombianas."))
-    sens_data = [["Método", "Cobertura", "Promedio"]] + [[r["metodo"], fmt_pct(r["cobertura"], 2), fmt_num(r["exposicion_promedio"])] for r in sensitivity]
+    sens_data = [["Método", "Cobertura", "Puntaje promedio"]] + [[r["metodo"], fmt_pct(r["cobertura"], 2), fmt_num(r["exposicion_promedio"])] for r in sensitivity]
     story.append(report_table(sens_data, [4.5 * inch, 1.15 * inch, 1.15 * inch]))
     story.append(P("El ingreso mensual equivalente multiplica el ingreso real por hora por horas semanales y por 52/12. Los cuantiles se ponderan y no separan empates; por eso la tabla de percentiles conserva 68 posiciones con masa positiva."))
 
@@ -322,40 +338,40 @@ def build_story() -> list:
     group_data = [["Grupo", "Ocupados (millones)", "Participación"]] + [[r["grupo_exposicion_es"], fmt_millions(r["ocupados"]), fmt_pct(r["participacion"])] for r in groups]
     story.append(report_table(group_data, [3.5 * inch, 1.75 * inch, 1.45 * inch]))
     story.append(Spacer(1, 5))
-    story.append(P("El 56,7% se clasifica como no expuesto y 14,4% como exposición mínima. Los gradientes 1 y 2 reúnen 17,4%; los gradientes 3 y 4, 8,0%. Esto no significa que 25,4% de los puestos desaparecerá: indica que contienen tareas con potencial técnico de apoyo o automatización."))
+    story.append(P("El 71,1% del empleo se clasifica como muy baja o ninguna exposición. La exposición baja y media reúne 17,4%; la exposición alta o muy alta, 8,0%. Esto no significa que 25,4% de los puestos desaparecerá: indica que contienen tareas con potencial técnico de apoyo o automatización."))
 
     story.append(PageBreak())
     story.extend(section("3. Ingreso, educación y perfiles"))
-    add_chart(story, "fig_02_quintiles_ingreso.png", "Figura 2. Índice promedio por quintil de ingreso laboral mensual equivalente.", 4.0 * inch)
-    quint_data = [["Quintil", "Índice", "Mediana mensual (millones)", "Participación muestra"]] + [[r["quintil_ingreso"], fmt_num(r["exposicion_promedio_4d"]), fmt_millions(r["ingreso_mediana_ponderada"]), fmt_pct(r["participacion_muestra_ingreso"])] for r in quintiles]
+    add_chart(story, "fig_02_quintiles_ingreso.png", "Figura 2. Puntaje promedio de exposición por quintil de ingreso laboral mensual equivalente.", 4.0 * inch)
+    quint_data = [["Quintil", "Puntaje", "Mediana mensual (millones)", "Participación muestra"]] + [[r["quintil_ingreso"], fmt_num(r["exposicion_promedio_4d"]), fmt_millions(r["ingreso_mediana_ponderada"]), fmt_pct(r["participacion_muestra_ingreso"])] for r in quintiles]
     story.append(report_table(quint_data, [1.1 * inch, 1.1 * inch, 2.6 * inch, 1.8 * inch]))
     story.append(Spacer(1, 5))
-    story.append(P("La exposición es similar en los dos quintiles inferiores y aumenta con fuerza desde el tercero. La relación es descriptiva: las ocupaciones mejor remuneradas concentran más tareas cognitivas y de oficina que la IA generativa puede ejecutar."))
+    story.append(P("La figura muestra el promedio ponderado del puntaje ocupacional de exposición, no el porcentaje de trabajadores expuestos. El puntaje es similar en los dos quintiles inferiores y aumenta con fuerza desde el tercero. La relación es descriptiva: las ocupaciones mejor remuneradas concentran más tareas cognitivas y de oficina que la IA generativa puede ejecutar."))
     story.append(PageBreak())
-    add_chart(story, "fig_03_percentiles_ingreso.png", "Figura 3. Exposición a lo largo de la distribución ponderada de ingreso.", 5.5 * inch)
+    add_chart(story, "fig_03_percentiles_ingreso.png", "Figura 3. Puntaje promedio de exposición a lo largo de la distribución ponderada de ingreso.", 5.5 * inch)
     story.append(P("La línea no contiene cien puntos porque los empates de ingreso -muy frecuentes alrededor de valores redondos y el salario mínimo- permanecen juntos. Dividirlos al azar produciría percentiles de tamaño idéntico, pero una precisión ficticia."))
     story.append(PageBreak())
-    add_chart(story, "fig_06_logro_educativo.png", "Figura 4. Índice promedio por logro educativo disponible.", 4.3 * inch)
-    edu_data = [["Educación", "Índice", "Cobertura"]] + [[r["educacion"], fmt_num(r["exposicion_promedio_4d"]), fmt_pct(r["cobertura_4d"])] for r in education]
+    add_chart(story, "fig_06_logro_educativo.png", "Figura 4. Puntaje promedio de exposición por logro educativo disponible.", 4.3 * inch)
+    edu_data = [["Educación", "Puntaje", "Cobertura"]] + [[r["educacion"], fmt_num(r["exposicion_promedio_4d"]), fmt_pct(r["cobertura_4d"])] for r in education]
     story.append(report_table(edu_data, [4.2 * inch, 1.2 * inch, 1.2 * inch]))
     story.append(Spacer(1, 4))
     story.append(P("La base disponible sólo conserva seis grupos. No permite separar técnica profesional, tecnológica, universitaria, especialización, maestría y doctorado. Ese cruce requiere recuperar P3042 antes de cerrar el informe."))
-    profile_data = [["Perfil", "Índice", "Cobertura"]]
+    profile_data = [["Perfil", "Puntaje", "Cobertura"]]
     profile_data += [[r["sexo"], fmt_num(r["exposicion_promedio_4d"]), fmt_pct(r["cobertura_4d"])] for r in sex]
     profile_data += [[r["formalidad"], fmt_num(r["exposicion_promedio_4d"]), fmt_pct(r["cobertura_4d"])] for r in formality]
     story.append(report_table(profile_data, [4.2 * inch, 1.2 * inch, 1.2 * inch]))
     story.append(P("Mujeres y ocupados formales presentan mayor exposición directa. Menor exposición informal no significa menor vulnerabilidad: los informales suelen tener menos protección frente a choques indirectos y transiciones."))
 
     story.extend(section("4. Geografía y actividad económica"))
-    add_chart(story, "fig_04_departamentos.png", "Figura 5. Índice promedio en los 24 departamentos seleccionados.", 7.25 * inch)
+    add_chart(story, "fig_04_departamentos.png", "Figura 5. Puntaje promedio de exposición en los 24 departamentos seleccionados.", 7.25 * inch)
     story.append(P("Bogotá encabeza con 0,319, seguida por Antioquia, Atlántico y Valle del Cauca. Huila, Cauca y Nariño tienen los promedios más bajos. La Guajira requiere cautela: la cobertura exacta es 80,0%, por debajo del resto."))
     story.append(PageBreak())
-    add_chart(story, "fig_05_actividad_economica.png", "Figura 6. Índice promedio por actividad económica.", 6.8 * inch)
-    story.append(P("Finanzas y seguros (0,478) e información y comunicaciones (0,455) encabezan. Agricultura (0,141), hogares empleadores (0,153) y construcción (0,160) están abajo. El índice no captura robótica, plataformas ni analítica, por lo que menor exposición generativa no significa inmunidad tecnológica."))
+    add_chart(story, "fig_05_actividad_economica.png", "Figura 6. Puntaje promedio de exposición por actividad económica.", 6.8 * inch)
+    story.append(P("Finanzas y seguros (0,478) e información y comunicaciones (0,455) encabezan. Agricultura (0,141), hogares empleadores (0,153) y construcción (0,160) están abajo. El puntaje no captura robótica, plataformas ni analítica, por lo que menor exposición generativa no significa inmunidad tecnológica."))
 
     story.extend(section("5. Ocupaciones prioritarias"))
-    add_chart(story, "fig_07_ocupaciones_alta_exposicion.png", "Figura 7. Ocupaciones de gradientes 3 y 4 con mayor empleo.", 6.5 * inch)
-    occ_data = [["Código", "Ocupación", "Grupo", "Ocupados"]] + [[r["oficio_c8_4d"], r["oficio_c8_label"], r["grupo_exposicion_4d"].replace("Gradient", "Gradiente"), f"{float(r['ocupados']):,.0f}".replace(",", ".")] for r in occupations]
+    add_chart(story, "fig_07_ocupaciones_alta_exposicion.png", "Figura 7. Ocupaciones de exposición alta o muy alta con mayor empleo.", 6.5 * inch)
+    occ_data = [["Código", "Ocupación", "Grupo", "Ocupados"]] + [[r["oficio_c8_4d"], r["oficio_c8_label"], r.get("grupo_exposicion_es") or exposure_label(r["grupo_exposicion_4d"]), f"{float(r['ocupados']):,.0f}".replace(",", ".")] for r in occupations]
     story.append(report_table(occ_data, [0.65 * inch, 3.7 * inch, 1.1 * inch, 1.15 * inch], tiny=True))
     story.append(P("Los perfiles son prioritarios para adopción responsable y formación, no porque su desplazamiento sea inevitable, sino porque una proporción grande de sus tareas puede cambiar pronto."))
 
@@ -375,10 +391,10 @@ def build_story() -> list:
     story.append(P("La unidad pertinente es la tarea. La IA puede automatizar el primer borrador o el registro y dejar al trabajador la validación, el trato con clientes, la responsabilidad y las excepciones. Si la firma usa el ahorro para expandir producción, el empleo puede sostenerse; si la demanda es fija, puede reducir horas o contratación."))
 
     story.extend(section("7. Por qué no se asigna un signo por ocupación"))
-    story.append(P("<b>No es viable clasificar las 427 ocupaciones como positivas o negativas usando la correlativa OIT.</b> El índice no contiene elasticidad de demanda, costos de adopción, decisiones empresariales, regulación, calidad, salarios ni reasignación. Un signo convertiría supuestos del analista en un dato aparentemente observado."))
+    story.append(P("<b>No es viable clasificar las 427 ocupaciones como positivas o negativas usando la correlativa OIT.</b> El indicador no contiene elasticidad de demanda, costos de adopción, decisiones empresariales, regulación, calidad, salarios ni reasignación. Un signo convertiría supuestos del analista en un dato aparentemente observado."))
     layers = [
         ["Capa", "Contenido", "Cobertura recomendada"],
-        ["1. Exposición tecnológica", "Puntaje y gradiente OIT", "Todas las ocupaciones"],
+        ["1. Exposición tecnológica", "Puntaje OIT y etiqueta de exposición", "Todas las ocupaciones"],
         ["2. Evidencia de resultados", "Productividad, calidad, horas, empleo e ingresos", "Sólo con estudio pertinente"],
         ["3. Confianza", "Directa, cercana o baja según ocupación y contexto", "Cada evidencia"],
     ]
@@ -388,7 +404,7 @@ def build_story() -> list:
     story.extend(section("8. Recomendaciones"))
     story.append(subsection("Firmas"))
     for item in [
-        "Mapear tareas en puestos de gradientes 3 y 4, empezando por oficina, contabilidad, centros de llamadas, secretarías y software.",
+        "Mapear tareas en puestos de exposición alta y muy alta, empezando por oficina, contabilidad, centros de llamadas, secretarías y software.",
         "Hacer pilotos con tiempo, calidad, errores, satisfacción y carga de trabajo; no medir éxito sólo por costo.",
         "Capacitar antes y durante el rediseño, con guías, datos confiables y supervisión.",
         "Mantener revisión humana en decisiones legales, financieras, laborales y de atención sensible.",
@@ -419,7 +435,7 @@ def build_story() -> list:
         ["Universo", "BaseIA suma 22,96 millones, 872 mil menos que el promedio oficial. Reconstruir desde el archivo completo de ocupados y documentar exclusiones."],
         ["Educación", "Recuperar P3042 para separar los doce niveles, de preescolar a doctorado."],
         ["Cruce", "Revisar manualmente códigos colombianos sin equivalencia; no imputar silenciosamente a dos dígitos."],
-        ["Causalidad", "El índice no incorpora adopción, inversión complementaria ni demanda. Es línea base, no pronóstico."],
+        ["Causalidad", "El indicador no incorpora adopción, inversión complementaria ni demanda. Es línea base, no pronóstico."],
         ["Muestra", "Agregar errores estándar con el diseño GEIH, especialmente en departamentos y ocupaciones pequeñas."],
     ]
     story.append(report_table(limitations, [1.25 * inch, 5.55 * inch]))

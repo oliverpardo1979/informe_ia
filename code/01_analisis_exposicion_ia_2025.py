@@ -91,21 +91,28 @@ GROUP_ORDER = [
     "Sin correspondencia 4d",
 ]
 GROUP_LABELS = {
-    "Not Exposed": "No expuesta",
-    "Minimal Exposure": "Exposición mínima",
-    "Gradient 1": "Gradiente 1",
-    "Gradient 2": "Gradiente 2",
-    "Gradient 3": "Gradiente 3",
-    "Gradient 4": "Gradiente 4",
+    "Not Exposed": "Muy baja o ninguna",
+    "Minimal Exposure": "Muy baja o ninguna",
+    "Gradient 1": "Baja",
+    "Gradient 2": "Media",
+    "Gradient 3": "Alta",
+    "Gradient 4": "Muy alta",
     "Sin correspondencia 4d": "Sin correspondencia 4d",
 }
-GROUP_COLORS = {
-    "Not Exposed": "#D9DDE2",
-    "Minimal Exposure": "#9FB3C8",
-    "Gradient 1": "#6BAED6",
-    "Gradient 2": "#3182BD",
-    "Gradient 3": "#D9A441",
-    "Gradient 4": "#B6423C",
+REPORT_GROUP_ORDER = [
+    "Muy baja o ninguna",
+    "Baja",
+    "Media",
+    "Alta",
+    "Muy alta",
+    "Sin correspondencia 4d",
+]
+REPORT_GROUP_COLORS = {
+    "Muy baja o ninguna": "#D9DDE2",
+    "Baja": "#6BAED6",
+    "Media": "#3182BD",
+    "Alta": "#D9A441",
+    "Muy alta": "#B6423C",
     "Sin correspondencia 4d": "#666666",
 }
 BLUE = "#17365D"
@@ -380,14 +387,16 @@ def build_tables(data: pd.DataFrame, crosswalk_4d: pd.DataFrame) -> dict[str, pd
     )
 
     groups = (
-        data.groupby("grupo_exposicion_4d", as_index=False, dropna=False)
+        data.assign(
+            grupo_exposicion_es=data["grupo_exposicion_4d"].map(GROUP_LABELS)
+        )
+        .groupby("grupo_exposicion_es", as_index=False, dropna=False)
         .agg(ocupados=("fex", "sum"), observaciones=("persona_id", "size"))
         .assign(participacion=lambda x: x["ocupados"] / total_weight)
     )
-    groups["orden"] = groups["grupo_exposicion_4d"].map(
-        {value: index for index, value in enumerate(GROUP_ORDER)}
+    groups["orden"] = groups["grupo_exposicion_es"].map(
+        {value: index for index, value in enumerate(REPORT_GROUP_ORDER)}
     )
-    groups["grupo_exposicion_es"] = groups["grupo_exposicion_4d"].map(GROUP_LABELS)
     groups = groups.sort_values("orden").drop(columns="orden")
 
     income = data[
@@ -477,6 +486,9 @@ def build_tables(data: pd.DataFrame, crosswalk_4d: pd.DataFrame) -> dict[str, pd
             desviacion_tareas_4d=("ai_exposure_sd", "first"),
         )
         .assign(participacion_empleo=lambda x: x["ocupados"] / total_weight)
+    )
+    occupations["grupo_exposicion_es"] = occupations["grupo_exposicion_4d"].map(
+        GROUP_LABELS
     )
     occupations = occupations.sort_values(
         ["exposicion_promedio_4d", "ocupados"], ascending=[False, False], na_position="last"
@@ -628,7 +640,14 @@ def save_bar_chart(
         value = scale_max * step / 5
         x = plot_left + (plot_right - plot_left) * step / 5
         draw.line((x, top, x, chart_bottom), fill=GRID, width=1)
-        tick = f"{value:.0%}" if percent else f"{value:.2f}".replace(".", ",")
+        if percent:
+            tick = (
+                f"{value:.1%}".replace(".", ",")
+                if scale_max < 0.10
+                else f"{value:.0%}"
+            )
+        else:
+            tick = f"{value:.2f}".replace(".", ",")
         box = draw.textbbox((0, 0), tick, font=tick_font)
         draw.text((x - (box[2] - box[0]) / 2, chart_bottom + 12), tick, font=tick_font, fill="#5A6570")
 
@@ -654,7 +673,11 @@ def save_bar_chart(
         )
         draw.text((plot_left + bar_width + 14, y + 4), value_label, font=value_font, fill="#27313B")
 
-    axis_label = "Participación de ocupados" if percent else "Índice promedio de exposición"
+    axis_label = (
+        "Participación de ocupados"
+        if percent
+        else "Puntaje promedio de exposición (0 a 1)"
+    )
     axis_box = draw.textbbox((0, 0), axis_label, font=label_font)
     draw.text(
         ((plot_left + plot_right - (axis_box[2] - axis_box[0])) / 2, chart_bottom + 50),
@@ -673,8 +696,8 @@ def save_percentile_chart(percentiles: pd.DataFrame) -> None:
     draw = ImageDraw.Draw(image)
     top = draw_header(
         draw,
-        "Exposición a IA por percentil de ingreso laboral",
-        "Percentiles ponderados; los empates de ingreso permanecen en el mismo grupo, Colombia, 2025.",
+        "Puntaje de exposición a IA por percentil de ingreso laboral",
+        "Promedio ponderado del puntaje ocupacional (0 a 1); los empates de ingreso permanecen en el mismo grupo, Colombia, 2025.",
         width,
     )
     left, right = 190, 2110
@@ -718,13 +741,10 @@ def build_charts(tables: dict[str, pd.DataFrame]) -> None:
     groups = tables["02_grupos_exposicion"].copy()
     groups["grupo_exposicion_es"] = pd.Categorical(
         groups["grupo_exposicion_es"],
-        categories=[GROUP_LABELS[group] for group in GROUP_ORDER],
+        categories=REPORT_GROUP_ORDER,
         ordered=True,
     )
     groups = groups.sort_values("grupo_exposicion_es", na_position="last")
-    group_color_map = {
-        GROUP_LABELS[group]: GROUP_COLORS[group] for group in GROUP_ORDER
-    }
     save_bar_chart(
         groups,
         "grupo_exposicion_es",
@@ -733,7 +753,7 @@ def build_charts(tables: dict[str, pd.DataFrame]) -> None:
         "Distribución de la población ocupada por exposición a IA generativa",
         "Colombia, 2025. Correspondencia exacta a cuatro dígitos; el no cruce se muestra por separado.",
         percent=True,
-        color_by_label=group_color_map,
+        color_by_label=REPORT_GROUP_COLORS,
         preserve_order=True,
     )
 
@@ -744,8 +764,8 @@ def build_charts(tables: dict[str, pd.DataFrame]) -> None:
         "quintil",
         "exposicion_promedio_4d",
         "fig_02_quintiles_ingreso.png",
-        "Exposición a IA por quintil de ingreso laboral",
-        "Promedio del índice entre ocupados con ingreso y horas válidas, Colombia, 2025.",
+        "Puntaje de exposición a IA por quintil de ingreso laboral",
+        "Promedio ponderado del puntaje ocupacional (0 a 1) entre ocupados con ingreso y horas válidas, Colombia, 2025.",
         preserve_order=True,
     )
 
@@ -756,23 +776,23 @@ def build_charts(tables: dict[str, pd.DataFrame]) -> None:
         "departamento",
         "exposicion_promedio_4d",
         "fig_04_departamentos.png",
-        "Exposición a IA por departamento",
-        "Promedio del índice entre ocupados con correspondencia exacta, 24 departamentos, 2025.",
+        "Puntaje de exposición a IA por departamento",
+        "Promedio ponderado del puntaje ocupacional (0 a 1) entre ocupados con correspondencia exacta, 24 departamentos, 2025.",
     )
     save_bar_chart(
         tables["06_actividad_economica"],
         "sector",
         "exposicion_promedio_4d",
         "fig_05_actividad_economica.png",
-        "Exposición a IA por actividad económica",
-        "Promedio del índice entre ocupados con correspondencia exacta, Colombia, 2025.",
+        "Puntaje de exposición a IA por actividad económica",
+        "Promedio ponderado del puntaje ocupacional (0 a 1) entre ocupados con correspondencia exacta, Colombia, 2025.",
     )
     save_bar_chart(
         tables["07_logro_educativo"],
         "educacion",
         "exposicion_promedio_4d",
         "fig_06_logro_educativo.png",
-        "Exposición a IA por logro educativo",
+        "Puntaje de exposición a IA por logro educativo",
         "La base disponible agrupa el logro en seis categorías, Colombia, 2025.",
         preserve_order=True,
     )
@@ -786,8 +806,8 @@ def build_charts(tables: dict[str, pd.DataFrame]) -> None:
         "ocupacion_plot",
         "participacion_empleo",
         "fig_07_ocupaciones_alta_exposicion.png",
-        "Ocupaciones de alta exposición con mayor peso en el empleo",
-        "Gradientes 3 y 4, ordenadas por participación en la población ocupada, Colombia, 2025.",
+        "Ocupaciones de exposición alta o muy alta con mayor peso en el empleo",
+        "Exposición alta y muy alta, ordenadas por participación en la población ocupada, Colombia, 2025.",
         percent=True,
         color=GOLD,
     )
