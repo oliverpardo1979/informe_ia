@@ -302,7 +302,7 @@ def build_story() -> list:
 
     story.extend(section("Resumen ejecutivo"))
     summaries = [
-        ("La exposición no es un pronóstico de daño.", "El indicador de la OIT estima qué tareas puede realizar la IA generativa. No identifica si una firma utilizará esa capacidad para complementar al trabajador, reemplazar horas o producir más."),
+        ("El puntaje no es un porcentaje de trabajadores expuestos.", "El indicador de la OIT resume, en una escala de 0 a 1, qué tanto puede la IA realizar, acelerar o transformar las tareas de cada ocupación. No predice pérdida de empleo: el efecto depende de si la IA sustituye o complementa esas tareas."),
         ("Una cuarta parte del empleo presenta exposición sustantiva.", "El 25,4% se ubica entre baja y muy alta exposición; el 8,0% tiene exposición alta o muy alta. Oficinistas, contadores, centros de llamadas, auxiliares contables, secretarios y desarrolladores concentran una parte importante."),
         ("La exposición aumenta con ingreso y educación.", "El puntaje promedio pasa de 0,211 en el primer quintil a 0,358 en el quinto. Es mayor entre mujeres que hombres y entre formales que informales. Esto describe tareas, no vulnerabilidad económica total."),
         ("Los resultados observados son mixtos.", "Experimentos encuentran más productividad en centros de atención, consultoría, escritura y software; otra evidencia muestra caídas de empleo e ingresos en trabajo independiente expuesto. El resultado depende de la organización del trabajo."),
