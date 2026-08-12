@@ -356,21 +356,33 @@ def build_story() -> list:
     story.append(report_table(edu_data, [4.2 * inch, 1.2 * inch, 1.2 * inch]))
     story.append(Spacer(1, 4))
     story.append(P("La base disponible sólo conserva seis grupos. No permite separar técnica profesional, tecnológica, universitaria, especialización, maestría y doctorado. Ese cruce requiere recuperar P3042 antes de cerrar el informe."))
-    profile_data = [["Perfil", "Puntaje", "Cobertura"]]
-    profile_data += [[r["sexo"], fmt_num(r["exposicion_promedio_4d"]), fmt_pct(r["cobertura_4d"])] for r in sex]
-    profile_data += [[r["formalidad"], fmt_num(r["exposicion_promedio_4d"]), fmt_pct(r["cobertura_4d"])] for r in formality]
-    story.append(report_table(profile_data, [4.2 * inch, 1.2 * inch, 1.2 * inch]))
-    story.append(P("Mujeres y ocupados formales presentan mayor exposición directa. Menor exposición informal no significa menor vulnerabilidad: los informales suelen tener menos protección frente a choques indirectos y transiciones."))
+    story.append(PageBreak())
+    add_chart(story, "fig_07_genero.png", "Figura 5. Puntaje promedio de exposición por género.", 2.8 * inch)
+    gender_data = [["Género", "Puntaje", "Alta o muy alta", "Cobertura"]] + [
+        [
+            r["sexo"],
+            fmt_num(r["exposicion_promedio_4d"]),
+            fmt_pct(r["participacion_alta_g3_g4"]),
+            fmt_pct(r["cobertura_4d"]),
+        ]
+        for r in sorted(sex, key=lambda row: 0 if row["sexo"] == "Mujer" else 1)
+    ]
+    story.append(report_table(gender_data, [2.2 * inch, 1.15 * inch, 1.65 * inch, 1.35 * inch]))
+    story.append(P("Las mujeres registran mayor exposición que los hombres: 0,297 frente a 0,240. La exposición alta o muy alta también es mayor entre mujeres, con 12,2% del empleo femenino frente a 5,1% del masculino. La comparación describe composición ocupacional; no mide pérdidas esperadas de empleo ni vulnerabilidad económica total."))
+    story.append(subsection("Formalidad"))
+    formality_data = [["Formalidad", "Puntaje", "Cobertura"]] + [[r["formalidad"], fmt_num(r["exposicion_promedio_4d"]), fmt_pct(r["cobertura_4d"])] for r in formality]
+    story.append(report_table(formality_data, [4.2 * inch, 1.2 * inch, 1.2 * inch]))
+    story.append(P("Los ocupados formales también presentan mayor exposición directa. Menor exposición informal no significa menor vulnerabilidad: los informales suelen tener menos protección frente a choques indirectos y transiciones."))
 
     story.extend(section("4. Geografía y actividad económica"))
-    add_chart(story, "fig_04_departamentos.png", "Figura 5. Puntaje promedio de exposición en los 24 departamentos seleccionados.", 7.25 * inch)
+    add_chart(story, "fig_04_departamentos.png", "Figura 6. Puntaje promedio de exposición en los 24 departamentos seleccionados.", 7.25 * inch)
     story.append(P("Bogotá encabeza con 0,319, seguida por Antioquia, Atlántico y Valle del Cauca. Huila, Cauca y Nariño tienen los promedios más bajos. La Guajira requiere cautela: la cobertura exacta es 80,0%, por debajo del resto."))
     story.append(PageBreak())
-    add_chart(story, "fig_05_actividad_economica.png", "Figura 6. Puntaje promedio de exposición por actividad económica.", 6.8 * inch)
+    add_chart(story, "fig_05_actividad_economica.png", "Figura 7. Puntaje promedio de exposición por actividad económica.", 6.8 * inch)
     story.append(P("Finanzas y seguros (0,478) e información y comunicaciones (0,455) encabezan. Agricultura (0,141), hogares empleadores (0,153) y construcción (0,160) están abajo. El puntaje no captura robótica, plataformas ni analítica, por lo que menor exposición generativa no significa inmunidad tecnológica."))
 
     story.extend(section("5. Ocupaciones prioritarias"))
-    add_chart(story, "fig_07_ocupaciones_alta_exposicion.png", "Figura 7. Ocupaciones de exposición alta o muy alta con mayor empleo.", 6.5 * inch)
+    add_chart(story, "fig_08_ocupaciones_alta_exposicion.png", "Figura 8. Ocupaciones de exposición alta o muy alta con mayor empleo.", 6.5 * inch)
     occ_data = [["Código", "Ocupación", "Grupo", "Ocupados"]] + [[r["oficio_c8_4d"], r["oficio_c8_label"], r.get("grupo_exposicion_es") or exposure_label(r["grupo_exposicion_4d"]), f"{float(r['ocupados']):,.0f}".replace(",", ".")] for r in occupations]
     story.append(report_table(occ_data, [0.65 * inch, 3.7 * inch, 1.1 * inch, 1.15 * inch], tiny=True))
     story.append(P("Los perfiles son prioritarios para adopción responsable y formación, no porque su desplazamiento sea inevitable, sino porque una proporción grande de sus tareas puede cambiar pronto."))

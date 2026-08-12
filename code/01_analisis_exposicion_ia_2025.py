@@ -797,6 +797,23 @@ def build_charts(tables: dict[str, pd.DataFrame]) -> None:
         preserve_order=True,
     )
 
+    sex = tables["08_sexo"].copy()
+    sex["sexo"] = pd.Categorical(
+        sex["sexo"],
+        categories=["Mujer", "Hombre"],
+        ordered=True,
+    )
+    sex = sex.sort_values("sexo")
+    save_bar_chart(
+        sex,
+        "sexo",
+        "exposicion_promedio_4d",
+        "fig_07_genero.png",
+        "Puntaje de exposición a IA por género",
+        "Promedio ponderado del puntaje ocupacional (0 a 1), mujeres y hombres, Colombia, 2025.",
+        preserve_order=True,
+    )
+
     high = tables["11_ocupaciones_alta_exposicion_empleo"].head(15).copy()
     high["ocupacion_plot"] = high["oficio_c8_label"].fillna(
         high["occupation_name_isco08"]
@@ -805,7 +822,7 @@ def build_charts(tables: dict[str, pd.DataFrame]) -> None:
         high,
         "ocupacion_plot",
         "participacion_empleo",
-        "fig_07_ocupaciones_alta_exposicion.png",
+        "fig_08_ocupaciones_alta_exposicion.png",
         "Ocupaciones de exposición alta o muy alta con mayor peso en el empleo",
         "Exposición alta y muy alta, ordenadas por participación en la población ocupada, Colombia, 2025.",
         percent=True,
