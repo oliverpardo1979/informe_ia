@@ -155,27 +155,7 @@ Este informe evalúa el impacto de la IA sobre los trabajadores colombianos. En 
 
 \subsection{Indicador de exposición}
 
-El primer indicador proviene de la actualización de 2025 del índice de exposición ocupacional a la IA elaborado por la OIT y NASK \citep{gmyrek2025}. Su unidad de análisis es la tarea. Cada tarea recibe un puntaje entre cero y uno según la capacidad de la IA para realizarla. El puntaje de una ocupación corresponde al promedio de los puntajes de las tareas que realiza la ocupación. Un mayor valor indica que las tareas realizadas por la ocupación pueden ser realizadas por la IA. A partir de estos puntajes, el presente informe clasifica a las ocupaciones en distintos grados de exposición: muy baja o ninguna, baja, media, alta y muy alta.
-
-
-\begin{table}[H]
-\centering
-\small
-\caption{Exposición de la ocupación y puntajes de las tareas asociadas a la ocupación}
-\label{tab:reglas_exposicion}
-\begin{tabularx}{0.94\textwidth}{>{\bfseries}l X}
-\toprule
-Exposición & Regla de asignación en función de la media ($\mu$) y la desviación estándar ($\sigma$) de los puntajes de las tareas asociadas a la ocupación \\
-\midrule
-Muy alta & $\mu\geq0,60$ y $\mu-\sigma\geq0,50$ \\
-Alta & $0,50\leq\mu<0,60$ y $\mu+\sigma\geq0,50$ \\
-Media & $0,40\leq\mu<0,50$ y $\mu+\sigma\geq0,50$ \\
-Baja & $\mu<0,40$ y $\mu+\sigma\geq0,50$ \\
-Muy baja o ninguna &  casos restantes \\
-\bottomrule
-\end{tabularx}
-\footnotesize{Fuente: \cite{gmyrek2025}}
-\end{table}
+El primer indicador proviene de la actualización de 2025 del índice de exposición ocupacional a la IA elaborado por la OIT y NASK \citep{gmyrek2025}. Su unidad de análisis es la tarea. Cada tarea recibe un puntaje entre cero y uno según la capacidad de la IA para realizarla. El puntaje de una ocupación corresponde al promedio de los puntajes de las tareas que realiza la ocupación. Un mayor valor indica que las tareas realizadas por la ocupación pueden ser realizadas por la IA. A partir de estos puntajes, el presente informe clasifica a las ocupaciones en distintos grados de exposición: muy baja o ninguna, baja, media, alta y muy alta. La regla de clasificación utiliza la media y la desviación estándar de los puntajes de las tareas asociadas a cada ocupación (Cuadro \ref{tab:reglas_exposicion}).
 
 Es importante tener en cuenta algunas limitaciones. El indicador no está asociado al uso efectivo de inteligencia artificial en Colombia y las tareas reciben el mismo peso independientemente de su frecuencia o importancia dentro de la ocupación.
 
@@ -610,6 +590,33 @@ La expansión de la inteligencia artificial generativa no está llegando primero
 Pero la exposición cuenta solo una parte de la historia. Entre los trabajadores de mayores ingresos y educación también es más frecuente encontrar ocupaciones donde la tecnología puede complementar tareas que requieren juicio, comunicación o responsabilidad. En otros segmentos del mercado laboral, una exposición menor puede estar acompañada por menos espacio para esa complementariedad. La distribución de las oportunidades de productividad no coincide necesariamente con la distribución de la exposición.
 
 Esta diferencia debería orientar la respuesta de empresas y política pública. La prioridad no es proteger ocupaciones de cualquier contacto con la inteligencia artificial, sino ampliar las capacidades para reorganizar el trabajo alrededor de ella y facilitar las transiciones donde la sustitución de tareas sea más probable. La pregunta relevante para Colombia no es únicamente qué trabajos puede transformar la tecnología, sino quién estará en condiciones de aprovechar esa transformación.
+
+\clearpage
+\appendix
+\setcounter{table}{0}
+\renewcommand{\thetable}{A\arabic{table}}
+
+\section{Regla de clasificación del indicador de exposición}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Exposición de la ocupación y puntajes de las tareas asociadas a la ocupación}
+\label{tab:reglas_exposicion}
+\begin{tabularx}{0.94\textwidth}{>{\bfseries}l X}
+\toprule
+Exposición & Regla de asignación en función de la media ($\mu$) y la desviación estándar ($\sigma$) de los puntajes de las tareas asociadas a la ocupación \\
+\midrule
+Muy alta & $\mu\geq0,60$ y $\mu-\sigma\geq0,50$ \\
+Alta & $0,50\leq\mu<0,60$ y $\mu+\sigma\geq0,50$ \\
+Media & $0,40\leq\mu<0,50$ y $\mu+\sigma\geq0,50$ \\
+Baja & $\mu<0,40$ y $\mu+\sigma\geq0,50$ \\
+Muy baja o ninguna & casos restantes \\
+\bottomrule
+\end{tabularx}
+
+{\footnotesize Fuente: \cite{gmyrek2025}}
+\end{table}
 
 \section*{Reproducibilidad}
 
