@@ -1,420 +1,420 @@
 ﻿oficio_c8_4d,oficio_c8_label,ocupados,oit_puntaje,aioe,is_oit_alta,is_aioe_alta,categoria,corte_oit,corte_aioe
-1111,Directores formuladores de políticas y normas,7238.968486075819,0.31,6.3965,False,True,Potencial incierto,0.495,5.808654
-1112,Directores del gobierno,14115.534137004648,0.38,6.476419,False,True,Potencial incierto,0.495,5.808654
-1113,Jefes de comunidades étnicas,521.8209489751972,0.23,6.516422,False,True,Potencial incierto,0.495,5.808654
+1111,Directores formuladores de políticas y normas,7238.968486075819,0.31,6.3965,True,True,Alto potencial de automatización,0.27,6.0391325
+1112,Directores del gobierno,14115.534137004648,0.38,6.476419,True,True,Alto potencial de automatización,0.27,6.0391325
+1113,Jefes de comunidades étnicas,521.8209489751972,0.23,6.516422,False,True,Potencial incierto,0.27,6.0391325
 1114,"Dirigentes de organizaciones con un interés específico
-(partidos políticos, sindicatos y organizaciones sociales)",2862.397891803907,0.37,6.460561,False,True,Potencial incierto,0.495,5.808654
-1120,Directores y gerentes generales,103455.63864397127,0.38,6.465027,False,True,Potencial incierto,0.495,5.808654
-1211,Directores financieros,28824.761601175655,0.37,6.686476,False,True,Potencial incierto,0.495,5.808654
-1212,Directores de recursos humanos,110659.13302275496,0.36,6.621023,False,True,Potencial incierto,0.495,5.808654
-1213,Directores de políticas y planeación,1528.1438481222783,0.36,6.471066,False,True,Potencial incierto,0.495,5.808654
-1219,Directores de administración y servicios no clasificados en otros grupos primarios,24884.62197385949,0.42,6.456695,False,True,Potencial incierto,0.495,5.808654
-1221,Directores de ventas y comercialización,79103.87176651857,0.41,6.616349,False,True,Potencial incierto,0.495,5.808654
-1222,Directores de publicidad y relaciones públicas,3612.123976182432,0.39,6.61747,False,True,Potencial incierto,0.495,5.808654
-1223,Directores de investigación y desarrollo,6145.326990662521,0.4,6.52573,False,True,Potencial incierto,0.495,5.808654
-1311,Directores de producción agropecuaria y silvicultura,123804.13035509756,0.27,5.975272,False,True,Potencial incierto,0.495,5.808654
-1312,Directores de producción de piscicultura y pesca,131.23412955915592,0.22,5.975272,False,True,Potencial incierto,0.495,5.808654
-1321,Directores de industrias manufactureras,43720.11379646565,0.38,6.26395,False,True,Potencial incierto,0.495,5.808654
-1322,Directores de explotaciones de minería,1624.6278107327541,0.35,6.471066,False,True,Potencial incierto,0.495,5.808654
-1323,Directores de empresas de construcción,9138.384645597633,0.34,6.498469,False,True,Potencial incierto,0.495,5.808654
-1324,"Directores de empresas de abastecimiento, distribución y afines",42685.207950342,0.38,6.447245,False,True,Potencial incierto,0.495,5.808654
-1330,Directores de servicios de tecnología de la información y las comunicaciones,7467.0941307681605,0.44,6.512313,False,True,Potencial incierto,0.495,5.808654
-1341,Directores de servicios de cuidados infantiles,1025.9721548915174,0.3,6.412315,False,True,Potencial incierto,0.495,5.808654
-1342,Directores de servicios de salud,38911.50378681339,0.36,6.602647,False,True,Potencial incierto,0.495,5.808654
-1343,Directores de servicios de atención a personas mayores,416.46500405087363,0.34,6.448178,False,True,Potencial incierto,0.495,5.808654
-1344,Directores  de servicios de bienestar social,3848.488248535582,0.37,6.555721,False,True,Potencial incierto,0.495,5.808654
-1345,Directores de servicios de educación,39559.03041254004,0.36,6.466944,False,True,Potencial incierto,0.495,5.808654
-1346,"Gerentes de sucursales de bancos, de servicios financieros y de seguros",14678.84366848653,0.47,6.490092,False,True,Potencial incierto,0.495,5.808654
-1349,Directores y gerentes de servicios profesionales no clasificados en otros grupos primarios,5781.439742393314,0.38,6.471066,False,True,Potencial incierto,0.495,5.808654
-1411,Gerentes de hoteles,13964.963500670352,0.37,6.215861,False,True,Potencial incierto,0.495,5.808654
-1412,Gerentes de restaurantes,123641.14556066669,0.36,5.979898,False,True,Potencial incierto,0.495,5.808654
-1420,Gerentes de comercios al por mayor y al por menor,387612.88577017863,0.44,6.293708,False,True,Potencial incierto,0.495,5.808654
-1431,"Gerentes de centros deportivos, de esparcimiento y culturales",18426.03749496406,0.32,6.439868,False,True,Potencial incierto,0.495,5.808654
-2111,Físicos y astrónomos,451.92111305679816,0.38,6.614495,False,True,Potencial incierto,0.495,5.808654
-2112,Meteorólogos,249.70242761306298,0.54,6.601195,True,True,Alto potencial de automatización,0.495,5.808654
-2113,Químicos,5078.553980859709,0.39,6.436358,False,True,Potencial incierto,0.495,5.808654
-2114,Geólogos y geofísicos,3182.860845596019,0.36,6.409459,False,True,Potencial incierto,0.495,5.808654
-2120,"Matemáticos, actuarios y estadísticos",4203.536839312676,0.56,6.683638,True,True,Alto potencial de automatización,0.495,5.808654
-2131,"Biólogos, botánicos, zoólogos y afines",17460.27576897569,0.4,6.433201,False,True,Potencial incierto,0.495,5.808654
-2132,"Agrónomos, silvicultores, zootecnistas y afines",18635.734895639118,0.29,6.231122,False,True,Potencial incierto,0.495,5.808654
-2133,Profesionales de la protección medioambiental,10863.084341863769,0.38,6.276647,False,True,Potencial incierto,0.495,5.808654
-2141,Ingenieros industriales y de producción,38704.213265776205,0.37,6.541169,False,True,Potencial incierto,0.495,5.808654
-2142,Ingenieros civiles,83393.04455075014,0.3,6.612184,False,True,Potencial incierto,0.495,5.808654
-2143,Ingenieros medioambientales,20277.87239588394,0.38,6.640196,False,True,Potencial incierto,0.495,5.808654
-2144,Ingenieros mecánicos,18258.202366322475,0.32,6.46805,False,True,Potencial incierto,0.495,5.808654
-2145,Ingenieros químicos,9437.680723232428,0.35,6.639194,False,True,Potencial incierto,0.495,5.808654
-2146,"Ingenieros de minas, metalúrgicos y afines",6629.86443932171,0.29,6.560246,False,True,Potencial incierto,0.495,5.808654
-2149,Ingenieros no clasificados en otros grupos primarios,7414.523424155805,0.3,6.496131,False,True,Potencial incierto,0.495,5.808654
-2151,Ingenieros electricistas,21693.88969345812,0.31,6.542457,False,True,Potencial incierto,0.495,5.808654
-2152,Ingenieros electrónicos,8000.572445548991,0.42,6.441413,False,True,Potencial incierto,0.495,5.808654
-2153,Ingenieros de telecomunicaciones,8745.23204172237,0.48,6.33357,False,True,Potencial incierto,0.495,5.808654
-2161,Arquitectos constructores,36966.95141645995,0.37,6.506584,False,True,Potencial incierto,0.495,5.808654
-2162,Arquitectos paisajistas,463.71831792250396,0.37,6.500835,False,True,Potencial incierto,0.495,5.808654
-2163,Diseñadores de productos y de prendas,15130.071873227726,0.35,6.29408,False,True,Potencial incierto,0.495,5.808654
-2164,"Planificadores urbanos, regionales y de tránsito",758.9130091077164,0.41,6.587888,False,True,Potencial incierto,0.495,5.808654
-2165,Cartógrafos y topógrafos,8805.833259865414,0.44,6.251631,False,True,Potencial incierto,0.495,5.808654
-2166,Diseñadores gráficos y multimedia,76570.17187238442,0.49,6.354967,False,True,Potencial incierto,0.495,5.808654
-2211,Médicos generales,62878.436620525106,0.29,6.475639,False,True,Potencial incierto,0.495,5.808654
-2212,Médicos especialistas,46770.78895293054,0.27,6.33282,False,True,Potencial incierto,0.495,5.808654
-2221,Profesionales de enfermería,30512.934290812085,0.25,6.132903,False,True,Potencial incierto,0.495,5.808654
-2230,Profesionales de medicina tradicional y alternativa,1858.2895332609667,0.32,6.352185,False,True,Potencial incierto,0.495,5.808654
-2240,Paramédicos e instrumentadores quirúrgicos,7079.238554823557,0.23,6.076613,False,True,Potencial incierto,0.495,5.808654
-2250,Veterinarios,17643.640137771003,0.14,6.000775,False,True,Potencial incierto,0.495,5.808654
-2261,Odontólogos,31532.608718814816,0.15,5.987839,False,True,Potencial incierto,0.495,5.808654
-2262,Farmacéuticos,3380.356417517985,0.33,6.307679,False,True,Potencial incierto,0.495,5.808654
-2263,Profesionales de la salud y la higiene laboral y ambiental,49618.23686869478,0.28,6.37864,False,True,Potencial incierto,0.495,5.808654
-2264,Fisioterapeutas,27891.63328485264,0.28,5.946371,False,True,Potencial incierto,0.495,5.808654
-2265,Dietistas y nutricionistas,7918.493455422986,0.41,6.639857,False,True,Potencial incierto,0.495,5.808654
-2266,Fonoaudiólogos y terapeutas del lenguaje,5511.4688291092825,0.24,6.435565,False,True,Potencial incierto,0.495,5.808654
-2267,Optómetras,4846.709311740389,0.24,6.261769,False,True,Potencial incierto,0.495,5.808654
-2269,Otros profesionales de la salud no clasificados en otros grupos primarios,15004.437472469412,0.2,6.231743,False,True,Potencial incierto,0.495,5.808654
-2310,Profesores de instituciones de educación superior,83108.01659998075,0.37,6.590571,False,True,Potencial incierto,0.495,5.808654
-2320,Profesores de formación profesional,25547.42276912845,0.35,6.193183,False,True,Potencial incierto,0.495,5.808654
-2330,Profesores de educación secundaria,211449.26757511165,0.3,6.571575,False,True,Potencial incierto,0.495,5.808654
-2341,Profesores de educación primaria,169832.4843223709,0.26,6.524414,False,True,Potencial incierto,0.495,5.808654
-2342,Profesores de primera infancia,62386.81669425414,0.21,6.123613,False,True,Potencial incierto,0.495,5.808654
-2351,Especialistas en métodos pedagógicos,16759.01251277979,0.39,6.620479,False,True,Potencial incierto,0.495,5.808654
-2352,Profesores de educación especial e inclusiva,2570.441904179634,0.28,6.256194,False,True,Potencial incierto,0.495,5.808654
-2353,Otros profesores de idiomas,17183.795121954787,0.34,6.51548,False,True,Potencial incierto,0.495,5.808654
-2354,Otros profesores de música,11227.95054604107,0.35,6.271835,False,True,Potencial incierto,0.495,5.808654
-2355,Otros profesores de artes,9068.77762412759,0.35,6.451907,False,True,Potencial incierto,0.495,5.808654
-2356,Instructores de tecnología de la información,841.7521943149447,0.47,6.574769,False,True,Potencial incierto,0.495,5.808654
-2359,Otros profesionales de la educación no clasificados en otros grupos primarios,49377.066302042826,0.33,6.51082,False,True,Potencial incierto,0.495,5.808654
-2411,Contadores,252537.74117273046,0.51,6.677804,True,True,Alto potencial de automatización,0.495,5.808654
-2412,Asesores financieros y de inversiones,72112.56695370383,0.57,6.657624,True,True,Alto potencial de automatización,0.495,5.808654
-2413,Analistas financieros,9957.805235836739,0.62,6.6709,True,True,Alto potencial de automatización,0.495,5.808654
-2421,Analistas de gestión y organización,22877.428539872326,0.46,6.646636,False,True,Potencial incierto,0.495,5.808654
-2422,Profesionales en políticas de administración,25341.547734184707,0.42,6.50828,False,True,Potencial incierto,0.495,5.808654
-2423,Profesionales de gestión de talento humano,13620.486410813908,0.45,6.610396,False,True,Potencial incierto,0.495,5.808654
-2424,Profesionales en formación y desarrollo de personal,1174.569987223553,0.41,6.574769,False,True,Potencial incierto,0.495,5.808654
-2431,Profesionales de la publicidad y la comercialización,71487.05547130128,0.55,6.582082,True,True,Alto potencial de automatización,0.495,5.808654
-2432,Profesionales de relaciones públicas,3109.8180474077226,0.43,6.613767,False,True,Potencial incierto,0.495,5.808654
-2433,Profesionales de ventas técnicas y médicas (excluyendo las TIC),11981.305831835456,0.5,6.533814,True,True,Alto potencial de automatización,0.495,5.808654
-2434,Profesionales de ventas de tecnología de la información y las comunicaciones,845.1477515980793,0.51,6.539503,True,True,Alto potencial de automatización,0.495,5.808654
-2511,Analistas de sistemas,104167.50326940892,0.49,6.564757,False,True,Potencial incierto,0.495,5.808654
-2512,Desarrolladores de software,88504.18554450833,0.53,6.594469,True,True,Alto potencial de automatización,0.495,5.808654
-2513,Desarrolladores web y multimedia,13176.151192197496,0.6,6.525661,True,True,Alto potencial de automatización,0.495,5.808654
-2514,Programadores de aplicaciones,2500.863372601095,0.57,6.607717,True,True,Alto potencial de automatización,0.495,5.808654
-2519,Desarrolladores y analistas de software y multimedia no clasificados en otros grupos primarios,1835.6270325025093,0.55,6.590802,True,True,Alto potencial de automatización,0.495,5.808654
-2521,Diseñadores y administradores de bases de datos,10736.395155207876,0.57,6.613738,True,True,Alto potencial de automatización,0.495,5.808654
-2522,Administradores de sistemas,1707.7607980572568,0.57,6.390465,True,True,Alto potencial de automatización,0.495,5.808654
-2523,Profesionales en redes de computadores,695.6415289543229,0.52,6.309319,True,True,Alto potencial de automatización,0.495,5.808654
-2529,Profesionales en bases de datos y en redes de computadores no clasificados en otros grupos primarios,2754.0889027354906,0.49,6.594446,False,True,Potencial incierto,0.495,5.808654
-2611,Abogados,215338.6418961086,0.36,6.633535,False,True,Potencial incierto,0.495,5.808654
-2612,Jueces,6596.125767149206,0.31,6.681685,False,True,Potencial incierto,0.495,5.808654
-2619,Profesionales en derecho no clasificados en otros grupos primarios,1355.112415891803,0.37,6.679877,False,True,Potencial incierto,0.495,5.808654
-2621,Archivistas y curadores de arte,3995.8725037169074,0.47,6.353089,False,True,Potencial incierto,0.495,5.808654
-2622,"Bibliotecarios, documentalistas y afines",3052.967876669608,0.55,6.369921,True,True,Alto potencial de automatización,0.495,5.808654
-2631,Economistas,9147.89134718162,0.55,6.66744,True,True,Alto potencial de automatización,0.495,5.808654
-2632,"Sociólogos, antropólogos y afines",4249.179468316274,0.48,6.56707,False,True,Potencial incierto,0.495,5.808654
-2633,"Filósofos, historiadores y especialistas en ciencias políticas",1071.8561518122885,0.47,6.612422,False,True,Potencial incierto,0.495,5.808654
-2634,Psicólogos,74945.08447841919,0.39,6.679008,False,True,Potencial incierto,0.495,5.808654
-2635,Profesionales del trabajo social y consejeros,29848.881531669227,0.28,6.444563,False,True,Potencial incierto,0.495,5.808654
-2636,Profesionales religiosos,20998.302928246012,0.17,6.596554,False,True,Potencial incierto,0.495,5.808654
-2641,Autores y otros escritores,2482.8580110112925,0.55,6.532624,True,True,Alto potencial de automatización,0.495,5.808654
-2642,Periodistas,21320.57009755548,0.54,6.556306,True,True,Alto potencial de automatización,0.495,5.808654
-2643,"Traductores, intérpretes y otros lingüistas",4863.791523228148,0.59,6.584358,True,True,Alto potencial de automatización,0.495,5.808654
-2651,"Escultores, pintores artísticos y afines",7997.379356745836,0.21,5.696834,False,False,Bajo potencial de automatización,0.495,5.808654
-2652,"Compositores, músicos y cantantes",30497.927525254247,0.28,6.23113,False,True,Potencial incierto,0.495,5.808654
-2653,Coreógrafos y bailarines,1367.7175312386553,0.19,5.077734,False,False,Bajo potencial de automatización,0.495,5.808654
-2654,"Directores y productores de cine, de teatro y afines",8723.892510649368,0.37,6.477548,False,True,Potencial incierto,0.495,5.808654
-2655,Actores,1113.0937804145594,0.31,6.106292,False,True,Potencial incierto,0.495,5.808654
-2656,"Locutores de radio, televisión y otros medios de comunicación",4506.8631153054,0.47,6.464634,False,True,Potencial incierto,0.495,5.808654
-2659,Artistas creativos e interpretativos no clasificados en otros grupos primarios,7493.5962082832375,0.13,5.834023,False,True,Potencial incierto,0.495,5.808654
-3111,Técnicos en ciencias físicas y químicas,5959.2342316157865,0.26,6.124301,False,True,Potencial incierto,0.495,5.808654
-3112,Técnicos en ingeniería civil,12771.51740415603,0.28,6.102024,False,True,Potencial incierto,0.495,5.808654
-3113,Electrotécnicos,40711.37922674709,0.27,6.047769,False,True,Potencial incierto,0.495,5.808654
-3114,Técnicos en electrónica,7031.49974288636,0.38,6.197597,False,True,Potencial incierto,0.495,5.808654
-3115,Técnicos en ingeniería mecánica,31058.850798351334,0.26,6.05094,False,True,Potencial incierto,0.495,5.808654
-3116,Técnicos en química industrial,2304.4018380994016,0.32,6.114186,False,True,Potencial incierto,0.495,5.808654
-3117,Técnicos de minas y metalurgia,1832.6206873195265,0.28,6.095752,False,True,Potencial incierto,0.495,5.808654
-3118,Delineantes y dibujantes técnicos,24521.659192699557,0.35,6.304472,False,True,Potencial incierto,0.495,5.808654
-3119,Técnicos en ciencias físicas y en ingeniería no clasificados en otros grupos primarios,4914.862437371651,0.26,6.095614,False,True,Potencial incierto,0.495,5.808654
-3121,Supervisores de minas,2749.3045767938047,0.29,5.896917,False,True,Potencial incierto,0.495,5.808654
-3122,Supervisores de industrias manufactureras,48449.7048595884,0.35,5.996478,False,True,Potencial incierto,0.495,5.808654
-3123,Supervisores de la construcción,148770.82413363367,0.28,5.896917,False,True,Potencial incierto,0.495,5.808654
-3131,Operadores de plantas de producción de energía,813.6900521948401,0.28,6.129119,False,True,Potencial incierto,0.495,5.808654
-3132,"Operadores de incineradores, instalaciones de tratamiento de agua y afines",6408.6692110784525,0.27,5.80437,False,False,Bajo potencial de automatización,0.495,5.808654
-3133,Controladores de instalaciones de procesamiento de productos químicos,2026.642150301096,0.29,5.861883,False,True,Potencial incierto,0.495,5.808654
-3134,Operadores de instalaciones de refinación de petróleo y gas natural,1591.5510452726762,0.29,5.786491,False,False,Bajo potencial de automatización,0.495,5.808654
-3135,Controladores de procesos de producción de metales,2348.4312499544008,0.31,5.508339,False,False,Bajo potencial de automatización,0.495,5.808654
-3141,Técnicos en ciencias biológicas (excluyendo la medicina),1464.8403886522124,0.38,6.10629,False,True,Potencial incierto,0.495,5.808654
-3142,Técnicos agropecuarios,12519.061142445193,0.26,6.079493,False,True,Potencial incierto,0.495,5.808654
-3143,Técnicos forestales,569.1199812428657,0.21,5.733818,False,False,Bajo potencial de automatización,0.495,5.808654
-3151,Oficiales maquinistas en navegación,2655.3269063629955,0.23,6.050312,False,True,Potencial incierto,0.495,5.808654
-3152,"Capitanes, oficiales de cubierta y prácticos",617.232101828003,0.29,6.064087,False,True,Potencial incierto,0.495,5.808654
-3153,Pilotos de aviación y afines,3386.1862972516346,0.27,6.061895,False,True,Potencial incierto,0.495,5.808654
-3154,Controladores de tráfico aéreo y marítimo,2139.0491377475237,0.31,6.302628,False,True,Potencial incierto,0.495,5.808654
-3155,Técnicos en seguridad aeronáutica,1861.050651171603,0.34,6.2253,False,True,Potencial incierto,0.495,5.808654
-3211,Técnicos en aparatos de diagnóstico y tratamiento médico,5803.953166416306,0.22,5.942073,False,True,Potencial incierto,0.495,5.808654
-3212,Técnicos de laboratorios médicos,7573.647820980598,0.31,6.069285,False,True,Potencial incierto,0.495,5.808654
-3213,Técnicos y asistentes farmacéuticos,26819.293019593533,0.3,6.037746,False,True,Potencial incierto,0.495,5.808654
-3214,Técnicos de prótesis médicas y dentales,6219.596244619754,0.18,6.050113,False,True,Potencial incierto,0.495,5.808654
-3221,Técnicos y profesionales del nivel medio en enfermería,8121.259136757163,0.22,5.80301,False,False,Bajo potencial de automatización,0.495,5.808654
-3222,Técnicos y profesionales del nivel medio en partería,59.690546682381644,0.2,6.138053,False,True,Potencial incierto,0.495,5.808654
-3230,Técnicos y profesionales del nivel medio en medicina tradicional y alternativa,2698.0563677962887,0.19,6.138053,False,True,Potencial incierto,0.495,5.808654
-3240,Técnicos y asistentes veterinarios,5710.325426751158,0.14,5.778573,False,False,Bajo potencial de automatización,0.495,5.808654
-3251,Higienistas y asistentes odontologícos,6088.499233559581,0.16,5.821962,False,True,Potencial incierto,0.495,5.808654
-3252,Técnicos en documentación sanitaria,209.12574706926875,0.52,5.978971,True,True,Alto potencial de automatización,0.495,5.808654
-3253,Trabajadores comunitarios de la salud,6779.508362631497,0.22,6.051313,False,True,Potencial incierto,0.495,5.808654
-3254,Técnicos en optometría y ópticas,543.7357433018847,0.24,6.080285,False,True,Potencial incierto,0.495,5.808654
-3255,Técnicos y asistentes terapeutas,1460.8583979045434,0.17,5.848796,False,True,Potencial incierto,0.495,5.808654
-3256,Asistentes médicos,485.2471463034011,0.35,6.086084,False,True,Potencial incierto,0.495,5.808654
-3257,"Inspectores de seguridad, salud ocupacional, medioambiental y afines",36636.0134805404,0.24,6.093802,False,True,Potencial incierto,0.495,5.808654
-3258,Técnicos en atención prehospitalaria,2077.0775710738153,0.22,5.978971,False,True,Potencial incierto,0.495,5.808654
-3259,Otros técnicos y profesionales del nivel medio de la salud no clasificados en otros grupos primarios,91.11348172010719,0.3,5.984585,False,True,Potencial incierto,0.495,5.808654
-3311,"Agentes de bolsa, cambio y otros servicios financieros",4204.437415919097,0.63,6.614645,True,True,Alto potencial de automatización,0.495,5.808654
-3312,Analistas de préstamos y créditos,32960.592523367,0.6,6.659052,True,True,Alto potencial de automatización,0.495,5.808654
-3313,Técnicos de contabilidad y afines,24192.37593571156,0.49,6.503252,False,True,Potencial incierto,0.495,5.808654
-3314,"Técnicos y profesionales del nivel medio de servicios estadísticos, matemáticos y afines",48.76969007548972,0.57,6.653169,True,True,Alto potencial de automatización,0.495,5.808654
-3315,Tasadores y evaluadores,10050.567464711503,0.45,6.45138,False,True,Potencial incierto,0.495,5.808654
-3321,Agentes de seguros,25137.15566568432,0.53,6.633198,True,True,Alto potencial de automatización,0.495,5.808654
-3322,Representantes comerciales,311582.12095335196,0.49,6.523676,False,True,Potencial incierto,0.495,5.808654
-3323,Agentes de compras,9816.947670024,0.39,6.499866,False,True,Potencial incierto,0.495,5.808654
-3324,Agentes de operaciones comerciales y consignatarios,16421.40564659329,0.44,6.632455,False,True,Potencial incierto,0.495,5.808654
-3331,Declarantes o gestores de aduana,6363.865200224072,0.57,6.183125,True,True,Alto potencial de automatización,0.495,5.808654
-3332,Organizadores de conferencias y eventos,17732.2952663373,0.48,6.203171,False,True,Potencial incierto,0.495,5.808654
-3333,Agentes de empleo y contratistas de mano de obra,589.9823897878317,0.39,6.242974,False,True,Potencial incierto,0.495,5.808654
-3334,Agentes inmobiliarios,44565.74608181104,0.35,6.546887,False,True,Potencial incierto,0.495,5.808654
-3339,Agentes de servicios comerciales no clasificados en otros grupos primarios,13904.950308209038,0.44,6.573806,False,True,Potencial incierto,0.495,5.808654
-3341,Supervisores de oficina,205849.43980431042,0.43,6.502773,False,True,Potencial incierto,0.495,5.808654
-3342,Secretarios jurídicos,10005.094518336593,0.55,6.491889,True,True,Alto potencial de automatización,0.495,5.808654
-3343,Secretarios administrativos y ejecutivos,69084.86416068696,0.54,6.466152,True,True,Alto potencial de automatización,0.495,5.808654
-3344,Secretarios médicos,24357.39294692273,0.53,6.548569,True,True,Alto potencial de automatización,0.495,5.808654
-3351,Agentes de aduanas e inspectores de fronteras,2342.4769084597365,0.32,6.006914,False,True,Potencial incierto,0.495,5.808654
-3352,Agentes de administración tributaria,1230.5990370656664,0.49,6.650681,False,True,Potencial incierto,0.495,5.808654
-3353,Agentes de servicios de seguridad social,1386.5046464690693,0.45,6.463698,False,True,Potencial incierto,0.495,5.808654
-3354,Agentes gubernamentales de expedición de licencias,404.8098652097102,0.43,6.451665,False,True,Potencial incierto,0.495,5.808654
-3355,Inspectores de policía y detectives,9388.8179980986,0.23,6.040519,False,True,Potencial incierto,0.495,5.808654
-3359,Agentes de gobierno y profesionales del nivel medio para la aplicación de regulaciones no clasificados en otros grupos primarios,22846.567243202506,0.36,6.111427,False,True,Potencial incierto,0.495,5.808654
-3411,"Técnicos y profesionales del nivel medio del derecho, de servicios legales y afines",11914.568775411155,0.39,6.424738,False,True,Potencial incierto,0.495,5.808654
-3412,Trabajadores y asistentes sociales,8509.1028907388,0.33,6.244282,False,True,Potencial incierto,0.495,5.808654
-3413,Auxiliares laicos de las religiones,1222.4868015592367,0.12,6.596554,False,True,Potencial incierto,0.495,5.808654
-3421,Atletas y deportistas,2723.838377968583,0.23,5.216759,False,False,Bajo potencial de automatización,0.495,5.808654
-3422,"Entrenadores, instructores y árbitros de actividades deportivas",64328.352348973895,0.37,6.126332,False,True,Potencial incierto,0.495,5.808654
-3423,Instructores de educación física y actividades recreativas,20727.549057493263,0.25,5.866364,False,True,Potencial incierto,0.495,5.808654
-3431,Fotógrafos,13789.992539376337,0.39,5.958809,False,True,Potencial incierto,0.495,5.808654
-3432,Diseñadores y decoradores de interiores,15890.081088061528,0.37,6.044847,False,True,Potencial incierto,0.495,5.808654
-3433,"Técnicos en galerías de arte, museos y bibliotecas",690.4145758124076,0.37,5.886916,False,True,Potencial incierto,0.495,5.808654
-3434,Chefs,23510.54099226417,0.25,5.916213,False,True,Potencial incierto,0.495,5.808654
-3511,Técnicos en operaciones de tecnología de la información y las comunicaciones,20446.129002786154,0.43,6.229704,False,True,Potencial incierto,0.495,5.808654
-3512,Técnicos en asistencia y soporte al usuario de tecnología de la información y las comunicaciones,28182.511642755107,0.47,6.16951,False,True,Potencial incierto,0.495,5.808654
-3513,Técnicos en redes y sistemas de computación,13402.362062694943,0.43,6.3889,False,True,Potencial incierto,0.495,5.808654
-3514,Técnicos de la Web,3194.4709425121946,0.53,6.458063,True,True,Alto potencial de automatización,0.495,5.808654
-3521,Técnicos de radiodifusión y grabación audio visual,17450.186811340925,0.35,6.071223,False,True,Potencial incierto,0.495,5.808654
-3522,Técnicos de ingeniería de las telecomunicaciones,11726.709942081448,0.45,6.197597,False,True,Potencial incierto,0.495,5.808654
-4110,Oficinistas generales,309583.3989483505,0.6,6.59278,True,True,Alto potencial de automatización,0.495,5.808654
-4120,Secretarios generales,106598.23377866385,0.58,6.529984,True,True,Alto potencial de automatización,0.495,5.808654
-4131,Operadores de máquinas de procesamiento de texto y mecanógrafos,118.16573441046185,0.65,6.314931,True,True,Alto potencial de automatización,0.495,5.808654
-4132,Grabadores de datos,41359.44194938024,0.7,6.174678,True,True,Alto potencial de automatización,0.495,5.808654
-4211,Cajeros de bancos y afines,22067.764330398782,0.58,6.024229,True,True,Alto potencial de automatización,0.495,5.808654
-4212,Receptores de apuestas y afines,16927.624624052194,0.45,6.198551,False,True,Potencial incierto,0.495,5.808654
-4213,Prestamistas,8364.031020100228,0.48,6.518089,False,True,Potencial incierto,0.495,5.808654
-4214,Cobradores y afines,32803.8423817087,0.43,6.601304,False,True,Potencial incierto,0.495,5.808654
-4221,Empleados y consultores de viajes,16240.21320709571,0.56,6.436819,True,True,Alto potencial de automatización,0.495,5.808654
-4222,Empleados de centros de llamadas,191575.44502539234,0.58,6.482806,True,True,Alto potencial de automatización,0.495,5.808654
-4223,Telefonistas,3898.934337925182,0.54,6.486005,True,True,Alto potencial de automatización,0.495,5.808654
-4224,Recepcionistas de hoteles,24133.30951518697,0.51,6.364114,True,True,Alto potencial de automatización,0.495,5.808654
-4225,Empleados de ventanillas de información,21086.199868967757,0.57,6.522058,True,True,Alto potencial de automatización,0.495,5.808654
-4226,Recepcionistas generales,34171.97630422927,0.57,6.491278,True,True,Alto potencial de automatización,0.495,5.808654
-4227,Entrevistadores de encuestas y de investigaciones de mercados,9122.728929172177,0.55,6.619223,True,True,Alto potencial de automatización,0.495,5.808654
-4229,Otros empleados de servicios de información al cliente no clasificados en otros grupos primarios,21575.501816979926,0.42,6.512033,False,True,Potencial incierto,0.495,5.808654
-4311,Auxiliares de contabilidad y cálculo de costos,161070.75975152224,0.64,6.569447,True,True,Alto potencial de automatización,0.495,5.808654
-4312,"Auxiliares de servicios estadísticos, financieros y de seguros",1840.4572727192726,0.64,6.591086,True,True,Alto potencial de automatización,0.495,5.808654
-4313,Auxiliares encargados de las nóminas,2150.0089409811017,0.61,6.601463,True,True,Alto potencial de automatización,0.495,5.808654
-4321,Empleados de control de abastecimientos e inventario,270306.39435427194,0.37,5.776328,False,False,Bajo potencial de automatización,0.495,5.808654
-4322,Empleados de servicios de apoyo a la producción,727.5346831291124,0.44,6.350068,False,True,Potencial incierto,0.495,5.808654
-4323,Empleados de servicios de transporte,23973.162957452394,0.5,6.591047,True,True,Alto potencial de automatización,0.495,5.808654
-4411,Empleados de bibliotecas,2124.353650142055,0.46,6.089088,False,True,Potencial incierto,0.495,5.808654
-4412,Empleados de servicios de correos,9547.50392211981,0.41,5.624753,False,False,Bajo potencial de automatización,0.495,5.808654
-4413,"Codificadores de datos, correctores de pruebas de imprenta y afines",539.8349971658536,0.51,6.615321,True,True,Alto potencial de automatización,0.495,5.808654
-4414,Escribientes públicos y afines,17261.202745338618,0.58,6.000819,True,True,Alto potencial de automatización,0.495,5.808654
-4415,Empleados de archivos,42127.90307457792,0.37,5.982029,False,True,Potencial incierto,0.495,5.808654
-4416,Empleados del servicio de personal,14573.523643976545,0.6,6.644495,True,True,Alto potencial de automatización,0.495,5.808654
-4419,Otro personal de apoyo administrativo no clasificados en otros grupos primarios,2009.6246039012271,0.63,6.522978,True,True,Alto potencial de automatización,0.495,5.808654
-5111,Personal de servicio a pasajeros,4037.0100035637884,0.22,5.885723,False,True,Potencial incierto,0.495,5.808654
-5112,Revisores y cobradores de los transportes públicos,14319.438103841858,0.25,5.983058,False,True,Potencial incierto,0.495,5.808654
-5113,Guías,8268.414650049057,0.32,6.243348,False,True,Potencial incierto,0.495,5.808654
-5120,Cocineros,370623.87365607324,0.18,5.757139,False,False,Bajo potencial de automatización,0.495,5.808654
-5131,Meseros,338997.57488866476,0.28,5.657045,False,False,Bajo potencial de automatización,0.495,5.808654
-5132,Bármanes,21924.642639206875,0.26,5.75692,False,False,Bajo potencial de automatización,0.495,5.808654
-5141,Peluqueros,208233.76320235245,0.17,5.886141,False,True,Potencial incierto,0.495,5.808654
-5142,Especialistas en tratamientos de belleza y afines,220474.9010960782,0.18,5.895388,False,True,Potencial incierto,0.495,5.808654
-5151,"Supervisores  de mantenimiento y limpieza en oficinas, hoteles y otros establecimientos",12878.235335888457,0.22,5.770702,False,False,Bajo potencial de automatización,0.495,5.808654
-5152,Mayordomos domésticos,14016.809202655268,0.2,5.774563,False,False,Bajo potencial de automatización,0.495,5.808654
-5153,Conserjes y afines,7855.246435563351,0.27,5.387205,False,False,Bajo potencial de automatización,0.495,5.808654
-5161,"Astrólogos, adivinos y trabajadores afines",1949.8663075219636,0.3,5.834023,False,True,Potencial incierto,0.495,5.808654
-5162,Acompañantes,41.39872281028825,0.22,5.926687,False,True,Potencial incierto,0.495,5.808654
-5163,Personal de servicios funerarios y embalsamadores,1914.231242143601,0.17,5.814301,False,True,Potencial incierto,0.495,5.808654
-5164,Cuidadores de animales,40808.14401607575,0.14,5.791688,False,False,Bajo potencial de automatización,0.495,5.808654
-5165,Instructores de conducción,5355.860780938179,0.2,6.271835,False,True,Potencial incierto,0.495,5.808654
-5169,Otros trabajadores de servicios personales no clasificados en otros grupos primarios,10824.56116452695,0.21,6.037252,False,True,Potencial incierto,0.495,5.808654
-5211,Vendedores en quioscos y puestos de mercado,112504.59116974869,0.35,6.533611,False,True,Potencial incierto,0.495,5.808654
-5212,Vendedores ambulantes de alimentos preparados para consumo inmediato,237436.93990301964,0.22,6.120241,False,True,Potencial incierto,0.495,5.808654
-5221,Comerciantes de tiendas,327845.2648112467,0.43,6.293708,False,True,Potencial incierto,0.495,5.808654
-5222,Supervisores de tiendas y almacenes,12728.734186177724,0.36,6.043226,False,True,Potencial incierto,0.495,5.808654
-5223,"Vendedores y auxiliares de venta en tiendas, almacenes y afines",1337628.6058828542,0.38,6.027552,False,True,Potencial incierto,0.495,5.808654
-5230,"Cajeros de comercio, taquilleros y expendedores de boletas",191916.86119117524,0.39,5.967376,False,True,Potencial incierto,0.495,5.808654
-5241,"Modelos de moda, arte y publicidad",3384.8235508495877,0.25,5.528823,False,False,Bajo potencial de automatización,0.495,5.808654
-5242,"Demostradores de tiendas, almacenes y afines",9466.774627122259,0.42,6.090277,False,True,Potencial incierto,0.495,5.808654
-5243,Vendedores puerta a puerta,85843.3229933959,0.46,6.533611,False,True,Potencial incierto,0.495,5.808654
-5244,Vendedores a través de medios tecnológicos,76827.25460029914,0.61,6.538582,True,True,Alto potencial de automatización,0.495,5.808654
-5245,Expendedores de combustibles para vehículos,39484.395985208925,0.24,5.792329,False,False,Bajo potencial de automatización,0.495,5.808654
-5246,Vendedores de comidas en mostrador,68352.96112412546,0.24,5.595956,False,False,Bajo potencial de automatización,0.495,5.808654
-5311,Cuidadores de niños,153735.6833911109,0.19,6.045576,False,True,Potencial incierto,0.495,5.808654
-5312,Auxiliares de maestros,21609.578663994118,0.24,6.4269,False,True,Potencial incierto,0.495,5.808654
-5321,Trabajadores de los cuidados personales en instituciones,189195.80620550874,0.14,5.718919,False,False,Bajo potencial de automatización,0.495,5.808654
-5322,Trabajadores de los cuidados personales a domicilio,77883.25575817715,0.25,5.915169,False,True,Potencial incierto,0.495,5.808654
-5329,Trabajadores de los cuidados personales en servicios de salud no clasificados en otros grupos primarios,54468.51496146848,0.15,5.76232,False,False,Bajo potencial de automatización,0.495,5.808654
-5411,Bomberos y rescatistas,7196.027037402065,0.18,5.603296,False,False,Bajo potencial de automatización,0.495,5.808654
-5412,Policías,91631.78745406696,0.14,5.781797,False,False,Bajo potencial de automatización,0.495,5.808654
-5413,Guardianes de prisión,8755.619874980717,0.14,5.708692,False,False,Bajo potencial de automatización,0.495,5.808654
-5414,Guardias de seguridad,500724.62915557896,0.2,5.968584,False,True,Potencial incierto,0.495,5.808654
-5419,Personal de los servicios de protección no clasificados en otros grupos primarios,7128.577314323568,0.2,5.913359,False,True,Potencial incierto,0.495,5.808654
-6111,Agricultores y trabajadores calificados de cultivos extensivos,340084.3626555051,0.18,5.666536,False,False,Bajo potencial de automatización,0.495,5.808654
-6112,Agricultores y trabajadores calificados de plantaciones de árboles y arbustos,265577.07268912403,0.17,5.666536,False,False,Bajo potencial de automatización,0.495,5.808654
-6113,"Agricultores y trabajadores calificados de huertas, invernaderos, viveros y jardines",133090.6691759687,0.18,5.519656,False,False,Bajo potencial de automatización,0.495,5.808654
-6114,Agricultores y trabajadores calificados de cultivos mixtos,28918.53358060287,0.17,5.666536,False,False,Bajo potencial de automatización,0.495,5.808654
-6121,Criadores de ganado y trabajadores de la cría de animales domésticos (excepto aves de corral),182608.59825950343,0.17,5.689269,False,False,Bajo potencial de automatización,0.495,5.808654
-6122,Avicultores y trabajadores calificados de la avicultura,60108.20334045595,0.19,5.689269,False,False,Bajo potencial de automatización,0.495,5.808654
-6123,Criadores y trabajadores calificados de la apicultura y la sericicultura,495.47883587040144,0.22,5.689269,False,False,Bajo potencial de automatización,0.495,5.808654
-6129,"Criadores y trabajadores pecuarios calificados, avicultores y criadores de insectos no clasificados en otros grupos primarios",5927.403433094178,0.2,5.689269,False,False,Bajo potencial de automatización,0.495,5.808654
-6130,Productores y trabajadores calificados de explotaciones agropecuarias mixtas cuya producción se destina al mercado,9048.252732785997,0.19,5.632311,False,False,Bajo potencial de automatización,0.495,5.808654
-6210,Trabajadores forestales calificados y afines,33124.820038674516,0.12,5.591495,False,False,Bajo potencial de automatización,0.495,5.808654
-6221,Trabajadores de explotaciones de acuicultura,3726.771233860284,0.22,5.689269,False,False,Bajo potencial de automatización,0.495,5.808654
-6222,Pescadores de agua dulce y en aguas costeras,83330.29827791275,0.17,5.583576,False,False,Bajo potencial de automatización,0.495,5.808654
-6223,Pescadores de alta mar,14465.80516945509,0.18,5.583576,False,False,Bajo potencial de automatización,0.495,5.808654
-6224,Cazadores y tramperos,222.30860768034745,0.09,5.630557,False,False,Bajo potencial de automatización,0.495,5.808654
-6320,Trabajadores pecuarios de subsistencia,57.013231165516096,0.13,5.534948,False,False,Bajo potencial de automatización,0.495,5.808654
-7111,Constructores de casas,70996.87932235905,0.14,6.498469,False,True,Potencial incierto,0.495,5.808654
-7112,Albañiles,196790.14179076074,0.09,5.360294,False,False,Bajo potencial de automatización,0.495,5.808654
-7113,"Labrantes, tronzadores y grabadores de piedra",2930.305068551866,0.11,5.426626,False,False,Bajo potencial de automatización,0.495,5.808654
-7114,"Operarios en cemento armado, enfoscadores y afines",797.7355551603662,0.1,5.353008,False,False,Bajo potencial de automatización,0.495,5.808654
-7115,Carpinteros de armar y de obra blanca,57532.63112356228,0.13,5.435905,False,False,Bajo potencial de automatización,0.495,5.808654
-7119,Oficiales y operarios de la construcción de obra gruesa y afines no clasificados en otros grupos primarios,13393.381564460393,0.09,5.509556,False,False,Bajo potencial de automatización,0.495,5.808654
-7121,Techadores,7795.332492507092,0.13,5.244433,False,False,Bajo potencial de automatización,0.495,5.808654
-7122,"Enchapadores, parqueteros y colocadores de suelos",8138.364761400847,0.1,5.376505,False,False,Bajo potencial de automatización,0.495,5.808654
-7123,Revocadores,26354.942704817513,0.11,5.291686,False,False,Bajo potencial de automatización,0.495,5.808654
-7124,Instaladores de material aislante y de insonorización,403.1229115841448,0.13,5.383828,False,False,Bajo potencial de automatización,0.495,5.808654
-7125,Cristaleros,12586.82841776323,0.14,5.408525,False,False,Bajo potencial de automatización,0.495,5.808654
-7126,Fontaneros e instaladores de tuberías,57179.69907475995,0.18,5.505657,False,False,Bajo potencial de automatización,0.495,5.808654
-7127,Mecánicos montadores de aire acondicionado y refrigeración,13928.17342876115,0.21,5.838341,False,True,Potencial incierto,0.495,5.808654
-7131,Pintores y empapeladores,68718.39360608242,0.13,5.287336,False,False,Bajo potencial de automatización,0.495,5.808654
-7132,Barnizadores y afines,41699.86859156142,0.12,5.455611,False,False,Bajo potencial de automatización,0.495,5.808654
-7133,Limpiadores de fachadas y deshollinadores,440.7306917390729,0.09,5.379189,False,False,Bajo potencial de automatización,0.495,5.808654
-7211,Moldeadores y macheros,1358.2141798637426,0.13,5.38403,False,False,Bajo potencial de automatización,0.495,5.808654
-7212,Soldadores y oxicortadores,113726.70472092723,0.13,5.538748,False,False,Bajo potencial de automatización,0.495,5.808654
-7213,Chapistas y caldereros,6862.72675365753,0.21,5.58463,False,False,Bajo potencial de automatización,0.495,5.808654
-7214,Montadores de estructuras metálicas,1441.3657660556842,0.11,5.309259,False,False,Bajo potencial de automatización,0.495,5.808654
-7215,Aparejadores y empalmadores de cables,1776.1136644103499,0.13,5.483974,False,False,Bajo potencial de automatización,0.495,5.808654
-7221,Herreros y forjadores,46959.53849952829,0.17,5.65006,False,False,Bajo potencial de automatización,0.495,5.808654
-7222,Herramentistas y afines,13370.130155050561,0.2,5.7717,False,False,Bajo potencial de automatización,0.495,5.808654
-7223,Ajustadores y operadores de máquinas herramientas,19931.761205054838,0.18,5.619966,False,False,Bajo potencial de automatización,0.495,5.808654
-7224,Pulidores de metales y afiladores de herramientas,1207.829202871298,0.17,5.577639,False,False,Bajo potencial de automatización,0.495,5.808654
-7231,Mecánicos y reparadores de vehículos de motor,283604.30363847676,0.18,5.611276,False,False,Bajo potencial de automatización,0.495,5.808654
-7232,Mecánicos y reparadores de sistemas y motores de aeronaves,2914.3442188232293,0.19,5.882306,False,True,Potencial incierto,0.495,5.808654
-7233,Mecánicos y reparadores de máquinas agrícolas e industriales,66268.01535432065,0.17,5.562452,False,False,Bajo potencial de automatización,0.495,5.808654
-7234,Reparadores de bicicletas y afines,12629.258489276233,0.13,5.822021,False,True,Potencial incierto,0.495,5.808654
-7311,Mecánicos y reparadores de instrumentos de precisión,4762.1329748665685,0.21,5.971792,False,True,Potencial incierto,0.495,5.808654
-7312,Fabricantes y afinadores de instrumentos musicales,1147.3479241144682,0.14,5.910364,False,True,Potencial incierto,0.495,5.808654
-7314,Alfareros y ceramistas (barro y arcilla),13993.33477721893,0.18,5.557803,False,False,Bajo potencial de automatización,0.495,5.808654
-7315,"Sopladores, modeladores, laminadores, cortadores y pulidores de vidrio",3661.732714140099,0.19,5.541688,False,False,Bajo potencial de automatización,0.495,5.808654
-7316,"Rotulistas, pintores decorativos y grabadores",6788.876834580496,0.18,5.671703,False,False,Bajo potencial de automatización,0.495,5.808654
-7321,Preimpresores y afines,5318.989834967381,0.38,6.204643,False,True,Potencial incierto,0.495,5.808654
-7322,Impresores,13908.6923235001,0.25,5.714819,False,False,Bajo potencial de automatización,0.495,5.808654
-7323,Encuadernadores y afines,7206.527349696235,0.22,5.626101,False,False,Bajo potencial de automatización,0.495,5.808654
-7411,Electricistas de obras y afines,119593.79710925609,0.19,5.64606,False,False,Bajo potencial de automatización,0.495,5.808654
-7412,Ajustadores electricistas,87022.670197954,0.17,5.691718,False,False,Bajo potencial de automatización,0.495,5.808654
-7413,Instaladores y reparadores de líneas eléctricas,2194.5355888470467,0.15,5.786233,False,False,Bajo potencial de automatización,0.495,5.808654
-7421,Ajustadores e instaladores en electrónica,10181.667144464227,0.25,5.830024,False,True,Potencial incierto,0.495,5.808654
-7422,Instaladores y reparadores en tecnología de la información y las comunicaciones,58929.00114665802,0.24,5.756212,False,False,Bajo potencial de automatización,0.495,5.808654
-7511,"Carniceros, pescaderos y afines",61651.16018870384,0.13,5.508307,False,False,Bajo potencial de automatización,0.495,5.808654
-7512,"Panaderos, pasteleros y confiteros",131486.40266696326,0.17,5.860904,False,True,Potencial incierto,0.495,5.808654
-7513,Operarios de la elaboración de productos lácteos,22455.105444712495,0.22,5.737752,False,False,Bajo potencial de automatización,0.495,5.808654
-7514,"Operarios de la conservación de frutas, legumbres, verduras y afines",47320.68648631297,0.15,5.782012,False,False,Bajo potencial de automatización,0.495,5.808654
-7515,Catadores y clasificadores de alimentos y bebidas,4590.7657015003315,0.31,5.764018,False,False,Bajo potencial de automatización,0.495,5.808654
-7516,Preparadores y elaboradores de cigarros y productos del tabaco,2470.4188394404096,0.14,5.493816,False,False,Bajo potencial de automatización,0.495,5.808654
-7521,Operarios del tratamiento de la madera,1080.1725827470393,0.22,5.523051,False,False,Bajo potencial de automatización,0.495,5.808654
-7522,Ebanistas y carpinteros (excluye carpinteros de armar y de obra blanca),84924.53690378589,0.16,5.548779,False,False,Bajo potencial de automatización,0.495,5.808654
-7523,Ajustadores y operadores de máquinas para trabajar madera,2773.819483441969,0.22,5.525065,False,False,Bajo potencial de automatización,0.495,5.808654
-7531,"Sastres, modistos, peleteros y sombrereros",135465.38614452176,0.15,5.840518,False,True,Potencial incierto,0.495,5.808654
-7532,"Patronistas y cortadores de tela, cuero y afines",19826.771038469327,0.17,5.725956,False,False,Bajo potencial de automatización,0.495,5.808654
-7533,"Costureros, bordadores y afines",21534.72644095589,0.12,5.643186,False,False,Bajo potencial de automatización,0.495,5.808654
-7534,"Tapiceros, colchoneros y afines",24649.54242674355,0.18,5.442407,False,False,Bajo potencial de automatización,0.495,5.808654
-7535,"Apelambradores, pellejeros y curtidores",515.2233578151985,0.11,5.55607,False,False,Bajo potencial de automatización,0.495,5.808654
-7536,Zapateros y afines,58808.32219719127,0.17,5.587921,False,False,Bajo potencial de automatización,0.495,5.808654
-7541,Buzos,60.131059789304786,0.16,5.537519,False,False,Bajo potencial de automatización,0.495,5.808654
-7542,Dinamiteros y pegadores,600.8729259813092,0.12,5.686134,False,False,Bajo potencial de automatización,0.495,5.808654
-7543,Clasificadores y probadores de productos (excluyendo alimentos y bebidas),13409.897364108003,0.31,6.021355,False,True,Potencial incierto,0.495,5.808654
-7544,Fumigadores y otros controladores de plagas y malas hierbas,89768.72746404549,0.13,5.709252,False,False,Bajo potencial de automatización,0.495,5.808654
-7549,"Otros oficiales, operarios y oficios relacionados no clasificados en otros grupos primarios",231.74139507242367,0.14,5.838835,False,True,Potencial incierto,0.495,5.808654
-8111,Mineros y operadores de instalaciones mineras,92903.3104468306,0.17,5.471848,False,False,Bajo potencial de automatización,0.495,5.808654
-8112,Operadores de instalaciones de procesamiento de minerales y rocas,4488.09230102755,0.21,5.542048,False,False,Bajo potencial de automatización,0.495,5.808654
-8113,Perforadores y sondistas de pozos y afines,1956.1208109113952,0.19,5.548316,False,False,Bajo potencial de automatización,0.495,5.808654
-8114,Operadores de máquinas para fabricar cemento y otros productos minerales,7626.012906476788,0.23,5.627382,False,False,Bajo potencial de automatización,0.495,5.808654
-8121,Operadores de instalaciones de procesamiento de metales,3937.81555473767,0.26,5.530396,False,False,Bajo potencial de automatización,0.495,5.808654
-8122,"Operadores de máquinas pulidoras, galvanizadoras y recubridoras de metales",4680.670638314796,0.2,5.559303,False,False,Bajo potencial de automatización,0.495,5.808654
-8131,Operadores de plantas y máquinas de productos químicos,20566.715808185905,0.24,5.638611,False,False,Bajo potencial de automatización,0.495,5.808654
-8132,Operadores de máquinas para fabricar productos fotográficos,95.30126926201805,0.27,5.871595,False,True,Potencial incierto,0.495,5.808654
-8141,Operadores de máquinas para fabricar productos de caucho,2612.6517381415533,0.18,5.508034,False,False,Bajo potencial de automatización,0.495,5.808654
-8142,Operadores de máquinas para fabricar productos de material plástico,47865.35917489113,0.17,5.580045,False,False,Bajo potencial de automatización,0.495,5.808654
-8143,Operadores de máquinas para fabricar productos de papel,12424.158697894847,0.18,5.542026,False,False,Bajo potencial de automatización,0.495,5.808654
-8151,"Operadores de máquinas de preparación de fibras, hilado y devanado",3785.67255137232,0.15,5.40671,False,False,Bajo potencial de automatización,0.495,5.808654
-8152,Operadores de telares y otras máquinas tejedoras,5214.932697315077,0.16,5.474895,False,False,Bajo potencial de automatización,0.495,5.808654
-8153,Operadores de máquinas de coser,214392.33136070284,0.15,5.600067,False,False,Bajo potencial de automatización,0.495,5.808654
-8154,"Operadores de máquinas de blanqueamiento, teñido y limpieza de tejidos",8683.98986428067,0.21,5.646511,False,False,Bajo potencial de automatización,0.495,5.808654
-8155,Operadores de máquinas de tratamiento de pieles y cueros,394.31129686752405,0.15,5.695531,False,False,Bajo potencial de automatización,0.495,5.808654
-8156,Operadores de máquinas para la fabricación de calzado y afines,11876.941188553856,0.16,5.570367,False,False,Bajo potencial de automatización,0.495,5.808654
-8157,Operadores de máquinas de lavandería,6219.678653259228,0.16,5.559304,False,False,Bajo potencial de automatización,0.495,5.808654
-8159,Operadores de máquinas para fabricar productos textiles y artículos de piel y cuero no clasificados en otros grupos primarios,1994.437789531895,0.16,5.695531,False,False,Bajo potencial de automatización,0.495,5.808654
-8160,Operadores de máquinas para elaborar alimentos y productos afines,72158.51773340223,0.15,5.714449,False,False,Bajo potencial de automatización,0.495,5.808654
-8171,Operadores de instalaciones para la preparación de papel y de pasta para papel,1375.1405473412487,0.28,5.580235,False,False,Bajo potencial de automatización,0.495,5.808654
-8172,Operadores de instalaciones de procesamiento de la madera,3298.3224264512196,0.14,5.509436,False,False,Bajo potencial de automatización,0.495,5.808654
-8181,Operadores de máquinas y de instalaciones para elaborar productos de vidrio y cerámica,13105.630970669463,0.17,5.59065,False,False,Bajo potencial de automatización,0.495,5.808654
-8182,Operadores de máquinas de vapor y calderas,516.672058271253,0.2,5.807737,False,False,Bajo potencial de automatización,0.495,5.808654
-8183,"Operadores de máquinas de embalaje, embotellamiento y etiquetado",11154.677897576456,0.22,5.593467,False,False,Bajo potencial de automatización,0.495,5.808654
-8211,Ensambladores de maquinaria mecánica,3553.8727054337182,0.27,5.623352,False,False,Bajo potencial de automatización,0.495,5.808654
-8212,Ensambladores de equipos eléctricos y electrónicos,7418.458493712006,0.28,5.777974,False,False,Bajo potencial de automatización,0.495,5.808654
-8219,Ensambladores no clasificados en otros grupos primarios,4558.540426778267,0.32,5.674428,False,False,Bajo potencial de automatización,0.495,5.808654
-8311,Maquinistas de locomotoras,2053.3653082342876,0.2,5.73995,False,False,Bajo potencial de automatización,0.495,5.808654
-8312,"Guardafrenos, guardagujas y agentes de maniobras",359.7045206749573,0.17,5.780596,False,False,Bajo potencial de automatización,0.495,5.808654
-8321,Conductores de motocicletas,509597.8902230916,0.25,5.779253,False,False,Bajo potencial de automatización,0.495,5.808654
-8331,"Conductores de buses, microbuses y tranvías",111363.17534933025,0.18,5.845283,False,True,Potencial incierto,0.495,5.808654
-8332,Conductores de camiones y vehículos pesados,283524.85932246316,0.24,5.808654,False,True,Potencial incierto,0.495,5.808654
-8341,Operadores de maquinaria agrícola y forestal móvil,20680.237142101098,0.12,5.550276,False,False,Bajo potencial de automatización,0.495,5.808654
-8342,"Operadores de máquinas de movimiento de tierras, construcción de vías y afines",32805.41014291777,0.13,5.543504,False,False,Bajo potencial de automatización,0.495,5.808654
-8343,"Operadores de grúas, aparatos elevadores y afines",9804.807537663717,0.18,5.762412,False,False,Bajo potencial de automatización,0.495,5.808654
-8344,Operadores de montacargas,26799.213661099024,0.2,5.752392,False,False,Bajo potencial de automatización,0.495,5.808654
-8350,Marineros de cubierta y afines,11023.076980402035,0.14,5.575459,False,False,Bajo potencial de automatización,0.495,5.808654
-9111,Personal doméstico,963168.2294587679,0.14,5.367166,False,False,Bajo potencial de automatización,0.495,5.808654
-9112,"Aseadores de oficinas, hoteles y otros establecimientos",461881.88818805374,0.12,5.351422,False,False,Bajo potencial de automatización,0.495,5.808654
-9121,Lavanderos y planchadores manuales,38776.00778300933,0.14,5.155579,False,False,Bajo potencial de automatización,0.495,5.808654
-9122,Lavadores de vehículos,57936.474016827575,0.09,5.299895,False,False,Bajo potencial de automatización,0.495,5.808654
-9123,Limpiadores de ventanas,123.79495765215138,0.11,5.387205,False,False,Bajo potencial de automatización,0.495,5.808654
-9129,Otro personal de limpieza no clasificados en otros grupos primarios,10392.248817662543,0.1,5.434045,False,False,Bajo potencial de automatización,0.495,5.808654
-9211,Obreros y peones de explotaciones agrícolas,1243208.4426374848,0.09,5.385233,False,False,Bajo potencial de automatización,0.495,5.808654
-9212,Obreros y peones de explotaciones ganaderas,230169.54382020514,0.12,5.496937,False,False,Bajo potencial de automatización,0.495,5.808654
-9213,Obreros y peones de explotaciones agropecuarias,87809.66312187936,0.11,5.435138,False,False,Bajo potencial de automatización,0.495,5.808654
-9214,Obreros y peones de jardinería y horticultura,117497.67484810308,0.12,5.297286,False,False,Bajo potencial de automatización,0.495,5.808654
-9215,Obreros y peones forestales,8330.041799191096,0.09,5.553598,False,False,Bajo potencial de automatización,0.495,5.808654
-9216,Obreros y peones de pesca y acuicultura,2843.416470775056,0.11,5.443712,False,False,Bajo potencial de automatización,0.495,5.808654
-9311,Obreros y peones de minas y canteras,94385.97195299831,0.11,5.421518,False,False,Bajo potencial de automatización,0.495,5.808654
-9312,Obreros y peones de obras públicas y mantenimiento,29158.562417149053,0.09,5.369333,False,False,Bajo potencial de automatización,0.495,5.808654
-9313,Obreros y peones de la construcción de edificios,664834.2040526397,0.09,5.253151,False,False,Bajo potencial de automatización,0.495,5.808654
-9321,Empacadores manuales,113232.17997072083,0.2,5.352308,False,False,Bajo potencial de automatización,0.495,5.808654
-9329,Obreros y peones de la industria manufacturera no clasificados en otros grupos primarios,60527.85098076325,0.12,5.420554,False,False,Bajo potencial de automatización,0.495,5.808654
-9331,Conductores de vehículos accionados a pedal o a brazo,12954.221747294354,0.21,5.615288,False,False,Bajo potencial de automatización,0.495,5.808654
-9332,Conductores de vehículos y maquinaria de tracción animal,2396.620514152893,0.13,5.621805,False,False,Bajo potencial de automatización,0.495,5.808654
-9333,Obreros y peones de carga,251208.7140929787,0.14,5.617035,False,False,Bajo potencial de automatización,0.495,5.808654
-9334,Surtidores de estanterías,37300.872701968576,0.2,5.68011,False,False,Bajo potencial de automatización,0.495,5.808654
-9411,Cocineros de comidas rápidas,177209.69940801588,0.18,5.740109,False,False,Bajo potencial de automatización,0.495,5.808654
-9412,Ayudantes de cocina,188925.73783723993,0.13,5.324141,False,False,Bajo potencial de automatización,0.495,5.808654
-9510,Trabajadores ambulantes de servicios y afines,25439.256860244393,0.18,5.778424,False,False,Bajo potencial de automatización,0.495,5.808654
-9520,Vendedores ambulantes (excluyendo comidas de preparación inmediata),200865.8210312273,0.2,6.533611,False,True,Potencial incierto,0.495,5.808654
-9611,Recolectores de basura y material reciclable,81246.14689214369,0.09,5.778382,False,False,Bajo potencial de automatización,0.495,5.808654
-9612,Clasificadores de desechos,43429.25653265051,0.18,5.456093,False,False,Bajo potencial de automatización,0.495,5.808654
-9613,Barrenderos y afines,22396.29013016938,0.09,5.368045,False,False,Bajo potencial de automatización,0.495,5.808654
-9621,"Mensajeros, mandaderos, maleteros y repartidores",199969.7536463874,0.37,5.531734,False,False,Bajo potencial de automatización,0.495,5.808654
-9622,Personas que realizan trabajos varios,13396.788658439751,0.11,5.535397,False,False,Bajo potencial de automatización,0.495,5.808654
-9624,Acarreadores de agua y recolectores de leña,820.9849070970005,0.09,5.264157,False,False,Bajo potencial de automatización,0.495,5.808654
-9629,Otras ocupaciones elementales no clasificadas en otros grupos primarios,20032.493717181165,0.29,5.824871,False,True,Potencial incierto,0.495,5.808654
+(partidos políticos, sindicatos y organizaciones sociales)",2862.397891803907,0.37,6.460561,True,True,Alto potencial de automatización,0.27,6.0391325
+1120,Directores y gerentes generales,103455.63864397127,0.38,6.465027,True,True,Alto potencial de automatización,0.27,6.0391325
+1211,Directores financieros,28824.761601175655,0.37,6.686476,True,True,Alto potencial de automatización,0.27,6.0391325
+1212,Directores de recursos humanos,110659.13302275496,0.36,6.621023,True,True,Alto potencial de automatización,0.27,6.0391325
+1213,Directores de políticas y planeación,1528.1438481222783,0.36,6.471066,True,True,Alto potencial de automatización,0.27,6.0391325
+1219,Directores de administración y servicios no clasificados en otros grupos primarios,24884.62197385949,0.42,6.456695,True,True,Alto potencial de automatización,0.27,6.0391325
+1221,Directores de ventas y comercialización,79103.87176651857,0.41,6.616349,True,True,Alto potencial de automatización,0.27,6.0391325
+1222,Directores de publicidad y relaciones públicas,3612.123976182432,0.39,6.61747,True,True,Alto potencial de automatización,0.27,6.0391325
+1223,Directores de investigación y desarrollo,6145.326990662521,0.4,6.52573,True,True,Alto potencial de automatización,0.27,6.0391325
+1311,Directores de producción agropecuaria y silvicultura,123804.13035509756,0.27,5.975272,True,False,Potencial incierto,0.27,6.0391325
+1312,Directores de producción de piscicultura y pesca,131.23412955915592,0.22,5.975272,False,False,Bajo potencial de automatización,0.27,6.0391325
+1321,Directores de industrias manufactureras,43720.11379646565,0.38,6.26395,True,True,Alto potencial de automatización,0.27,6.0391325
+1322,Directores de explotaciones de minería,1624.6278107327541,0.35,6.471066,True,True,Alto potencial de automatización,0.27,6.0391325
+1323,Directores de empresas de construcción,9138.384645597633,0.34,6.498469,True,True,Alto potencial de automatización,0.27,6.0391325
+1324,"Directores de empresas de abastecimiento, distribución y afines",42685.207950342,0.38,6.447245,True,True,Alto potencial de automatización,0.27,6.0391325
+1330,Directores de servicios de tecnología de la información y las comunicaciones,7467.0941307681605,0.44,6.512313,True,True,Alto potencial de automatización,0.27,6.0391325
+1341,Directores de servicios de cuidados infantiles,1025.9721548915174,0.3,6.412315,True,True,Alto potencial de automatización,0.27,6.0391325
+1342,Directores de servicios de salud,38911.50378681339,0.36,6.602647,True,True,Alto potencial de automatización,0.27,6.0391325
+1343,Directores de servicios de atención a personas mayores,416.46500405087363,0.34,6.448178,True,True,Alto potencial de automatización,0.27,6.0391325
+1344,Directores  de servicios de bienestar social,3848.488248535582,0.37,6.555721,True,True,Alto potencial de automatización,0.27,6.0391325
+1345,Directores de servicios de educación,39559.03041254004,0.36,6.466944,True,True,Alto potencial de automatización,0.27,6.0391325
+1346,"Gerentes de sucursales de bancos, de servicios financieros y de seguros",14678.84366848653,0.47,6.490092,True,True,Alto potencial de automatización,0.27,6.0391325
+1349,Directores y gerentes de servicios profesionales no clasificados en otros grupos primarios,5781.439742393314,0.38,6.471066,True,True,Alto potencial de automatización,0.27,6.0391325
+1411,Gerentes de hoteles,13964.963500670352,0.37,6.215861,True,True,Alto potencial de automatización,0.27,6.0391325
+1412,Gerentes de restaurantes,123641.14556066669,0.36,5.979898,True,False,Potencial incierto,0.27,6.0391325
+1420,Gerentes de comercios al por mayor y al por menor,387612.88577017863,0.44,6.293708,True,True,Alto potencial de automatización,0.27,6.0391325
+1431,"Gerentes de centros deportivos, de esparcimiento y culturales",18426.03749496406,0.32,6.439868,True,True,Alto potencial de automatización,0.27,6.0391325
+2111,Físicos y astrónomos,451.92111305679816,0.38,6.614495,True,True,Alto potencial de automatización,0.27,6.0391325
+2112,Meteorólogos,249.70242761306298,0.54,6.601195,True,True,Alto potencial de automatización,0.27,6.0391325
+2113,Químicos,5078.553980859709,0.39,6.436358,True,True,Alto potencial de automatización,0.27,6.0391325
+2114,Geólogos y geofísicos,3182.860845596019,0.36,6.409459,True,True,Alto potencial de automatización,0.27,6.0391325
+2120,"Matemáticos, actuarios y estadísticos",4203.536839312676,0.56,6.683638,True,True,Alto potencial de automatización,0.27,6.0391325
+2131,"Biólogos, botánicos, zoólogos y afines",17460.27576897569,0.4,6.433201,True,True,Alto potencial de automatización,0.27,6.0391325
+2132,"Agrónomos, silvicultores, zootecnistas y afines",18635.734895639118,0.29,6.231122,True,True,Alto potencial de automatización,0.27,6.0391325
+2133,Profesionales de la protección medioambiental,10863.084341863769,0.38,6.276647,True,True,Alto potencial de automatización,0.27,6.0391325
+2141,Ingenieros industriales y de producción,38704.213265776205,0.37,6.541169,True,True,Alto potencial de automatización,0.27,6.0391325
+2142,Ingenieros civiles,83393.04455075014,0.3,6.612184,True,True,Alto potencial de automatización,0.27,6.0391325
+2143,Ingenieros medioambientales,20277.87239588394,0.38,6.640196,True,True,Alto potencial de automatización,0.27,6.0391325
+2144,Ingenieros mecánicos,18258.202366322475,0.32,6.46805,True,True,Alto potencial de automatización,0.27,6.0391325
+2145,Ingenieros químicos,9437.680723232428,0.35,6.639194,True,True,Alto potencial de automatización,0.27,6.0391325
+2146,"Ingenieros de minas, metalúrgicos y afines",6629.86443932171,0.29,6.560246,True,True,Alto potencial de automatización,0.27,6.0391325
+2149,Ingenieros no clasificados en otros grupos primarios,7414.523424155805,0.3,6.496131,True,True,Alto potencial de automatización,0.27,6.0391325
+2151,Ingenieros electricistas,21693.88969345812,0.31,6.542457,True,True,Alto potencial de automatización,0.27,6.0391325
+2152,Ingenieros electrónicos,8000.572445548991,0.42,6.441413,True,True,Alto potencial de automatización,0.27,6.0391325
+2153,Ingenieros de telecomunicaciones,8745.23204172237,0.48,6.33357,True,True,Alto potencial de automatización,0.27,6.0391325
+2161,Arquitectos constructores,36966.95141645995,0.37,6.506584,True,True,Alto potencial de automatización,0.27,6.0391325
+2162,Arquitectos paisajistas,463.71831792250396,0.37,6.500835,True,True,Alto potencial de automatización,0.27,6.0391325
+2163,Diseñadores de productos y de prendas,15130.071873227726,0.35,6.29408,True,True,Alto potencial de automatización,0.27,6.0391325
+2164,"Planificadores urbanos, regionales y de tránsito",758.9130091077164,0.41,6.587888,True,True,Alto potencial de automatización,0.27,6.0391325
+2165,Cartógrafos y topógrafos,8805.833259865414,0.44,6.251631,True,True,Alto potencial de automatización,0.27,6.0391325
+2166,Diseñadores gráficos y multimedia,76570.17187238442,0.49,6.354967,True,True,Alto potencial de automatización,0.27,6.0391325
+2211,Médicos generales,62878.436620525106,0.29,6.475639,True,True,Alto potencial de automatización,0.27,6.0391325
+2212,Médicos especialistas,46770.78895293054,0.27,6.33282,True,True,Alto potencial de automatización,0.27,6.0391325
+2221,Profesionales de enfermería,30512.934290812085,0.25,6.132903,False,True,Potencial incierto,0.27,6.0391325
+2230,Profesionales de medicina tradicional y alternativa,1858.2895332609667,0.32,6.352185,True,True,Alto potencial de automatización,0.27,6.0391325
+2240,Paramédicos e instrumentadores quirúrgicos,7079.238554823557,0.23,6.076613,False,True,Potencial incierto,0.27,6.0391325
+2250,Veterinarios,17643.640137771003,0.14,6.000775,False,False,Bajo potencial de automatización,0.27,6.0391325
+2261,Odontólogos,31532.608718814816,0.15,5.987839,False,False,Bajo potencial de automatización,0.27,6.0391325
+2262,Farmacéuticos,3380.356417517985,0.33,6.307679,True,True,Alto potencial de automatización,0.27,6.0391325
+2263,Profesionales de la salud y la higiene laboral y ambiental,49618.23686869478,0.28,6.37864,True,True,Alto potencial de automatización,0.27,6.0391325
+2264,Fisioterapeutas,27891.63328485264,0.28,5.946371,True,False,Potencial incierto,0.27,6.0391325
+2265,Dietistas y nutricionistas,7918.493455422986,0.41,6.639857,True,True,Alto potencial de automatización,0.27,6.0391325
+2266,Fonoaudiólogos y terapeutas del lenguaje,5511.4688291092825,0.24,6.435565,False,True,Potencial incierto,0.27,6.0391325
+2267,Optómetras,4846.709311740389,0.24,6.261769,False,True,Potencial incierto,0.27,6.0391325
+2269,Otros profesionales de la salud no clasificados en otros grupos primarios,15004.437472469412,0.2,6.231743,False,True,Potencial incierto,0.27,6.0391325
+2310,Profesores de instituciones de educación superior,83108.01659998075,0.37,6.590571,True,True,Alto potencial de automatización,0.27,6.0391325
+2320,Profesores de formación profesional,25547.42276912845,0.35,6.193183,True,True,Alto potencial de automatización,0.27,6.0391325
+2330,Profesores de educación secundaria,211449.26757511165,0.3,6.571575,True,True,Alto potencial de automatización,0.27,6.0391325
+2341,Profesores de educación primaria,169832.4843223709,0.26,6.524414,False,True,Potencial incierto,0.27,6.0391325
+2342,Profesores de primera infancia,62386.81669425414,0.21,6.123613,False,True,Potencial incierto,0.27,6.0391325
+2351,Especialistas en métodos pedagógicos,16759.01251277979,0.39,6.620479,True,True,Alto potencial de automatización,0.27,6.0391325
+2352,Profesores de educación especial e inclusiva,2570.441904179634,0.28,6.256194,True,True,Alto potencial de automatización,0.27,6.0391325
+2353,Otros profesores de idiomas,17183.795121954787,0.34,6.51548,True,True,Alto potencial de automatización,0.27,6.0391325
+2354,Otros profesores de música,11227.95054604107,0.35,6.271835,True,True,Alto potencial de automatización,0.27,6.0391325
+2355,Otros profesores de artes,9068.77762412759,0.35,6.451907,True,True,Alto potencial de automatización,0.27,6.0391325
+2356,Instructores de tecnología de la información,841.7521943149447,0.47,6.574769,True,True,Alto potencial de automatización,0.27,6.0391325
+2359,Otros profesionales de la educación no clasificados en otros grupos primarios,49377.066302042826,0.33,6.51082,True,True,Alto potencial de automatización,0.27,6.0391325
+2411,Contadores,252537.74117273046,0.51,6.677804,True,True,Alto potencial de automatización,0.27,6.0391325
+2412,Asesores financieros y de inversiones,72112.56695370383,0.57,6.657624,True,True,Alto potencial de automatización,0.27,6.0391325
+2413,Analistas financieros,9957.805235836739,0.62,6.6709,True,True,Alto potencial de automatización,0.27,6.0391325
+2421,Analistas de gestión y organización,22877.428539872326,0.46,6.646636,True,True,Alto potencial de automatización,0.27,6.0391325
+2422,Profesionales en políticas de administración,25341.547734184707,0.42,6.50828,True,True,Alto potencial de automatización,0.27,6.0391325
+2423,Profesionales de gestión de talento humano,13620.486410813908,0.45,6.610396,True,True,Alto potencial de automatización,0.27,6.0391325
+2424,Profesionales en formación y desarrollo de personal,1174.569987223553,0.41,6.574769,True,True,Alto potencial de automatización,0.27,6.0391325
+2431,Profesionales de la publicidad y la comercialización,71487.05547130128,0.55,6.582082,True,True,Alto potencial de automatización,0.27,6.0391325
+2432,Profesionales de relaciones públicas,3109.8180474077226,0.43,6.613767,True,True,Alto potencial de automatización,0.27,6.0391325
+2433,Profesionales de ventas técnicas y médicas (excluyendo las TIC),11981.305831835456,0.5,6.533814,True,True,Alto potencial de automatización,0.27,6.0391325
+2434,Profesionales de ventas de tecnología de la información y las comunicaciones,845.1477515980793,0.51,6.539503,True,True,Alto potencial de automatización,0.27,6.0391325
+2511,Analistas de sistemas,104167.50326940892,0.49,6.564757,True,True,Alto potencial de automatización,0.27,6.0391325
+2512,Desarrolladores de software,88504.18554450833,0.53,6.594469,True,True,Alto potencial de automatización,0.27,6.0391325
+2513,Desarrolladores web y multimedia,13176.151192197496,0.6,6.525661,True,True,Alto potencial de automatización,0.27,6.0391325
+2514,Programadores de aplicaciones,2500.863372601095,0.57,6.607717,True,True,Alto potencial de automatización,0.27,6.0391325
+2519,Desarrolladores y analistas de software y multimedia no clasificados en otros grupos primarios,1835.6270325025093,0.55,6.590802,True,True,Alto potencial de automatización,0.27,6.0391325
+2521,Diseñadores y administradores de bases de datos,10736.395155207876,0.57,6.613738,True,True,Alto potencial de automatización,0.27,6.0391325
+2522,Administradores de sistemas,1707.7607980572568,0.57,6.390465,True,True,Alto potencial de automatización,0.27,6.0391325
+2523,Profesionales en redes de computadores,695.6415289543229,0.52,6.309319,True,True,Alto potencial de automatización,0.27,6.0391325
+2529,Profesionales en bases de datos y en redes de computadores no clasificados en otros grupos primarios,2754.0889027354906,0.49,6.594446,True,True,Alto potencial de automatización,0.27,6.0391325
+2611,Abogados,215338.6418961086,0.36,6.633535,True,True,Alto potencial de automatización,0.27,6.0391325
+2612,Jueces,6596.125767149206,0.31,6.681685,True,True,Alto potencial de automatización,0.27,6.0391325
+2619,Profesionales en derecho no clasificados en otros grupos primarios,1355.112415891803,0.37,6.679877,True,True,Alto potencial de automatización,0.27,6.0391325
+2621,Archivistas y curadores de arte,3995.8725037169074,0.47,6.353089,True,True,Alto potencial de automatización,0.27,6.0391325
+2622,"Bibliotecarios, documentalistas y afines",3052.967876669608,0.55,6.369921,True,True,Alto potencial de automatización,0.27,6.0391325
+2631,Economistas,9147.89134718162,0.55,6.66744,True,True,Alto potencial de automatización,0.27,6.0391325
+2632,"Sociólogos, antropólogos y afines",4249.179468316274,0.48,6.56707,True,True,Alto potencial de automatización,0.27,6.0391325
+2633,"Filósofos, historiadores y especialistas en ciencias políticas",1071.8561518122885,0.47,6.612422,True,True,Alto potencial de automatización,0.27,6.0391325
+2634,Psicólogos,74945.08447841919,0.39,6.679008,True,True,Alto potencial de automatización,0.27,6.0391325
+2635,Profesionales del trabajo social y consejeros,29848.881531669227,0.28,6.444563,True,True,Alto potencial de automatización,0.27,6.0391325
+2636,Profesionales religiosos,20998.302928246012,0.17,6.596554,False,True,Potencial incierto,0.27,6.0391325
+2641,Autores y otros escritores,2482.8580110112925,0.55,6.532624,True,True,Alto potencial de automatización,0.27,6.0391325
+2642,Periodistas,21320.57009755548,0.54,6.556306,True,True,Alto potencial de automatización,0.27,6.0391325
+2643,"Traductores, intérpretes y otros lingüistas",4863.791523228148,0.59,6.584358,True,True,Alto potencial de automatización,0.27,6.0391325
+2651,"Escultores, pintores artísticos y afines",7997.379356745836,0.21,5.696834,False,False,Bajo potencial de automatización,0.27,6.0391325
+2652,"Compositores, músicos y cantantes",30497.927525254247,0.28,6.23113,True,True,Alto potencial de automatización,0.27,6.0391325
+2653,Coreógrafos y bailarines,1367.7175312386553,0.19,5.077734,False,False,Bajo potencial de automatización,0.27,6.0391325
+2654,"Directores y productores de cine, de teatro y afines",8723.892510649368,0.37,6.477548,True,True,Alto potencial de automatización,0.27,6.0391325
+2655,Actores,1113.0937804145594,0.31,6.106292,True,True,Alto potencial de automatización,0.27,6.0391325
+2656,"Locutores de radio, televisión y otros medios de comunicación",4506.8631153054,0.47,6.464634,True,True,Alto potencial de automatización,0.27,6.0391325
+2659,Artistas creativos e interpretativos no clasificados en otros grupos primarios,7493.5962082832375,0.13,5.834023,False,False,Bajo potencial de automatización,0.27,6.0391325
+3111,Técnicos en ciencias físicas y químicas,5959.2342316157865,0.26,6.124301,False,True,Potencial incierto,0.27,6.0391325
+3112,Técnicos en ingeniería civil,12771.51740415603,0.28,6.102024,True,True,Alto potencial de automatización,0.27,6.0391325
+3113,Electrotécnicos,40711.37922674709,0.27,6.047769,True,True,Alto potencial de automatización,0.27,6.0391325
+3114,Técnicos en electrónica,7031.49974288636,0.38,6.197597,True,True,Alto potencial de automatización,0.27,6.0391325
+3115,Técnicos en ingeniería mecánica,31058.850798351334,0.26,6.05094,False,True,Potencial incierto,0.27,6.0391325
+3116,Técnicos en química industrial,2304.4018380994016,0.32,6.114186,True,True,Alto potencial de automatización,0.27,6.0391325
+3117,Técnicos de minas y metalurgia,1832.6206873195265,0.28,6.095752,True,True,Alto potencial de automatización,0.27,6.0391325
+3118,Delineantes y dibujantes técnicos,24521.659192699557,0.35,6.304472,True,True,Alto potencial de automatización,0.27,6.0391325
+3119,Técnicos en ciencias físicas y en ingeniería no clasificados en otros grupos primarios,4914.862437371651,0.26,6.095614,False,True,Potencial incierto,0.27,6.0391325
+3121,Supervisores de minas,2749.3045767938047,0.29,5.896917,True,False,Potencial incierto,0.27,6.0391325
+3122,Supervisores de industrias manufactureras,48449.7048595884,0.35,5.996478,True,False,Potencial incierto,0.27,6.0391325
+3123,Supervisores de la construcción,148770.82413363367,0.28,5.896917,True,False,Potencial incierto,0.27,6.0391325
+3131,Operadores de plantas de producción de energía,813.6900521948401,0.28,6.129119,True,True,Alto potencial de automatización,0.27,6.0391325
+3132,"Operadores de incineradores, instalaciones de tratamiento de agua y afines",6408.6692110784525,0.27,5.80437,True,False,Potencial incierto,0.27,6.0391325
+3133,Controladores de instalaciones de procesamiento de productos químicos,2026.642150301096,0.29,5.861883,True,False,Potencial incierto,0.27,6.0391325
+3134,Operadores de instalaciones de refinación de petróleo y gas natural,1591.5510452726762,0.29,5.786491,True,False,Potencial incierto,0.27,6.0391325
+3135,Controladores de procesos de producción de metales,2348.4312499544008,0.31,5.508339,True,False,Potencial incierto,0.27,6.0391325
+3141,Técnicos en ciencias biológicas (excluyendo la medicina),1464.8403886522124,0.38,6.10629,True,True,Alto potencial de automatización,0.27,6.0391325
+3142,Técnicos agropecuarios,12519.061142445193,0.26,6.079493,False,True,Potencial incierto,0.27,6.0391325
+3143,Técnicos forestales,569.1199812428657,0.21,5.733818,False,False,Bajo potencial de automatización,0.27,6.0391325
+3151,Oficiales maquinistas en navegación,2655.3269063629955,0.23,6.050312,False,True,Potencial incierto,0.27,6.0391325
+3152,"Capitanes, oficiales de cubierta y prácticos",617.232101828003,0.29,6.064087,True,True,Alto potencial de automatización,0.27,6.0391325
+3153,Pilotos de aviación y afines,3386.1862972516346,0.27,6.061895,True,True,Alto potencial de automatización,0.27,6.0391325
+3154,Controladores de tráfico aéreo y marítimo,2139.0491377475237,0.31,6.302628,True,True,Alto potencial de automatización,0.27,6.0391325
+3155,Técnicos en seguridad aeronáutica,1861.050651171603,0.34,6.2253,True,True,Alto potencial de automatización,0.27,6.0391325
+3211,Técnicos en aparatos de diagnóstico y tratamiento médico,5803.953166416306,0.22,5.942073,False,False,Bajo potencial de automatización,0.27,6.0391325
+3212,Técnicos de laboratorios médicos,7573.647820980598,0.31,6.069285,True,True,Alto potencial de automatización,0.27,6.0391325
+3213,Técnicos y asistentes farmacéuticos,26819.293019593533,0.3,6.037746,True,False,Potencial incierto,0.27,6.0391325
+3214,Técnicos de prótesis médicas y dentales,6219.596244619754,0.18,6.050113,False,True,Potencial incierto,0.27,6.0391325
+3221,Técnicos y profesionales del nivel medio en enfermería,8121.259136757163,0.22,5.80301,False,False,Bajo potencial de automatización,0.27,6.0391325
+3222,Técnicos y profesionales del nivel medio en partería,59.690546682381644,0.2,6.138053,False,True,Potencial incierto,0.27,6.0391325
+3230,Técnicos y profesionales del nivel medio en medicina tradicional y alternativa,2698.0563677962887,0.19,6.138053,False,True,Potencial incierto,0.27,6.0391325
+3240,Técnicos y asistentes veterinarios,5710.325426751158,0.14,5.778573,False,False,Bajo potencial de automatización,0.27,6.0391325
+3251,Higienistas y asistentes odontologícos,6088.499233559581,0.16,5.821962,False,False,Bajo potencial de automatización,0.27,6.0391325
+3252,Técnicos en documentación sanitaria,209.12574706926875,0.52,5.978971,True,False,Potencial incierto,0.27,6.0391325
+3253,Trabajadores comunitarios de la salud,6779.508362631497,0.22,6.051313,False,True,Potencial incierto,0.27,6.0391325
+3254,Técnicos en optometría y ópticas,543.7357433018847,0.24,6.080285,False,True,Potencial incierto,0.27,6.0391325
+3255,Técnicos y asistentes terapeutas,1460.8583979045434,0.17,5.848796,False,False,Bajo potencial de automatización,0.27,6.0391325
+3256,Asistentes médicos,485.2471463034011,0.35,6.086084,True,True,Alto potencial de automatización,0.27,6.0391325
+3257,"Inspectores de seguridad, salud ocupacional, medioambiental y afines",36636.0134805404,0.24,6.093802,False,True,Potencial incierto,0.27,6.0391325
+3258,Técnicos en atención prehospitalaria,2077.0775710738153,0.22,5.978971,False,False,Bajo potencial de automatización,0.27,6.0391325
+3259,Otros técnicos y profesionales del nivel medio de la salud no clasificados en otros grupos primarios,91.11348172010719,0.3,5.984585,True,False,Potencial incierto,0.27,6.0391325
+3311,"Agentes de bolsa, cambio y otros servicios financieros",4204.437415919097,0.63,6.614645,True,True,Alto potencial de automatización,0.27,6.0391325
+3312,Analistas de préstamos y créditos,32960.592523367,0.6,6.659052,True,True,Alto potencial de automatización,0.27,6.0391325
+3313,Técnicos de contabilidad y afines,24192.37593571156,0.49,6.503252,True,True,Alto potencial de automatización,0.27,6.0391325
+3314,"Técnicos y profesionales del nivel medio de servicios estadísticos, matemáticos y afines",48.76969007548972,0.57,6.653169,True,True,Alto potencial de automatización,0.27,6.0391325
+3315,Tasadores y evaluadores,10050.567464711503,0.45,6.45138,True,True,Alto potencial de automatización,0.27,6.0391325
+3321,Agentes de seguros,25137.15566568432,0.53,6.633198,True,True,Alto potencial de automatización,0.27,6.0391325
+3322,Representantes comerciales,311582.12095335196,0.49,6.523676,True,True,Alto potencial de automatización,0.27,6.0391325
+3323,Agentes de compras,9816.947670024,0.39,6.499866,True,True,Alto potencial de automatización,0.27,6.0391325
+3324,Agentes de operaciones comerciales y consignatarios,16421.40564659329,0.44,6.632455,True,True,Alto potencial de automatización,0.27,6.0391325
+3331,Declarantes o gestores de aduana,6363.865200224072,0.57,6.183125,True,True,Alto potencial de automatización,0.27,6.0391325
+3332,Organizadores de conferencias y eventos,17732.2952663373,0.48,6.203171,True,True,Alto potencial de automatización,0.27,6.0391325
+3333,Agentes de empleo y contratistas de mano de obra,589.9823897878317,0.39,6.242974,True,True,Alto potencial de automatización,0.27,6.0391325
+3334,Agentes inmobiliarios,44565.74608181104,0.35,6.546887,True,True,Alto potencial de automatización,0.27,6.0391325
+3339,Agentes de servicios comerciales no clasificados en otros grupos primarios,13904.950308209038,0.44,6.573806,True,True,Alto potencial de automatización,0.27,6.0391325
+3341,Supervisores de oficina,205849.43980431042,0.43,6.502773,True,True,Alto potencial de automatización,0.27,6.0391325
+3342,Secretarios jurídicos,10005.094518336593,0.55,6.491889,True,True,Alto potencial de automatización,0.27,6.0391325
+3343,Secretarios administrativos y ejecutivos,69084.86416068696,0.54,6.466152,True,True,Alto potencial de automatización,0.27,6.0391325
+3344,Secretarios médicos,24357.39294692273,0.53,6.548569,True,True,Alto potencial de automatización,0.27,6.0391325
+3351,Agentes de aduanas e inspectores de fronteras,2342.4769084597365,0.32,6.006914,True,False,Potencial incierto,0.27,6.0391325
+3352,Agentes de administración tributaria,1230.5990370656664,0.49,6.650681,True,True,Alto potencial de automatización,0.27,6.0391325
+3353,Agentes de servicios de seguridad social,1386.5046464690693,0.45,6.463698,True,True,Alto potencial de automatización,0.27,6.0391325
+3354,Agentes gubernamentales de expedición de licencias,404.8098652097102,0.43,6.451665,True,True,Alto potencial de automatización,0.27,6.0391325
+3355,Inspectores de policía y detectives,9388.8179980986,0.23,6.040519,False,True,Potencial incierto,0.27,6.0391325
+3359,Agentes de gobierno y profesionales del nivel medio para la aplicación de regulaciones no clasificados en otros grupos primarios,22846.567243202506,0.36,6.111427,True,True,Alto potencial de automatización,0.27,6.0391325
+3411,"Técnicos y profesionales del nivel medio del derecho, de servicios legales y afines",11914.568775411155,0.39,6.424738,True,True,Alto potencial de automatización,0.27,6.0391325
+3412,Trabajadores y asistentes sociales,8509.1028907388,0.33,6.244282,True,True,Alto potencial de automatización,0.27,6.0391325
+3413,Auxiliares laicos de las religiones,1222.4868015592367,0.12,6.596554,False,True,Potencial incierto,0.27,6.0391325
+3421,Atletas y deportistas,2723.838377968583,0.23,5.216759,False,False,Bajo potencial de automatización,0.27,6.0391325
+3422,"Entrenadores, instructores y árbitros de actividades deportivas",64328.352348973895,0.37,6.126332,True,True,Alto potencial de automatización,0.27,6.0391325
+3423,Instructores de educación física y actividades recreativas,20727.549057493263,0.25,5.866364,False,False,Bajo potencial de automatización,0.27,6.0391325
+3431,Fotógrafos,13789.992539376337,0.39,5.958809,True,False,Potencial incierto,0.27,6.0391325
+3432,Diseñadores y decoradores de interiores,15890.081088061528,0.37,6.044847,True,True,Alto potencial de automatización,0.27,6.0391325
+3433,"Técnicos en galerías de arte, museos y bibliotecas",690.4145758124076,0.37,5.886916,True,False,Potencial incierto,0.27,6.0391325
+3434,Chefs,23510.54099226417,0.25,5.916213,False,False,Bajo potencial de automatización,0.27,6.0391325
+3511,Técnicos en operaciones de tecnología de la información y las comunicaciones,20446.129002786154,0.43,6.229704,True,True,Alto potencial de automatización,0.27,6.0391325
+3512,Técnicos en asistencia y soporte al usuario de tecnología de la información y las comunicaciones,28182.511642755107,0.47,6.16951,True,True,Alto potencial de automatización,0.27,6.0391325
+3513,Técnicos en redes y sistemas de computación,13402.362062694943,0.43,6.3889,True,True,Alto potencial de automatización,0.27,6.0391325
+3514,Técnicos de la Web,3194.4709425121946,0.53,6.458063,True,True,Alto potencial de automatización,0.27,6.0391325
+3521,Técnicos de radiodifusión y grabación audio visual,17450.186811340925,0.35,6.071223,True,True,Alto potencial de automatización,0.27,6.0391325
+3522,Técnicos de ingeniería de las telecomunicaciones,11726.709942081448,0.45,6.197597,True,True,Alto potencial de automatización,0.27,6.0391325
+4110,Oficinistas generales,309583.3989483505,0.6,6.59278,True,True,Alto potencial de automatización,0.27,6.0391325
+4120,Secretarios generales,106598.23377866385,0.58,6.529984,True,True,Alto potencial de automatización,0.27,6.0391325
+4131,Operadores de máquinas de procesamiento de texto y mecanógrafos,118.16573441046185,0.65,6.314931,True,True,Alto potencial de automatización,0.27,6.0391325
+4132,Grabadores de datos,41359.44194938024,0.7,6.174678,True,True,Alto potencial de automatización,0.27,6.0391325
+4211,Cajeros de bancos y afines,22067.764330398782,0.58,6.024229,True,False,Potencial incierto,0.27,6.0391325
+4212,Receptores de apuestas y afines,16927.624624052194,0.45,6.198551,True,True,Alto potencial de automatización,0.27,6.0391325
+4213,Prestamistas,8364.031020100228,0.48,6.518089,True,True,Alto potencial de automatización,0.27,6.0391325
+4214,Cobradores y afines,32803.8423817087,0.43,6.601304,True,True,Alto potencial de automatización,0.27,6.0391325
+4221,Empleados y consultores de viajes,16240.21320709571,0.56,6.436819,True,True,Alto potencial de automatización,0.27,6.0391325
+4222,Empleados de centros de llamadas,191575.44502539234,0.58,6.482806,True,True,Alto potencial de automatización,0.27,6.0391325
+4223,Telefonistas,3898.934337925182,0.54,6.486005,True,True,Alto potencial de automatización,0.27,6.0391325
+4224,Recepcionistas de hoteles,24133.30951518697,0.51,6.364114,True,True,Alto potencial de automatización,0.27,6.0391325
+4225,Empleados de ventanillas de información,21086.199868967757,0.57,6.522058,True,True,Alto potencial de automatización,0.27,6.0391325
+4226,Recepcionistas generales,34171.97630422927,0.57,6.491278,True,True,Alto potencial de automatización,0.27,6.0391325
+4227,Entrevistadores de encuestas y de investigaciones de mercados,9122.728929172177,0.55,6.619223,True,True,Alto potencial de automatización,0.27,6.0391325
+4229,Otros empleados de servicios de información al cliente no clasificados en otros grupos primarios,21575.501816979926,0.42,6.512033,True,True,Alto potencial de automatización,0.27,6.0391325
+4311,Auxiliares de contabilidad y cálculo de costos,161070.75975152224,0.64,6.569447,True,True,Alto potencial de automatización,0.27,6.0391325
+4312,"Auxiliares de servicios estadísticos, financieros y de seguros",1840.4572727192726,0.64,6.591086,True,True,Alto potencial de automatización,0.27,6.0391325
+4313,Auxiliares encargados de las nóminas,2150.0089409811017,0.61,6.601463,True,True,Alto potencial de automatización,0.27,6.0391325
+4321,Empleados de control de abastecimientos e inventario,270306.39435427194,0.37,5.776328,True,False,Potencial incierto,0.27,6.0391325
+4322,Empleados de servicios de apoyo a la producción,727.5346831291124,0.44,6.350068,True,True,Alto potencial de automatización,0.27,6.0391325
+4323,Empleados de servicios de transporte,23973.162957452394,0.5,6.591047,True,True,Alto potencial de automatización,0.27,6.0391325
+4411,Empleados de bibliotecas,2124.353650142055,0.46,6.089088,True,True,Alto potencial de automatización,0.27,6.0391325
+4412,Empleados de servicios de correos,9547.50392211981,0.41,5.624753,True,False,Potencial incierto,0.27,6.0391325
+4413,"Codificadores de datos, correctores de pruebas de imprenta y afines",539.8349971658536,0.51,6.615321,True,True,Alto potencial de automatización,0.27,6.0391325
+4414,Escribientes públicos y afines,17261.202745338618,0.58,6.000819,True,False,Potencial incierto,0.27,6.0391325
+4415,Empleados de archivos,42127.90307457792,0.37,5.982029,True,False,Potencial incierto,0.27,6.0391325
+4416,Empleados del servicio de personal,14573.523643976545,0.6,6.644495,True,True,Alto potencial de automatización,0.27,6.0391325
+4419,Otro personal de apoyo administrativo no clasificados en otros grupos primarios,2009.6246039012271,0.63,6.522978,True,True,Alto potencial de automatización,0.27,6.0391325
+5111,Personal de servicio a pasajeros,4037.0100035637884,0.22,5.885723,False,False,Bajo potencial de automatización,0.27,6.0391325
+5112,Revisores y cobradores de los transportes públicos,14319.438103841858,0.25,5.983058,False,False,Bajo potencial de automatización,0.27,6.0391325
+5113,Guías,8268.414650049057,0.32,6.243348,True,True,Alto potencial de automatización,0.27,6.0391325
+5120,Cocineros,370623.87365607324,0.18,5.757139,False,False,Bajo potencial de automatización,0.27,6.0391325
+5131,Meseros,338997.57488866476,0.28,5.657045,True,False,Potencial incierto,0.27,6.0391325
+5132,Bármanes,21924.642639206875,0.26,5.75692,False,False,Bajo potencial de automatización,0.27,6.0391325
+5141,Peluqueros,208233.76320235245,0.17,5.886141,False,False,Bajo potencial de automatización,0.27,6.0391325
+5142,Especialistas en tratamientos de belleza y afines,220474.9010960782,0.18,5.895388,False,False,Bajo potencial de automatización,0.27,6.0391325
+5151,"Supervisores  de mantenimiento y limpieza en oficinas, hoteles y otros establecimientos",12878.235335888457,0.22,5.770702,False,False,Bajo potencial de automatización,0.27,6.0391325
+5152,Mayordomos domésticos,14016.809202655268,0.2,5.774563,False,False,Bajo potencial de automatización,0.27,6.0391325
+5153,Conserjes y afines,7855.246435563351,0.27,5.387205,True,False,Potencial incierto,0.27,6.0391325
+5161,"Astrólogos, adivinos y trabajadores afines",1949.8663075219636,0.3,5.834023,True,False,Potencial incierto,0.27,6.0391325
+5162,Acompañantes,41.39872281028825,0.22,5.926687,False,False,Bajo potencial de automatización,0.27,6.0391325
+5163,Personal de servicios funerarios y embalsamadores,1914.231242143601,0.17,5.814301,False,False,Bajo potencial de automatización,0.27,6.0391325
+5164,Cuidadores de animales,40808.14401607575,0.14,5.791688,False,False,Bajo potencial de automatización,0.27,6.0391325
+5165,Instructores de conducción,5355.860780938179,0.2,6.271835,False,True,Potencial incierto,0.27,6.0391325
+5169,Otros trabajadores de servicios personales no clasificados en otros grupos primarios,10824.56116452695,0.21,6.037252,False,False,Bajo potencial de automatización,0.27,6.0391325
+5211,Vendedores en quioscos y puestos de mercado,112504.59116974869,0.35,6.533611,True,True,Alto potencial de automatización,0.27,6.0391325
+5212,Vendedores ambulantes de alimentos preparados para consumo inmediato,237436.93990301964,0.22,6.120241,False,True,Potencial incierto,0.27,6.0391325
+5221,Comerciantes de tiendas,327845.2648112467,0.43,6.293708,True,True,Alto potencial de automatización,0.27,6.0391325
+5222,Supervisores de tiendas y almacenes,12728.734186177724,0.36,6.043226,True,True,Alto potencial de automatización,0.27,6.0391325
+5223,"Vendedores y auxiliares de venta en tiendas, almacenes y afines",1337628.6058828542,0.38,6.027552,True,False,Potencial incierto,0.27,6.0391325
+5230,"Cajeros de comercio, taquilleros y expendedores de boletas",191916.86119117524,0.39,5.967376,True,False,Potencial incierto,0.27,6.0391325
+5241,"Modelos de moda, arte y publicidad",3384.8235508495877,0.25,5.528823,False,False,Bajo potencial de automatización,0.27,6.0391325
+5242,"Demostradores de tiendas, almacenes y afines",9466.774627122259,0.42,6.090277,True,True,Alto potencial de automatización,0.27,6.0391325
+5243,Vendedores puerta a puerta,85843.3229933959,0.46,6.533611,True,True,Alto potencial de automatización,0.27,6.0391325
+5244,Vendedores a través de medios tecnológicos,76827.25460029914,0.61,6.538582,True,True,Alto potencial de automatización,0.27,6.0391325
+5245,Expendedores de combustibles para vehículos,39484.395985208925,0.24,5.792329,False,False,Bajo potencial de automatización,0.27,6.0391325
+5246,Vendedores de comidas en mostrador,68352.96112412546,0.24,5.595956,False,False,Bajo potencial de automatización,0.27,6.0391325
+5311,Cuidadores de niños,153735.6833911109,0.19,6.045576,False,True,Potencial incierto,0.27,6.0391325
+5312,Auxiliares de maestros,21609.578663994118,0.24,6.4269,False,True,Potencial incierto,0.27,6.0391325
+5321,Trabajadores de los cuidados personales en instituciones,189195.80620550874,0.14,5.718919,False,False,Bajo potencial de automatización,0.27,6.0391325
+5322,Trabajadores de los cuidados personales a domicilio,77883.25575817715,0.25,5.915169,False,False,Bajo potencial de automatización,0.27,6.0391325
+5329,Trabajadores de los cuidados personales en servicios de salud no clasificados en otros grupos primarios,54468.51496146848,0.15,5.76232,False,False,Bajo potencial de automatización,0.27,6.0391325
+5411,Bomberos y rescatistas,7196.027037402065,0.18,5.603296,False,False,Bajo potencial de automatización,0.27,6.0391325
+5412,Policías,91631.78745406696,0.14,5.781797,False,False,Bajo potencial de automatización,0.27,6.0391325
+5413,Guardianes de prisión,8755.619874980717,0.14,5.708692,False,False,Bajo potencial de automatización,0.27,6.0391325
+5414,Guardias de seguridad,500724.62915557896,0.2,5.968584,False,False,Bajo potencial de automatización,0.27,6.0391325
+5419,Personal de los servicios de protección no clasificados en otros grupos primarios,7128.577314323568,0.2,5.913359,False,False,Bajo potencial de automatización,0.27,6.0391325
+6111,Agricultores y trabajadores calificados de cultivos extensivos,340084.3626555051,0.18,5.666536,False,False,Bajo potencial de automatización,0.27,6.0391325
+6112,Agricultores y trabajadores calificados de plantaciones de árboles y arbustos,265577.07268912403,0.17,5.666536,False,False,Bajo potencial de automatización,0.27,6.0391325
+6113,"Agricultores y trabajadores calificados de huertas, invernaderos, viveros y jardines",133090.6691759687,0.18,5.519656,False,False,Bajo potencial de automatización,0.27,6.0391325
+6114,Agricultores y trabajadores calificados de cultivos mixtos,28918.53358060287,0.17,5.666536,False,False,Bajo potencial de automatización,0.27,6.0391325
+6121,Criadores de ganado y trabajadores de la cría de animales domésticos (excepto aves de corral),182608.59825950343,0.17,5.689269,False,False,Bajo potencial de automatización,0.27,6.0391325
+6122,Avicultores y trabajadores calificados de la avicultura,60108.20334045595,0.19,5.689269,False,False,Bajo potencial de automatización,0.27,6.0391325
+6123,Criadores y trabajadores calificados de la apicultura y la sericicultura,495.47883587040144,0.22,5.689269,False,False,Bajo potencial de automatización,0.27,6.0391325
+6129,"Criadores y trabajadores pecuarios calificados, avicultores y criadores de insectos no clasificados en otros grupos primarios",5927.403433094178,0.2,5.689269,False,False,Bajo potencial de automatización,0.27,6.0391325
+6130,Productores y trabajadores calificados de explotaciones agropecuarias mixtas cuya producción se destina al mercado,9048.252732785997,0.19,5.632311,False,False,Bajo potencial de automatización,0.27,6.0391325
+6210,Trabajadores forestales calificados y afines,33124.820038674516,0.12,5.591495,False,False,Bajo potencial de automatización,0.27,6.0391325
+6221,Trabajadores de explotaciones de acuicultura,3726.771233860284,0.22,5.689269,False,False,Bajo potencial de automatización,0.27,6.0391325
+6222,Pescadores de agua dulce y en aguas costeras,83330.29827791275,0.17,5.583576,False,False,Bajo potencial de automatización,0.27,6.0391325
+6223,Pescadores de alta mar,14465.80516945509,0.18,5.583576,False,False,Bajo potencial de automatización,0.27,6.0391325
+6224,Cazadores y tramperos,222.30860768034745,0.09,5.630557,False,False,Bajo potencial de automatización,0.27,6.0391325
+6320,Trabajadores pecuarios de subsistencia,57.013231165516096,0.13,5.534948,False,False,Bajo potencial de automatización,0.27,6.0391325
+7111,Constructores de casas,70996.87932235905,0.14,6.498469,False,True,Potencial incierto,0.27,6.0391325
+7112,Albañiles,196790.14179076074,0.09,5.360294,False,False,Bajo potencial de automatización,0.27,6.0391325
+7113,"Labrantes, tronzadores y grabadores de piedra",2930.305068551866,0.11,5.426626,False,False,Bajo potencial de automatización,0.27,6.0391325
+7114,"Operarios en cemento armado, enfoscadores y afines",797.7355551603662,0.1,5.353008,False,False,Bajo potencial de automatización,0.27,6.0391325
+7115,Carpinteros de armar y de obra blanca,57532.63112356228,0.13,5.435905,False,False,Bajo potencial de automatización,0.27,6.0391325
+7119,Oficiales y operarios de la construcción de obra gruesa y afines no clasificados en otros grupos primarios,13393.381564460393,0.09,5.509556,False,False,Bajo potencial de automatización,0.27,6.0391325
+7121,Techadores,7795.332492507092,0.13,5.244433,False,False,Bajo potencial de automatización,0.27,6.0391325
+7122,"Enchapadores, parqueteros y colocadores de suelos",8138.364761400847,0.1,5.376505,False,False,Bajo potencial de automatización,0.27,6.0391325
+7123,Revocadores,26354.942704817513,0.11,5.291686,False,False,Bajo potencial de automatización,0.27,6.0391325
+7124,Instaladores de material aislante y de insonorización,403.1229115841448,0.13,5.383828,False,False,Bajo potencial de automatización,0.27,6.0391325
+7125,Cristaleros,12586.82841776323,0.14,5.408525,False,False,Bajo potencial de automatización,0.27,6.0391325
+7126,Fontaneros e instaladores de tuberías,57179.69907475995,0.18,5.505657,False,False,Bajo potencial de automatización,0.27,6.0391325
+7127,Mecánicos montadores de aire acondicionado y refrigeración,13928.17342876115,0.21,5.838341,False,False,Bajo potencial de automatización,0.27,6.0391325
+7131,Pintores y empapeladores,68718.39360608242,0.13,5.287336,False,False,Bajo potencial de automatización,0.27,6.0391325
+7132,Barnizadores y afines,41699.86859156142,0.12,5.455611,False,False,Bajo potencial de automatización,0.27,6.0391325
+7133,Limpiadores de fachadas y deshollinadores,440.7306917390729,0.09,5.379189,False,False,Bajo potencial de automatización,0.27,6.0391325
+7211,Moldeadores y macheros,1358.2141798637426,0.13,5.38403,False,False,Bajo potencial de automatización,0.27,6.0391325
+7212,Soldadores y oxicortadores,113726.70472092723,0.13,5.538748,False,False,Bajo potencial de automatización,0.27,6.0391325
+7213,Chapistas y caldereros,6862.72675365753,0.21,5.58463,False,False,Bajo potencial de automatización,0.27,6.0391325
+7214,Montadores de estructuras metálicas,1441.3657660556842,0.11,5.309259,False,False,Bajo potencial de automatización,0.27,6.0391325
+7215,Aparejadores y empalmadores de cables,1776.1136644103499,0.13,5.483974,False,False,Bajo potencial de automatización,0.27,6.0391325
+7221,Herreros y forjadores,46959.53849952829,0.17,5.65006,False,False,Bajo potencial de automatización,0.27,6.0391325
+7222,Herramentistas y afines,13370.130155050561,0.2,5.7717,False,False,Bajo potencial de automatización,0.27,6.0391325
+7223,Ajustadores y operadores de máquinas herramientas,19931.761205054838,0.18,5.619966,False,False,Bajo potencial de automatización,0.27,6.0391325
+7224,Pulidores de metales y afiladores de herramientas,1207.829202871298,0.17,5.577639,False,False,Bajo potencial de automatización,0.27,6.0391325
+7231,Mecánicos y reparadores de vehículos de motor,283604.30363847676,0.18,5.611276,False,False,Bajo potencial de automatización,0.27,6.0391325
+7232,Mecánicos y reparadores de sistemas y motores de aeronaves,2914.3442188232293,0.19,5.882306,False,False,Bajo potencial de automatización,0.27,6.0391325
+7233,Mecánicos y reparadores de máquinas agrícolas e industriales,66268.01535432065,0.17,5.562452,False,False,Bajo potencial de automatización,0.27,6.0391325
+7234,Reparadores de bicicletas y afines,12629.258489276233,0.13,5.822021,False,False,Bajo potencial de automatización,0.27,6.0391325
+7311,Mecánicos y reparadores de instrumentos de precisión,4762.1329748665685,0.21,5.971792,False,False,Bajo potencial de automatización,0.27,6.0391325
+7312,Fabricantes y afinadores de instrumentos musicales,1147.3479241144682,0.14,5.910364,False,False,Bajo potencial de automatización,0.27,6.0391325
+7314,Alfareros y ceramistas (barro y arcilla),13993.33477721893,0.18,5.557803,False,False,Bajo potencial de automatización,0.27,6.0391325
+7315,"Sopladores, modeladores, laminadores, cortadores y pulidores de vidrio",3661.732714140099,0.19,5.541688,False,False,Bajo potencial de automatización,0.27,6.0391325
+7316,"Rotulistas, pintores decorativos y grabadores",6788.876834580496,0.18,5.671703,False,False,Bajo potencial de automatización,0.27,6.0391325
+7321,Preimpresores y afines,5318.989834967381,0.38,6.204643,True,True,Alto potencial de automatización,0.27,6.0391325
+7322,Impresores,13908.6923235001,0.25,5.714819,False,False,Bajo potencial de automatización,0.27,6.0391325
+7323,Encuadernadores y afines,7206.527349696235,0.22,5.626101,False,False,Bajo potencial de automatización,0.27,6.0391325
+7411,Electricistas de obras y afines,119593.79710925609,0.19,5.64606,False,False,Bajo potencial de automatización,0.27,6.0391325
+7412,Ajustadores electricistas,87022.670197954,0.17,5.691718,False,False,Bajo potencial de automatización,0.27,6.0391325
+7413,Instaladores y reparadores de líneas eléctricas,2194.5355888470467,0.15,5.786233,False,False,Bajo potencial de automatización,0.27,6.0391325
+7421,Ajustadores e instaladores en electrónica,10181.667144464227,0.25,5.830024,False,False,Bajo potencial de automatización,0.27,6.0391325
+7422,Instaladores y reparadores en tecnología de la información y las comunicaciones,58929.00114665802,0.24,5.756212,False,False,Bajo potencial de automatización,0.27,6.0391325
+7511,"Carniceros, pescaderos y afines",61651.16018870384,0.13,5.508307,False,False,Bajo potencial de automatización,0.27,6.0391325
+7512,"Panaderos, pasteleros y confiteros",131486.40266696326,0.17,5.860904,False,False,Bajo potencial de automatización,0.27,6.0391325
+7513,Operarios de la elaboración de productos lácteos,22455.105444712495,0.22,5.737752,False,False,Bajo potencial de automatización,0.27,6.0391325
+7514,"Operarios de la conservación de frutas, legumbres, verduras y afines",47320.68648631297,0.15,5.782012,False,False,Bajo potencial de automatización,0.27,6.0391325
+7515,Catadores y clasificadores de alimentos y bebidas,4590.7657015003315,0.31,5.764018,True,False,Potencial incierto,0.27,6.0391325
+7516,Preparadores y elaboradores de cigarros y productos del tabaco,2470.4188394404096,0.14,5.493816,False,False,Bajo potencial de automatización,0.27,6.0391325
+7521,Operarios del tratamiento de la madera,1080.1725827470393,0.22,5.523051,False,False,Bajo potencial de automatización,0.27,6.0391325
+7522,Ebanistas y carpinteros (excluye carpinteros de armar y de obra blanca),84924.53690378589,0.16,5.548779,False,False,Bajo potencial de automatización,0.27,6.0391325
+7523,Ajustadores y operadores de máquinas para trabajar madera,2773.819483441969,0.22,5.525065,False,False,Bajo potencial de automatización,0.27,6.0391325
+7531,"Sastres, modistos, peleteros y sombrereros",135465.38614452176,0.15,5.840518,False,False,Bajo potencial de automatización,0.27,6.0391325
+7532,"Patronistas y cortadores de tela, cuero y afines",19826.771038469327,0.17,5.725956,False,False,Bajo potencial de automatización,0.27,6.0391325
+7533,"Costureros, bordadores y afines",21534.72644095589,0.12,5.643186,False,False,Bajo potencial de automatización,0.27,6.0391325
+7534,"Tapiceros, colchoneros y afines",24649.54242674355,0.18,5.442407,False,False,Bajo potencial de automatización,0.27,6.0391325
+7535,"Apelambradores, pellejeros y curtidores",515.2233578151985,0.11,5.55607,False,False,Bajo potencial de automatización,0.27,6.0391325
+7536,Zapateros y afines,58808.32219719127,0.17,5.587921,False,False,Bajo potencial de automatización,0.27,6.0391325
+7541,Buzos,60.131059789304786,0.16,5.537519,False,False,Bajo potencial de automatización,0.27,6.0391325
+7542,Dinamiteros y pegadores,600.8729259813092,0.12,5.686134,False,False,Bajo potencial de automatización,0.27,6.0391325
+7543,Clasificadores y probadores de productos (excluyendo alimentos y bebidas),13409.897364108003,0.31,6.021355,True,False,Potencial incierto,0.27,6.0391325
+7544,Fumigadores y otros controladores de plagas y malas hierbas,89768.72746404549,0.13,5.709252,False,False,Bajo potencial de automatización,0.27,6.0391325
+7549,"Otros oficiales, operarios y oficios relacionados no clasificados en otros grupos primarios",231.74139507242367,0.14,5.838835,False,False,Bajo potencial de automatización,0.27,6.0391325
+8111,Mineros y operadores de instalaciones mineras,92903.3104468306,0.17,5.471848,False,False,Bajo potencial de automatización,0.27,6.0391325
+8112,Operadores de instalaciones de procesamiento de minerales y rocas,4488.09230102755,0.21,5.542048,False,False,Bajo potencial de automatización,0.27,6.0391325
+8113,Perforadores y sondistas de pozos y afines,1956.1208109113952,0.19,5.548316,False,False,Bajo potencial de automatización,0.27,6.0391325
+8114,Operadores de máquinas para fabricar cemento y otros productos minerales,7626.012906476788,0.23,5.627382,False,False,Bajo potencial de automatización,0.27,6.0391325
+8121,Operadores de instalaciones de procesamiento de metales,3937.81555473767,0.26,5.530396,False,False,Bajo potencial de automatización,0.27,6.0391325
+8122,"Operadores de máquinas pulidoras, galvanizadoras y recubridoras de metales",4680.670638314796,0.2,5.559303,False,False,Bajo potencial de automatización,0.27,6.0391325
+8131,Operadores de plantas y máquinas de productos químicos,20566.715808185905,0.24,5.638611,False,False,Bajo potencial de automatización,0.27,6.0391325
+8132,Operadores de máquinas para fabricar productos fotográficos,95.30126926201805,0.27,5.871595,True,False,Potencial incierto,0.27,6.0391325
+8141,Operadores de máquinas para fabricar productos de caucho,2612.6517381415533,0.18,5.508034,False,False,Bajo potencial de automatización,0.27,6.0391325
+8142,Operadores de máquinas para fabricar productos de material plástico,47865.35917489113,0.17,5.580045,False,False,Bajo potencial de automatización,0.27,6.0391325
+8143,Operadores de máquinas para fabricar productos de papel,12424.158697894847,0.18,5.542026,False,False,Bajo potencial de automatización,0.27,6.0391325
+8151,"Operadores de máquinas de preparación de fibras, hilado y devanado",3785.67255137232,0.15,5.40671,False,False,Bajo potencial de automatización,0.27,6.0391325
+8152,Operadores de telares y otras máquinas tejedoras,5214.932697315077,0.16,5.474895,False,False,Bajo potencial de automatización,0.27,6.0391325
+8153,Operadores de máquinas de coser,214392.33136070284,0.15,5.600067,False,False,Bajo potencial de automatización,0.27,6.0391325
+8154,"Operadores de máquinas de blanqueamiento, teñido y limpieza de tejidos",8683.98986428067,0.21,5.646511,False,False,Bajo potencial de automatización,0.27,6.0391325
+8155,Operadores de máquinas de tratamiento de pieles y cueros,394.31129686752405,0.15,5.695531,False,False,Bajo potencial de automatización,0.27,6.0391325
+8156,Operadores de máquinas para la fabricación de calzado y afines,11876.941188553856,0.16,5.570367,False,False,Bajo potencial de automatización,0.27,6.0391325
+8157,Operadores de máquinas de lavandería,6219.678653259228,0.16,5.559304,False,False,Bajo potencial de automatización,0.27,6.0391325
+8159,Operadores de máquinas para fabricar productos textiles y artículos de piel y cuero no clasificados en otros grupos primarios,1994.437789531895,0.16,5.695531,False,False,Bajo potencial de automatización,0.27,6.0391325
+8160,Operadores de máquinas para elaborar alimentos y productos afines,72158.51773340223,0.15,5.714449,False,False,Bajo potencial de automatización,0.27,6.0391325
+8171,Operadores de instalaciones para la preparación de papel y de pasta para papel,1375.1405473412487,0.28,5.580235,True,False,Potencial incierto,0.27,6.0391325
+8172,Operadores de instalaciones de procesamiento de la madera,3298.3224264512196,0.14,5.509436,False,False,Bajo potencial de automatización,0.27,6.0391325
+8181,Operadores de máquinas y de instalaciones para elaborar productos de vidrio y cerámica,13105.630970669463,0.17,5.59065,False,False,Bajo potencial de automatización,0.27,6.0391325
+8182,Operadores de máquinas de vapor y calderas,516.672058271253,0.2,5.807737,False,False,Bajo potencial de automatización,0.27,6.0391325
+8183,"Operadores de máquinas de embalaje, embotellamiento y etiquetado",11154.677897576456,0.22,5.593467,False,False,Bajo potencial de automatización,0.27,6.0391325
+8211,Ensambladores de maquinaria mecánica,3553.8727054337182,0.27,5.623352,True,False,Potencial incierto,0.27,6.0391325
+8212,Ensambladores de equipos eléctricos y electrónicos,7418.458493712006,0.28,5.777974,True,False,Potencial incierto,0.27,6.0391325
+8219,Ensambladores no clasificados en otros grupos primarios,4558.540426778267,0.32,5.674428,True,False,Potencial incierto,0.27,6.0391325
+8311,Maquinistas de locomotoras,2053.3653082342876,0.2,5.73995,False,False,Bajo potencial de automatización,0.27,6.0391325
+8312,"Guardafrenos, guardagujas y agentes de maniobras",359.7045206749573,0.17,5.780596,False,False,Bajo potencial de automatización,0.27,6.0391325
+8321,Conductores de motocicletas,509597.8902230916,0.25,5.779253,False,False,Bajo potencial de automatización,0.27,6.0391325
+8331,"Conductores de buses, microbuses y tranvías",111363.17534933025,0.18,5.845283,False,False,Bajo potencial de automatización,0.27,6.0391325
+8332,Conductores de camiones y vehículos pesados,283524.85932246316,0.24,5.808654,False,False,Bajo potencial de automatización,0.27,6.0391325
+8341,Operadores de maquinaria agrícola y forestal móvil,20680.237142101098,0.12,5.550276,False,False,Bajo potencial de automatización,0.27,6.0391325
+8342,"Operadores de máquinas de movimiento de tierras, construcción de vías y afines",32805.41014291777,0.13,5.543504,False,False,Bajo potencial de automatización,0.27,6.0391325
+8343,"Operadores de grúas, aparatos elevadores y afines",9804.807537663717,0.18,5.762412,False,False,Bajo potencial de automatización,0.27,6.0391325
+8344,Operadores de montacargas,26799.213661099024,0.2,5.752392,False,False,Bajo potencial de automatización,0.27,6.0391325
+8350,Marineros de cubierta y afines,11023.076980402035,0.14,5.575459,False,False,Bajo potencial de automatización,0.27,6.0391325
+9111,Personal doméstico,963168.2294587679,0.14,5.367166,False,False,Bajo potencial de automatización,0.27,6.0391325
+9112,"Aseadores de oficinas, hoteles y otros establecimientos",461881.88818805374,0.12,5.351422,False,False,Bajo potencial de automatización,0.27,6.0391325
+9121,Lavanderos y planchadores manuales,38776.00778300933,0.14,5.155579,False,False,Bajo potencial de automatización,0.27,6.0391325
+9122,Lavadores de vehículos,57936.474016827575,0.09,5.299895,False,False,Bajo potencial de automatización,0.27,6.0391325
+9123,Limpiadores de ventanas,123.79495765215138,0.11,5.387205,False,False,Bajo potencial de automatización,0.27,6.0391325
+9129,Otro personal de limpieza no clasificados en otros grupos primarios,10392.248817662543,0.1,5.434045,False,False,Bajo potencial de automatización,0.27,6.0391325
+9211,Obreros y peones de explotaciones agrícolas,1243208.4426374848,0.09,5.385233,False,False,Bajo potencial de automatización,0.27,6.0391325
+9212,Obreros y peones de explotaciones ganaderas,230169.54382020514,0.12,5.496937,False,False,Bajo potencial de automatización,0.27,6.0391325
+9213,Obreros y peones de explotaciones agropecuarias,87809.66312187936,0.11,5.435138,False,False,Bajo potencial de automatización,0.27,6.0391325
+9214,Obreros y peones de jardinería y horticultura,117497.67484810308,0.12,5.297286,False,False,Bajo potencial de automatización,0.27,6.0391325
+9215,Obreros y peones forestales,8330.041799191096,0.09,5.553598,False,False,Bajo potencial de automatización,0.27,6.0391325
+9216,Obreros y peones de pesca y acuicultura,2843.416470775056,0.11,5.443712,False,False,Bajo potencial de automatización,0.27,6.0391325
+9311,Obreros y peones de minas y canteras,94385.97195299831,0.11,5.421518,False,False,Bajo potencial de automatización,0.27,6.0391325
+9312,Obreros y peones de obras públicas y mantenimiento,29158.562417149053,0.09,5.369333,False,False,Bajo potencial de automatización,0.27,6.0391325
+9313,Obreros y peones de la construcción de edificios,664834.2040526397,0.09,5.253151,False,False,Bajo potencial de automatización,0.27,6.0391325
+9321,Empacadores manuales,113232.17997072083,0.2,5.352308,False,False,Bajo potencial de automatización,0.27,6.0391325
+9329,Obreros y peones de la industria manufacturera no clasificados en otros grupos primarios,60527.85098076325,0.12,5.420554,False,False,Bajo potencial de automatización,0.27,6.0391325
+9331,Conductores de vehículos accionados a pedal o a brazo,12954.221747294354,0.21,5.615288,False,False,Bajo potencial de automatización,0.27,6.0391325
+9332,Conductores de vehículos y maquinaria de tracción animal,2396.620514152893,0.13,5.621805,False,False,Bajo potencial de automatización,0.27,6.0391325
+9333,Obreros y peones de carga,251208.7140929787,0.14,5.617035,False,False,Bajo potencial de automatización,0.27,6.0391325
+9334,Surtidores de estanterías,37300.872701968576,0.2,5.68011,False,False,Bajo potencial de automatización,0.27,6.0391325
+9411,Cocineros de comidas rápidas,177209.69940801588,0.18,5.740109,False,False,Bajo potencial de automatización,0.27,6.0391325
+9412,Ayudantes de cocina,188925.73783723993,0.13,5.324141,False,False,Bajo potencial de automatización,0.27,6.0391325
+9510,Trabajadores ambulantes de servicios y afines,25439.256860244393,0.18,5.778424,False,False,Bajo potencial de automatización,0.27,6.0391325
+9520,Vendedores ambulantes (excluyendo comidas de preparación inmediata),200865.8210312273,0.2,6.533611,False,True,Potencial incierto,0.27,6.0391325
+9611,Recolectores de basura y material reciclable,81246.14689214369,0.09,5.778382,False,False,Bajo potencial de automatización,0.27,6.0391325
+9612,Clasificadores de desechos,43429.25653265051,0.18,5.456093,False,False,Bajo potencial de automatización,0.27,6.0391325
+9613,Barrenderos y afines,22396.29013016938,0.09,5.368045,False,False,Bajo potencial de automatización,0.27,6.0391325
+9621,"Mensajeros, mandaderos, maleteros y repartidores",199969.7536463874,0.37,5.531734,True,False,Potencial incierto,0.27,6.0391325
+9622,Personas que realizan trabajos varios,13396.788658439751,0.11,5.535397,False,False,Bajo potencial de automatización,0.27,6.0391325
+9624,Acarreadores de agua y recolectores de leña,820.9849070970005,0.09,5.264157,False,False,Bajo potencial de automatización,0.27,6.0391325
+9629,Otras ocupaciones elementales no clasificadas en otros grupos primarios,20032.493717181165,0.29,5.824871,True,False,Potencial incierto,0.27,6.0391325
