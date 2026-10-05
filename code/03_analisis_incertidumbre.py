@@ -4,10 +4,14 @@ AIOE/CAIOE para la poblacion ocupada en 2025.
 Cada persona ocupada con correspondencia valida en los dos indices cae en
 una de tres situaciones:
 
-  - Ambos indices coinciden en que la exposicion a la IA generativa es alta.
-  - Ambos indices coinciden en que la exposicion es baja.
+  - Ambos indices coinciden en que el potencial de automatizacion es alto.
+  - Ambos indices coinciden en que es bajo.
   - Los indices no coinciden (incertidumbre): el residuo de las dos
     categorias anteriores.
+
+Regla de corte: un indice es "alto" para una ocupacion cuando su puntaje es
+igual o superior a la mediana de ese indice entre las ocupaciones (CIUO-08 a
+4 digitos) con puntaje en ambos indices; cada ocupacion pesa igual.
 
 Las figuras muestran solo las dos categorias de coincidencia; el residuo
 hasta 100% corresponde a la incertidumbre. Las tablas conservan tambien la
@@ -49,13 +53,27 @@ INCIERTO_COLOR = base.QUADRANT_COLORS[base.QUADRANT_ALTA_SUSTITUYE]
 ALTA_LABEL = "Alto potencial de automatización"
 BAJA_LABEL = "Bajo potencial de automatización"
 INCIERTO_LABEL = "Potencial incierto"
-SENSITIVITY_PERCENTILES = [30, 40, 50, 60, 70]
+SENSITIVITY_PERCENTILES = [30, 40, 50, 60, 70]  # corte comun a ambos indices
 RESIDUAL_NOTE = "El resto hasta 100% es empleo donde los índices no coinciden."
 
 SOURCE = (
     "Fuente: cálculos propios con GEIH 2025 del DANE, índice OIT-NASK (2025) y "
     "AIOE/CAIOE (Felten, Raj y Seamans, 2021; Pizzinelli et al., en revisión)."
 )
+
+
+def occupation_table(data: pd.DataFrame) -> pd.DataFrame:
+    """Una fila por ocupacion (CIUO-08 4d) con puntaje en ambos indices."""
+    both = data[data["has_both_indices"]]
+    return both.groupby(["oficio_c8_4d", "oficio_c8_label"], dropna=False, as_index=False).agg(
+        oit=("ai_exposure_mean", "first"), aioe=("ai_aioe_all", "first")
+    )
+
+
+def occupation_medians(data: pd.DataFrame) -> tuple[float, float]:
+    """Medianas de OIT-NASK y AIOE entre ocupaciones (cada una pesa igual)."""
+    occupations = occupation_table(data)
+    return float(occupations["oit"].median()), float(occupations["aioe"].median())
 
 
 def flag_uncertainty(data: pd.DataFrame) -> pd.DataFrame:
@@ -67,13 +85,14 @@ def flag_uncertainty(data: pd.DataFrame) -> pd.DataFrame:
     comparaciones (igual que en la herramienta interactiva del Informe 3).
     """
     out = data.copy()
-    is_oit_alta = out["grupo_exposicion_4d"].map(base.GROUP_LABELS).isin(["Alta", "Muy alta"])
     has_oit = out["grupo_exposicion_4d"] != "Sin correspondencia 4d"
-    is_aioe_alta = out["cuadrante_aioe_caioe"].isin(
-        [base.QUADRANT_ALTA_COMPLEMENTA, base.QUADRANT_ALTA_SUSTITUYE]
-    )
     has_aioe = out["cuadrante_aioe_caioe"] != base.QUADRANT_SIN_AIOE
     out["has_both_indices"] = has_oit & has_aioe
+    corte_oit, corte_aioe = occupation_medians(out)
+    out["corte_oit"] = corte_oit
+    out["corte_aioe"] = corte_aioe
+    is_oit_alta = out["ai_exposure_mean"] >= corte_oit
+    is_aioe_alta = out["ai_aioe_all"] >= corte_aioe
     out["is_oit_alta"] = is_oit_alta
     out["is_aioe_alta"] = is_aioe_alta
     out["es_incierto"] = out["has_both_indices"] & (is_oit_alta != is_aioe_alta)
@@ -235,43 +254,35 @@ def build_scatter_table(data: pd.DataFrame) -> pd.DataFrame:
         [ALTA_LABEL, BAJA_LABEL],
         default=INCIERTO_LABEL,
     )
-    high = occupations.loc[occupations["is_oit_alta"], "oit_puntaje"].min()
-    low = occupations.loc[~occupations["is_oit_alta"], "oit_puntaje"].max()
-    occupations["corte_oit"] = (high + low) / 2 if high > low else high
-    occupations["corte_aioe"] = base.weighted_quantile(
-        both["ai_aioe_all"], both["fex"], np.array([0.5])
-    )[0]
+    occupations["corte_oit"] = float(data["corte_oit"].iloc[0])
+    occupations["corte_aioe"] = float(data["corte_aioe"].iloc[0])
     return occupations
 
 
 def build_sensitivity_table(data: pd.DataFrame) -> pd.DataFrame:
-    both = data[data["has_both_indices"]].copy()
-    oit_label = both["grupo_exposicion_4d"].map(base.GROUP_LABELS)
-    definitions = {
-        "Solo potencial de automatización muy alto": ["Muy alta"],
-        "Potencial de automatización alto y muy alto (base)": ["Alta", "Muy alta"],
-        "Potencial de automatización medio, alto y muy alto": ["Media", "Alta", "Muy alta"],
-    }
+    """Participacion de cada categoria cuando el corte de ambos indices se
+    mueve del percentil 30 al 70 de su distribucion entre ocupaciones; el
+    caso base es el percentil 50 (mediana)."""
+    both = data[data["has_both_indices"]]
+    occupations = occupation_table(data)
+    weights = both["fex"]
+    total = weights.sum()
     rows = []
-    for definition, groups in definitions.items():
-        oit_alta = oit_label.isin(groups)
-        for percentile in SENSITIVITY_PERCENTILES:
-            cutoff = base.weighted_quantile(
-                both["ai_aioe_all"], both["fex"], np.array([percentile / 100])
-            )[0]
-            aioe_alta = both["ai_aioe_all"] >= cutoff
-            weights = both["fex"]
-            total = weights.sum()
-            rows.append(
-                {
-                    "definicion_oit": definition,
-                    "percentil_corte_aioe": percentile,
-                    "corte_aioe": cutoff,
-                    "participacion_ambos_alta": weights[oit_alta & aioe_alta].sum() / total,
-                    "participacion_ambos_baja": weights[~oit_alta & ~aioe_alta].sum() / total,
-                    "participacion_incertidumbre": weights[oit_alta != aioe_alta].sum() / total,
-                }
-            )
+    for percentile in SENSITIVITY_PERCENTILES:
+        cut_oit = float(np.percentile(occupations["oit"], percentile))
+        cut_aioe = float(np.percentile(occupations["aioe"], percentile))
+        oit_alta = both["ai_exposure_mean"] >= cut_oit
+        aioe_alta = both["ai_aioe_all"] >= cut_aioe
+        rows.append(
+            {
+                "percentil_corte": percentile,
+                "corte_oit": cut_oit,
+                "corte_aioe": cut_aioe,
+                "participacion_ambos_alta": weights[oit_alta & aioe_alta].sum() / total,
+                "participacion_ambos_baja": weights[~oit_alta & ~aioe_alta].sum() / total,
+                "participacion_incertidumbre": weights[oit_alta != aioe_alta].sum() / total,
+            }
+        )
     return pd.DataFrame(rows)
 
 
@@ -390,8 +401,9 @@ def _plot_legend(draw, items, x, y, font):
 
 def save_agreement_scatter(table: pd.DataFrame, filename: str) -> None:
     """Dispersion OIT-NASK (eje x) contra AIOE (eje y) por ocupacion. Las
-    lineas de corte definen cuatro zonas: en dos coinciden los indices y la
-    zona superior izquierda es la discrepancia (AIOE alto, OIT bajo)."""
+    lineas de corte (medianas de cada indice) definen cuatro zonas: en dos
+    coinciden los indices y las otras dos son la discrepancia (arriba a la
+    izquierda: AIOE alto y OIT bajo; abajo a la derecha: OIT alto y AIOE bajo)."""
     width, height = 2200, 1500
     image = Image.new("RGB", (width, height), "white")
     draw = ImageDraw.Draw(image)
@@ -431,14 +443,17 @@ def save_agreement_scatter(table: pd.DataFrame, filename: str) -> None:
     draw.rectangle((x_cut, top, right, y_cut), fill="#E7EEF7")
     draw.rectangle((left, top, x_cut, y_cut), fill="#FBECEA")
     draw.rectangle((left, y_cut, x_cut, bottom), fill="#F2F4F6")
+    draw.rectangle((x_cut, y_cut, right, bottom), fill="#FBECEA")
 
     total = table["ocupados"].sum()
     share = table.groupby("categoria")["ocupados"].sum() / total
+    solo_aioe = table.loc[~table["is_oit_alta"] & table["is_aioe_alta"], "ocupados"].sum() / total
+    solo_oit = table.loc[table["is_oit_alta"] & ~table["is_aioe_alta"], "ocupados"].sum() / total
     zones = [
         ((x_cut + right) / 2, top + 20, f"ALTO POTENCIAL ({share.get(ALTA_LABEL, 0):.1%})"),
-        ((left + x_cut) / 2, top + 20, f"INCIERTO ({share.get(INCIERTO_LABEL, 0):.1%})"),
+        ((left + x_cut) / 2, top + 20, f"INCIERTO ({solo_aioe:.1%})"),
         ((left + x_cut) / 2, bottom - 56, f"BAJO POTENCIAL ({share.get(BAJA_LABEL, 0):.1%})"),
-        ((x_cut + right) / 2, bottom - 56, "SOLO OIT ALTO (0.0%)"),
+        ((x_cut + right) / 2, bottom - 56, f"INCIERTO ({solo_oit:.1%})"),
     ]
     for cx, cy, text in zones:
         text = text.replace(".", ",")
@@ -457,6 +472,12 @@ def save_agreement_scatter(table: pd.DataFrame, filename: str) -> None:
 
     draw.line((x_cut, top, x_cut, bottom), fill="#71808F", width=3)
     draw.line((left, y_cut, right, y_cut), fill="#71808F", width=3)
+    font_cut = base.image_font(21)
+    cut_oit_text = f"Mediana OIT-NASK: {float(table['corte_oit'].iloc[0]):.2f}".replace(".", ",")
+    cut_aioe_text = f"Mediana AIOE: {float(table['corte_aioe'].iloc[0]):.2f}".replace(".", ",")
+    draw.text((x_cut + 10, bottom - 96), cut_oit_text, font=font_cut, fill="#5A6570")
+    box = draw.textbbox((0, 0), cut_aioe_text, font=font_cut)
+    draw.text((right - 10 - (box[2] - box[0]), y_cut - 30), cut_aioe_text, font=font_cut, fill="#5A6570")
 
     colors = {ALTA_LABEL: ALTA_COLOR, BAJA_LABEL: BAJA_COLOR, INCIERTO_LABEL: INCIERTO_COLOR}
     max_size = float(table["ocupados"].max()) or 1.0
@@ -482,14 +503,14 @@ def save_agreement_scatter(table: pd.DataFrame, filename: str) -> None:
 
 
 def save_sensitivity_chart(table: pd.DataFrame, filename: str) -> None:
-    """Participacion de la incertidumbre segun el corte de AIOE (percentil
-    de la distribucion ponderada) y la definicion de alta exposicion OIT."""
+    """Participacion de cada categoria segun el percentil en que se corta
+    cada indice (el mismo percentil para ambos; P50 = mediana, caso base)."""
     width, height = 2200, 1300
     image = Image.new("RGB", (width, height), "white")
     draw = ImageDraw.Draw(image)
     top = base.draw_header(
         draw,
-        "Potencialidad de automatización: sensibilidad al umbral",
+        "Potencialidad de automatización: sensibilidad al corte",
         "",
         width,
     )
@@ -499,11 +520,11 @@ def save_sensitivity_chart(table: pd.DataFrame, filename: str) -> None:
     font_tick = base.image_font(21)
 
     series = [
-        ("Solo potencial de automatización muy alto", "#B6423C"),
-        ("Potencial de automatización alto y muy alto (base)", ALTA_COLOR),
-        ("Potencial de automatización medio, alto y muy alto", "#3182BD"),
+        (ALTA_LABEL, "participacion_ambos_alta", ALTA_COLOR),
+        (BAJA_LABEL, "participacion_ambos_baja", BAJA_COLOR),
+        (INCIERTO_LABEL, "participacion_incertidumbre", INCIERTO_COLOR),
     ]
-    _plot_legend(draw, [(color, name) for name, color in series], 70, top - 22, font_label)
+    _plot_legend(draw, [(color, name) for name, _, color in series], 70, top - 22, font_label)
     top += 60
     left, right = 190, 2060
     bottom = height - 230
@@ -529,27 +550,25 @@ def save_sensitivity_chart(table: pd.DataFrame, filename: str) -> None:
         box = draw.textbbox((0, 0), tick, font=font_tick)
         draw.text((x - (box[2] - box[0]) / 2, bottom + 16), tick, font=font_tick, fill="#5A6570")
 
-    for name, color in series:
-        part = table[table["definicion_oit"] == name].sort_values("percentil_corte_aioe")
-        points = [
-            (to_x(r["percentil_corte_aioe"]), to_y(r["participacion_incertidumbre"]))
-            for _, r in part.iterrows()
-        ]
+    part = table.sort_values("percentil_corte")
+    for _, column, color in series:
+        points = [(to_x(r["percentil_corte"]), to_y(r[column])) for _, r in part.iterrows()]
         draw.line(points, fill=color, width=6, joint="curve")
         for (x, y), (_, r) in zip(points, part.iterrows()):
-            is_base = name.endswith("(base)") and int(r["percentil_corte_aioe"]) == 50
-            radius = 15 if is_base else 9
+            radius = 15 if int(r["percentil_corte"]) == 50 else 9
             draw.ellipse((x - radius, y - radius, x + radius, y + radius), fill=color, outline="white", width=3)
-            label = f"{r['participacion_incertidumbre']:.1%}".replace(".", ",")
+            label = f"{r[column]:.1%}".replace(".", ",")
             box = draw.textbbox((0, 0), label, font=font_value)
-            draw.text((x - (box[2] - box[0]) / 2, y - 46), label, font=font_value, fill="#27313B")
+            is_top = r[column] >= max(r[c] for _, c, _ in series)
+            label_y = y - 46 if is_top else y + 18
+            draw.text((x - (box[2] - box[0]) / 2, label_y), label, font=font_value, fill="#27313B")
 
     draw.line((left, top, left, bottom), fill="#71808F", width=2)
     draw.line((left, bottom, right, bottom), fill="#71808F", width=2)
-    x_label = "Corte de alto potencial de automatización de AIOE (percentil de la distribución ponderada; caso base P50 = mediana)"
+    x_label = "Percentil de corte de ambos índices entre ocupaciones (P50 = mediana, caso base)"
     box = draw.textbbox((0, 0), x_label, font=font_axis)
     draw.text(((left + right - (box[2] - box[0])) / 2, bottom + 62), x_label, font=font_axis, fill="#27313B")
-    draw.text((left, top - 34), "Participación del empleo en incertidumbre", font=font_axis, fill="#27313B")
+    draw.text((left, top - 34), "Participación del empleo", font=font_axis, fill="#27313B")
     draw.text((70, height - 55), SOURCE, font=base.image_font(20), fill="#5A6570")
     image.save(FIG_DIR / filename, dpi=(220, 220))
 
@@ -622,6 +641,7 @@ def build_charts(tables: dict[str, pd.DataFrame]) -> None:
         [
             {"categoria": ALTA_LABEL, "participacion": national["participacion_ambos_alta"]},
             {"categoria": BAJA_LABEL, "participacion": national["participacion_ambos_baja"]},
+            {"categoria": INCIERTO_LABEL, "participacion": national["participacion_incertidumbre"]},
         ]
     )
     base.save_bar_chart(
@@ -633,9 +653,9 @@ def build_charts(tables: dict[str, pd.DataFrame]) -> None:
         "",
         percent=True,
         preserve_order=True,
-        color_by_label={ALTA_LABEL: ALTA_COLOR, BAJA_LABEL: BAJA_COLOR},
+        color_by_label={ALTA_LABEL: ALTA_COLOR, BAJA_LABEL: BAJA_COLOR, INCIERTO_LABEL: INCIERTO_COLOR},
         source=SOURCE,
-        min_height=520,
+        min_height=600,
         axis_label="Participación del empleo",
     )
 
