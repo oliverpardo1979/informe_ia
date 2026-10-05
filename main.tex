@@ -153,7 +153,7 @@ Este informe evalúa el impacto de la IA sobre los trabajadores colombianos. En 
 
 %El interés no está únicamente en identificar dónde puede producirse una transformación más intensa de las tareas, sino también en entender dónde existen mejores condiciones para convertir ese cambio tecnológico en aumentos de productividad y dónde pueden surgir transiciones laborales más complejas.
 
-El informe está organizado en seis secciones, incluida la presente introducción, y un apéndice metodológico. La sección 2 describe los indicadores de exposición y complementariedad y explica cómo se cruzan con la GEIH. La sección 3 caracteriza la exposición a la IA en Colombia. La sección 4 distingue entre ocupaciones donde la IA puede sustituir tareas y ocupaciones donde puede complementar el trabajo. La sección 5 revisa evidencia internacional sobre los efectos de la adopción de IA. La sección 6 presenta implicaciones para Colombia. El apéndice reporta la regla de clasificación del indicador de exposición.
+El informe está organizado en seis secciones, incluida la presente introducción, y un apéndice metodológico. La sección 2 describe los indicadores de exposición y complementariedad y explica cómo se cruzan con la GEIH. La sección 3 caracteriza la exposición a la IA en Colombia. La sección 4 distingue entre ocupaciones donde la IA puede sustituir tareas y ocupaciones donde puede complementar el trabajo. La sección 5 revisa evidencia internacional sobre los efectos de la adopción de IA. La sección 6 presenta implicaciones para Colombia. %El apéndice reporta la regla de clasificación del indicador de exposición.
 
 \section{Metodología}
 
@@ -251,6 +251,48 @@ La Figura \ref{fig:quintiles_ingreso} muestra una correlación positiva entre in
 \end{figure}
 
 La naturaleza de las tareas por parte de las personas con mayores ingresos y con mayor logro educativo ayuda a explicar estas correlaciones. El procesamiento de información, la escritura, el análisis, la programación y la elaboración de documentos tienen mayor peso en ocupaciones profesionales y de oficina, que a su vez se concentran entre trabajadores de mayores ingresos y educación.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Ocupaciones de alta exposición según el índice OIT-NASK, por quintil de ingreso}
+\label{tab:ocupaciones_oit_quintil}
+\begin{tabular}{p{5.2cm}rp{5.2cm}r}
+\toprule
+\multicolumn{2}{c}{Quintil 1 (más pobre)} & \multicolumn{2}{c}{Quintil 5 (más rico)} \\
+\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+Ocupación & Ocupados & Ocupación & Ocupados \\
+\midrule
+Vendedores a través de medios tecnológicos & 21.348 & Contadores & 181.430 \\
+Oficinistas generales & 6.019 & Oficinistas generales & 89.967 \\
+Grabadores de datos & 3.794 & Desarrolladores de software & 74.832 \\
+Auxiliares de contabilidad y cálculo de costos & 3.727 & Asesores financieros y de inversiones & 55.033 \\
+Secretarios generales & 2.718 & Profesionales de la publicidad y la comercialización & 48.190 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Ocupaciones de alta exposición según AIOE (Felten et al., 2021; Pizzinelli et al.), por quintil de ingreso}
+\label{tab:ocupaciones_aioe_quintil}
+\begin{tabular}{p{5.2cm}rp{5.2cm}r}
+\toprule
+\multicolumn{2}{c}{Quintil 1 (más pobre)} & \multicolumn{2}{c}{Quintil 5 (más rico)} \\
+\cmidrule(lr){1-2} \cmidrule(lr){3-4}
+Ocupación & Ocupados & Ocupación & Ocupados \\
+\midrule
+Vendedores en tiendas y almacenes & 282.381 & Contadores & 181.430 \\
+Vendedores ambulantes de alimentos & 130.427 & Profesores de educación secundaria & 178.446 \\
+Comerciantes de tiendas & 130.170 & Abogados & 177.594 \\
+Representantes comerciales & 122.115 & Gerentes de comercio al por mayor y al por menor & 137.859 \\
+Especialistas en tratamientos de belleza & 98.670 & Profesores de educación primaria & 134.195 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Los cuadros 3 y 4 dejan entrever un resultado comparativo entre los quintiles 1 y 5 identificando cuales son las ocupaciones con mayor exposicion segun distinta definicion. A pesar de que se encuentran algunas diferencias, existe concordancia en algunas ocupaciones expuestas entre ambos indices reflejando que es necesario anticiparse a medidas de politica publica enfocadas en estas ocupaciones altamente expuestas. Para mas detalles ver anexos.
 
 \textbf{Las mujeres y los trabajadores formales están más expuestos a la IA}
 
@@ -426,160 +468,59 @@ Los resultados del informe desplazan la discusión desde la cantidad de empleos 
 
 \begin{figure}[H]
     \centering
-
     \resizebox{0.92\textwidth}{!}{%
     \begin{tikzpicture}[
-        node distance=0.3cm,
-        every node/.style={
-            font=\footnotesize,
-            align=center
+        node distance=0.9cm and 1.6cm,
+        every node/.style={font=\footnotesize, align=center},
+        box/.style={
+            rectangle, rounded corners=3pt, draw,
+            minimum width=4.6cm, minimum height=1cm, inner sep=4pt
         },
-        main/.style={
-            rectangle,
-            rounded corners=2pt,
-            draw,
-            minimum width=2.2cm,
-            minimum height=0.9cm,
-            inner sep=2pt
+        pathbox/.style={
+            rectangle, rounded corners=3pt, draw, thick,
+            minimum width=4.6cm, minimum height=1cm, inner sep=4pt
         },
-        outcome/.style={
-            rectangle,
-            rounded corners=3pt,
-            draw,
-            minimum width=2.8cm,
-            minimum height=0.8cm,
-            inner sep=5pt
-        },
-        factor/.style={
-            rectangle,
-            rounded corners=2pt,
-            draw,
-            dashed,
-            minimum width=3.1cm,
-            minimum height=0.7cm,
-            inner sep=4pt,
-            font=\footnotesize
-        },
-        arrow/.style={
-            -{Latex[length=2mm]},
-            thick
-        },
-        factorarrow/.style={
-            -{Latex[length=2mm]},
-            dashed
-        }
+        arrow/.style={-{Latex[length=2.2mm]}, thick}
     ]
 
-    % Cadena principal
+    \node[box] (exposicion)
+        {\textbf{Exposición tecnológica}\\
+        Las tareas de la ocupación son compatibles con lo que la IA puede hacer};
 
-    \node[main] (capacity)
-    {\textbf{Capacidades de la inteligencia artificial}\\
-    Tareas que la tecnología puede realizar o transformar};
+    \node[pathbox, below left=1.1cm and 0.4cm of exposicion, draw=red!55!black]
+        (sustitucion)
+        {\textbf{Baja complementariedad}\\
+        Mayor potencial de sustitución de tareas};
 
-    \node[main, below=of capacity] (exposure)
-    {\textbf{Exposición ocupacional}\\
-    Presencia de esas tareas dentro de cada ocupación};
+    \node[pathbox, below right=1.1cm and 0.4cm of exposicion, draw=blue!45!black]
+        (complementariedad)
+        {\textbf{Alta complementariedad}\\
+        Mayor potencial de aumento de productividad};
 
-    \node[main, below=of exposure] (adoption)
-    {\textbf{Adopción de inteligencia artificial}\\
-    Uso efectivo por empresas y trabajadores};
+    \node[box, below=2.3cm of exposicion] (adopcion)
+        {\textbf{Adopción real por empresas y trabajadores}\\
+        No es automática: depende de costos, habilidades y organización del trabajo};
 
-    \node[main, below=of adoption] (reorganization)
-    {\textbf{Reorganización del trabajo}\\
-    Cambio en la combinación y distribución de tareas};
+    \node[box, below=1.1cm of adopcion] (resultado)
+        {\textbf{Efecto en empleo, salarios y calidad del trabajo}\\
+        Incierto: puede ser positivo o negativo según el caso};
 
-    % Automatización y complementariedad
-
-    \node[outcome, below left=0.9cm and 0.5cm of reorganization]
-    (automation)
-    {\textbf{Automatización}\\
-    Sustitución de algunas tareas};
-
-    \node[outcome, below right=0.9cm and 0.5cm of reorganization]
-    (complement)
-    {\textbf{Complementariedad}\\
-    IA como apoyo al trabajador};
-
-    % Productividad y calidad
-
-    \node[main, below=2.0cm of reorganization] (productivity)
-    {\textbf{Productividad y calidad}\\
-    Cambios en tiempo, producción, errores y desempeño};
-
-    % Resultados laborales finales
-
-    \node[outcome, below left=0.9cm and 1.4cm of productivity]
-    (employment)
-    {\textbf{Empleo}\\
-    Demanda de trabajo};
-
-    \node[outcome, below=0.9cm of productivity]
-    (wages)
-    {\textbf{Salarios}\\
-    e ingresos};
-
-    \node[outcome, below right=0.9cm and 1.4cm of productivity]
-    (transitions)
-    {\textbf{Transiciones}\\
-    ocupacionales};
-
-    % Flechas principales
-
-    \draw[arrow] (capacity) -- (exposure);
-    \draw[arrow] (exposure) -- (adoption);
-    \draw[arrow] (adoption) -- (reorganization);
-
-    \draw[arrow] (reorganization) -- (automation);
-    \draw[arrow] (reorganization) -- (complement);
-
-    \draw[arrow] (automation) -- (productivity);
-    \draw[arrow] (complement) -- (productivity);
-
-    \draw[arrow] (productivity) -- (employment);
-    \draw[arrow] (productivity) -- (wages);
-    \draw[arrow] (productivity) -- (transitions);
-
-    % Factores que condicionan la relación
-
-    \node[factor, left=1.4cm of adoption] (skills)
-    {\textbf{Habilidades}\\
-    Formación y capacidad de uso};
-
-    \node[factor, right=1.4cm of adoption] (organization)
-    {\textbf{Organización empresarial}\\
-    Procesos y gestión};
-
-    \node[factor, left=1.4cm of reorganization] (investment)
-    {\textbf{Inversión complementaria}\\
-    Tecnología e infraestructura};
-
-    \node[factor, right=1.4cm of reorganization] (demand)
-    {\textbf{Demanda}\\
-    Bienes y servicios};
-
-    \node[factor, right=1.4cm of productivity] (regulation)
-    {\textbf{Regulación y entorno institucional}};
-
-    % Flechas de factores
-
-    \draw[factorarrow] (skills) -- (adoption);
-    \draw[factorarrow] (organization) -- (adoption);
-    \draw[factorarrow] (investment) -- (reorganization);
-    \draw[factorarrow] (demand) -- (reorganization);
-    \draw[factorarrow] (regulation) -- (productivity);
+    \draw[arrow] (exposicion) -- (sustitucion);
+    \draw[arrow] (exposicion) -- (complementariedad);
+    \draw[arrow] (sustitucion) -- (adopcion);
+    \draw[arrow] (complementariedad) -- (adopcion);
+    \draw[arrow] (adopcion) -- (resultado);
 
     \end{tikzpicture}%
     }
-
-    \caption{Cómo la exposición a la inteligencia artificial puede traducirse en resultados laborales}
+    \caption{De la exposición tecnológica al efecto sobre el empleo}
     \label{fig:mecanismo_ia_empleo}
 
-    \begin{minipage}{0.95\textwidth}
+    \begin{minipage}{0.85\textwidth}
         \vspace{0.2cm}
         \footnotesize
-%        \textit{Nota:} La exposición tecnológica no determina directamente los        efectos sobre empleo o salarios. Los resultados dependen de la adopción,        la reorganización de las tareas, el grado de automatización o complementariedad y de factores como las habilidades de los trabajadores,       la organización empresarial, la inversión complementaria, la demanda y el entorno institucional.
+        \textit{Nota:} La exposición y la complementariedad describen el potencial técnico de una ocupación; el efecto final depende de si empresas y trabajadores efectivamente adoptan la tecnología, lo cual varía según habilidades, costos, organización del trabajo y demanda.
     \end{minipage}
-
 \end{figure}
 
 Para las empresas, la unidad relevante de análisis es la tarea. Identificar qué actividades pueden automatizarse, cuáles requieren supervisión y cuáles pueden aumentar su valor mediante nuevas herramientas permite orientar la adopción hacia mejoras de productividad y calidad. Los pilotos de implementación deberían evaluar no solo reducciones de tiempo y costos, sino también errores, satisfacción de clientes, carga de trabajo y capacidad de los trabajadores para asumir funciones de mayor valor agregado.
@@ -626,6 +567,28 @@ Muy baja o ninguna & casos restantes \\
 
 {\footnotesize Fuente: \cite{gmyrek2025}}
 \end{table}
+
+\section{Robustez}
+
+Las Figuras 11 y 12 detallan, a nivel de ocupación, el patrón agregado presentado en la Sección 5 sobre la heterogeneidad de la exposición por quintil de ingreso. Cada figura compara las cinco ocupaciones de mayor peso en el quintil de ingreso más bajo y en el más alto, clasificadas como de alta exposición según un índice distinto: el índice OIT-NASK y AIOE.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.76\textheight,keepaspectratio]{figures/fig_19_ocupaciones_alta_exposicion_por_quintil.png}
+\caption{Ocupados por actividades economicas mas expuestas por quintil de ingreso - OIT}
+\label{fig:razon_complementariedad_relativa}
+\end{figure}
+
+Bajo el índice OIT-NASK, la exposición alta se concentra casi por completo en el quintil de mayores ingresos. En el quintil 1, la ocupación de mayor peso clasificada como de alta exposición —vendedores a través de medios tecnológicos— reúne 21 mil personas; sumando todas las ocupaciones de alta exposición del quintil, el total llega a 57 mil personas, el 1,3\% de su empleo. En el quintil 5, contadores por sí solos representan 181 mil personas, y el conjunto de ocupaciones de alta exposición asciende a 769 mil personas, el 16,8\% del quintil.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=0.76\textheight,keepaspectratio]{figures/fig_20_ocupaciones_alta_exposicion_aioe_por_quintil.png}
+\caption{Ocupados por actividades economicas mas expuestas por quintil de ingreso - Pizinelli}
+\label{fig:razon_complementariedad_relativa}
+\end{figure}
+
+El panorama cambia de forma sustancial al usar AIOE (Felten et al., 2021; Pizzinelli et al., en revisión). En el quintil 1, la ocupación de mayor peso bajo este índice —vendedores y auxiliares de venta en tiendas— concentra 282 mil personas, más que cualquier ocupación de alta exposición OIT en el quintil 5 con excepción de contadores. En conjunto, las ocupaciones de alta exposición AIOE suman 1,57 millones de personas en el quintil 1 (34,3\% de su empleo) y 3,86 millones en el quintil 5 (84,4\%). La diferencia no es solo de magnitud: en el quintil 1, la mayoría de esas ocupaciones —vendedores ambulantes, especialistas en tratamientos de belleza, sastres— corresponde al cuadrante de baja complementariedad (mayor riesgo de sustitución, en rojo en la Figura A.2), mientras que en el quintil 5 predominan ocupaciones de alta complementariedad (profesores, abogados, gerentes, en azul). El índice OIT, centrado en tareas de oficina, deja fuera buena parte de la exposición que AIOE sí captura en ventas, atención al público y servicios personales.
 
 \section*{Reproducibilidad}
 
