@@ -1,52 +1,52 @@
-﻿oficio_c8_4d,oficio_c8_label,occupation_name_isco08,grupo_exposicion_4d,ocupados,observaciones,exposicion_promedio_4d,desviacion_tareas_4d,participacion_empleo,grupo_exposicion_es
-4110,Oficinistas generales,General Office Clerks,Gradient 4,309583.3989483505,5844,0.6,0.1,0.013486300896569737,Muy alta
-2411,Contadores,Accountants,Gradient 3,252537.74117273046,3800,0.51,0.08,0.01100123577932452,Alta
-4222,Empleados de centros de llamadas,Contact Centre Information Clerks,Gradient 3,191575.44502539234,2301,0.58,0.06,0.008345551165803107,Alta
-4311,Auxiliares de contabilidad y cálculo de costos,Accounting and Bookkeeping Clerks,Gradient 4,161070.75975152224,2604,0.64,0.07,0.007016683514126451,Muy alta
-4120,Secretarios generales,Secretaries (general),Gradient 3,106598.23377866385,1929,0.58,0.1,0.004643711066761012,Alta
-2512,Desarrolladores de software,Software Developers,Gradient 3,88504.18554450833,974,0.53,0.07,0.0038554847608550575,Alta
-5244,Vendedores a través de medios tecnológicos,Contact Centre Salespersons,Gradient 4,76827.25460029914,936,0.61,0.1,0.00334680566243756,Muy alta
-2412,Asesores financieros y de inversiones,Financial and Investment Advisers,Gradient 3,72112.56695370383,796,0.57,0.11,0.00314142095366016,Alta
-2431,Profesionales de la publicidad y la comercialización,Advertising and Marketing Professionals,Gradient 3,71487.05547130128,801,0.55,0.09,0.003114171960030022,Alta
-3343,Secretarios administrativos y ejecutivos,Administrative and Executive Secretaries,Gradient 3,69084.86416068696,1110,0.54,0.14,0.003009525926243582,Alta
-4132,Grabadores de datos,Data Entry Clerks,Gradient 4,41359.44194938024,932,0.7,0.03,0.001801730586776745,Muy alta
-4226,Recepcionistas generales,Receptionists (general),Gradient 3,34171.97630422927,594,0.57,0.17,0.0014886248947288472,Alta
-3312,Analistas de préstamos y créditos,Credit and Loans Officers,Gradient 4,32960.592523367,415,0.6,0.04,0.001435853698904298,Muy alta
-3321,Agentes de seguros,Insurance Representatives,Gradient 3,25137.15566568432,339,0.53,0.12,0.001095043358729613,Alta
-3344,Secretarios médicos,Medical Secretaries,Gradient 3,24357.39294692273,399,0.53,0.11,0.0010610747587049697,Alta
-4224,Recepcionistas de hoteles,Hotel Receptionists,Gradient 3,24133.30951518697,562,0.51,0.07,0.0010513130705892947,Alta
-4323,Empleados de servicios de transporte,Transport Clerks,Gradient 3,23973.162957452394,335,0.5,0.1,0.0010443366478466826,Alta
-4211,Cajeros de bancos y afines,Bank Tellers and Related Clerks,Gradient 3,22067.764330398782,359,0.58,0.09,0.0009613322642148492,Alta
-2642,Periodistas,Journalists,Gradient 3,21320.57009755548,281,0.54,0.1,0.0009287824366512996,Alta
-4225,Empleados de ventanillas de información,Inquiry Clerks,Gradient 3,21086.199868967757,363,0.57,0.09,0.0009185726274862443,Alta
-4414,Escribientes públicos y afines,Scribes and Related Workers,Gradient 3,17261.202745338618,269,0.58,0.08,0.000751945275008657,Alta
-4221,Empleados y consultores de viajes,Travel Consultants and Clerks,Gradient 3,16240.21320709571,265,0.56,0.07,0.0007074681739374498,Alta
-4416,Empleados del servicio de personal,Personnel Clerks,Gradient 4,14573.523643976545,188,0.6,0.09,0.0006348626110236985,Muy alta
-2513,Desarrolladores web y multimedia,Web and Multimedia Developers,Gradient 4,13176.151192197496,141,0.6,0.08,0.0005739892392173061,Muy alta
-2433,Profesionales de ventas técnicas y médicas (excluyendo las TIC),Technical and Medical Sales Professionals (excluding ICT),Gradient 3,11981.305831835456,145,0.5,0.1,0.0005219385022932595,Alta
-2521,Diseñadores y administradores de bases de datos,Database Designers and Administrators,Gradient 3,10736.395155207876,109,0.57,0.08,0.00046770678304931904,Alta
-3342,Secretarios jurídicos,Legal Secretaries,Gradient 3,10005.094518336593,193,0.55,0.13,0.00043584932406346224,Alta
-2413,Analistas financieros,Financial Analysts,Gradient 4,9957.805235836739,102,0.62,0.06,0.00043378927337876024,Muy alta
-2631,Economistas,Economists,Gradient 3,9147.89134718162,116,0.55,0.08,0.0003985072058007888,Alta
-4227,Entrevistadores de encuestas y de investigaciones de mercados,Survey and Market Research Interviewers,Gradient 3,9122.728929172177,192,0.55,0.16,0.0003974110619451642,Alta
-3331,Declarantes o gestores de aduana,Clearing and Forwarding Aents,Gradient 3,6363.865200224072,73,0.57,0.09,0.0002772274005872954,Alta
-2643,"Traductores, intérpretes y otros lingüistas","Translators, Interpreters and Other Linguists",Gradient 3,4863.791523228148,80,0.59,0.11,0.000211880082082126,Alta
-3311,"Agentes de bolsa, cambio y otros servicios financieros",Securities and Finance Dealers and Brokers,Gradient 4,4204.437415919097,56,0.63,0.04,0.00018315681100633245,Muy alta
-2120,"Matemáticos, actuarios y estadísticos","Mathematicians, Actuaries and Statisticians",Gradient 3,4203.536839312676,27,0.56,0.09,0.00018311757942241725,Alta
-4223,Telefonistas,Telephone Switchboard Operators,Gradient 3,3898.934337925182,59,0.54,0.15,0.00016984826006771598,Alta
-3514,Técnicos de la Web,Web Technicians,Gradient 3,3194.4709425121946,22,0.53,0.12,0.0001391599048347412,Alta
-2622,"Bibliotecarios, documentalistas y afines",Librarians and Related Information Professionals,Gradient 3,3052.967876669608,49,0.55,0.04,0.00013299564366885542,Alta
-2514,Programadores de aplicaciones,Applications Programmers,Gradient 3,2500.863372601095,21,0.57,0.08,0.00010894445909787135,Alta
-2641,Autores y otros escritores,Authors and Related Writers,Gradient 3,2482.8580110112925,36,0.55,0.09,0.00010816009622513177,Alta
-4313,Auxiliares encargados de las nóminas,Payroll Clerks,Gradient 4,2150.0089409811017,32,0.61,0.08,9.366027896484167e-05,Muy alta
-4419,Otro personal de apoyo administrativo no clasificados en otros grupos primarios,Clerical Support Workers Not Elsewhere Classified,Gradient 4,2009.6246039012271,36,0.63,0.03,8.754475268838094e-05,Muy alta
-4312,"Auxiliares de servicios estadísticos, financieros y de seguros","Statistical, Finance and Insurance Clerks",Gradient 4,1840.4572727192726,31,0.64,0.02,8.017536034389633e-05,Muy alta
-2519,Desarrolladores y analistas de software y multimedia no clasificados en otros grupos primarios,Software and Applications Developers and Analysts Not Elsewhere Classified,Gradient 3,1835.6270325025093,12,0.55,0.16,7.996494184863054e-05,Alta
-2522,Administradores de sistemas,Systems Aministrators,Gradient 3,1707.7607980572568,8,0.57,0.05,7.4394738413634e-05,Alta
-2434,Profesionales de ventas de tecnología de la información y las comunicaciones,Information and Communications Technology Sales Professionals,Gradient 3,845.1477515980793,13,0.51,0.09,3.6816951163497785e-05,Alta
-2523,Profesionales en redes de computadores,Computer Network Professionals,Gradient 3,695.6415289543229,10,0.52,0.06,3.030405056439417e-05,Alta
-4413,"Codificadores de datos, correctores de pruebas de imprenta y afines","Coding, Proofreading and Related Clerks",Gradient 3,539.8349971658536,9,0.51,0.2,2.3516691240579722e-05,Alta
-2112,Meteorólogos,Meteorologists,Gradient 3,249.70242761306298,2,0.54,0.13,1.087772175392234e-05,Alta
-3252,Técnicos en documentación sanitaria,Medical Records and Health Information Technicians,Gradient 3,209.12574706926875,12,0.52,0.1,9.11009039818258e-06,Alta
-4131,Operadores de máquinas de procesamiento de texto y mecanógrafos,Typists and Word Processing Operators,Gradient 4,118.16573441046185,4,0.65,0.05,5.147623081008634e-06,Muy alta
-3314,"Técnicos y profesionales del nivel medio de servicios estadísticos, matemáticos y afines","Statistical, Mathematical and Related Associate Professionals",Gradient 3,48.76969007548972,2,0.57,0.1,2.1245412939607805e-06,Alta
+﻿oficio_c8_4d,oficio_c8_label,occupation_name_isco08,grupo_exposicion_4d,ocupados,observaciones,exposicion_promedio_4d,desviacion_tareas_4d,aioe_all,caioe,caioe_w50,theta,cuadrante_aioe_caioe,participacion_empleo,grupo_exposicion_es
+4110,Oficinistas generales,General Office Clerks,Gradient 4,309583.3989483505,5844,0.6,0.1,6.59278,5.667148,6.129964,0.4494444,"Alto potencial de automatización, baja complementariedad",0.013486300896569737,Muy alta
+2411,Contadores,Accountants,Gradient 3,252537.74117273046,3800,0.51,0.08,6.677804,5.356271,6.017037,0.5068519,"Alto potencial de automatización, baja complementariedad",0.01100123577932452,Alta
+4222,Empleados de centros de llamadas,Contact Centre Information Clerks,Gradient 3,191575.44502539234,2301,0.58,0.06,6.482806,5.543252,6.013029,0.4540972,"Alto potencial de automatización, baja complementariedad",0.008345551165803107,Alta
+4311,Auxiliares de contabilidad y cálculo de costos,Accounting and Bookkeeping Clerks,Gradient 4,161070.75975152224,2604,0.64,0.07,6.569447,5.652227,6.110837,0.4490278,"Alto potencial de automatización, baja complementariedad",0.007016683514126451,Muy alta
+4120,Secretarios generales,Secretaries (general),Gradient 3,106598.23377866385,1929,0.58,0.1,6.529984,5.584951,6.057467,0.4538889,"Alto potencial de automatización, baja complementariedad",0.004643711066761012,Alta
+2512,Desarrolladores de software,Software Developers,Gradient 3,88504.18554450833,974,0.53,0.07,6.594469,5.235276,5.914872,0.5152778,"Alto potencial de automatización, baja complementariedad",0.0038554847608550575,Alta
+5244,Vendedores a través de medios tecnológicos,Contact Centre Salespersons,Gradient 4,76827.25460029914,936,0.61,0.1,6.538582,5.835684,6.187133,0.4166667,"Alto potencial de automatización, baja complementariedad",0.00334680566243756,Muy alta
+2412,Asesores financieros y de inversiones,Financial and Investment Advisers,Gradient 3,72112.56695370383,796,0.57,0.11,6.657624,5.29039,5.974008,0.5145139,"Alto potencial de automatización, baja complementariedad",0.00314142095366016,Alta
+2431,Profesionales de la publicidad y la comercialización,Advertising and Marketing Professionals,Gradient 3,71487.05547130128,801,0.55,0.09,6.582082,5.195694,5.888888,0.5198148,"Alto potencial de automatización, baja complementariedad",0.003114171960030022,Alta
+3343,Secretarios administrativos y ejecutivos,Administrative and Executive Secretaries,Gradient 3,69084.86416068696,1110,0.54,0.14,6.466152,5.399941,5.933047,0.4741667,"Alto potencial de automatización, baja complementariedad",0.003009525926243582,Alta
+4132,Grabadores de datos,Data Entry Clerks,Gradient 4,41359.44194938024,932,0.7,0.03,6.174678,5.287926,5.731302,0.4527778,"Alto potencial de automatización, baja complementariedad",0.001801730586776745,Muy alta
+4226,Recepcionistas generales,Receptionists (general),Gradient 3,34171.97630422927,594,0.57,0.17,6.491278,5.551846,6.021562,0.4538889,"Alto potencial de automatización, baja complementariedad",0.0014886248947288472,Alta
+3312,Analistas de préstamos y créditos,Credit and Loans Officers,Gradient 4,32960.592523367,415,0.6,0.04,6.659052,4.91752,5.788286,0.5706944,"Alto potencial de automatización, alta complementariedad",0.001435853698904298,Muy alta
+3321,Agentes de seguros,Insurance Representatives,Gradient 3,25137.15566568432,339,0.53,0.12,6.633198,4.862688,5.747943,0.5761111,"Alto potencial de automatización, alta complementariedad",0.001095043358729613,Alta
+3344,Secretarios médicos,Medical Secretaries,Gradient 3,24357.39294692273,399,0.53,0.11,6.548569,5.283544,5.916057,0.5025,"Alto potencial de automatización, baja complementariedad",0.0010610747587049697,Alta
+4224,Recepcionistas de hoteles,Hotel Receptionists,Gradient 3,24133.30951518697,562,0.51,0.07,6.364114,4.781098,5.572606,0.5576389,"Alto potencial de automatización, alta complementariedad",0.0010513130705892947,Alta
+4323,Empleados de servicios de transporte,Transport Clerks,Gradient 3,23973.162957452394,335,0.5,0.1,6.591047,4.758369,5.674708,0.5872222,"Alto potencial de automatización, alta complementariedad",0.0010443366478466826,Alta
+4211,Cajeros de bancos y afines,Bank Tellers and Related Clerks,Gradient 3,22067.764330398782,359,0.58,0.09,6.024229,4.936072,5.48015,0.4881944,"Alto potencial de automatización, baja complementariedad",0.0009613322642148492,Alta
+2642,Periodistas,Journalists,Gradient 3,21320.57009755548,281,0.54,0.1,6.556306,4.730375,5.643341,0.5876389,"Alto potencial de automatización, alta complementariedad",0.0009287824366512996,Alta
+4225,Empleados de ventanillas de información,Inquiry Clerks,Gradient 3,21086.199868967757,363,0.57,0.09,6.522058,5.544497,6.033278,0.4590278,"Alto potencial de automatización, baja complementariedad",0.0009185726274862443,Alta
+4414,Escribientes públicos y afines,Scribes and Related Workers,Gradient 3,17261.202745338618,269,0.58,0.08,6.000819,4.376306,5.188562,0.5785416,"Alto potencial de automatización, alta complementariedad",0.000751945275008657,Alta
+4221,Empleados y consultores de viajes,Travel Consultants and Clerks,Gradient 3,16240.21320709571,265,0.56,0.07,6.436819,4.802754,5.619786,0.5618519,"Alto potencial de automatización, alta complementariedad",0.0007074681739374498,Alta
+4416,Empleados del servicio de personal,Personnel Clerks,Gradient 4,14573.523643976545,188,0.6,0.09,6.644495,5.424491,6.034493,0.4927778,"Alto potencial de automatización, baja complementariedad",0.0006348626110236985,Muy alta
+2513,Desarrolladores web y multimedia,Web and Multimedia Developers,Gradient 4,13176.151192197496,141,0.6,0.08,6.525661,5.399984,5.962822,0.4816667,"Alto potencial de automatización, baja complementariedad",0.0005739892392173061,Muy alta
+2433,Profesionales de ventas técnicas y médicas (excluyendo las TIC),Technical and Medical Sales Professionals (excluding ICT),Gradient 3,11981.305831835456,145,0.5,0.1,6.533814,4.380227,5.457021,0.6383333,"Alto potencial de automatización, alta complementariedad",0.0005219385022932595,Alta
+2521,Diseñadores y administradores de bases de datos,Database Designers and Administrators,Gradient 3,10736.395155207876,109,0.57,0.08,6.613738,5.385603,5.999671,0.4948612,"Alto potencial de automatización, baja complementariedad",0.00046770678304931904,Alta
+3342,Secretarios jurídicos,Legal Secretaries,Gradient 3,10005.094518336593,193,0.55,0.13,6.491889,5.449581,5.970735,0.4697222,"Alto potencial de automatización, baja complementariedad",0.00043584932406346224,Alta
+2413,Analistas financieros,Financial Analysts,Gradient 4,9957.805235836739,102,0.62,0.06,6.6709,5.34769,6.009295,0.5074537,"Alto potencial de automatización, baja complementariedad",0.00043378927337876024,Muy alta
+2631,Economistas,Economists,Gradient 3,9147.89134718162,116,0.55,0.08,6.66744,5.093184,5.880312,0.5452778,"Alto potencial de automatización, baja complementariedad",0.0003985072058007888,Alta
+4227,Entrevistadores de encuestas y de investigaciones de mercados,Survey and Market Research Interviewers,Gradient 3,9122.728929172177,192,0.55,0.16,6.619223,5.021416,5.820319,0.5505555,"Alto potencial de automatización, alta complementariedad",0.0003974110619451642,Alta
+3331,Declarantes o gestores de aduana,Clearing and Forwarding Aents,Gradient 3,6363.865200224072,73,0.57,0.09,6.183125,4.83092,5.507022,0.5280555,"Alto potencial de automatización, baja complementariedad",0.0002772274005872954,Alta
+2643,"Traductores, intérpretes y otros lingüistas","Translators, Interpreters and Other Linguists",Gradient 3,4863.791523228148,80,0.59,0.11,6.584358,4.750899,5.667628,0.5876389,"Alto potencial de automatización, alta complementariedad",0.000211880082082126,Alta
+3311,"Agentes de bolsa, cambio y otros servicios financieros",Securities and Finance Dealers and Brokers,Gradient 4,4204.437415919097,56,0.63,0.04,6.614645,4.604707,5.609675,0.6129167,"Alto potencial de automatización, alta complementariedad",0.00018315681100633245,Muy alta
+2120,"Matemáticos, actuarios y estadísticos","Mathematicians, Actuaries and Statisticians",Gradient 3,4203.536839312676,27,0.56,0.09,6.683638,5.181784,5.932711,0.5339074,"Alto potencial de automatización, baja complementariedad",0.00018311757942241725,Alta
+4223,Telefonistas,Telephone Switchboard Operators,Gradient 3,3898.934337925182,59,0.54,0.15,6.486005,5.862153,6.174079,0.4054167,"Alto potencial de automatización, baja complementariedad",0.00016984826006771598,Alta
+3514,Técnicos de la Web,Web Technicians,Gradient 3,3194.4709425121946,22,0.53,0.12,6.458063,5.28103,5.869546,0.4915277,"Alto potencial de automatización, baja complementariedad",0.0001391599048347412,Alta
+2622,"Bibliotecarios, documentalistas y afines",Librarians and Related Information Professionals,Gradient 3,3052.967876669608,49,0.55,0.04,6.369921,4.515566,5.442743,0.6002778,"Alto potencial de automatización, alta complementariedad",0.00013299564366885542,Alta
+2514,Programadores de aplicaciones,Applications Programmers,Gradient 3,2500.863372601095,21,0.57,0.08,6.607717,5.623902,6.115809,0.4580555,"Alto potencial de automatización, baja complementariedad",0.00010894445909787135,Alta
+2641,Autores y otros escritores,Authors and Related Writers,Gradient 3,2482.8580110112925,36,0.55,0.09,6.532624,5.09641,5.814517,0.5290432,"Alto potencial de automatización, baja complementariedad",0.00010816009622513177,Alta
+4313,Auxiliares encargados de las nóminas,Payroll Clerks,Gradient 4,2150.0089409811017,32,0.61,0.08,6.601463,5.759777,6.18062,0.4366667,"Alto potencial de automatización, baja complementariedad",9.366027896484167e-05,Muy alta
+4419,Otro personal de apoyo administrativo no clasificados en otros grupos primarios,Clerical Support Workers Not Elsewhere Classified,Gradient 4,2009.6246039012271,36,0.63,0.03,6.522978,5.343334,5.933156,0.4899583,"Alto potencial de automatización, baja complementariedad",8.754475268838094e-05,Muy alta
+4312,"Auxiliares de servicios estadísticos, financieros y de seguros","Statistical, Finance and Insurance Clerks",Gradient 4,1840.4572727192726,31,0.64,0.02,6.591086,5.515591,6.053339,0.4722743,"Alto potencial de automatización, baja complementariedad",8.017536034389633e-05,Muy alta
+2519,Desarrolladores y analistas de software y multimedia no clasificados en otros grupos primarios,Software and Applications Developers and Analysts Not Elsewhere Classified,Gradient 3,1835.6270325025093,12,0.55,0.16,6.590802,5.22016,5.905481,0.5171296,"Alto potencial de automatización, baja complementariedad",7.996494184863054e-05,Alta
+2522,Administradores de sistemas,Systems Aministrators,Gradient 3,1707.7607980572568,8,0.57,0.05,6.390465,5.162076,5.77627,0.5013888,"Alto potencial de automatización, baja complementariedad",7.4394738413634e-05,Alta
+2434,Profesionales de ventas de tecnología de la información y las comunicaciones,Information and Communications Technology Sales Professionals,Gradient 3,845.1477515980793,13,0.51,0.09,6.539503,4.506314,5.522909,0.6198148,"Alto potencial de automatización, alta complementariedad",3.6816951163497785e-05,Alta
+2523,Profesionales en redes de computadores,Computer Network Professionals,Gradient 3,695.6415289543229,10,0.52,0.06,6.309319,4.892351,5.600835,0.53375,"Alto potencial de automatización, baja complementariedad",3.030405056439417e-05,Alta
+4413,"Codificadores de datos, correctores de pruebas de imprenta y afines","Coding, Proofreading and Related Clerks",Gradient 3,539.8349971658536,9,0.51,0.2,6.615321,5.703876,6.159599,0.4469445,"Alto potencial de automatización, baja complementariedad",2.3516691240579722e-05,Alta
+2112,Meteorólogos,Meteorologists,Gradient 3,249.70242761306298,2,0.54,0.13,6.601195,4.946659,5.773927,0.5597222,"Alto potencial de automatización, alta complementariedad",1.087772175392234e-05,Alta
+3252,Técnicos en documentación sanitaria,Medical Records and Health Information Technicians,Gradient 3,209.12574706926875,12,0.52,0.1,5.978971,4.372726,5.175849,0.5779094,"Alto potencial de automatización, alta complementariedad",9.11009039818258e-06,Alta
+4131,Operadores de máquinas de procesamiento de texto y mecanógrafos,Typists and Word Processing Operators,Gradient 4,118.16573441046185,4,0.65,0.05,6.314931,5.653618,5.984275,0.4138889,"Alto potencial de automatización, baja complementariedad",5.147623081008634e-06,Muy alta
+3314,"Técnicos y profesionales del nivel medio de servicios estadísticos, matemáticos y afines","Statistical, Mathematical and Related Associate Professionals",Gradient 3,48.76969007548972,2,0.57,0.1,6.653169,5.1789,5.916034,0.5308102,"Alto potencial de automatización, baja complementariedad",2.1245412939607805e-06,Alta

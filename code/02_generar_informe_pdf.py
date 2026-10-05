@@ -161,6 +161,22 @@ styles.add(
 )
 styles.add(
     ParagraphStyle(
+        "SmallCJCHeader",
+        parent=styles["SmallCJC"],
+        fontName=FONT_BOLD,
+        textColor=colors.white,
+    )
+)
+styles.add(
+    ParagraphStyle(
+        "TinyCJCHeader",
+        parent=styles["TinyCJC"],
+        fontName=FONT_BOLD,
+        textColor=colors.white,
+    )
+)
+styles.add(
+    ParagraphStyle(
         "BulletCJC",
         parent=styles["BodyCJC"],
         leftIndent=13,
@@ -197,10 +213,12 @@ def bullet(text: str) -> Paragraph:
 
 def report_table(data: list[list], widths: list[float], header_rows: int = 1, tiny: bool = False) -> Table:
     style_name = "TinyCJC" if tiny else "SmallCJC"
+    header_style_name = "TinyCJCHeader" if tiny else "SmallCJCHeader"
     cooked = []
     for row_idx, row in enumerate(data):
+        row_style = header_style_name if row_idx < header_rows else style_name
         cooked.append([
-            cell if hasattr(cell, "wrap") else Paragraph(str(cell), styles[style_name])
+            cell if hasattr(cell, "wrap") else Paragraph(str(cell), styles[row_style])
             for cell in row
         ])
     table = LongTable(cooked, colWidths=widths, repeatRows=header_rows, hAlign="LEFT")
@@ -266,8 +284,12 @@ def build_story() -> list:
     education = read_csv("07_logro_educativo.csv")
     sex = read_csv("08_sexo.csv")
     formality = read_csv("09_formalidad.csv")
-    occupations = read_csv("11_ocupaciones_alta_exposicion_empleo.csv")[:15]
+    occupations = read_csv("11_ocupaciones_alta_exposicion_empleo.csv")[:12]
     sensitivity = read_csv("13_sensibilidad_2d.csv")
+    aioe_national = read_csv("14_aioe_caioe_resumen_nacional.csv")[0]
+    quadrants = read_csv("15_cuadrantes_exposicion_complementariedad.csv")
+    substitution_risk = read_csv("16_ocupaciones_riesgo_sustitucion_empleo.csv")[:10]
+    high_complementarity = read_csv("17_ocupaciones_alta_complementariedad_empleo.csv")[:10]
 
     story: list = []
 
@@ -452,11 +474,78 @@ def build_story() -> list:
     ]
     story.append(report_table(limitations, [1.25 * inch, 5.55 * inch]))
     story.append(Spacer(1, 6))
-    story.append(P("<b>Reproducibilidad.</b> code/01_analisis_exposicion_ia_2025.py genera las tablas, siete figuras y pruebas de calidad. Ningún resultado principal usa imputación a dos dígitos."))
+    story.append(P("<b>Reproducibilidad.</b> code/01_analisis_exposicion_ia_2025.py genera las 17 tablas, las 13 figuras y las pruebas de calidad, incluyendo el cruce con AIOE/CAIOE. Ningún resultado principal usa imputación a dos dígitos ni la variante alternativa de CAIOE."))
+
+    story.extend(section("10. Exposición y complementariedad potencial (AIOE/CAIOE)"))
+    story.append(P("El AI Occupational Exposure (AIOE), propuesto por Felten, Raj y Seamans (2021), mide la exposición de cada ocupación a la inteligencia artificial combinando dos insumos: un mapa de similitud entre aplicaciones de IA (reconocimiento de imágenes, traducción automática, transcripción de voz, generación de texto, entre otras) y las habilidades laborales detalladas de O*NET, y la puntuación de importancia que O*NET asigna a cada habilidad dentro de cada ocupación. El resultado es un puntaje continuo, sin cota superior, que ordena ocupaciones según qué tan relacionadas están sus habilidades más importantes con las capacidades demostradas por la IA. A diferencia del índice OIT, que evalúa tareas frente a la IA generativa actual, AIOE captura un conjunto más amplio y anterior de capacidades tecnológicas (por ejemplo, visión por computador y reconocimiento de patrones)."))
+    story.append(P("Pizzinelli et al. extienden AIOE con un parámetro de complementariedad potencial, theta, que resume qué tan sustituibles o complementarias son las tareas de una ocupación frente a la IA: un theta más alto indica que la IA tiende a acompañar el trabajo humano en esas tareas en lugar de reemplazarlo. Theta resume seis atributos ocupacionales -comunicación, responsabilidad, exigencia física, criticidad de los errores, contenido rutinario y nivel de habilidades-, de los cuales la criticidad de los errores y la comunicación muestran la asociación más alta con la complementariedad potencial. A partir de theta construyen el Complementarity-Adjusted AIOE (CAIOE), que ajusta el AIOE por esa complementariedad; este informe usa la variante base de CAIOE como indicador principal y una variante alternativa como ejercicio de sensibilidad. Como el paper de Pizzinelli et al. está en revisión, la definición de estos indicadores puede ajustarse antes de su publicación; cualquier uso público de las cifras de esta sección debe citar tanto a Pizzinelli et al. como a Felten, Raj y Seamans (2021)."))
+    story.append(P("Pizzinelli et al. clasifican cada ocupación en tres categorías según si su AIOE y su theta superan sendas medianas de referencia (exposición baja; exposición alta con complementariedad baja, mayor riesgo de sustitución; y exposición alta con complementariedad alta, mayor potencial de aumento). Este informe reproduce esa taxonomía sobre la distribución del empleo colombiano, calculando las medianas entre los ocupados con correspondencia en lugar de usar las medianas globales de referencia del archivo de trabajo (la reclasificación coincide con la taxonomía original en 84,9% de los casos). Para comparar grupos de población, el informe resume los dos cuadrantes de exposición alta en una razón entre la participación del empleo en el cuadrante de alta complementariedad y la del cuadrante de riesgo de sustitución: un valor superior a 1 indica que, entre los ocupados con alta exposición, predomina el perfil complementario. El cruce con la GEIH usa la misma correspondencia exacta a cuatro dígitos ISCO-08 que el índice OIT: el 100% de las 427 ocupaciones de la correlativa tiene AIOE/CAIOE, con una cobertura ponderada de 96,83% del empleo de 2025, muy similar al 96,49% del índice OIT."))
+    national_data = [
+        ["Indicador", "Valor"],
+        ["Cobertura ponderada AIOE/CAIOE", fmt_pct(aioe_national["cobertura_aioe"], 2)],
+        ["AIOE promedio", fmt_num(aioe_national["aioe_all_promedio"])],
+        ["CAIOE promedio", fmt_num(aioe_national["caioe_promedio"])],
+        ["Theta promedio (complementariedad)", fmt_num(aioe_national["theta_promedio"])],
+        ["Correlación con índice OIT (Spearman, por ocupación)", fmt_num(aioe_national["correlacion_spearman_oit_aioe_all"], 2)],
+    ]
+    story.append(report_table(national_data, [4.5 * inch, 2.3 * inch]))
+    story.append(Spacer(1, 5))
+    story.append(P("AIOE y el índice OIT están fuertemente correlacionados a nivel ocupación (correlación de Spearman de " + fmt_num(aioe_national["correlacion_spearman_oit_aioe_all"], 2) + "): ambos identifican como más expuestas a las ocupaciones de oficina, contabilidad y atención al cliente. La correlación con CAIOE es más moderada, reflejo de la dimensión de complementariedad que el índice OIT no mide."))
+    add_chart(story, "fig_12_aioe_percentiles_ingreso.png", "Figura 9. AIOE promedio a lo largo de la distribución de ingreso laboral.", 4.3 * inch)
+    story.append(P("El patrón es similar al del índice OIT, con más variación en la parte baja de la distribución: el AIOE promedio se mantiene entre 5,6 y 5,9 hasta cerca del percentil 65 y sube con claridad a partir de ese punto, hasta cerca de 6,4 en los percentiles más altos."))
+
+    story.append(subsection("Cuadrantes de exposición y complementariedad"))
+    add_chart(story, "fig_09_cuadrante_exposicion_complementariedad.png", "Figura 10. AIOE y complementariedad potencial por ocupación; el tamaño del punto es proporcional al empleo.", 5.0 * inch)
+    quad_data = [["Cuadrante", "Ocupados (millones)", "Participación"]] + [[r["cuadrante"], fmt_millions(r["ocupados"]), fmt_pct(r["participacion"])] for r in quadrants]
+    story.append(report_table(quad_data, [3.6 * inch, 1.75 * inch, 1.35 * inch]))
+    story.append(Spacer(1, 5))
+    story.append(P("El cuadrante de alta exposición y baja complementariedad -mayor riesgo de sustitución- concentra cerca de una quinta parte del empleo. El cuadrante de alta exposición y alta complementariedad -mayor potencial de aumento- es el más grande entre los de alta exposición. Ninguno de los dos cuadrantes predice el resultado laboral: ambos describen composición de tareas, no un pronóstico de empleo."))
+
+    story.append(subsection("Ocupaciones en cada cuadrante de alta exposición"))
+    occ_compare = [["Riesgo de sustitución", "Alta complementariedad"]] + [
+        [substitution_risk[i]["oficio_c8_label"], high_complementarity[i]["oficio_c8_label"]]
+        for i in range(min(len(substitution_risk), len(high_complementarity)))
+    ]
+    story.append(report_table(occ_compare, [3.45 * inch, 3.45 * inch], tiny=True))
+    story.append(Spacer(1, 5))
+    story.append(P("Las ocupaciones de riesgo de sustitución están dominadas por tareas de punto de venta, oficina y registro contable: oficinistas generales, contadores, auxiliares de contabilidad y empleados de centros de llamadas encabezan también la lista de exposición alta o muy alta del índice OIT, mientras que vendedores en tiendas, vendedores ambulantes y especialistas en tratamientos de belleza tienen una exposición OIT baja o nula y sólo aparecen expuestos bajo AIOE, que además de tareas cognitivas recoge tareas de punto de venta e inventario sensibles a otras capacidades tecnológicas. Las ocupaciones de alta complementariedad combinan exposición tecnológica con responsabilidad, comunicación o atención directa a personas: guardias de seguridad, gerentes y representantes comerciales, conductores de carga, abogados, profesores, peluqueros y supervisores de oficina."))
+
+    story.append(subsection("Actividad económica"))
+    add_chart(story, "fig_10_riesgo_sustitucion_sector.png", "Figura 11. Participación del empleo en el cuadrante de riesgo de sustitución, por actividad económica.", 6.3 * inch)
+    story.append(PageBreak())
+    sector_quad = [["Actividad económica", "Alta complementariedad", "Riesgo de sustitución"]] + [
+        [r["sector"], fmt_pct(r["participacion_cuadrante_alta_exposicion_alta_complementariedad"], 1), fmt_pct(r["participacion_cuadrante_alta_exposicion_baja_complementariedad"], 1)]
+        for r in sorted(sectors, key=lambda row: float(row["participacion_cuadrante_alta_exposicion_alta_complementariedad"]) + float(row["participacion_cuadrante_alta_exposicion_baja_complementariedad"]), reverse=True)
+    ]
+    story.append(report_table(sector_quad, [3.9 * inch, 1.5 * inch, 1.5 * inch], tiny=True))
+    story.append(Spacer(1, 5))
+    story.append(P("Educación y organizaciones extraterritoriales tienen la mayor participación complementaria, muy por encima de su participación en riesgo de sustitución. Actividades financieras y de seguros es la única actividad donde el riesgo de sustitución supera a la complementariedad; comercio y reparación tiene el segundo mayor riesgo, con una complementariedad considerablemente menor. Agricultura y hogares como empleadores tienen la menor participación en ambos cuadrantes, reflejo de su baja exposición general."))
+
+    story.extend(section("11. Heterogeneidad de la complementariedad potencial"))
+    story.append(P("La razón entre complementariedad y riesgo de sustitución es " + fmt_num(aioe_national["razon_complementariedad_sustitucion"], 2) + " a nivel nacional. Esta sección la desagrega por logro educativo, ingreso, departamento y género y formalidad."))
+    education_reliable = [r for r in education if float(r["observaciones"]) >= 100]
+    add_chart(story, "fig_11_razon_complementariedad_educacion.png", "Figura 12. Razón entre complementariedad y riesgo de sustitución por logro educativo (excluye preescolar, con 27 observaciones).", 3.4 * inch)
+    story.append(P("La razón aumenta con el logro educativo: de " + fmt_num(education_reliable[0]["razon_complementariedad_sustitucion"], 2) + " entre quienes no tienen educación formal a " + fmt_num(education_reliable[-1]["razon_complementariedad_sustitucion"], 2) + " en educación superior o universitaria. La exposición de los ocupados sin educación formal se concentra más en el perfil de riesgo; en la educación superior, el empleo complementario casi duplica al de riesgo."))
+    ratio_data = [["Grupo", "Razón complementariedad/riesgo"]] + [
+        [f"Quintil de ingreso {r['quintil_ingreso']}", fmt_num(r["razon_complementariedad_sustitucion"], 2)] for r in quintiles
+    ] + [
+        [r["sexo"], fmt_num(r["razon_complementariedad_sustitucion"], 2)] for r in sorted(sex, key=lambda row: 0 if row["sexo"] == "Hombre" else 1)
+    ] + [
+        [r["formalidad"], fmt_num(r["razon_complementariedad_sustitucion"], 2)] for r in formality if r["formalidad"] in ("Formal", "Informal")
+    ]
+    story.append(report_table(ratio_data, [4.5 * inch, 2.3 * inch]))
+    story.append(Spacer(1, 5))
+    story.append(P("La razón crece de forma monótona con el ingreso: la participación en el cuadrante de riesgo es relativamente estable entre quintiles (16% a 23%), mientras que la de alta complementariedad crece con fuerza hacia el extremo superior de la distribución. Por género, la mayor exposición femenina que ya documentaba el índice OIT se concentra, según AIOE/CAIOE, más en el perfil de sustitución que en el de complementariedad (razón cercana a 1 entre mujeres frente a casi 2 entre hombres). Por formalidad, los informales reparten su exposición de forma casi equitativa entre complementariedad y riesgo, mientras que en el empleo formal predomina la complementariedad."))
+
+    add_chart(story, "fig_13_razon_complementariedad_departamento.png", "Figura 13. Razón entre complementariedad y riesgo de sustitución por departamento.", 7.2 * inch)
+    story.append(P("La razón supera 1 en los 24 departamentos analizados: varía entre " + fmt_num(min(float(r["razon_complementariedad_sustitucion"]) for r in departments), 2) + " en Quindío y " + fmt_num(max(float(r["razon_complementariedad_sustitucion"]) for r in departments), 2) + " en Caquetá. Bogotá, el departamento con mayor exposición según el índice OIT y AIOE, tiene una razón cercana a la mediana departamental. A diferencia de la educación, el ingreso, el género y la formalidad, la geografía no separa con claridad departamentos donde predomine el riesgo de sustitución."))
+    story.append(P("Estos patrones describen, para 2025, en qué cuadrante de exposición y complementariedad se concentran hoy las tareas de cada grupo; no establecen una relación causal entre educación, ingreso, departamento, actividad económica, género o formalidad y el efecto final de la IA sobre el empleo, ni anticipan cómo evolucionará esa composición a medida que cambien la adopción tecnológica y la organización del trabajo."))
 
     story.extend(section("Referencias y fuentes"))
     refs = [
         ("OIT y NASK (2025)", "Generative AI and Jobs: A Refined Global Index of Occupational Exposure", "https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure"),
+        ("Felten, Raj y Seamans (2021)", "Occupational, Industry, and Geographic Exposure to Artificial Intelligence: A Novel Dataset and Its Potential Uses", "https://doi.org/10.1002/smj.3286"),
+        ("Pizzinelli y coautores (en revisión)", "AIOE/CAIOE: complementariedad potencial y exposición ocupacional. Documento de trabajo en revisión; cita por confirmar cuando se publique", ""),
         ("Brynjolfsson, Li y Raymond (2025)", "Generative AI at Work", "https://academic.oup.com/qje/article/140/2/889/7990658"),
         ("Dell'Acqua et al. (2026)", "Navigating the Jagged Technological Frontier", "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838"),
         ("Noy y Zhang (2023)", "Experimental Evidence on the Productivity Effects of Generative AI", "https://doi.org/10.1126/science.adh2586"),
@@ -466,7 +555,8 @@ def build_story() -> list:
         ("DANE (2026)", "Mercado laboral, diciembre de 2025", "https://www.dane.gov.co/index.php/estadisticas-por-tema/mercado-laboral/empleo-y-desempleo"),
     ]
     for author, title, url in refs:
-        story.append(P(f"<b>{author}.</b> <link href='{url}' color='#173A63'>{title}</link>.", "SmallCJC"))
+        title_html = f"<link href='{url}' color='#173A63'>{title}</link>" if url else title
+        story.append(P(f"<b>{author}.</b> {title_html}.", "SmallCJC"))
 
     return story
 
