@@ -23,9 +23,11 @@
 \usepackage{enumitem}
 \usepackage{microtype}
 \usepackage{tikz}
-\usepackage{graphicx}
-\usepackage{float}
-\usetikzlibrary{positioning, arrows.meta, shapes.geometric}
+\usetikzlibrary{arrows.meta, positioning}
+
+\definecolor{ALTACOL}{HTML}{17365D}
+\definecolor{BAJACOL}{HTML}{4A7BB0}
+\definecolor{INCIERTOCOL}{HTML}{B6423C}
 
 \setlength{\textfloatsep}{18pt plus 2pt minus 4pt}
 \setlength{\floatsep}{12pt plus 2pt minus 2pt}
@@ -61,7 +63,7 @@
 \newcommand{\reportseriesdesc}{Evidencia para entender y fomentar la productividad}
 \newcommand{\reportnumber}{Informe 03}
 \newcommand{\reporttitle}{Inteligencia Artificial y Empleo en Colombia}
-\newcommand{\reportsubtitle}{Exposición, complementariedad y transformación del trabajo}
+\newcommand{\reportsubtitle}{Qué tan de acuerdo están los indicadores de potencial de automatización}
 \newcommand{\reportauthorone}{Oliver Pardo}
 \newcommand{\reportauthoroneaffil}{Profesor asociado del Departamento de Administración, Pontificia Universidad Javeriana y director del Centro Javeriano de Competitividad}
 \newcommand{\reportauthortwo}{Jorge Orozco}
@@ -70,7 +72,7 @@
 
 \title{\reporttitle\\\reportsubtitle}
 \author{\reportauthorone \and \reportauthortwo}
-\date{Julio de 2026}
+\date{Octubre de 2026}
 
 \begin{document}
 
@@ -95,8 +97,8 @@
 \vspace{0.45cm}
 {\Huge\bfseries \reporttitle\par}
 \vspace{0.35cm}
-%{\Large \reportsubtitle\par}
-%\vspace{0.65cm}
+{\Large \reportsubtitle\par}
+\vspace{0.65cm}
 {\large\bfseries \reportauthorone\par}
 {\normalsize \reportauthoroneaffil\par}
 \vspace{0.25cm}
@@ -107,7 +109,7 @@
 \vfill
 
 \begin{center}
-{\large Septiembre de 2026\par}
+{\large Octubre de 2026\par}
 \end{center}
 
 \end{titlepage}
@@ -124,16 +126,15 @@
 \section*{Resumen ejecutivo}
 \addcontentsline{toc}{section}{Resumen ejecutivo}
 
-La inteligencia artificial (IA) está automatizando al menos algunas de las tareas realizadas por los trabajadores. Este informe estudia cómo esa transformación puede afectar al empleo colombiano a partir de dos dimensiones. La primera es qué tan expuestas están las ocupaciones a ser afectadas por la IA. La segunda es si esta exposición se traduce en que la IA complementa las tareas del trabajador o si por el contrario las sustituye.
+\textbf{Este informe no pregunta cuánto automatizará la inteligencia artificial (IA) el mercado laboral colombiano, sino qué tan seguros podemos estar de esa medición.} Existen varios indicadores internacionales que buscan capturar el potencial de automatización de cada ocupación, construidos con datos y metodologías distintas. En vez de elegir uno y presentarlo como la verdad, este informe cruza dos de los más usados --OIT-NASK y AIOE-- y pregunta: ¿en qué ocupaciones coinciden en que el potencial es alto?, ¿en cuáles coinciden en que es bajo?, y --la pregunta central del informe-- ¿en cuántas no se ponen de acuerdo?
 
-El 25\% del empleo colombiano presenta algún grado de exposición y el 8,0\% se ubica en niveles altos o muy altos. La exposición aumenta con el ingreso y la educación, es mayor entre mujeres y trabajadores formales y se concentra especialmente en actividades financieras, información y comunicaciones. %Ocupaciones como por ejemplo los auxiliares contables y los desarrolladores de software aparecen entre las ocupaciones de alta exposición a la IA.
+\textbf{A nivel nacional, los dos índices coinciden en que el 8,3\,\% del empleo tiene alto potencial de automatización, y en que el 49,6\,\% tiene bajo potencial.} El 42,1\,\% restante del empleo queda en una zona de \textbf{incertidumbre}: un índice lo marca como alto y el otro no. Esa zona de desacuerdo no es un detalle técnico menor --es casi la mitad del empleo con información válida, y es más grande que el grupo de alto potencial casi cinco veces.
 
-Los trabajadores de mayores ingresos están más expuestos y, dentro del empleo expuesto, se concentran con mayor frecuencia en ocupaciones donde la IA puede complementar el trabajo. En el primer quintil de ingreso, por cada ocupado en una ocupación de baja complementariedad hay 0,75 ocupados en ocupaciones de alta complementariedad. En el quinto quintil, por cada ocupado en una ocupación de baja complementariedad hay 2,80 ocupados en ocupaciones de alta complementariedad.
+\textbf{El desacuerdo tiene una estructura clara, no es aleatorio.} En prácticamente todos los casos en que los índices no coinciden, es AIOE el que marca alto potencial donde OIT-NASK no lo hace; el patrón inverso --OIT alto y AIOE bajo-- no se observa. La incertidumbre también crece con el ingreso: pasa de 34,4\,\% en el primer quintil a 68,5\,\% en el quinto. Crece con la educación: de 17,2\,\% entre quienes no tienen educación formal a 61,7\,\% entre quienes tienen educación superior. Y es sustancialmente mayor entre trabajadores formales (51,6\,\%) que entre informales (33,8\,\%). Es decir, cuanto mejor posicionado está un trabajador, menos seguros podemos estar de si su ocupación realmente tiene alto potencial de automatización o si solo lo dice uno de los dos índices.
 
-%También se observan diferencias por educación, género y formalidad. La distribución de las ganancias potenciales de la inteligencia artificial depende, por tanto, no solo de quién está expuesto, sino también del tipo de tareas que realiza y de su capacidad para reorganizarlas alrededor de la nueva tecnología.
+\textbf{La clasificación también es sensible a dónde se pone el umbral.} Si el corte de AIOE se mueve del percentil 30 al 70 de su distribución, la incertidumbre pasa de más de 60\,\% a menos de 25\,\%. Esto no es una falla del ejercicio: es la evidencia de que cualquier cifra única de ``empleo en riesgo'' depende de decisiones metodológicas que rara vez se hacen explícitas.
 
-%La evidencia internacional muestra por qué esta distinción importa. El uso de inteligencia artificial ha producido aumentos de productividad en centros de llamadas, desarrollo de software, consultoría y escritura, pero también existen señales de menor demanda laboral en algunos mercados altamente expuestos.
-El reto para Colombia consiste no solo en facilitar la adopción de la IA. También exige capacitar a los trabajadores para usar estas herramientas allí donde la IA puede complementar sus tareas. Al mismo tiempo, el país debe fortalecer la transición hacia otras ocupaciones para quienes se encuentran en ocupaciones con alta posibilidad de sustitución. El presente informe ayuda a identificar hacia qué ocupaciones deben orientarse estos esfuerzos.
+\textbf{La implicación central es metodológica antes que de política pública:} asignarle a cada ocupación una etiqueta de riesgo --alto o bajo-- con un solo indicador construye una certeza que los datos no respaldan. El informe muestra dónde esa certeza existe (el 8,3\,\% y el 49,6\,\% donde los índices coinciden) y dónde no (el 42,1\,\% restante), como primer paso antes de usar estos indicadores para decisiones de formación, transición laboral o política pública.
 
 \end{mdframed}
 
@@ -143,270 +144,163 @@ El reto para Colombia consiste no solo en facilitar la adopción de la IA. Tambi
 
 \section{Introducción}
 
-La IA está ampliando la frontera de lo que puede ser automatizado. A diferencia de olas anteriores de cambio tecnológico, que afectaron principalmente tareas rutinarias y codificables, los nuevos sistemas pueden producir textos, resumir documentos, generar código, analizar información y apoyar procesos de decisión. La transformación tecnológica alcanza así con mayor intensidad a ocupaciones administrativas, profesionales y relativamente calificadas.
+La inteligencia artificial generativa puede producir textos, resumir documentos, analizar información, generar código y apoyar decisiones. A diferencia de olas de automatización anteriores, concentradas en tareas manuales y rutinarias, estas capacidades alcanzan actividades cognitivas presentes en ocupaciones administrativas y profesionales: redactar un informe, responder una solicitud, clasificar información o programar una función ya no son tareas exclusivamente humanas en la misma medida que hace pocos años.
 
-No obstante, el efecto de la IA sobre los trabajadores puede ser positivo o negativo dependiendo de qué tanto las tareas realizadas por la IA complementan o sustituyen las tareas que quedan en manos del trabajador. Si las complementan, el trabajador genera más valor agregado gracias a la IA, lo que puede contribuir a mantener su puesto de trabajo y elevar su salario. Si las sustituyen, las empresas pueden prescindir de estos trabajadores y presionar a la baja los salarios.
+Por eso entender qué tanto puede transformar la IA al mercado laboral colombiano importa para trabajadores, empresas y formuladores de política: de ahí depende hacia dónde orientar la capacitación, qué actividades vale la pena rediseñar dentro de una empresa, y a qué ocupaciones debería prestarle más atención la política de formación y empleo.
 
-%El efecto sobre el mercado laboral depende, sin embargo, de algo más que las capacidades técnicas de estas herramientas. Una empresa puede utilizarlas para reducir el tiempo requerido por una tarea, mejorar su calidad, ampliar la producción o reasignar trabajadores hacia actividades de mayor valor. También puede automatizar tareas y reducir la cantidad de trabajo necesaria para producir un mismo resultado. La adopción, la organización del trabajo, las habilidades de los trabajadores y la respuesta de la demanda determinan qué trayectoria termina predominando.
+El problema es que no existe una sola forma de medir ese potencial. Distintos equipos de investigación han construido indicadores que buscan aproximar qué tan compatibles son las tareas o las habilidades de una ocupación con las capacidades actuales de la IA, usando datos, metodologías y supuestos diferentes. Dos de los más usados son el índice OIT-NASK, construido en 2025 a partir de evaluaciones de tareas concretas frente a IA generativa, y el AIOE, construido por Felten, Raj y Seamans a partir de habilidades laborales y un conjunto más amplio de capacidades de IA. Cuando dos mediciones independientes del mismo fenómeno coinciden, esa coincidencia es información valiosa. Cuando no coinciden, ignorar el desacuerdo y quedarse con uno de los dos equivale a esconder la incertidumbre en vez de medirla.
 
-Este informe evalúa el impacto de la IA sobre los trabajadores colombianos. En primer lugar se mide, para cada ocupación reportada en la Gran Encuesta Integrada de Hogares (GEIH), la \textit{exposición}: la magnitud en que las tareas asociadas a la ocupación pueden ser automatizadas por la IA. En segundo lugar se mide la \textit{complementariedad}: en qué medida la IA complementa al trabajo humano en lugar de sustituirlo. Para la medición de la exposición se usa el índice de exposición a la IA desarrollado por la Organización Internacional del Trabajo (OIT) y el Instituto Nacional de Investigación (NASK) de Polonia documentado por \citep{gmyrek2025}. Para la medición de la complementariedad se utiliza la metodología desarrollada por \citet{felten2021} y \citet{pizzinelli2023}. A partir de esta información se infiere cómo la IA afectará potencialmente a distintos géneros, logros educativos y niveles de ingreso.
+Este informe toma ese desacuerdo como objeto de estudio. En vez de elegir un índice y presentar sus resultados como si fueran un hecho establecido, cruza los dos para cada ocupación y cada trabajador de la Gran Encuesta Integrada de Hogares (GEIH) de 2025, y clasifica el empleo en tres grupos: \textbf{alto potencial de automatización} (ambos índices coinciden en que es alto), \textbf{bajo potencial} (ambos coinciden en que es bajo), e \textbf{incierto} (los índices no coinciden). La Sección \ref{sec:como_leer} explica esta clasificación en términos simples; la Sección \ref{sec:resultados} la recorre por ingreso, educación, género, formalidad, actividad económica, departamento y ocupación; y la Sección \ref{sec:implicaciones} discute qué implica para Colombia. El Apéndice \ref{sec:apendice_metodologia} documenta la construcción técnica completa de ambos índices y de la clasificación.
 
-%El interés no está únicamente en identificar dónde puede producirse una transformación más intensa de las tareas, sino también en entender dónde existen mejores condiciones para convertir ese cambio tecnológico en aumentos de productividad y dónde pueden surgir transiciones laborales más complejas.
+\section{Cómo leer la coincidencia entre indicadores}
+\label{sec:como_leer}
 
-El informe está organizado en seis secciones, incluida la presente introducción, y un apéndice metodológico. La sección 2 describe los indicadores de exposición y complementariedad y explica cómo se cruzan con la GEIH. La sección 3 caracteriza la exposición a la IA en Colombia. La sección 4 distingue entre ocupaciones donde la IA puede sustituir tareas y ocupaciones donde puede complementar el trabajo. La sección 5 revisa evidencia internacional sobre los efectos de la adopción de IA. La sección 6 presenta implicaciones para Colombia. El apéndice reporta la regla de clasificación del indicador de exposición.
+Para cada ocupación con información válida en los dos índices, este informe compara si OIT-NASK y AIOE coinciden en calificarla de alto potencial de automatización, de bajo potencial, o si se contradicen.
 
-\section{Metodología}
+\begin{itemize}
+\item \textbf{Alto potencial de automatización}: los dos índices coinciden en que la ocupación tiene un puntaje alto.
+\item \textbf{Bajo potencial de automatización}: los dos índices coinciden en que la ocupación tiene un puntaje bajo.
+\item \textbf{Incierto}: un índice la clasifica como de alto potencial y el otro no.
+\end{itemize}
 
-\subsection{Indicador de exposición}
+Esta clasificación no es una medida adicional de exposición tecnológica: es una medida de \textbf{qué tan de acuerdo están entre sí los indicadores disponibles}. Un resultado de alto potencial es más confiable que el de cualquiera de los dos índices por separado, porque dos metodologías construidas de forma independiente llegan a la misma conclusión. Un resultado incierto no significa que la ocupación esté a salvo de la IA ni que esté particularmente expuesta: significa que, con la información disponible hoy, no es posible afirmar ninguna de las dos cosas con la misma confianza. El Apéndice \ref{sec:apendice_metodologia} detalla cómo se construye cada índice, cómo se define el corte de ``alto'' en cada uno, y qué ocupaciones quedan fuera por falta de correspondencia.
 
-El primer indicador proviene de la actualización de 2025 del índice de exposición ocupacional a la IA elaborado por la OIT y NASK \citep{gmyrek2025}. Su unidad de análisis es la tarea. Cada tarea recibe un puntaje entre cero y uno según la capacidad de la IA para realizarla. El puntaje de una ocupación corresponde al promedio de los puntajes de las tareas que realiza la ocupación. Un mayor valor indica que las tareas realizadas por la ocupación pueden ser realizadas por la IA. A partir de estos puntajes, el presente informe clasifica a las ocupaciones en distintos grados de exposición: muy baja o ninguna, baja, media, alta y muy alta. La regla de clasificación utiliza la media y la desviación estándar de los puntajes de las tareas asociadas a cada ocupación (Cuadro \ref{tab:reglas_exposicion}).
+\section{Resultados}
+\label{sec:resultados}
 
-Es importante tener en cuenta algunas limitaciones. El indicador no está asociado al uso efectivo de inteligencia artificial en Colombia y las tareas reciben el mismo peso independientemente de su frecuencia o importancia dentro de la ocupación.
-
-\subsection{Indicador de complementariedad}
-
-La exposición indica qué tan probable es que una ocupación sea impactada por la IA, pero no necesariamente indica si ese impacto es positivo o negativo. Para estudiar esta diferencia se incorpora el \textit{AI Occupational Exposure Index} (AIOE), desarrollado por \citet{felten2021}, y la extensión propuesta por \citet{pizzinelli2023}. El AIOE mide la exposición de las ocupaciones a las capacidades de IA para realizar las tareas asociadas a la ocupación, aunque sus resultados no necesariamente coinciden con los de la OIT. \citet{pizzinelli2023} incorpora al indicador documentado por \citet{felten2021} un parámetro de complementariedad construido a partir de características de las ocupaciones. %Estas características incluyen, entre otras,  la necesidad de comunicación, la responsabilidad asociada con las decisiones, la criticidad de los errores, el contenido rutinario de las tareas.
-
-El ejercicio distingue tres situaciones: baja exposición, alta exposición acompañada de alta complementariedad, y alta exposición con baja complementariedad. Esta última identifica ocupaciones en las que las tareas expuestas presentan menos atributos asociados con comunicación, responsabilidad o juicio y, por tanto, un mayor potencial de sustitución.
-
-%El índice de la OIT y el índice de AIOE no utilizan la misma definición de exposición. %El primero se emplea en este informe para caracterizar la exposición específica a inteligencia artificial generativa; el segundo permite estudiar la naturaleza de esa exposición y el grado de complementariedad asociado con las características de cada ocupación.
-
-\begin{table}[!htbp]
-    \centering
-    \caption{Exposición, complementariedad y sustitución de tareas}
-    \label{tab:exposicion_complementariedad}
-
-    \scriptsize
-    \renewcommand{\arraystretch}{1.05}
-    \setlength{\tabcolsep}{3pt}
-
-    \begin{tabularx}{\textwidth}{
-        >{\raggedright\arraybackslash}p{3.5cm}
-        >{\raggedright\arraybackslash}X
-        >{\raggedright\arraybackslash}X
-    }
-        \toprule
-        & \textbf{Baja complementariedad}
-        & \textbf{Alta complementariedad} \\
-        \midrule
-
-        \textbf{Alta exposición a IA}
-        & \textbf{Mayor potencial de sustitución.}
-        La IA puede realizar una parte importante de las tareas y existen menos
-        características que favorezcan la complementariedad.
-
-        & \textbf{Mayor potencial de complementariedad.}
-        La IA puede automatizar tareas asociadas a la ocupación pero la comunicación, la decisión
-        o la responsabilidad recaen sobre el trabajador. \\
-
-        \addlinespace[1pt]
-
-        \textbf{Baja exposición a IA}
-        & \multicolumn{2}{>{\raggedright\arraybackslash}p{\dimexpr\textwidth-3.5cm-4\tabcolsep\relax}}{
-        \textbf{Menor impacto directo.}
-        Las capacidades actuales de la IA tienen una incidencia limitada sobre
-        las tareas principales de estas ocupaciones.
-        } \\
-
-        \bottomrule
-    \end{tabularx}
-
-    \begin{minipage}{\textwidth}
-        \vspace{0.05cm}
-        \tiny
-        %\textit{Nota:} Las categorías describen exposición y complementariedad potencial y no predicen pérdidas o ganancias de empleo.
-    \end{minipage}
-\end{table}
-
-%\subsection*{Aplicación a la GEIH de 2025}
-
-Los indicadores se cruzan con la GEIH de 2025 utilizando la clasificación CIUO-08 a cuatro dígitos. Los cruces con el indicador de la OIT y con el indicador de AIOE superan al 95\% de los trabajadores encuestados.
-
-%Los promedios y participaciones se calculan con los factores de expansión de la GEIH. De esta manera, los resultados permiten trasladar los indicadores ocupacionales internacionales a la estructura del empleo colombiano.
-
-\section{Exposición a la IA en Colombia}
-
-\textbf{Una parte significativa pero no mayoritaria de los trabajadores colombianos están trabajando en ocupaciones expuestas e la IA}
-
-La Figura \ref{fig:distribucion_exposicion} muestra que la mayor parte del empleo colombiano se encuentra en ocupaciones con exposición muy baja o nula a la inteligencia artificial generativa. El 71,1\% de los ocupados pertenece a esta categoría. La exposición baja representa el 8,8\%, la media el 8,6\%, la alta el 5,1\% y la muy alta el 2,9\%. El 3,5\% restante corresponde a ocupaciones sin equivalencia exacta en el cruce a cuatro dígitos.
+\subsection{Panorama nacional}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{figures/fig_01_distribucion_exposicion.png}
-\caption{Distribución de los ocupados por nivel de exposición}
-\label{fig:distribucion_exposicion}
+\includegraphics[width=0.85\textwidth]{figures/fig_21_coincidencia_nacional.png}
+\caption{Potencial de automatizacion en las ocupaciones colombianas}
+\label{fig:nacional}
 \end{figure}
 
-%La exposición alta o muy alta se concentra, entonces, en una fracción específica del empleo. Más que anticipar la desaparición de puestos completos, el resultado señala dónde existe un mayor margen para que cambie la combinación de tareas que hoy realizan los trabajadores.
+Entre los ocupados con información válida en los dos índices, 8,3\,\% tiene alto potencial de automatización y 49,6\,\% tiene bajo potencial: juntos, los índices coinciden en el 57,9\,\% del empleo (Figura \ref{fig:nacional}). El 42,1\,\% restante es incierto. Ese 42,1\,\% es la cifra más importante de este informe: es casi cinco veces el tamaño del grupo de alto potencial, y es mayor que cualquiera de los dos grupos donde sí hay acuerdo salvo el de bajo potencial.
 
-\textbf{La exposición a la IA aumenta con el ingreso y la educación}
-
-La Figura \ref{fig:quintiles_ingreso} muestra una correlación positiva entre ingreso y exposición a la IA. Los dos primeros quintiles registran puntajes cercanos a 0,21, mientras que el quinto alcanza 0,36. La exposición a la IA también se correlaciona positivamente con la educación: la exposición pasa de 0,18 entre trabajadores con educación básica primaria a 0,36 entre quienes tienen educación superior o universitaria.
+\subsection{¿Por qué no coinciden los índices?}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{figures/fig_14_panel_ingreso_educacion.png}
-\caption{Puntaje promedio de exposición por quintil de ingreso y logro educativo}
-\label{fig:quintiles_ingreso}
+\includegraphics[width=\textwidth]{figures/fig_28_dispersion_oit_aioe.png}
+\caption{Cuadrantes por ocupacion y pontecialidad de automatizacion}
+\label{fig:dispersion}
 \end{figure}
 
-La naturaleza de las tareas por parte de las personas con mayores ingresos y con mayor logro educativo ayuda a explicar estas correlaciones. El procesamiento de información, la escritura, el análisis, la programación y la elaboración de documentos tienen mayor peso en ocupaciones profesionales y de oficina, que a su vez se concentran entre trabajadores de mayores ingresos y educación.
+La Figura \ref{fig:dispersion} muestra el origen del desacuerdo. Cada punto es una ocupación, ubicada según su puntaje OIT-NASK (eje horizontal) y su puntaje AIOE (eje vertical); las líneas marcan el corte de alto potencial de cada índice. La zona de ``no coinciden'' (en rojo) concentra 42,1\,\% del empleo, y está formada casi en su totalidad por ocupaciones donde AIOE marca alto potencial y OIT-NASK no: la zona opuesta --OIT alto y AIOE bajo-- está vacía (0,0\,\%). En otras palabras, el desacuerdo no es simétrico. AIOE, construido sobre un conjunto más amplio de habilidades y capacidades de IA (incluidas algunas anteriores a los modelos generativos, como visión por computador y reconocimiento de patrones), marca como de alto potencial a un conjunto de ocupaciones --muchas de ventas, atención al público y servicios-- que OIT-NASK, centrado en tareas evaluadas frente a IA generativa actual, no alcanza a capturar. Ninguno de los dos índices es ``el correcto''; miden cosas relacionadas pero no idénticas, y su desacuerdo es, en sí mismo, el resultado más informativo de este ejercicio.
 
-\textbf{Las mujeres y los trabajadores formales están más expuestos a la IA}
-
-La Figura \ref{fig:genero_formalidad} muestra que la exposición también varía por género y formalidad. El puntaje alcanza 0,30 entre las mujeres y 0,24 entre los hombres. Entre trabajadores formales es de 0,32, frente a 0,22 entre los informales.
+\subsection{Ingreso: quintiles y percentiles}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{figures/fig_15_panel_genero_formalidad.png}
-\caption{Exposición promedio por género y formalidad}
+\includegraphics[width=0.85\textwidth]{figures/fig_25_coincidencia_quintil_ingreso.png}
+\caption{Potencial de automatizacion por quintiles}
+\label{fig:quintil}
+\end{figure}
+
+La incertidumbre no se distribuye igual a lo largo de la distribución de ingreso: crece con fuerza a medida que se sube de quintil (Figura \ref{fig:quintil}). En el primer quintil, los índices coinciden en que 1,3\,\% del empleo tiene alto potencial y 64,3\,\% tiene bajo potencial --es decir, apenas 34,4\,\% del empleo del quintil más pobre es incierto--. En el quinto quintil esa proporción se invierte: los índices coinciden en que 17,2\,\% tiene alto potencial y solo 14,3\,\% tiene bajo potencial, dejando 68,5\,\% del empleo en la zona incierta. El aumento es progresivo de un quintil al siguiente, sin un salto brusco en un punto específico de la distribución.
+
+\subsection{Educación}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_23_coincidencia_logro_educativo.png}
+\caption{Potencial de automatizacion por logro educativo}
+\label{fig:educacion}
+\end{figure}
+
+El mismo gradiente aparece con el logro educativo (Figura \ref{fig:educacion}). Entre quienes no tienen educación formal, los índices coinciden en el 82,8\,\% de los casos (prácticamente todo en el grupo de bajo potencial) y la incertidumbre es de apenas 17,2\,\%. Entre quienes tienen educación superior o universitaria, la coincidencia cae a 38,3\,\% --19,6\,\% en alto potencial y 18,8\,\% en bajo potencial-- y la incertidumbre sube a 61,7\,\%, la más alta de todos los niveles educativos: casi dos de cada tres trabajadores con educación superior no tienen hoy una clasificación confiable de su propio potencial de automatización.
+
+\subsection{Género y formalidad}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.85\textwidth]{figures/fig_22_coincidencia_genero_formalidad.png}
+\caption{Potencial de automatizacion por genero y formalidad}
 \label{fig:genero_formalidad}
 \end{figure}
 
-Estas diferencias responden en buena medida a la naturaleza de las ocupaciones de las mujeres y los trabjadores informales. Las mujeres tienen una mayor presencia en actividades administrativas, contables y de atención al cliente, mientras que el empleo informal concentra más tareas manuales, presenciales y de servicios personales.
+Por género, la incertidumbre es mayor entre mujeres (49,4\,\%) que entre hombres (36,9\,\%)\footnote{Nota de lectura: el puntaje promedio de cada índice por separado también es mayor entre mujeres que entre hombres; aquí se añade que el desacuerdo entre índices --la incertidumbre-- sigue el mismo sentido (Apéndice \ref{sec:apendice_metodologia}).}; los índices coinciden en que 12,4\,\% del empleo femenino tiene alto potencial, frente a 5,3\,\% del masculino (Figura \ref{fig:genero_formalidad}, panel A). Por formalidad, la brecha es más marcada: la incertidumbre alcanza 51,6\,\% entre trabajadores formales y 33,8\,\% entre informales, y los índices coinciden en que 15,8\,\% del empleo formal tiene alto potencial, frente a apenas 2,0\,\% del informal (panel B).
 
-\textbf{La exposición se concentra en actividades intensivas en digitalización}
-
-La Figura \ref{fig:actividad_economica} muestra que las mayores exposiciones sectoriales aparecen en actividades financieras y de seguros, con un puntaje de 0,478, e información y comunicaciones, con 0,455. En el extremo opuesto, agricultura registra 0,141 y construcción 0,160.
+\subsection{Actividad económica}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth,height=0.80\textheight,keepaspectratio]{figures/fig_05_actividad_economica.png}
-\caption{Exposición promedio por actividad económica}
-\label{fig:actividad_economica}
+\includegraphics[width=\textwidth,height=0.82\textheight,keepaspectratio]{figures/fig_24_coincidencia_actividad_economica.png}
+\caption{Potencial de automatizacion por actividad economica}
+\label{fig:actividad}
 \end{figure}
 
-%El patrón sectorial vuelve a reflejar la naturaleza de las tareas. Las actividades intensivas en procesamiento de información, comunicación, elaboración de documentos y análisis de datos concentran una mayor proporción de funciones compatibles con la inteligencia artificial generativa. Los bajos valores de agricultura o construcción se refieren únicamente a este tipo de tecnología y no a otras formas de automatización.
+Por actividad económica la heterogeneidad es aún mayor (Figura \ref{fig:actividad}). En un extremo, agricultura, ganadería, silvicultura y pesca tiene la mayor coincidencia del país: 94,2\,\% del empleo del sector, casi todo en bajo potencial, con apenas 5,8\,\% de incertidumbre. En el otro extremo, educación es la actividad con mayor incertidumbre: 81,9\,\% de su empleo queda sin clasificación confiable, seguida por organizaciones extraterritoriales (79,6\,\%), comercio y reparación (70,7\,\%) y artes, recreación y otros servicios (71,4\,\%). Actividades financieras y de seguros es la única actividad donde el acuerdo se concentra mayoritariamente en alto potencial (48,3\,\%) en vez de bajo potencial, con 47,2\,\% de incertidumbre.
 
-\textbf{Los departamentos donde se encunetran las grandes ciudades del país están más expuestos a la IA}
-
-La Figura \ref{fig:departamentos} muestra que las diferencias territoriales siguen una lógica semejante. Bogotá presenta el mayor puntaje promedio, seguida por Antioquia, Atlántico y Valle del Cauca, territorios con una mayor concentración de servicios profesionales, administrativos y tecnológicos.
+\subsection{Departamento}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth,height=0.78\textheight,keepaspectratio]{figures/fig_04_departamentos.png}
-\caption{Puntaje promedio de exposición por departamentos}
-\label{fig:departamentos}
+\includegraphics[width=\textwidth,height=0.85\textheight,keepaspectratio]{figures/fig_26_coincidencia_departamento.png}
+\caption{Potencial de automatizacion por departamento}
+\label{fig:departamento}
 \end{figure}
 
-\textbf{Las ocupaciones más expuestas se concentran en contabilidad y servicios digitales}
+La geografía separa menos que el ingreso, la educación o la actividad económica, pero reproduce el mismo gradiente (Figura \ref{fig:departamento}). Bogotá tiene, a la vez, la mayor participación de alto potencial confirmado (14,7\,\%) y la mayor incertidumbre del país (52,7\,\%); le siguen Antioquia, Caldas, Valle del Cauca y Risaralda, todos con 9\,\% o más de alto potencial e incertidumbre por encima de 38\,\%. En el extremo opuesto, Nariño, Huila y Cauca --con apenas 3\,\% a 4\,\% de alto potencial-- tienen la menor incertidumbre del país, entre 28\,\% y 29\,\%, y más de dos tercios de su empleo coincide en bajo potencial.
 
-La Figura \ref{fig:ocupaciones_alta_exposicion} muestra que, entre las ocupaciones de exposición alta o muy alta con mayor peso en el empleo, se encuentran oficinistas generales, contadores, empleados de centros de llamadas, auxiliares de contabilidad y cálculo de costos, secretarios generales y desarrolladores de software.
+\subsection{Ocupaciones}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth]{figures/fig_08_ocupaciones_alta_exposicion.png}
-\caption{Ocupaciones de exposición alta o muy alta con mayor peso en el empleo}
-\label{fig:ocupaciones_alta_exposicion}
+\includegraphics[width=\textwidth,height=0.80\textheight,keepaspectratio]{figures/fig_27_coincidencia_ocupaciones.png}
+\caption{Rankin de otencial de automatizacion: Ocupaciones}
+\label{fig:ocupaciones}
 \end{figure}
 
-Estas ocupaciones concentran tareas como registrar información, elaborar documentos, responder solicitudes, clasificar datos, preparar informes, procesar operaciones o producir código. La exposición es alta precisamente porque una parte importante de esas actividades se encuentra cerca de las capacidades actuales de los sistemas generativos.
-
-%El siguiente paso es distinguir qué ocurre alrededor de esas tareas: cuánto espacio conserva el trabajador para funciones que requieren juicio, responsabilidad, comunicación o interacción humana.
-
-\section{Complementariedad}
-
-\subsection{Complementariedad a través de ocupaciones}
-
-\textbf{La IA complementará a casi una tercera parte de los trabajadores colombianos, pero sustituirá a otra quinta parte.}
-
-Una ocupación altamente expuesta puede combinar la automatización de algunas de sus tareas con aumentos en la productividad en otras. El resultado depende de las características del puesto y de la importancia que conservan funciones difíciles de delegar completamente a un sistema automatizado.
-
-La Figura \ref{fig:cuadrante_exposicion_complementariedad} permite aproximarse a esta diferencia. En Colombia, el 48\% del empleo se ubica en ocupaciones de baja exposición según esta métrica. El 28\% combina alta exposición con alta complementariedad y el 21\% combina alta exposición con baja complementariedad. El resto corresponde a ocupaciones sin correspondencia con el indicador de exposición a la IA.
+Entre las ocupaciones donde los índices coinciden en alto potencial (Figura \ref{fig:ocupaciones}, panel A), las de mayor peso en el empleo son oficinistas generales, contadores, empleados de centros de llamadas, auxiliares de contabilidad y cálculo de costos, secretarios generales y desarrolladores de software --tareas de oficina y procesamiento de información que ambos índices reconocen de forma consistente. Entre las de bajo potencial (panel B), destacan obreros y peones de explotaciones agrícolas, personal doméstico, obreros de la construcción, conductores de motocicletas y aseadores --ocupaciones con un fuerte componente manual o presencial que ninguno de los dos índices asocia con las capacidades actuales de la IA.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth,height=0.76\textheight,keepaspectratio]{figures/fig_09_cuadrante_exposicion_complementariedad.png}
-\caption{Exposición y complementariedad potencial por ocupación}
-\label{fig:cuadrante_exposicion_complementariedad}
+\includegraphics[width=\textwidth,height=0.72\textheight,keepaspectratio]{figures/fig_27b_ocupaciones_incertidumbre.png}
+\caption{Ranking de incertidumbre: Ocupaciones}
+\label{fig:ocupaciones_incierto}
 \end{figure}
 
-La Figura \ref{fig:cuadrante_exposicion_complementariedad} también muestra gran diversidad en las ocupaciones expuestas. Oficinistas, auxiliares contables, cajeros y empleados de centros de llamadas aparecen con mayor frecuencia entre aquellas de baja complementariedad. En contraste, docentes, abogados, gerentes, representantes comerciales y supervisores combinan exposición tecnológica con tareas donde la comunicación, la responsabilidad y el juicio mantienen un peso importante. El Cuadro \ref{tab:ocupaciones_complementariedad} presenta ejemplos de ocupaciones con alta exposición y distinto margen de complementariedad.
+Las ocupaciones con mayor incertidumbre (Figura \ref{fig:ocupaciones_incierto}) concentran, por sí solas, una porción del empleo nacional comparable a la de todo el grupo de alto potencial confirmado: vendedores y auxiliares de venta en tiendas, almacenes y afines encabezan la lista con 5,8\,\% del empleo total --más que cualquier ocupación individual de las Figuras anteriores--, seguidos por guardias de seguridad (2,2\,\%), gerentes de comercios al por mayor y al por menor (1,7\,\%), comerciantes de tiendas y representantes comerciales (1,4\,\% cada uno) y conductores de camiones y vehículos pesados (1,2\,\%). Son, en su mayoría, ocupaciones de ventas, atención al público y logística --exactamente el tipo de actividad que, según la Sección 3.2, AIOE clasifica como de alto potencial y OIT-NASK no.
 
-\begin{table}[H]
-    \centering
-    \caption{Ejemplos de ocupaciones según el tipo de exposición a la inteligencia artificial}
-    \label{tab:ocupaciones_complementariedad}
+\section{De la medición a la decisión}
+\label{sec:cadena}
 
-    \scriptsize
-    \renewcommand{\arraystretch}{1.05}
-    \setlength{\tabcolsep}{4pt}
-
-    \begin{tabularx}{\textwidth}{
-        >{\raggedright\arraybackslash}X
-        >{\raggedright\arraybackslash}X
-    }
-        \toprule
-        \textbf{Alta exposición y baja complementariedad}
-        & \textbf{Alta exposición y alta complementariedad} \\
-
-        \textit{Mayor potencial relativo de sustitución de tareas}
-        & \textit{Mayor potencial de complementariedad} \\
-
-        \midrule
-
-        Oficinistas generales
-        & Profesores de educación secundaria \\
-
-        Contadores
-        & Abogados \\
-
-        Empleados de centros de llamadas
-        & Representantes comerciales \\
-
-        Auxiliares de contabilidad y cálculo de costos
-        & Supervisores de oficina \\
-
-        Cajeros de comercio, taquilleros y expendedores de boletas
-        & Gerentes de comercios al por mayor y al por menor \\
-
-        \bottomrule
-    \end{tabularx}
-
-    \begin{minipage}{\textwidth}
-        \vspace{0.05cm}
-        \tiny
-%        \textit{Nota:} La clasificación corresponde al ejercicio AIOE/CAIOE aplicado al empleo colombiano. Las categorías describen características potenciales de las ocupaciones y no predicen pérdidas o ganancias de empleo.
-    \end{minipage}
-\end{table}
-
-La complementariedad tiende a ser mayor cuando en la ocupación se debe asumir responsabilidad sobre decisiones, interactuar con otras personas, supervisar resultados o resolver excepciones. La IA libera a estas ocupaciones de tareas rutinarias al delegarlas a la IA. Estas características ayudan a entender por qué ciertas ocupaciones con exposición a la IA pueden de hecho verse beneficiadas.
-
-\subsection{Complementariedad  a través de características socioeconómicas}
-
-%\subsection{Ingresos}
-
-\textbf{Tanto la exposición como la complementariedad aumentan con el ingreso.}
-
-La Figura \ref{fig:razon_complementariedad_ingreso} reporta cuántos ocupados se ubican en ocupaciones de alta complementariedad por cada ocupado en ocupaciones de baja complementariedad. En el primer quintil, por cada ocupado en una ocupación de baja complementariedad hay 0,75 ocupados en ocupaciones de alta complementariedad. En el quinto quintil, por cada ocupado en una ocupación de baja complementariedad hay 2,80 ocupados en ocupaciones de alta complementariedad. Hasta el tercer quintil pesan más las ocupaciones de baja complementariedad; en los dos quintiles superiores pesan más las ocupaciones de alta complementariedad.
+Todo lo anterior mide potencial técnico, no un resultado laboral. Que una ocupación caiga en el grupo de alto potencial, de bajo potencial o de incertidumbre describe qué tan compatibles son sus tareas con las capacidades actuales de la IA --no si una empresa la automatiza, ni qué le ocurre al trabajador que la desempeña. Ese paso depende de la adopción, que no es automática: está condicionada por costos, capacidades disponibles y organización del trabajo, y solo después de ocurrir se traduce en un efecto --positivo, negativo o nulo-- sobre el empleo, los salarios o la calidad del trabajo.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth,height=0.76\textheight,keepaspectratio]{figures/fig_16_razon_complementariedad_ingreso.png}
-\caption{Ocupados en alta complementariedad por cada ocupado en baja complementariedad, por quintil de ingreso}
-\label{fig:razon_complementariedad_ingreso}
+\begin{tikzpicture}[
+  node distance=9mm and 12mm,
+  box/.style={draw, rounded corners, align=center, font=\small, inner sep=6pt, text width=3.6cm},
+  arr/.style={-{Stealth[length=2.5mm]}, thick}
+]
+\node[box] (med) {\textbf{Potencial de automatización}\\[2pt]\footnotesize Medido cruzando dos índices independientes};
+\node[box, below=16mm of med, xshift=-5.4cm, text=ALTACOL, draw=ALTACOL] (alto) {\textbf{Alto potencial}\\[2pt]\footnotesize Ambos índices coinciden (8,3\,\% del empleo)};
+\node[box, below=16mm of med, text=INCIERTOCOL, draw=INCIERTOCOL] (incierto) {\textbf{Incierto}\\[2pt]\footnotesize Los índices no coinciden (42,1\,\% del empleo)};
+\node[box, below=16mm of med, xshift=5.4cm, text=BAJACOL, draw=BAJACOL] (bajo) {\textbf{Bajo potencial}\\[2pt]\footnotesize Ambos índices coinciden (49,6\,\% del empleo)};
+\node[box, below=16mm of incierto] (adop) {\textbf{Adopción real por empresas y trabajadores}\\[2pt]\footnotesize No es automática: depende de costos, habilidades y organización del trabajo};
+\node[box, below=10mm of adop] (efecto) {\textbf{Efecto en empleo, salarios y calidad del trabajo}\\[2pt]\footnotesize Incierto: puede ser positivo, negativo o nulo según el caso};
+\draw[arr] (med) -- (alto);
+\draw[arr] (med) -- (incierto);
+\draw[arr] (med) -- (bajo);
+\draw[arr] (alto) -- (adop);
+\draw[arr] (incierto) -- (adop);
+\draw[arr] (bajo) -- (adop);
+\draw[arr] (adop) -- (efecto);
+\end{tikzpicture}
+\caption{De la medición del potencial de automatización al efecto sobre el empleo}
+\label{fig:cadena}
 \end{figure}
+\noindent\emph{Nota:} Las tres categorías de la Figura \ref{fig:cadena} describen qué tan de acuerdo están los índices sobre el potencial técnico de una ocupación; ninguna predice por sí sola si la tecnología se adopta ni qué efecto tiene sobre el trabajador.
 
-La exposición a la IA trae riesgos y oportunidades. Los trabajadores de mayores ingresos están más expuestos a la IA, pero también ocupan puestos en los que existen mayores posibilidades de utilizarla como complemento. Entre los trabajadores de menores ingresos la exposición es menor, pero, cuando existe exposición, la complementariedad tiende a ser baja.
+La cadena de la Figura \ref{fig:cadena} es la misma para las tres categorías: ni siquiera el grupo de alto potencial confirmado salta directamente a un efecto laboral sin pasar por una decisión real de adopción. Para el grupo de incertidumbre, además, el primer paso --saber si el potencial es realmente alto o bajo-- ni siquiera está resuelto todavía.
 
-%La desigualdad asociada con la inteligencia artificial puede surgir así por una vía distinta a la habitual brecha de acceso tecnológico. Incluso si el uso de estas herramientas se generaliza, las diferencias en las tareas, las habilidades y la organización del trabajo pueden determinar quién logra convertirlas en productividad.
+Esa misma dualidad --adopción condicionada, efecto incierto-- aparece en la evidencia internacional sobre IA generativa, que mide efectos reales en vez de potencial técnico. En tareas con una frontera de capacidad bien definida, las ganancias de productividad han sido altas: en centros de llamadas, un asistente generativo elevó 15\,\% los casos resueltos por hora, con mayores ganancias entre los agentes menos experimentados \citep{brynjolfsson2025}; en desarrollo de software, el acceso a una herramienta de IA elevó 26\,\% las tareas completadas en tres experimentos de campo \citep{cui2026}; en escritura profesional, la IA redujo el tiempo y mejoró la calidad de forma simultánea \citep{noy2023}. Pero el resultado depende de si el problema se mantiene dentro de esa frontera: en consultoría, el desempeño mejoró cuando las tareas eran compatibles con la herramienta y empeoró cuando la excedían \citep{dellacqua2026} --evidencia de que la adopción exitosa exige también saber cuándo no usar la IA.
 
-%\subsection*{Educación, género y formalidad}
-
-La Figura \ref{fig:razon_complementariedad_relativa} aplica la misma lectura a género, formalidad y logro educativo. Entre las mujeres, por cada ocupada en una ocupación de baja complementariedad hay una ocupada en ocupaciones de alta complementariedad. Entre los hombres, por cada ocupado en una ocupación de baja complementariedad hay casi dos ocupados en ocupaciones de alta complementariedad. Esta diferencia no significa que los hombres estén más expuestos: la Figura \ref{fig:genero_formalidad} muestra que la exposición promedio es mayor entre las mujeres. El resultado indica que, dentro del empleo expuesto, los hombres se concentran relativamente más en ocupaciones con mayor complementariedad.
-
-La misma lectura aplica a la formalidad y la educación. Entre trabajadores formales, por cada ocupado en una ocupación de baja complementariedad hay 1,7 ocupados en ocupaciones de alta complementariedad. Entre trabajadores informales, por cada ocupado en una ocupación de baja complementariedad hay 0,9 ocupados en ocupaciones de alta complementariedad. 
-
-Entre quienes no tienen ninguna educación, por cada ocupado en una ocupación de baja complementariedad hay 0,6 ocupados en ocupaciones de alta complementariedad. Entre quienes tienen educación superior o universitaria, por cada ocupado en una ocupación de baja complementariedad hay 1,7 ocupados en ocupaciones de alta complementariedad.
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth,height=0.76\textheight,keepaspectratio]{figures/fig_17_razon_complementariedad_relativa.png}
-\caption{Ocupados en alta complementariedad por cada ocupado en baja complementariedad, por género, formalidad y logro educativo}
-\label{fig:razon_complementariedad_relativa}
-\end{figure}
-
-En conclusión, los grupos con mayor ingreso, educación y formalidad pueden estar más expuestos y, al mismo tiempo, relativamente mejor posicionados para capturar las ganancias de productividad. La formación para la transición tecnológica debería considerar ambas dimensiones: cuánto puede cambiar una ocupación y qué margen existe para reorganizar sus tareas alrededor de la nueva tecnología.
+El efecto sobre el empleo, además, no se deriva mecánicamente del aumento de productividad. En una plataforma de trabajo independiente, los perfiles más expuestos a herramientas generativas experimentaron caídas de empleo e ingresos, porque una misma producción pudo alcanzarse con menos horas de trabajo \citep{hui2024}. En otro experimento, sobre tareas administrativas y de correspondencia, la IA redujo el tiempo dedicado al correo sin producir cambios detectables en la cantidad ni en la composición de las tareas \citep{dillon2025} --el tercer desenlace posible, junto al positivo y al negativo: ningún efecto apreciable. Estos seis estudios miden tareas, contextos y metodologías distintos, y sus resultados no se trasladan directamente a Colombia; pero ilustran, con evidencia causal, lo que la Figura \ref{fig:cadena} resume de forma esquemática: el mismo potencial técnico puede terminar en efectos opuestos según cómo se adopte.
 
 \section{Experiencia internacional}
 
@@ -421,216 +315,67 @@ El aumento de productividad tampoco determina la trayectoria del empleo. En merc
 La evidencia disponible apunta así a una relación menos mecánica que la habitual discusión sobre automatización. La inteligencia artificial puede elevar la productividad y, al mismo tiempo, modificar la demanda de trabajo. La dirección final depende de cómo cambien las tareas, de la capacidad de los trabajadores para complementar la tecnología y de si las ganancias de eficiencia se traducen en mayor producción o en una menor utilización de trabajo.
 
 \section{Implicaciones para Colombia}
+\label{sec:implicaciones}
 
-Los resultados del informe desplazan la discusión desde la cantidad de empleos expuestos hacia las condiciones que determinan cómo se utiliza la tecnología. Exposición, complementariedad y capacidad de transición describen problemas distintos y requieren respuestas diferentes. La Figura \ref{fig:mecanismo_ia_empleo} sintetiza la secuencia que conecta las capacidades de la inteligencia artificial con la adopción, la reorganización de tareas y los resultados laborales.
+\textbf{Para la formación y la política de transición laboral}, el grupo más útil para priorizar es el de alto potencial de automatización confirmado por ambos índices (8,3\,\% del empleo): ahí la evidencia es más sólida y las acciones de capacitación o acompañamiento tienen menor probabilidad de estar respondiendo a una clasificación equivocada. El grupo de incertidumbre (42,1\,\% del empleo) no debería tratarse como si tuviera la misma certeza: requiere monitoreo y evidencia adicional --no necesariamente la misma urgencia de intervención-- antes de que se le asignen recursos de formación dirigidos específicamente a mitigar un riesgo que, con la información actual, no está confirmado.
 
-\begin{figure}[H]
-    \centering
+\textbf{Para las empresas}, el hallazgo de que la incertidumbre crece con el ingreso, la educación y la formalidad es relevante porque sugiere que los puestos más calificados y mejor remunerados --los que suelen concentrar la atención de la conversación pública sobre IA y empleo-- son también los que tienen la medición menos consolidada. Decisiones de adopción tecnológica basadas en un solo indicador en esos segmentos deberían tratarse con mayor cautela que en los segmentos donde los índices coinciden.
 
-    \resizebox{0.92\textwidth}{!}{%
-    \begin{tikzpicture}[
-        node distance=0.3cm,
-        every node/.style={
-            font=\footnotesize,
-            align=center
-        },
-        main/.style={
-            rectangle,
-            rounded corners=2pt,
-            draw,
-            minimum width=2.2cm,
-            minimum height=0.9cm,
-            inner sep=2pt
-        },
-        outcome/.style={
-            rectangle,
-            rounded corners=3pt,
-            draw,
-            minimum width=2.8cm,
-            minimum height=0.8cm,
-            inner sep=5pt
-        },
-        factor/.style={
-            rectangle,
-            rounded corners=2pt,
-            draw,
-            dashed,
-            minimum width=3.1cm,
-            minimum height=0.7cm,
-            inner sep=4pt,
-            font=\footnotesize
-        },
-        arrow/.style={
-            -{Latex[length=2mm]},
-            thick
-        },
-        factorarrow/.style={
-            -{Latex[length=2mm]},
-            dashed
-        }
-    ]
+\textbf{Para la política pública}, el resultado de la Sección 3.8 --que la clasificación depende sustancialmente del umbral elegido-- es un llamado a la transparencia metodológica: cualquier cifra de ``empleo en riesgo por IA'' que circule en el debate público debería venir acompañada de qué indicador la respalda, qué corte utiliza, y qué tan sensible es a decisiones alternativas razonables.
 
-    % Cadena principal
+\section{Conclusiones}
 
-    \node[main] (capacity)
-    {\textbf{Capacidades de la inteligencia artificial}\\
-    Tareas que la tecnología puede realizar o transformar};
+Este informe no estima cuánta IA automatizará el mercado laboral colombiano; mide qué tan de acuerdo están dos de los indicadores internacionales más usados para intentar responder esa pregunta. La respuesta es: en poco menos de 58\,\% del empleo. El 42,1\,\% restante --mayor que el grupo de alto potencial confirmado casi cinco veces-- es una zona de incertidumbre genuina, no un vacío de información que deba completarse eligiendo arbitrariamente uno de los dos índices.
 
-    \node[main, below=of capacity] (exposure)
-    {\textbf{Exposición ocupacional}\\
-    Presencia de esas tareas dentro de cada ocupación};
+Esa incertidumbre tiene una estructura reconocible: es mayor en las ocupaciones de ventas, atención al público y servicios que AIOE captura y OIT-NASK no, y crece sistemáticamente con el ingreso, la educación y la formalidad. Los trabajadores mejor posicionados del mercado laboral colombiano son, paradójicamente, aquellos sobre los que menos certeza tenemos respecto a su potencial de automatización. Y esa incertidumbre es, además, sensible a decisiones metodológicas --el umbral de cada índice-- que rara vez se discuten cuando se presenta una sola cifra.
 
-    \node[main, below=of exposure] (adoption)
-    {\textbf{Adopción de inteligencia artificial}\\
-    Uso efectivo por empresas y trabajadores};
+La recomendación central de este informe es, por tanto, metodológica: antes de usar cualquier indicador de potencial de automatización para orientar formación, políticas de transición o decisiones empresariales, vale la pena preguntar con qué otro indicador coincide, y de qué tamaño es la zona donde no hay acuerdo. Ignorar esa pregunta no elimina la incertidumbre; solo la hace invisible.
 
-    \node[main, below=of adoption] (reorganization)
-    {\textbf{Reorganización del trabajo}\\
-    Cambio en la combinación y distribución de tareas};
-
-    % Automatización y complementariedad
-
-    \node[outcome, below left=0.9cm and 0.5cm of reorganization]
-    (automation)
-    {\textbf{Automatización}\\
-    Sustitución de algunas tareas};
-
-    \node[outcome, below right=0.9cm and 0.5cm of reorganization]
-    (complement)
-    {\textbf{Complementariedad}\\
-    IA como apoyo al trabajador};
-
-    % Productividad y calidad
-
-    \node[main, below=2.0cm of reorganization] (productivity)
-    {\textbf{Productividad y calidad}\\
-    Cambios en tiempo, producción, errores y desempeño};
-
-    % Resultados laborales finales
-
-    \node[outcome, below left=0.9cm and 1.4cm of productivity]
-    (employment)
-    {\textbf{Empleo}\\
-    Demanda de trabajo};
-
-    \node[outcome, below=0.9cm of productivity]
-    (wages)
-    {\textbf{Salarios}\\
-    e ingresos};
-
-    \node[outcome, below right=0.9cm and 1.4cm of productivity]
-    (transitions)
-    {\textbf{Transiciones}\\
-    ocupacionales};
-
-    % Flechas principales
-
-    \draw[arrow] (capacity) -- (exposure);
-    \draw[arrow] (exposure) -- (adoption);
-    \draw[arrow] (adoption) -- (reorganization);
-
-    \draw[arrow] (reorganization) -- (automation);
-    \draw[arrow] (reorganization) -- (complement);
-
-    \draw[arrow] (automation) -- (productivity);
-    \draw[arrow] (complement) -- (productivity);
-
-    \draw[arrow] (productivity) -- (employment);
-    \draw[arrow] (productivity) -- (wages);
-    \draw[arrow] (productivity) -- (transitions);
-
-    % Factores que condicionan la relación
-
-    \node[factor, left=1.4cm of adoption] (skills)
-    {\textbf{Habilidades}\\
-    Formación y capacidad de uso};
-
-    \node[factor, right=1.4cm of adoption] (organization)
-    {\textbf{Organización empresarial}\\
-    Procesos y gestión};
-
-    \node[factor, left=1.4cm of reorganization] (investment)
-    {\textbf{Inversión complementaria}\\
-    Tecnología e infraestructura};
-
-    \node[factor, right=1.4cm of reorganization] (demand)
-    {\textbf{Demanda}\\
-    Bienes y servicios};
-
-    \node[factor, right=1.4cm of productivity] (regulation)
-    {\textbf{Regulación y entorno institucional}};
-
-    % Flechas de factores
-
-    \draw[factorarrow] (skills) -- (adoption);
-    \draw[factorarrow] (organization) -- (adoption);
-    \draw[factorarrow] (investment) -- (reorganization);
-    \draw[factorarrow] (demand) -- (reorganization);
-    \draw[factorarrow] (regulation) -- (productivity);
-
-    \end{tikzpicture}%
-    }
-
-    \caption{Cómo la exposición a la inteligencia artificial puede traducirse en resultados laborales}
-    \label{fig:mecanismo_ia_empleo}
-
-    \begin{minipage}{0.95\textwidth}
-        \vspace{0.2cm}
-        \footnotesize
-%        \textit{Nota:} La exposición tecnológica no determina directamente los        efectos sobre empleo o salarios. Los resultados dependen de la adopción,        la reorganización de las tareas, el grado de automatización o complementariedad y de factores como las habilidades de los trabajadores,       la organización empresarial, la inversión complementaria, la demanda y el entorno institucional.
-    \end{minipage}
-
-\end{figure}
-
-Para las empresas, la unidad relevante de análisis es la tarea. Identificar qué actividades pueden automatizarse, cuáles requieren supervisión y cuáles pueden aumentar su valor mediante nuevas herramientas permite orientar la adopción hacia mejoras de productividad y calidad. Los pilotos de implementación deberían evaluar no solo reducciones de tiempo y costos, sino también errores, satisfacción de clientes, carga de trabajo y capacidad de los trabajadores para asumir funciones de mayor valor agregado.
-
-Para los trabajadores, las habilidades relevantes van más allá del manejo técnico de las herramientas. Verificar resultados, detectar errores, formular problemas, interpretar información, comunicarse con clientes y asumir responsabilidad sobre decisiones son capacidades que pueden aumentar el grado de complementariedad con la tecnología.
-
-Para el Gobierno, identificar las ocupaciones expuestas es apenas el punto de partida. Las políticas de formación deberían prestar especial atención a trabajadores que combinan alta exposición con baja complementariedad y menores posibilidades de transición. El seguimiento del mercado laboral también deberá incorporar información sobre adopción empresarial, vacantes, salarios, horas trabajadas y movilidad ocupacional.
-
-La transformación tiene además una dimensión empresarial. Si las capacidades necesarias para adoptar inteligencia artificial se concentran en firmas grandes y productivas, mientras las Mipymes enfrentan restricciones de implementación, la tecnología puede ampliar las brechas de productividad ya existentes entre empresas. Facilitar la adopción y la formación en firmas de menor tamaño es, por ello, parte de la misma agenda de transición.
-
-El objetivo no debería ser contener la exposición tecnológica, sino aumentar la capacidad para aprovecharla. Allí donde la inteligencia artificial pueda complementar el trabajo, el reto es acelerar la adopción productiva. Donde la sustitución de tareas tenga mayor peso, la prioridad pasa por facilitar la adaptación y la movilidad de los trabajadores.
-
-%\section{Conclusiones}
-
-%La expansión de la inteligencia artificial generativa no está llegando primero a los trabajadores tradicionalmente asociados con la automatización. En Colombia, la exposición se concentra en ocupaciones administrativas, profesionales y de servicios intensivos en información, y aumenta con el ingreso y la educación. La transformación tecnológica alcanza así una parte del mercado laboral que durante otras olas de automatización estuvo relativamente menos expuesta.
-
-%Pero la exposición cuenta solo una parte de la historia. Entre los trabajadores de mayores ingresos y educación también es más frecuente encontrar ocupaciones donde la tecnología puede complementar tareas que requieren juicio, comunicación o responsabilidad. En otros segmentos del mercado laboral, una exposición menor puede estar acompañada por menos espacio para esa complementariedad. La distribución de las oportunidades de productividad no coincide necesariamente con la distribución de la exposición.
-
-%Esta diferencia debería orientar la respuesta de empresas y política pública. La prioridad no es proteger ocupaciones de cualquier contacto con la inteligencia artificial, sino ampliar las capacidades para reorganizar el trabajo alrededor de ella y facilitar las transiciones donde la sustitución de tareas sea más probable. La pregunta relevante para Colombia no es únicamente qué trabajos puede transformar la tecnología, sino quién estará en condiciones de aprovechar esa transformación.
-
-\clearpage
 \appendix
-\setcounter{table}{0}
-\renewcommand{\thetable}{A\arabic{table}}
 
-\section{Regla de clasificación del indicador de exposición}
+\section{Metodología}
+\label{sec:apendice_metodologia}
+
+\subsection{Fuentes y unidad de análisis}
+
+El análisis utiliza la GEIH de 2025 para identificar las ocupaciones y características de los trabajadores colombianos. Los indicadores internacionales se vinculan mediante la Clasificación Internacional Uniforme de Ocupaciones de 2008 (CIUO-08) a cuatro dígitos \citep{ilo2012isco}. El puntaje de cada índice se asigna a la ocupación y se traslada a quienes la desempeñan: las diferencias entre grupos de trabajadores reflejan su distribución ocupacional, no observaciones individuales del uso de IA en el puesto de trabajo.
+
+\subsection{El índice OIT-NASK}
+
+La actualización de 2025 de la Organización Internacional del Trabajo (OIT) y el instituto polaco NASK construye un índice de potencial de automatización a partir de tareas ocupacionales \citep{gmyrek2025}. Cada tarea recibe un valor entre cero --la IA no puede realizarla-- y uno --puede realizarla completamente, dada la capacidad tecnológica considerada--; el puntaje de una ocupación es el promedio no ponderado de los puntajes de sus tareas, sin ajustar por frecuencia ni importancia dentro del trabajo. La OIT combina la media y la desviación estándar de esos puntajes en cinco categorías.
 
 \begin{table}[H]
 \centering
 \small
-\caption{Exposición de la ocupación y puntajes de las tareas asociadas a la ocupación}
+\caption{Reglas y etiquetas de potencial de automatización (índice OIT-NASK)}
 \label{tab:reglas_exposicion}
 \begin{tabularx}{0.94\textwidth}{>{\bfseries}l X}
 \toprule
-Exposición & Regla de asignación en función de la media ($\mu$) y la desviación estándar ($\sigma$) de los puntajes de las tareas asociadas a la ocupación \\
+Etiqueta & Regla basada en la media ($\mu$) y la desviación estándar ($\sigma$) de los puntajes de tareas \\
 \midrule
-Muy alta & $\mu\geq0,60$ y $\mu-\sigma\geq0,50$ \\
-Alta & $0,50\leq\mu<0,60$ y $\mu+\sigma\geq0,50$ \\
-Media & $0,40\leq\mu<0,50$ y $\mu+\sigma\geq0,50$ \\
-Baja & $\mu<0,40$ y $\mu+\sigma\geq0,50$ \\
-Muy baja o ninguna & casos restantes \\
+Muy alto & $\mu\geq0,60$ y $\mu-\sigma\geq0,50$ \\
+Alto & $0,50\leq\mu<0,60$ y $\mu+\sigma\geq0,50$ \\
+Medio & $0,40\leq\mu<0,50$ y $\mu+\sigma\geq0,50$ \\
+Bajo & $\mu<0,40$ y $\mu+\sigma\geq0,50$ \\
+Muy bajo o ninguno & casos restantes \\
 \bottomrule
 \end{tabularx}
-
-{\footnotesize Fuente: \cite{gmyrek2025}}
+\caption*{\footnotesize Fuente: \citet{gmyrek2025}.}
 \end{table}
 
-\section*{Reproducibilidad}
+En este informe, ``alto potencial de automatización'' bajo OIT-NASK corresponde a las categorías alto y muy alto del Cuadro \ref{tab:reglas_exposicion} (Sección \ref{sec:sensibilidad} evalúa la sensibilidad de esta elección). El cruce con la GEIH enlaza \texttt{OFICIO\_C8} con la CIUO-08 a cuatro dígitos y conserva únicamente coincidencias exactas, con una cobertura de 96,49\,\% del empleo expandido.
 
-El programa \texttt{code/01\_analisis\_exposicion\_ia\_2025.py} genera las tablas CSV, las figuras base y las pruebas de calidad. Los insumos principales son \texttt{BaseIA.dta}, la correlativa CIUO-08/GEIH y el archivo público de tareas de la OIT. Ningún resultado del informe usa la imputación a dos dígitos como estimación principal.
+\subsection{El índice AIOE/CAIOE}
 
+El \emph{AI Occupational Exposure Index} (AIOE), propuesto por \citet{felten2021}, aproxima la compatibilidad de cada ocupación con la IA combinando un mapa de similitud entre aplicaciones de IA (reconocimiento de imágenes, traducción automática, transcripción de voz, generación de texto, entre otras) y las habilidades laborales que define el sistema estadounidense O*NET, con la puntuación de importancia que O*NET asigna a cada habilidad dentro de cada ocupación. AIOE combina ambos insumos en un puntaje continuo, sin cota superior, que ordena las ocupaciones según qué tan relacionadas están sus habilidades más importantes con las capacidades de IA ya demostradas --muchas de ellas anteriores a los modelos generativos--. Por eso AIOE y OIT-NASK miden potencial de automatización desde ángulos distintos: tareas frente a IA generativa actual, en un caso; habilidades frente a un conjunto más amplio de capacidades, en el otro. Pizzinelli et al. extienden AIOE con un parámetro de complementariedad potencial (\emph{theta}); este informe utiliza únicamente la dimensión de potencial de automatización de AIOE/CAIOE, no la de complementariedad.
+
+En este informe, ``alto potencial de automatización'' bajo AIOE corresponde a un puntaje igual o superior a la mediana ponderada de su distribución entre los ocupados colombianos con correspondencia (percentil 50; la Sección \ref{sec:sensibilidad} evalúa cortes alternativos entre los percentiles 30 y 70). El cruce con la GEIH hereda la cobertura de \texttt{OFICIO\_C8} con CIUO-08 a cuatro dígitos: 96,83\,\% del empleo de 2025.
+
+\subsection{La clasificación de coincidencia}
+
+Para cada persona ocupada con correspondencia válida en los dos índices, se construyen dos indicadores binarios --si OIT-NASK la clasifica como de alto potencial, y si AIOE la clasifica como de alto potencial-- y se cruzan en tres categorías: \textbf{alto potencial} cuando ambos son verdaderos, \textbf{bajo potencial} cuando ambos son falsos, e \textbf{incierto} cuando difieren. Todas las participaciones se calculan sobre el universo de ocupados con información válida en los dos índices dentro de cada grupo (quintil, nivel educativo, sector, departamento, etc.), ponderado por el factor de expansión de la GEIH. El programa \path{code/03_analisis_incertidumbre.py} genera las tablas y figuras de esta sección; reutiliza la carga de datos de \path{code/01_analisis_exposicion_ia_2025.py}.
+
+\addcontentsline{toc}{section}{Referencias}
 \bibliographystyle{apalike}
 \bibliography{references}
 
