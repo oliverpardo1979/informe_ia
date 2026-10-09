@@ -399,11 +399,21 @@ def _plot_legend(draw, items, x, y, font):
         x += 36 + (box[2] - box[0]) + 60
 
 
+def occupation_percentiles(scores: pd.Series) -> pd.Series:
+    """Rangos medios en percentiles, con los empates en la mediana en P50."""
+    percentiles = 100 * (scores.rank(method="average") - 0.5) / scores.count()
+    return percentiles.mask(scores.eq(scores.median()), 50.0)
+
+
 def save_agreement_scatter(table: pd.DataFrame, filename: str) -> None:
-    """Dispersion OIT-NASK (eje x) contra AIOE (eje y) por ocupacion. Las
+    """Percentiles OIT-NASK (eje x) contra AIOE (eje y) por ocupacion. Las
     lineas de corte (medianas de cada indice) definen cuatro zonas: en dos
     coinciden los indices y las otras dos son la discrepancia (arriba a la
     izquierda: AIOE alto y OIT bajo; abajo a la derecha: OIT alto y AIOE bajo)."""
+    table = table.assign(
+        oit_percentil=occupation_percentiles(table["oit_puntaje"]),
+        aioe_percentil=occupation_percentiles(table["aioe"]),
+    )
     width, height = 2200, 1500
     image = Image.new("RGB", (width, height), "white")
     draw = ImageDraw.Draw(image)
@@ -428,9 +438,9 @@ def save_agreement_scatter(table: pd.DataFrame, filename: str) -> None:
     top += 50
     left, right = 230, 2120
     bottom = height - 170
-    x_min, x_max = 0.0, float(table["oit_puntaje"].max()) * 1.06
-    y_min = float(table["aioe"].min()) - 0.08
-    y_max = float(table["aioe"].max()) + 0.08
+    # Leave room for edge bubbles and quadrant labels outside the data range.
+    x_min, x_max = -8.0, 108.0
+    y_min, y_max = -8.0, 108.0
 
     def to_x(value: float) -> float:
         return left + (right - left) * (value - x_min) / (x_max - x_min)
@@ -438,8 +448,8 @@ def save_agreement_scatter(table: pd.DataFrame, filename: str) -> None:
     def to_y(value: float) -> float:
         return bottom - (bottom - top) * (value - y_min) / (y_max - y_min)
 
-    x_cut = to_x(float(table["corte_oit"].iloc[0]))
-    y_cut = to_y(float(table["corte_aioe"].iloc[0]))
+    x_cut = to_x(50.0)
+    y_cut = to_y(50.0)
     draw.rectangle((x_cut, top, right, y_cut), fill="#E7EEF7")
     draw.rectangle((left, top, x_cut, y_cut), fill="#FBECEA")
     draw.rectangle((left, y_cut, x_cut, bottom), fill="#F2F4F6")
@@ -450,31 +460,30 @@ def save_agreement_scatter(table: pd.DataFrame, filename: str) -> None:
     solo_aioe = table.loc[~table["is_oit_alta"] & table["is_aioe_alta"], "ocupados"].sum() / total
     solo_oit = table.loc[table["is_oit_alta"] & ~table["is_aioe_alta"], "ocupados"].sum() / total
     zones = [
-        ((x_cut + right) / 2, top + 20, f"ALTO POTENCIAL ({share.get(ALTA_LABEL, 0):.1%})"),
-        ((left + x_cut) / 2, top + 20, f"INCIERTO ({solo_aioe:.1%})"),
-        ((left + x_cut) / 2, bottom - 56, f"BAJO POTENCIAL ({share.get(BAJA_LABEL, 0):.1%})"),
-        ((x_cut + right) / 2, bottom - 56, f"INCIERTO ({solo_oit:.1%})"),
+        ((x_cut + right) / 2, top + 20, f"ALTO POTENCIAL ({share.get(ALTA_LABEL, 0):.0%})"),
+        ((left + x_cut) / 2, top + 20, f"INCIERTO ({solo_aioe:.0%})"),
+        ((left + x_cut) / 2, bottom - 56, f"BAJO POTENCIAL ({share.get(BAJA_LABEL, 0):.0%})"),
+        ((x_cut + right) / 2, bottom - 56, f"INCIERTO ({solo_oit:.0%})"),
     ]
     for cx, cy, text in zones:
         text = text.replace(".", ",")
         box = draw.textbbox((0, 0), text, font=font_zone)
         draw.text((cx - (box[2] - box[0]) / 2, cy), text, font=font_zone, fill="#8B95A1")
 
-    for step in range(6):
-        x_value = x_min + (x_max - x_min) * step / 5
-        tick = f"{x_value:.2f}".replace(".", ",")
+    for x_value in [0, 25, 50, 75, 100]:
+        tick = str(x_value)
         box = draw.textbbox((0, 0), tick, font=font_tick)
         draw.text((to_x(x_value) - (box[2] - box[0]) / 2, bottom + 12), tick, font=font_tick, fill="#5A6570")
-        y_value = y_min + (y_max - y_min) * step / 5
-        tick_y = f"{y_value:.2f}".replace(".", ",")
+        y_value = x_value
+        tick_y = str(y_value)
         box_y = draw.textbbox((0, 0), tick_y, font=font_tick)
         draw.text((left - 14 - (box_y[2] - box_y[0]), to_y(y_value) - 10), tick_y, font=font_tick, fill="#5A6570")
 
     draw.line((x_cut, top, x_cut, bottom), fill="#71808F", width=3)
     draw.line((left, y_cut, right, y_cut), fill="#71808F", width=3)
     font_cut = base.image_font(21)
-    cut_oit_text = f"Mediana OIT-NASK: {float(table['corte_oit'].iloc[0]):.2f}".replace(".", ",")
-    cut_aioe_text = f"Mediana AIOE: {float(table['corte_aioe'].iloc[0]):.2f}".replace(".", ",")
+    cut_oit_text = "Mediana OIT-NASK (P50)"
+    cut_aioe_text = "Mediana AIOE (P50)"
     draw.text((x_cut + 10, bottom - 96), cut_oit_text, font=font_cut, fill="#5A6570")
     box = draw.textbbox((0, 0), cut_aioe_text, font=font_cut)
     draw.text((right - 10 - (box[2] - box[0]), y_cut - 30), cut_aioe_text, font=font_cut, fill="#5A6570")
@@ -482,8 +491,8 @@ def save_agreement_scatter(table: pd.DataFrame, filename: str) -> None:
     colors = {ALTA_LABEL: ALTA_COLOR, BAJA_LABEL: BAJA_COLOR, INCIERTO_LABEL: INCIERTO_COLOR}
     max_size = float(table["ocupados"].max()) or 1.0
     for _, row in table.sort_values("ocupados", ascending=False).iterrows():
-        x = to_x(float(row["oit_puntaje"]))
-        y = to_y(float(row["aioe"]))
+        x = to_x(float(row["oit_percentil"]))
+        y = to_y(float(row["aioe_percentil"]))
         radius = 4 + 26 * (float(row["ocupados"]) / max_size) ** 0.5
         draw.ellipse(
             (x - radius, y - radius, x + radius, y + radius),
@@ -494,10 +503,16 @@ def save_agreement_scatter(table: pd.DataFrame, filename: str) -> None:
 
     draw.line((left, top, left, bottom), fill="#71808F", width=2)
     draw.line((left, bottom, right, bottom), fill="#71808F", width=2)
-    x_label = "Índice OIT-NASK (puntaje de potencial de automatización, 0 a 1)"
+    x_label = "Percentil de la ocupación en OIT-NASK"
     box = draw.textbbox((0, 0), x_label, font=font_axis)
     draw.text(((left + right - (box[2] - box[0])) / 2, bottom + 55), x_label, font=font_axis, fill="#27313B")
-    draw.text((left, top - 34), "Índice AIOE (Felten, Raj y Seamans, 2021)", font=font_axis, fill="#27313B")
+    draw.text((left, top - 34), "Percentil de la ocupación en AIOE (Felten)", font=font_axis, fill="#27313B")
+    draw.text(
+        (70, height - 85),
+        "El tamaño de los puntos indica el empleo. Los porcentajes corresponden a trabajadores, no a ocupaciones.",
+        font=base.image_font(23),
+        fill="#5A6570",
+    )
     draw.text((70, height - 45), SOURCE, font=base.image_font(19), fill="#5A6570")
     image.save(FIG_DIR / filename, dpi=(220, 220))
 

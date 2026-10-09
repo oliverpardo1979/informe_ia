@@ -164,23 +164,32 @@ El informe consta de siete secciones, incluida esta introducción. La Sección \
 \section{Metodología}
 \label{sec:como_leer}
 
- 
-Distintos equipos de investigación han construido indicadores usando datos, metodologías y supuestos diferentes. Dos de los más usados son el índice de la Organización Internacional del Trabajo (OIT) y la Red Informática Científica y Académica de Polonia (NASK, por sus siglas en polaco), denominado OIT-NASK \citep{gmyrek2025}, y el índice de exposición ocupacional a la inteligencia artificial (\emph{Artificial Intelligence Occupational Exposure}, AIOE), de \citet{felten2021}. Cuando dos mediciones independientes del mismo fenómeno coinciden, esa coincidencia es información valiosa. Cuando no coinciden, ignorar el desacuerdo y quedarse con uno de los dos equivale a esconder la incertidumbre en vez de medirla.
+El informe utiliza dos índices. El primero es el índice de exposición ocupacional a la inteligencia artificial (\emph{Artificial Intelligence Occupational Exposure}, AIOE), de \citet{felten2021}. El segundo es el de la Organización Internacional del Trabajo (OIT) y la Red Informática Científica y Académica de Polonia (NASK, por sus siglas en polaco), denominado OIT-NASK \citep{gmyrek2025}.
 
-Este informe toma ese desacuerdo como objeto de estudio. En vez de elegir un índice y presentar sus resultados como si fueran un hecho establecido, cruza los dos para cada ocupación y cada trabajador de la Gran Encuesta Integrada de Hogares (GEIH) de 2025 \citep{dane_geih2025}, y clasifica el empleo en tres grupos: \textbf{alto potencial de automatización} (ambos índices coinciden en que es alto), \textbf{bajo potencial} (ambos coinciden en que es bajo), e \textbf{incierto} (los índices no coinciden).
+En \textbf{AIOE, de Felten}, cuanto mayor es el indicador, más se parece lo que la IA puede hacer a lo que una persona necesita saber hacer en esa ocupación. En \textbf{OIT-NASK}, cuanto mayor es el indicador, mayor es el potencial de automatización de las tareas de una ocupación.
 
+Para compararlos, ordenamos las ocupaciones de menor a mayor puntaje en cada índice y expresamos su posición en percentiles. Un percentil más alto indica una posición más alta frente a las demás ocupaciones, no un porcentaje de tareas automatizables.
 
-\textbf{Felten} mira las habilidades que requiere una ocupación y qué tanto coinciden con lo que puede hacer la IA. A mayor indicador, mayor coincidencia \citep{felten2021}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{figures/fig_28_dispersion_oit_aioe.png}
+\caption{Posición de las ocupaciones en los dos índices, expresada en percentiles}
+\label{fig:dispersion}
+\end{figure}
 
-En \textbf{OIT-NASK}, cuanto mayor es el indicador, mayor es el potencial de automatización de las tareas de una ocupación \citep{gmyrek2025}.
+La Figura \ref{fig:dispersion} presenta la posición de cada ocupación en los dos índices. El eje horizontal corresponde a OIT-NASK y el vertical, a AIOE. Cada punto representa una ocupación. En general, las ocupaciones que aparecen en posiciones altas en un índice también aparecen en posiciones altas en el otro, aunque no siempre coinciden.
 
-Nuestro indicador combina las habilidades que requiere la ocupación y la posibilidad de automatizar sus tareas. Comparamos el puntaje de cada ocupación con la mediana de cada índice y distinguimos tres grupos:
+Las líneas de la figura marcan la mediana de cada índice, que corresponde al percentil 50. Usamos ese punto de corte para clasificar las ocupaciones en tres grupos:
 
 \begin{itemize}
-\item \textbf{Alto potencial relativo de automatización.} Ambos puntajes son iguales o superiores a sus respectivas medianas. Coinciden una mayor correspondencia entre las habilidades requeridas y las capacidades de la IA y un mayor potencial de automatización de las tareas.
-\item \textbf{Bajo potencial relativo de automatización.} Ambos puntajes están por debajo de sus respectivas medianas. Coinciden una menor correspondencia entre las habilidades requeridas y las capacidades de la IA y un menor potencial de automatización de las tareas.
-\item \textbf{Potencial incierto.} Un puntaje es igual o superior a su mediana y el otro está por debajo. Hay dos posibilidades. En una, las tareas tienen un mayor potencial relativo de automatización, pero las capacidades de la IA coinciden menos con las habilidades requeridas. En la otra, las capacidades de la IA coinciden más con esas habilidades, pero las tareas tienen un menor potencial relativo de automatización.
+\item \textbf{Alto potencial relativo de automatización.} La ocupación está en la mediana o por encima de ella en ambos índices.
+\item \textbf{Bajo potencial relativo de automatización.} La ocupación está por debajo de la mediana en ambos índices.
+\item \textbf{Potencial incierto.} La ocupación está en la mediana o por encima de ella en un índice, pero por debajo en el otro.
 \end{itemize}
+
+``Alto'' y ``bajo'' indican un mayor o menor potencial de automatización frente a las demás ocupaciones. ``Incierto'' significa que los dos índices no coinciden en esa clasificación.
+
+Finalmente, utilizamos la Gran Encuesta Integrada de Hogares (GEIH) de 2025 \citep{dane_geih2025} para calcular qué porcentaje de los trabajadores está en cada grupo, según su ocupación. Los resultados corresponden a los trabajadores cuyas ocupaciones tienen información en ambos índices.
 
 \section{Resultados}
 \label{sec:resultados}
@@ -195,17 +204,6 @@ Nuestro indicador combina las habilidades que requiere la ocupación y la posibi
 \end{figure}
 
 La Figura \ref{fig:nacional} presenta la distribución de los trabajadores entre las tres categorías de potencial relativo de automatización. El 27\,\% de los trabajadores está en ocupaciones con alto potencial relativo de automatización, el 54\,\% en ocupaciones con bajo potencial relativo y el 19\,\% en ocupaciones con potencial incierto. Predomina, por tanto, el bajo potencial relativo, mientras que algo más de uno de cada cuatro trabajadores está en el grupo de alto potencial. Los porcentajes se calculan entre los ocupados con información en ambos indicadores.
-
-\subsection{¿Por qué no coinciden los índices?}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{figures/fig_28_dispersion_oit_aioe.png}
-\caption{Cruce de los indicadores por ocupación}
-\label{fig:dispersion}
-\end{figure}
-
-La Figura \ref{fig:dispersion} presenta el cruce de los puntajes de Felten y OIT-NASK por ocupación. Cada punto representa una ocupación. Las ubicadas arriba a la derecha tienen alto potencial relativo de automatización y las de abajo a la izquierda, bajo potencial relativo. Las dos zonas rojas corresponden al potencial incierto. El 14\,\% de los trabajadores está en ocupaciones con un puntaje alto en OIT-NASK y bajo en Felten, y el 5\,\% presenta la combinación contraria. El desacuerdo más frecuente es, entonces, que el indicador de tareas señale mayor potencial de automatización, pero el de habilidades no dé una señal igualmente alta.
 
 \subsection{Ingreso}
 
@@ -394,6 +392,8 @@ Para el cruce entre indicadores, el corte de AIOE es la mediana de su puntaje en
 En un ejemplo hipotético, un auxiliar contable lee facturas, compara sus valores con los pagos, redacta respuestas a proveedores y archiva soportes físicos. Estas tareas requieren comprensión escrita, razonamiento numérico, expresión escrita y destreza manual. La IA puede extraer datos, detectar diferencias y proponer respuestas, pero guardar los papeles requiere intervención física. OIT-NASK evaluaría la capacidad de la IA generativa para realizar cada tarea y promediaría sus puntajes \citep{gmyrek2025}. El AIOE de \citet{felten2021} evaluaría la relación entre las habilidades requeridas y las aplicaciones de IA, ponderando cada habilidad por su importancia y nivel requerido en la ocupación. Ninguno de los dos puntajes determina por sí solo si se perderá ese empleo.
 
 Para interpretar los puntajes, el informe compara cada ocupación con las demás ocupaciones presentes en la GEIH que tienen información válida en ambos indicadores. El corte es la \textbf{mediana}, no la media. La mediana es el valor central de los puntajes ordenados de menor a mayor. Cada ocupación pesa lo mismo para calcular ese corte, independientemente de cuántas personas la desempeñen. En cada indicador, llamamos ``alto'' a un puntaje igual o superior a su mediana y ``bajo'' a uno inferior. Esta regla no implica que la mitad de los trabajadores quede en cada grupo. Los empates tampoco garantizan dos grupos de igual número de ocupaciones.
+
+La Figura \ref{fig:dispersion} expresa los puntajes en percentiles para mostrar ambos índices en una escala común. Para cada índice, se calcula $100(r-0{,}5)/N$, donde $r$ es el rango de la ocupación en orden ascendente y $N$ es el número de ocupaciones con información en ambos índices. Los empates reciben el rango promedio. Si un puntaje coincide con la mediana, se ubica en el percentil 50 para conservar la correspondencia visual con el corte. Esta transformación solo cambia la escala de la figura. La clasificación se calcula sobre los puntajes originales y sus medianas.
 
 \textbf{En AIOE, de Felten y sus coautores,} un puntaje alto indica que las habilidades requeridas por la ocupación, ponderadas por su importancia y nivel requerido, tienen una relación relativamente mayor con las aplicaciones de IA consideradas. Un puntaje bajo indica una relación relativamente menor. Esa relación aproxima qué tan pertinentes son las capacidades de la IA para el trabajo. No demuestra que la tecnología pueda reemplazar esas habilidades ni realizar de manera autónoma las tareas que las requieren \citep{felten2021}.
 
