@@ -164,11 +164,8 @@ El informe consta de siete secciones, incluida esta introducción. La Sección \
 \section{Metodología}
 \label{sec:como_leer}
 
-El informe utiliza dos índices. El primero es el índice de exposición ocupacional a la inteligencia artificial (\emph{Artificial Intelligence Occupational Exposure}, AIOE), de \citet{felten2021}. El segundo es el de la Organización Internacional del Trabajo (OIT) y la Red Informática Científica y Académica de Polonia (NASK, por sus siglas en polaco), denominado OIT-NASK \citep{gmyrek2025}.
+El informe utiliza dos índices. El primero es el índice de exposición ocupacional a la inteligencia artificial (\emph{Artificial Intelligence Occupational Exposure}, AIOE), de \citet{felten2021}. El segundo es el de la Organización Internacional del Trabajo (OIT) y la Red Informática Científica y Académica de Polonia (NASK, por sus siglas en polaco), denominado OIT-NASK \citep{gmyrek2025}.  El índice AIOE aproxima en qué medida la IA tiene las habilidades que requiere una ocupación. El índice OIT-NASK evalúa en qué medida la IA puede realizar las tareas de esa ocupación.
 
-El índice \textbf{AIOE, de Felten}, aproxima en qué medida la IA tiene las habilidades que requiere una ocupación. El índice \textbf{OIT-NASK} evalúa en qué medida la IA puede realizar las tareas de esa ocupación.
-
-Para compararlos, ordenamos las ocupaciones de menor a mayor puntaje en cada índice y expresamos su posición en percentiles. Un percentil más alto indica una posición más alta frente a las demás ocupaciones, no un porcentaje de tareas automatizables.
 
 \begin{figure}[H]
 \centering
@@ -177,21 +174,24 @@ Para compararlos, ordenamos las ocupaciones de menor a mayor puntaje en cada ín
 \label{fig:dispersion}
 \end{figure}
 
-La Figura \ref{fig:dispersion} presenta la posición de cada ocupación en los dos índices. El eje horizontal corresponde a OIT-NASK y el vertical, a AIOE. Cada punto representa una ocupación. En general, las ocupaciones que aparecen en posiciones altas en un índice también aparecen en posiciones altas en el otro, aunque no siempre coinciden.
+%Para compararlos, ordenamos las ocupaciones de menor a mayor puntaje en cada índice y expresamos su posición en percentiles. 
+
+
+La Figura \ref{fig:dispersion} presenta la posición de cada ocupación en los dos índices. El eje horizontal corresponde a OIT-NASK y el vertical, a AIOE. Cada punto representa una ocupación. En general, las ocupaciones que aparecen en perecentiles altos en un índice también aparecen en perecentiles altas en el otro, aunque no siempre coinciden.
 
 Las líneas de la figura marcan la mediana de cada índice, que corresponde al percentil 50. Usamos ese punto de corte para clasificar las ocupaciones en tres grupos:
 
 \begin{itemize}
-\item \textbf{Alto potencial relativo de automatización.} La ocupación está en la mediana o por encima de ella en ambos índices.
-\item \textbf{Bajo potencial relativo de automatización.} La ocupación está por debajo de la mediana en ambos índices.
-\item \textbf{Potencial incierto.} La ocupación está en la mediana o por encima de ella en un índice, pero por debajo en el otro.
+\item \textbf{Alto potencial relativo de automatización.} La ocupación por encima de las medianas de ambos índices.
+\item \textbf{Bajo potencial relativo de automatización.} La ocupación está por debajo de las medianas de ambos índices.
+\item \textbf{Potencial incierto.} La ocupación está por encima de la mediana de un índice, pero por debajo en el otro.
 \end{itemize}
 
-``Alto'' y ``bajo'' indican un mayor o menor potencial de automatización frente a las demás ocupaciones. ``Incierto'' significa que los dos índices no coinciden en esa clasificación.
+``Alto'' y ``bajo'' indican un mayor o menor potencial de automatización frente a un punto de corte arbitrario como lo es la mediana. ``Incierto'' significa que los dos índices no coinciden en esa clasificación.
 
-Finalmente, utilizamos la Gran Encuesta Integrada de Hogares (GEIH) de 2025 \citep{dane_geih2025} para calcular qué porcentaje de los trabajadores está en cada grupo, según su ocupación. Los resultados corresponden a los trabajadores cuyas ocupaciones tienen información en ambos índices.
+Finalmente, utilizamos la Gran Encuesta Integrada de Hogares (GEIH) de 2025 \citep{dane_geih2025} para calcular qué porcentaje de los trabajadores está en cada grupo, según su ocupación. 
 
-La \href{https://kin-george.github.io/CJC-Interactividad03/}{herramienta en línea} permite buscar una ocupación y consultar su clasificación como alto potencial relativo de automatización, bajo potencial relativo o potencial incierto. Al desplegar el detalle, el usuario puede ver el puntaje de la ocupación en cada índice y si está por encima o por debajo de la mediana. También puede ubicarla en el gráfico que cruza ambos índices.
+La \href{https://kin-george.github.io/CJC-Interactividad03/}{herramienta en línea} permite buscar una ocupación y consultar su clasificación como alto potencial relativo de automatización, bajo potencial relativo o potencial incierto. Al desplegar el detalle, el usuario puede ver el percentil de la ocupación en cada índice y si está por encima o por debajo de la mediana. También puede ubicarla en el gráfico que cruza ambos índices.
 
 \section{Resultados}
 \label{sec:resultados}
@@ -205,7 +205,7 @@ La \href{https://kin-george.github.io/CJC-Interactividad03/}{herramienta en lín
 \label{fig:nacional}
 \end{figure}
 
-La Figura \ref{fig:nacional} presenta la distribución de los trabajadores entre las tres categorías de potencial relativo de automatización. El 27\,\% de los trabajadores está en ocupaciones con alto potencial relativo de automatización, el 54\,\% en ocupaciones con bajo potencial relativo y el 19\,\% en ocupaciones con potencial incierto. Predomina, por tanto, el bajo potencial relativo, mientras que algo más de uno de cada cuatro trabajadores está en el grupo de alto potencial. Los porcentajes se calculan entre los ocupados con información en ambos indicadores.
+La Figura \ref{fig:nacional} presenta la distribución de los trabajadores entre las tres categorías de potencial relativo de automatización. El 27\,\% de los trabajadores está en ocupaciones con alto potencial relativo de automatización, el 54\,\% en ocupaciones con bajo potencial relativo y el 19\,\% en ocupaciones con potencial incierto. Predomina, por tanto, el bajo potencial relativo, mientras que algo más de uno de cada cuatro trabajadores está en el grupo de alto potencial. 
 
 \subsection{Ingreso}
 
