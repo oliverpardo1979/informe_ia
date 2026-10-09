@@ -159,7 +159,8 @@ Los resultados muestran que más de la mitad de los trabajadores analizados est�
 No obstante, la incertidumbre sobre el impacto de la IA no es menor. Los pronósticos sobre el impacto de la IA deben tomarse siempre con cautela, pues no es siempre claro cómo la IA transformará las tareas de los trabajadores y cómo reaccionarán las empresas, los mercados y los propios trabajadores ante una tecnología con un potencial tan transformador.
 
 
-El informe consta de cinco secciones, incluida esta introducción. La Sección \ref{sec:como_leer} presenta los indicadores y la clasificación de las ocupaciones según su potencial relativo de automatización. La Sección \ref{sec:resultados} presenta los resultados por ingreso, educación, género, formalidad, actividad económica, departamento y ocupación. La Sección \ref{sec:cadena} discute los efectos de la automatización sobre las empresas, la economía y los trabajadores a partir de la teoría económica y la experiencia internacional. La Sección \ref{sec:conclusiones} recoge las conclusiones y sus implicaciones para Colombia. El Apéndice \ref{sec:apendice_metodologia} detalla las fuentes y la construcción de los indicadores.
+El informe consta de cinco secciones, incluida esta introducción. La Sección \ref{sec:como_leer} presenta los indicadores y la clasificación de las ocupaciones según su potencial relativo de automatización. La Sección \ref{sec:resultados} presenta los resultados por ingreso, educación, género, formalidad, actividad económica, departamento y ocupación. La Sección \ref{sec:cadena} discute los efectos de la automatización sobre las empresas, la economía y los trabajadores a partir de la teoría económica y la experiencia internacional. La Sección \ref{sec:conclusiones} recoge las conclusiones y sus implicaciones para Colombia.
+% El Apéndice \ref{sec:apendice_metodologia} detalla las fuentes y la construcción de los indicadores.
 
 \section{Metodología}
 \label{sec:como_leer}
@@ -325,13 +326,18 @@ Para los trabajadores, la sustitución de tareas puede coexistir con mejoras en 
 
 Dependiendo de sus perfiles, el impacto de la IA puede ser muy distinto para los trabajadores en una misma ocupación. En un experimento de tres meses con 133 abogados de patentes, los abogados más experimentados que habían tenido acceso a la IA superaron a sus pares sin ese acceso \citep{autor2026}. Entre los menos experimentados no hubo una mejora promedio, pero sí una mayor dispersión en sus evaluaciones de desempeño. 
 
+\clearpage
 \section{Conclusiones}
 \label{sec:conclusiones}
 
 El 27\,\% de los trabajadores colombianos se encunetra en en ocupaciones con alto potencial relativo de automatización, al 54\,\% en ocupaciones con bajo potencial relativo y al 19\,\% en ocupaciones con potencial incierto. La mayoría queda en el grupo de bajo potencial relativo, pero el grupo de alto potencial reúne a algo más de uno de cada cuatro trabajadores. El alto potencial relativo es más frecuente entre los trabajadores de mayores ingresos, con educación superior, las mujeres y los trabajadores formales. Por actividad económica, destaca en información y comunicaciones y en actividades financieras y de seguros. 
 
-El alto potencial relativo de automatización identifica oportunidades para aumentar la productividad, no un pronóstico de pérdida de empleo. La sustitución de tareas puede coexistir con una mayor producción y unos mejores salarios. Dicho esto, las empresas, los trabajadores y los programas de formación deben revaluar las necesidades de capacitación. La capacitación debe incluir la evaluación de las respuestas de la IA y el desarrollo del criterio profesional, no solo el manejo de la herramienta.
+El alto potencial relativo de automatización identifica oportunidades para aumentar la productividad, no un pronóstico de pérdida de empleo. La sustitución de tareas puede coexistir con una mayor producción y unos mejores salarios.
 
+Las empresas deben revisar con sus trabajadores qué tareas reorganizar y ofrecer capacitación para las nuevas funciones \citep{ocde2024}. Los trabajadores necesitan aprender a utilizar la IA en su ocupación y a evaluar sus respuestas. Las universidades y demás instituciones de formación deben incorporar estas capacidades en sus programas y preservar la práctica necesaria para desarrollar criterio profesional \citep{autor2026}. Los servicios de empleo deben acompañar a quienes necesiten cambiar de ocupación con orientación y formación vinculada a las oportunidades de contratación \citep{ocde2024}.
+
+% Apendice conservado para una posible reincorporacion al manuscrito.
+\begin{comment}
 \appendix
 
 \section{Metodología}
@@ -400,6 +406,8 @@ Para resumir los resultados, el informe agrupa las dos situaciones de desacuerdo
 \subsection{La clasificación de coincidencia}
 
 Para cada persona ocupada con correspondencia válida en los dos índices, se construyen dos indicadores binarios --si OIT-NASK la clasifica como de alto potencial, y si AIOE la clasifica como de alto potencial-- y se cruzan en tres categorías: \textbf{alto potencial} cuando ambos son verdaderos, \textbf{bajo potencial} cuando ambos son falsos, e \textbf{incierto} cuando difieren. Todas las participaciones se calculan sobre el universo de ocupados con información válida en los dos índices dentro de cada grupo (quintil, nivel educativo, sector, departamento, etc.), ponderado por el factor de expansión de la GEIH. El programa \path{code/03_analisis_incertidumbre.py} genera las tablas y figuras de esta sección y reutiliza la carga de datos de \path{code/01_analisis_exposicion_ia_2025.py}.
+
+\end{comment}
 
 \addcontentsline{toc}{section}{Referencias}
 \bibliographystyle{apalike}
